@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/item_container"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="?attr/selectableItemBackground">
+
+    <ImageView
+        android:id="@+id/bot_avatar"
+        android:layout_width="@dimen/avatar_size"
+        android:layout_height="@dimen/avatar_size"
+        android:layout_margin="@dimen/margin_normal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/bot_name"
+        app:layout_constraintHorizontal_chainStyle="spread"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        tools:ignore="ContentDescription"
+        tools:src="@drawable/bot_avatar_rounded_any" />
+
+    <TextView
+        android:id="@+id/bot_new_label"
+        style="@style/ShopNewLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_tiny"
+        android:layout_marginEnd="@dimen/margin_small"
+        android:layout_marginRight="@dimen/margin_small"
+        android:text="@string/new_bot"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toEndOf="@+id/bot_avatar"
+        app:layout_constraintStart_toStartOf="@+id/bot_name"
+        app:layout_constraintTop_toBottomOf="@+id/bot_name" />
+
+    <TextView
+        android:id="@+id/bot_name"
+        style="@style/ShopBotNameList"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/margin_small"
+        android:layout_marginRight="@dimen/margin_small"
+        app:layout_constraintEnd_toStartOf="@+id/shop_button"
+        app:layout_constraintStart_toEndOf="@+id/bot_avatar"
+        app:layout_constraintTop_toTopOf="@+id/bot_avatar"
+        app:layout_constraintVertical_chainStyle="spread"
+        tools:text="Sponge Bob" />
+
+
+
+    <TextView
+        android:id="@+id/bot_description"
+        style="@style/BotInfoNormalText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_normal"
+        android:layout_marginLeft="@dimen/margin_normal"
+        android:layout_marginTop="@dimen/margin_small"
+        android:layout_marginEnd="@dimen/margin_normal"
+        android:layout_marginRight="@dimen/margin_normal"
+        android:layout_marginBottom="@dimen/margin_normal"
+        android:ellipsize="end"
+        android:maxLines="2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/bot_avatar"
+        tools:text="Чрезмерно оптимистичный мульт-герой, всегда раздражает остальных." />
+
+    <com.smedialink.shop.view.custom.SmartButton
+        android:id="@+id/shop_button"
+        android:layout_width="@dimen/shop_button_width"
+        android:layout_height="@dimen/shop_button_height"
+        android:layout_margin="@dimen/margin_normal"
+        android:layout_marginStart="@dimen/margin_small"
+        android:layout_marginLeft="@dimen/margin_small"
+        android:gravity="center"
+        android:textAllCaps="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/bot_name"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Buy" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

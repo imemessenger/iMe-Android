@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+>
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        
+        
+        
+        <FrameLayout
+            android:id="@+id/layoutRules"
+            android:layout_width="match_parent"
+            android:layout_height="59dp"
+            android:background="?attr/selectableItemBackground">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:layout_gravity="center"
+                android:textColor="@color/colorBlack"
+                android:layout_margin="16dp"
+                android:text="@string/publication_rules"/>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/colorDivider"
+                android:layout_gravity="bottom"/>
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/layoutRecommendations"
+            android:layout_width="match_parent"
+            android:layout_height="59dp"
+            android:background="?attr/selectableItemBackground">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:layout_gravity="center"
+                android:textColor="@color/colorBlack"
+                android:layout_margin="16dp"
+                android:text="@string/design_recommendations"/>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/colorDivider"
+                android:layout_gravity="bottom"/>
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/layoutLocation"
+            android:layout_width="match_parent"
+            android:layout_height="59dp"
+            android:background="?attr/selectableItemBackground">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:layout_gravity="center"
+                android:textColor="@color/colorBlack"
+                android:layout_margin="16dp"
+                android:text="@string/location_in_the_collection"/>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/colorDivider"
+                android:layout_gravity="bottom"/>
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/layoutCountries"
+            android:layout_width="match_parent"
+            android:layout_height="59dp"
+            android:background="?attr/selectableItemBackground">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:layout_gravity="center"
+                android:textColor="@color/colorBlack"
+                android:layout_margin="16dp"
+                android:text="@string/countries_for_placement"/>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/colorDivider"
+                android:layout_gravity="bottom"/>
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/layoutRating"
+            android:layout_width="match_parent"
+            android:layout_height="59dp"
+            android:background="?attr/selectableItemBackground">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:layout_gravity="center"
+                android:textColor="@color/colorBlack"
+                android:layout_margin="16dp"
+                android:text="@string/rating"/>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/colorDivider"
+                android:layout_gravity="bottom"/>
+
+        </FrameLayout>
+
+
+
+        <FrameLayout
+            android:id="@+id/layoutCategories"
+            android:layout_width="match_parent"
+            android:layout_height="59dp"
+            android:background="?attr/selectableItemBackground">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:layout_gravity="center"
+                android:textColor="@color/colorBlack"
+                android:layout_margin="16dp"
+                android:text="@string/categories"/>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/colorDivider"
+                android:layout_gravity="bottom"/>
+
+        </FrameLayout>
+        
+        
+    </LinearLayout>
+    
+    
+    <Button
+        android:id="@+id/buttonApply"
+        android:layout_width="182dp"
+        android:layout_gravity="bottom|center"
+        android:layout_margin="36dp"
+        android:layout_height="42dp"
+        android:textColor="@android:color/white"
+        android:textAllCaps="true"
+        android:text="@string/apply"/>
+    
+    
+</FrameLayout>

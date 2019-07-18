@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="bottom"
+    android:orientation="vertical">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/avatar_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/channel_avatar"
+            android:layout_width="@dimen/avatar_size"
+            android:layout_height="@dimen/avatar_size"
+            android:layout_marginStart="@dimen/margin_normal"
+            android:layout_marginLeft="@dimen/margin_normal"
+            android:layout_marginTop="@dimen/margin_normal"
+            android:layout_marginBottom="@dimen/margin_normal"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="ContentDescription"
+            tools:src="@drawable/bot_avatar_rounded_any" />
+
+        <TextView
+            android:id="@+id/channel_name"
+            style="@style/BotInfoBoldText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_normal"
+            android:layout_marginLeft="@dimen/margin_normal"
+            app:layout_constraintStart_toEndOf="@+id/channel_avatar"
+            app:layout_constraintTop_toTopOf="@+id/channel_avatar"
+            tools:text="Churchill" />
+
+        <TextView
+            android:id="@+id/channel_type"
+            style="@style/BotInfoNormalText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toTopOf="@+id/tags_container"
+            app:layout_constraintStart_toStartOf="@+id/channel_name"
+            app:layout_constraintTop_toBottomOf="@+id/channel_name"
+            tools:text="NeuroBot" />
+
+        <com.google.android.flexbox.FlexboxLayout
+            android:id="@+id/tags_container"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_small"
+            android:layout_marginLeft="@dimen/margin_small"
+            android:layout_marginEnd="@dimen/margin_normal"
+            android:layout_marginRight="@dimen/margin_normal"
+            app:alignContent="space_between"
+            app:alignItems="baseline"
+            app:flexDirection="row"
+            app:flexWrap="wrap"
+            app:justifyContent="flex_start"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/channel_avatar"
+            app:layout_constraintTop_toBottomOf="@+id/channel_type" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/stats_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_normal"
+        android:background="@color/colorSmartPanelBackground"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/avatar_container">
+
+        <TextView
+            android:id="@+id/rating_number"
+            style="@style/BotInfoBoldText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_small"
+            android:drawableStart="@drawable/ic_star_black"
+            android:drawableLeft="@drawable/ic_star_black"
+            android:drawablePadding="@dimen/padding_tiny"
+            android:gravity="center"
+            app:layout_constraintEnd_toEndOf="@+id/rating_label"
+            app:layout_constraintStart_toStartOf="@+id/rating_label"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="4.8" />
+
+        <TextView
+            android:id="@+id/rating_label"
+            style="@style/BotInfoNormalText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_normal"
+            android:layout_marginLeft="@dimen/margin_normal"
+            android:layout_marginTop="@dimen/margin_small"
+            android:layout_marginBottom="@dimen/margin_small"
+            android:gravity="center"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/installs_label"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/rating_number"
+            tools:text="1к отзывов " />
+
+        <TextView
+            android:id="@+id/installs_label"
+            style="@style/BotInfoNormalText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_normal"
+            android:layout_marginLeft="@dimen/margin_normal"
+            android:gravity="center"
+            android:text="@string/ChannelMembers"
+            app:layout_constraintBottom_toBottomOf="@+id/rating_label"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/rating_label" />
+
+        <TextView
+            style="@style/BotInfoBoldText"
+            android:id="@+id/installs_counter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="@+id/installs_label"
+            app:layout_constraintStart_toStartOf="@+id/installs_label"
+            app:layout_constraintTop_toTopOf="@+id/rating_number"
+            tools:text="13245к" />
+
+
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/channel_description"
+        style="@style/BotInfoNormalText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_normal"
+        android:layout_marginLeft="@dimen/margin_normal"
+        android:layout_marginTop="@dimen/margin_normal"
+        android:layout_marginEnd="@dimen/margin_normal"
+        android:layout_marginRight="@dimen/margin_normal"
+        android:layout_marginBottom="@dimen/margin_normal"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/stats_container"
+        tools:text="Искусство реально понимает под собой неоднозначный даосизм Искусство реально понимает под собой неоднозначный даосизм " />
+
+
+    <TextView
+        android:id="@+id/channel_link_label"
+        style="@style/BotInfoNormalText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_normal"
+        android:text="@string/link"
+        app:layout_constraintStart_toStartOf="@+id/channel_description"
+        app:layout_constraintTop_toBottomOf="@+id/channel_description" />
+
+    <TextView
+        android:id="@+id/channel_link"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorChannelLink"
+        android:layout_marginStart="@dimen/margin_small"
+        android:layout_marginLeft="@dimen/margin_small"
+        tools:text ="channel_name"
+        app:layout_constraintTop_toTopOf="@id/channel_link_label"
+        app:layout_constraintBottom_toBottomOf="@id/channel_link_label"
+        app:layout_constraintStart_toEndOf="@id/channel_link_label"/>
+    <LinearLayout
+        android:id="@+id/rating_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_normal"
+        android:background="@color/colorSmartPanelBackground"
+        android:orientation="vertical"
+        android:padding="@dimen/padding_normal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/channel_link_label">
+
+        <TextView
+            style="@style/BotInfoGrayText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:text="@string/rate_channel" />
+
+        <me.zhanghai.android.materialratingbar.MaterialRatingBar
+            android:id="@+id/rating"
+            style="@style/Widget.MaterialRatingBar.RatingBar.Indicator"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="-3dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginRight="-3dp"
+            android:numStars="5"
+            android:rating="0"
+            android:secondaryProgress="5"
+            android:stepSize="1"
+            app:mrb_progressTint="@color/colorBotRating" />
+
+    </LinearLayout>
+
+
+    <FrameLayout
+        android:id="@+id/channel_join_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_info_button"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rating_container"
+        app:layout_constraintVertical_bias="1.0"
+        >
+
+        <TextView
+            android:id="@+id/channel_join_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-medium"
+            android:gravity="center_horizontal"
+            android:letterSpacing="0.03"
+            android:layout_gravity="center"
+            android:padding="@dimen/padding_normal"
+            android:text="@string/shop_button_label_download"
+            android:textColor="#ffffff"
+            android:textSize="18sp"
+            android:textStyle="normal"
+            app:layout_constraintVertical_bias="1.0" />
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center"
+            android:layout_margin="@dimen/margin_normal"
+            android:layout_marginStart="@dimen/margin_small"
+            android:layout_marginLeft="@dimen/margin_small"
+            android:indeterminate="true"
+            android:indeterminateTint="@android:color/white"
+            android:visibility="invisible"
+
+            tools:visibility="visible" />
+    </FrameLayout>
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

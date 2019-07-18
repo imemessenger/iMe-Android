@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/padding_extra_small">
+
+    <ImageView
+        android:id="@+id/bot_avatar"
+        android:layout_width="@dimen/avatar_size_big"
+        android:layout_height="@dimen/avatar_size_big"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="ContentDescription"
+        tools:src="@drawable/bot_avatar_rounded_any" />
+
+    <TextView
+        android:id="@+id/bot_name"
+        style="@style/ShopBotNameGrid"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_extra_small"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="@+id/bot_avatar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bot_avatar"
+        tools:text="Tyrion Lannister" />
+
+    <TextView
+        android:id="@+id/bot_status"
+        style="@style/ShopBotStatusText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/margin_tiny"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/bot_new_label"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="@+id/bot_name"
+        app:layout_constraintTop_toBottomOf="@+id/bot_name"
+        tools:text="199 ₽" />
+
+    <TextView
+        android:id="@+id/bot_new_label"
+        style="@style/ShopNewLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/new_bot"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/bot_name"
+        app:layout_constraintStart_toEndOf="@+id/bot_status"
+        app:layout_constraintTop_toBottomOf="@+id/bot_name" />
+
+    <ImageView
+        android:id="@+id/bot_installed_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/margin_tiny"
+        android:layout_marginBottom="@dimen/margin_tiny"
+        android:src="@drawable/ic_bot_installed"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/bot_avatar"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="ContentDescription" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

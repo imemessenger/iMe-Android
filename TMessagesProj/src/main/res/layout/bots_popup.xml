@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorPopupBackground">
+
+    <ImageView
+        android:id="@+id/bot_info_img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="8dp"
+        android:src="@drawable/ic_bot_info"
+        app:layout_constraintBottom_toTopOf="@+id/bot_share_img"
+        app:layout_constraintEnd_toStartOf="@+id/bot_info_text"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="ContentDescription" />
+
+    <TextView
+        android:id="@+id/bot_info_text"
+        style="@style/BotPopupLabel"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:text="@string/bot_info"
+        app:layout_constraintBottom_toBottomOf="@+id/bot_info_img"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/bot_info_img"
+        app:layout_constraintTop_toTopOf="@+id/bot_info_img" />
+
+    <ImageView
+        android:id="@+id/bot_share_img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="8dp"
+        android:src="@drawable/ic_bot_share"
+        app:layout_constraintBottom_toTopOf="@+id/bot_disable_img"
+        app:layout_constraintEnd_toStartOf="@+id/bot_share_text"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bot_info_img"
+        tools:ignore="ContentDescription" />
+
+    <TextView
+        android:id="@+id/bot_share_text"
+        style="@style/BotPopupLabel"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:text="@string/bot_share"
+        app:layout_constraintBottom_toBottomOf="@+id/bot_share_img"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/bot_share_img"
+        app:layout_constraintTop_toTopOf="@+id/bot_share_img" />
+
+    <ImageView
+        android:id="@+id/bot_disable_img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="16dp"
+        android:src="@drawable/ic_bot_disable"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/bot_disable_text"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bot_share_img"
+        tools:ignore="ContentDescription" />
+
+    <TextView
+        android:id="@+id/bot_disable_text"
+        style="@style/BotPopupLabel"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:text="@string/bot_disable"
+        app:layout_constraintBottom_toBottomOf="@+id/bot_disable_img"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/bot_disable_img"
+        app:layout_constraintTop_toTopOf="@+id/bot_disable_img" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

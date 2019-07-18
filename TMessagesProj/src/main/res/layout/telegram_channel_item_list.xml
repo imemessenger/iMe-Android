@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/item_container"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="?attr/selectableItemBackground">
+
+    <com.smedialink.channels.view.custom.TelegramImageView
+        android:id="@+id/channel_avatar"
+        android:layout_width="52dp"
+        android:layout_height="52dp"
+        android:layout_margin="@dimen/margin_normal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/channel_name"
+        app:layout_constraintHorizontal_chainStyle="spread"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        tools:ignore="ContentDescription" />
+
+
+    <TextView
+        android:id="@+id/channel_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/margin_small"
+        android:layout_marginRight="@dimen/margin_small"
+        android:ellipsize="end"
+        android:fontFamily="sans-serif-medium"
+        android:textColor="#000"
+        android:textSize="16sp"
+        android:textStyle="normal"
+        app:layout_constraintEnd_toStartOf="@+id/join_button"
+        app:layout_constraintStart_toEndOf="@+id/channel_avatar"
+        app:layout_constraintTop_toTopOf="@+id/channel_avatar"
+        tools:text="ChannelName " />
+
+
+    <com.smedialink.shop.view.custom.SmartButton
+        android:id="@+id/join_button"
+        android:layout_width="@dimen/shop_button_width"
+        android:layout_height="@dimen/shop_button_height"
+        android:layout_margin="@dimen/margin_normal"
+        android:layout_marginStart="@dimen/margin_small"
+        android:layout_marginLeft="@dimen/margin_small"
+        android:gravity="center"
+        android:textAllCaps="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/channel_name"
+        app:layout_constraintTop_toTopOf="parent"
+      />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="@dimen/shop_button_width"
+        android:layout_height="@dimen/shop_button_height"
+        android:layout_margin="@dimen/margin_normal"
+        android:layout_marginStart="@dimen/margin_small"
+        android:layout_marginLeft="@dimen/margin_small"
+        android:indeterminate="true"
+        android:visibility="invisible"
+        android:indeterminateTint="@color/colorShopButtonEnable"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/channel_name"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:visibility="visible" />
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="0.5dp"
+        tools:layout_height="3dp"
+        app:layout_constraintStart_toEndOf="@id/channel_avatar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:background="@color/colorChannelsDivider"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

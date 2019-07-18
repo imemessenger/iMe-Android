@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+    <corners android:radius="@dimen/tag_label_corner_radius" />
+    <padding
+        android:bottom="@dimen/new_label_bg_padding"
+        android:left="@dimen/tag_label_bg_padding"
+        android:right="@dimen/tag_label_bg_padding"
+        android:top="@dimen/new_label_bg_padding" />
+    <solid android:color="@color/colorTagBackground" />
+</shape>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:paddingTop="@dimen/padding_extra_small"
+    android:paddingBottom="@dimen/padding_extra_small"
+    android:paddingRight="@dimen/padding_channel_grid"
+    android:paddingLeft="@dimen/padding_channel_grid">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/channel_avatar"
+        android:layout_width="@dimen/avatar_size_big"
+        android:layout_height="@dimen/avatar_size_big"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="ContentDescription" />
+
+    <TextView
+        android:id="@+id/channel_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_extra_small"
+        android:textSize="12sp"
+        android:lines="2"
+        android:ellipsize="end"
+        android:textColor="#000"
+        android:fontFamily="sans-serif-medium"
+        app:layout_constraintEnd_toStartOf="@+id/channel_installed_icon"
+        app:layout_constraintEnd_toEndOf="@+id/channel_avatar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/channel_avatar"
+        tools:text="Tyrion Lannisterdsfdsf" />
+
+
+    <ImageView
+        android:id="@+id/channel_installed_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/margin_tiny"
+        android:layout_marginBottom="@dimen/margin_tiny"
+        android:src="@drawable/ic_bot_installed"
+        android:visibility="gone"
+        tools:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/channel_avatar"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="ContentDescription" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

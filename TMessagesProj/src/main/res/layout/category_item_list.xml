@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/item_container"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="?attr/selectableItemBackground">
+
+
+    <TextView
+        android:id="@+id/textCategoryTitle"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:textColor="@color/colorCategory"
+        android:paddingTop="@dimen/padding_normal"
+        android:paddingLeft="@dimen/margin_normal"
+        android:textSize="16sp"
+        android:fontFamily="sans-serif"
+        android:background="?attr/selectableItemBackground"
+        android:textStyle="normal"
+        android:paddingRight="@dimen/margin_normal"
+        android:paddingBottom="@dimen/padding_normal"
+        tools:text="Название категории"/>
+
+
+</FrameLayout>

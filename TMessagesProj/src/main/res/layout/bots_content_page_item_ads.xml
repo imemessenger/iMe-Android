@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="@dimen/margin_small"
+    android:layout_marginEnd="@dimen/margin_small"
+    android:layout_marginTop="@dimen/answer_bg_padding"
+    android:layout_marginBottom="@dimen/answer_bg_padding">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:background="@drawable/bg_bot_answer_ads"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/ads_phrase"
+            style="@style/AnswerText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_small"
+            android:layout_marginLeft="@dimen/margin_small"
+            android:layout_marginTop="@dimen/margin_extra_small"
+            android:layout_marginEnd="@dimen/margin_small"
+            android:layout_marginRight="@dimen/margin_small"
+            android:layout_marginBottom="@dimen/margin_extra_small"
+            android:layout_weight="1"
+            tools:text="Длинный текст текст текст" />
+
+        <TextView
+            style="@style/AdsLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|end"
+            android:text="@string/ads_label" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

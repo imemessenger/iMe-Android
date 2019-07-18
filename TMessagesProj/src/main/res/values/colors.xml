@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="divider">#dcdcdc</color>
+    <color name="colorTabsBackground">#f5f6f7</color>
+    <color name="colorTabsDivider">#e2e5e7</color>
+    <color name="colorSmartPanelBackground">#f5f6f7</color>
+    <color name="colorAnswerAds">#c2eefd</color>
+    <color name="colorAnswerAdsText">#2678b6</color>
+    <color name="colorAnswerNormal">#efffde</color>
+    <color name="colorPopupBackground">#FFF</color>
+
+    <color name="colorNewLabel">#ff8181</color>
+    <color name="colorShopButtonEnable">#21CBC6</color>
+    <color name="colorChannelLink">#29ccbe</color>
+    <color name="colorShopButtonDisable">#8a8a8a</color>
+    <color name="colorShopButtonTextLight">#ffffff</color>
+    <color name="colorShopButtonTextEnable">#21CBC6</color>
+    <color name="colorBotRating">#21CBC6</color>
+    <color name="colorShopButtonTextDisable">#8a8a8a</color>
+    <color name="colorChannelPlaceholder">#d8d8d8</color>
+    <color name="colorShopStatusText">#8a8a8a</color>
+    <color name="colorChannelsDivider">#dedede</color>
+    <color name="colorCategory">#444444</color>
+    <color name="colorTagBackground">#f5f6f7</color>
+    <color name="colorDivider">#f5f6f7</color>
+    <color name="colorBlack">#373737</color>
+    <color name="colorChannelSubscribersGray">#878787</color>
+    <color name="colorThemeBlue">#537ea3</color>
+    <color name="transparent">#00ffffff</color>
+</resources>

@@ -1,0 +1,202 @@
+<resources
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--THEMES-->
+
+    <style name="Theme.TMessages.Start" parent="Theme.AppCompat">
+        <item name="android:actionBarStyle">@style/ActionBar.Transparent.TMessages.Start</item>
+        <item name="android:colorBackground">@android:color/white</item>
+        <item name="android:windowBackground">@android:color/white</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:textViewStyle">@style/MyTextViewStyle</item>
+    </style>
+
+    <style name="Theme.TMessages" parent="Theme.AppCompat.Light">
+        <item name="android:windowActionBar">false</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowActionBarOverlay">false</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:colorBackground">@android:color/white</item>
+        <item name="android:windowBackground">@android:color/white</item>
+        <item name="android:itemTextAppearance">@style/ActionBar.Transparent.TMessages.Item</item>
+        <item name="android:listViewStyle">@style/Theme.TMessages.ListView</item>
+        <item name="android:listChoiceBackgroundIndicator">@drawable/list_selector_ex</item>
+        <item name="android:actionBarItemBackground">@drawable/bar_selector_style</item>
+        <item name="android:textViewStyle">@style/MyTextViewStyle</item>
+    </style>
+
+    <style name="Theme.TMessages.PopupNotification" parent="Theme.TMessages">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowAnimationStyle">@null</item>
+        <item name="android:windowActionBar">false</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+    <style name="Theme.TMessages.Transparent" parent="Theme.TMessages">
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowCloseOnTouchOutside">false</item>
+        <item name="android:colorBackgroundCacheHint">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:backgroundDimEnabled">false</item>
+        <item name="android:windowAnimationStyle">@null</item>
+        <item name="android:windowActionBar">false</item>
+    </style>
+
+    <style name="Theme.TMessages.TransparentWithAlerts" parent="Theme.TMessages">
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:colorBackgroundCacheHint">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowActionBar">false</item>
+    </style>
+
+    <style name="scrollbarShapeStyle">
+        <item name="android:scrollbarAlwaysDrawVerticalTrack">true</item>
+        <item name="android:scrollbarStyle">insideInset</item>
+        <item name="android:scrollbars">vertical</item>
+        <item name="android:fadeScrollbars">true</item>
+        <item name="android:scrollbarThumbVertical">@drawable/scrollbar_vertical_thumb_inset</item>
+        <item name="android:scrollbarTrackVertical">@null</item>
+        <item name="android:scrollbarSize">8dp</item>
+        <item name="android:scrollbarFadeDuration">250</item>
+        <item name="android:scrollbarDefaultDelayBeforeFade">400</item>
+    </style>
+
+    <!-- TextView -->
+
+    <style name="MyTextViewStyle" parent="android:Widget.Holo.Light.TextView">
+        <item name="android:hyphenationFrequency">none</item>
+    </style>
+
+    <!-- POPUP -->
+
+    <style name="PopupAnimation" parent="android:Animation" mce_bogus="1">
+        <item name="android:windowEnterAnimation">@anim/popup_in</item>
+        <item name="android:windowExitAnimation">@anim/popup_out</item>
+    </style>
+
+    <style name="PopupContextAnimation" parent="android:Animation" mce_bogus="1">
+        <item name="android:windowEnterAnimation">@anim/popup_context_in</item>
+    </style>
+
+    <!--ACTION BAR-->
+
+    <style name="ActionBar.Transparent.TMessages.Start" parent="android:style/Widget.Holo.Light.ActionBar">
+        <item name="android:background">#ff527da3</item>
+        <item name="android:logo">@drawable/transparent</item>
+        <item name="android:title">""</item>
+    </style>
+
+    <!--ACTION BAR ITEMS-->
+
+    <style name="ActionBar.Transparent.TMessages.Item" parent="android:TextAppearance.Widget.IconMenu.Item">
+        <item name="android:textColor">#000000</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <!--LIST VIEW-->
+
+    <style name="Theme.TMessages.ListView" parent="@android:style/Widget.ListView">
+        <item name="android:listSelector">@drawable/list_selector_ex</item>
+        <item name="android:fadingEdge">none</item>
+        <item name="android:dividerHeight">1dp</item>
+        <item name="android:divider">@color/divider</item>
+    </style>
+
+    <!--ALERT DIALOG-->
+
+    <style name="DialogNoAnimation">
+        <item name="android:windowEnterAnimation">@anim/no_animation</item>
+        <item name="android:windowExitAnimation">@anim/no_animation</item>
+    </style>
+
+    <style name="TransparentDialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:background">@null</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowFullscreen">false</item>
+    </style>
+
+    <style name="DefaultText">
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="MyCustomTabLayout" parent="Widget.Design.TabLayout">
+        <item name="tabIndicatorColor">@color/transparent</item>
+    </style>
+
+    <style name="BottomDialogTheme" parent="Theme.AppCompat.Light.Dialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:background">@null</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowFullscreen">false</item>
+        <item name="android:windowEnterAnimation">@anim/slide_up_dialog</item>
+        <item name="android:windowExitAnimation">@anim/slide_down_dialog</item>
+    </style>
+
+    <style name="BotsPanelNameText">
+        <item name="android:textSize">14sp</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
+    <style name="AnswerText">
+        <item name="android:textSize">15sp</item>
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">#000</item>
+        <item name="android:lineSpacingExtra">2sp</item>
+    </style>
+
+    <style name="BotInfoBoldText">
+        <item name="android:textSize">16sp</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">#313131</item>
+    </style>
+
+    <style name="BotInfoGrayText">
+        <item name="android:textSize">14sp</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">#8a8a8a</item>
+    </style>
+
+    <style name="BotInfoNormalText">
+        <item name="android:textSize">14sp</item>
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">#8a8a8a</item>
+        <item name="android:lineSpacingExtra">4sp</item>
+    </style>
+
+    <style name="PrimaryFlatButton" parent="Theme.AppCompat.Light">
+        <item name="android:buttonStyle">@style/Widget.AppCompat.Button.Borderless.Colored</item>
+        <item name="colorControlHighlight">@color/colorAnswerAds</item>
+        <item name="colorAccent">@color/colorShopButtonTextEnable</item>
+    </style>
+
+    <style name="AdsLabel">
+        <item name="android:textColor">@color/colorAnswerAdsText</item>
+        <item name="android:textSize">11sp</item>
+    </style>
+
+    <style name="BotPopupLabel">
+        <item name="android:textSize">15sp</item>
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">#000000</item>
+    </style>
+
+</resources>

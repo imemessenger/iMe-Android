@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="AutoBots">Автоматические боты</string>
+    <string name="ShareTelegram">Поделиться iMe…</string>
+    <string name="InviteToTelegram">ПРИГЛАСИТЬ В</string>
+    <string name="InviteFriendsHelp">Выберите людей, которых хотите пригласить в iMe Messenger</string>
+    <string name="InviteText2">Привет, вместо Telegram я использую iMe – мессенджер с Искусственным интеллектом!
+Скачай его здесь %1$s и общайся с пользователями Telegram используя нейроботов-помощников для переписок.</string>
+    <string name="InviteText3">Привет, я общаюсь здесь с тобой используя нейроботов – помощников для переписок. Скачай iMe Messenger – мессенджер с Искусственным интеллектом и продолжай общаться с пользователями Telegram в новом формате!\n%1$s</string>
+    <string name="TelegramVersion">iMe для Android %1$s</string>
+
+    <string name="Page1Title">iMe Messenger</string>
+    <string name="Page2Title">Быстрый</string>
+    <string name="Page3Title">Умный</string>
+    <string name="Page4Title">Безопасный</string>
+    <string name="Page5Title">Мощный</string>
+    <string name="Page6Title">Облачный</string>
+    <string name="NoFolders">Папок пока нет</string>
+    <string name="NoFoldersHelp">Чтобы создать папку с выбранными чатами, нажмите на значок плюс в правом нижнем углу.</string>
+    <string name="NoUnread">Непрочитанных чатов нет</string>
+    <string name="NoUnreadHelp">В этой вкладке отображаются чаты с \nнепрочитанными сообщениями.</string>
+    <string name="SelectChats">Выберите чаты</string>
+    <string name="Selected">Выбрано: %d</string>
+    <string name="FolderName">Название папки</string>
+    <string name="SelectDialogsToAdd">Выберите диалоги для добавления в папку %s</string>
+    <string name="SendToFolder">Добавить в папку</string>
+    <string name="RemoveFromFolder">Удалить из папки</string>
+    <string name="FolderEdit">Добавить чат</string>
+    <string name="FolderRename">Переименовать</string>
+    <string name="FolderDelete">Удалить</string>
+    <!--tabs-->
+    <string name="tabAll">Все</string>
+    <string name="tabUnread">Непрочитанные</string>
+    <string name="tabChats">Личные чаты</string>
+    <string name="tabGroups">Групповые чаты</string>
+    <string name="tabChannels">Каналы</string>
+    <string name="tabBots">Боты</string>
+    <string name="tabFolders">Папки</string>
+
+    <string name="Page1Message">Самый безопасный\n мессенджер в мире.</string>
+    <string name="Page2Message">Доставка сообщений быстрее чем\n в любом другом приложении.</string>
+    <string name="Page3Message">Искусственный интеллект поможет в\n общении и сделает его ярче.</string>
+    <string name="Page4Message">Ваши сообщения в безопасности от\n хакерских атак.</string>
+    <string name="Page5Message">Не имеет ограничений на размер\n ваших файлов и чатов.</string>
+    <string name="Page6Message">Доступ к сообщениям со\n множества устройств.</string>
+
+    <string name="UsernameHelp">Вы можете выбрать публичное имя пользователя в **iMe**. В этом случае другие люди смогут найти Вас по такому имени и связаться, не зная Вашего телефона.\n\nВы можете использовать символы **a–z**, **0–9** и подчёркивания. Минимальная длина – **5** символов.</string>
+    <string name="DeleteAccountHelp">Если Вы ни разу не заглянете в iMe Messenger за это время, аккаунт будет удалён вместе со всеми сообщениями и контактами.</string>
+
+    <string name="UseProxySettings">Использовать прокси</string>
+    <string name="UseProxySettingsInfo">Если нет соединения, то попробуйте использовать прокси.</string>
+
+    <string name="YourPhone">Ваш телефон</string>
+    <string name="StartText">Пожалуйста, укажите код страны и свой номер телефона.</string>
+    <string name="iMeSettings">Настройки вкладок</string>
+    <string name="TabSettings">Настройки вкладок</string>
+    <string name="TabSettingsInfo">Настройте порядок вкладок с помощью перетаскивания</string>
+
+    <string name="error_no_internet">Проверьте интернет соединение</string>
+    <string name="ads_label">ads</string>
+
+    <!-- iMeStore -->
+    <string name="AiStore">iMeStore</string>
+    <string name="BotsMarket">Магазин ботов</string>
+    <string name="NotFound">По вашему запросу ничего не найдено.</string>
+    <string name="Channel">Канал</string>
+    <string name="ChannelMembers">Подписчиков</string>
+
+    <string name="tab_all">Все</string>
+    <string name="shop_tab_popular">Популярные</string>
+    <string name="shop_tab_free">Бесплатные</string>
+    <string name="shop_tab_my">Мои</string>
+
+    <string name="shop_button_label_download">Скачать</string>
+    <string name="shop_button_label_enable">Включить</string>
+    <string name="shop_button_label_disable">Отключить</string>
+    <string name="shop_button_label_update">Обновить</string>
+    <string name="shop_button_label_downloading">Загрузка…</string>
+    <string name="neuro_bot_info_date_added_placeholder">Добавлен</string>
+    <string name="neuro_bot_info_date_updated_placeholder">Обновлен</string>
+    <string name="phrases">Фраз</string>
+    <string name="link">Ссылка</string>
+    <string name="themes">Тем</string>
+    <string name="installs">Установок</string>
+    <string name="rate_bot">Оцените бота</string>
+    <string name="rate_channel">Оценить канал</string>
+    <string name="close">Закрыть</string>
+    <string name="receive">Получить</string>
+    <string name="developer">Разработчик: iMe Messenger</string>
+    <string name="new_bot">NEW</string>
+    <string name="free_bot">Бесплатный</string>
+    <string name="bot_info">Подробно о боте</string>
+    <string name="bot_share">Поделиться</string>
+    <string name="bot_disable">Отключить бота</string>
+    <string name="categories">Категории</string>
+    <string name="HideOnTop">Скрыть</string>
+    <string name="search">Поиск</string>
+    <string name="change_country">Сменить страну каналов</string>
+    <string name="add_channel">Добавить свой канал</string>
+    <string name="publication_rules">Правила размещения</string>
+    <string name="design_recommendations">Рекомендации оформления</string>
+    <string name="countries_for_placement">Страны размещения</string>
+    <string name="location_in_the_collection">Расположение в подборке</string>
+    <string name="apply">Подать заявку</string>
+    <string name="channel_country">Страна каналов</string>
+    <string name="rating">Рейтинг</string>
+    <string name="add_channel_title">Добавление канала</string>
+
+    <string name="empty_category">В данную категорию еще не были добавлены каналы.</string>
+    <plurals name="ratings">
+        <item quantity="one" tools:ignore="ImpliedQuantity">оценка</item>
+        <item quantity="few">оценки</item>
+        <item quantity="many">оценок</item>
+        <item quantity="other">оценок</item>
+    </plurals>
+
+    <plurals name="subscribers">
+        <item quantity="one" tools:ignore="ImpliedQuantity">подписчик</item>
+        <item quantity="few">подписчика</item>
+        <item quantity="many">подписчиков</item>
+        <item quantity="other">подписчиков</item>
+    </plurals>
+
+    <string name="publication_rules_text">     Мы не допускаем размещение каналов, в которых содержится контент нарушающий законодательные или общегражданские права и нормы, оскорбляющий людей и чувства верующих, носящий нацистский, насильственный или порнографический характер, и т.д.. Также, мы оцениваем количество рекламы, присутствующей внутри канала, при ее содержании более 30% от общего контента есть большая вероятность непрохождения модерации.
+\n     При нарушении правил размещения материалов в канале после модерации и выпуска в подборке, а также при обоснованных жалобах со стороны пользователей или иных лиц, мы оставляем за собой право удалить ваш канал из подборки.</string>
+    <string name="design_recommendations_text">      Все данные о вашем канале подтягиваются в подборку автоматически по API Telegram через username, поэтому позаботьтесь о корректном и красивом оформлении.
+\n\nа. Название - краткое и ёмкое. Оптимально в одно слово, желательно не более 3-х слов. При большом количестве символов, название может полностью не поместиться под аватаркой канала и будет обрезано.
+\n\nб. Описание – сжато, строго по теме. Пользователи, если не по названию, то по описанию должны понять о чём ваш канал. Описание канала располагается в карточке канала.
+\n\nв. Аватар – не поленитесь сделать себе красивый и уникальный логотип у дизайнера, это стоит не так дорого. Аватарка канала более чем на 50% отвечает за то, что пользователи обратят внимание и заинтересуются вашим ресурсом.
+\n\nг. Данные о контактах – желательно оставлять свои данные в информации о канале для обратной связи.</string>
+    <string name="location_in_the_collection_text">а. Вкладка «Все». В каждой категории тематические каналы располагаются автоматически в приоритетном порядке по количеству подписчиков - слева направо по горизонтали.
+\n\nб. Каналы, добавленные впервые, дополнительно отображаются в категории «Новые», в течении первого месяца размещения, в приоритетном порядке по дате и времени размещения. При обновлении подборки свежие каналы сменяют предыдущие.
+\n\nв. Вкладка «Популярные». Все каналы размещаются по вертикали, вне зависимости от тематики, в приоритетном порядке по количеству подписчиков сверху вниз.
+\n\nг. Вкладка «Рекомендуемые». Данная вкладка появится в подборке при наборе каналами необходимого количества оценок от пользователей. Все каналы размещаются по вертикали, вне зависимости от тематики, в приоритетном порядке по внутреннему рейтингу от пользователей сверху вниз.
+\n\nд. Вкладка «Мои». Данная вкладка является пользовательской и в ней у каждого пользователя располагаются свои каналы.</string>
+    <string name="rating_text">      На данный момент приоритет всех каналов основывается на количестве подписчиков. Но зачастую, у недобросовестных каналов, количество подписчиков может не соответствовать качеству канала, т.к. использовались боты для накруток. Наш внутренний рейтинг от самих пользователей позволит в будущем оценивать каналы с большей объективностью. После набора каналами необходимого количества оценок мы реализуем вкладку «Рекомендуемые». Поэтому, мы советуем следить за своим рейтингом и, при неудовлетворении оценкой, вносить изменения в политику канала.</string>
+    <string name="countries_for_placement_text">      При размещении каналов мы основываемся на том, на каком языке ведется данный канал. Допускается размещение канала сразу для нескольких стран. На данный момент, каналы на русском языке размещаются для России, стран СНГ и Украины. Каналы на английском языке по умолчанию размещаются для всех остальных стран мира, с возможной корректировкой в будущем. Каналы на остальных языках размещаются не более чем для 3-х стран. Если ваш канал ведется на языке, отличающемся от языка страны, для которой предназначен канал, то допускается размещение и по языковому распределению, и по странам. Например, российский канал по обучению английского языка, может быть размещен как в англоязычных странах, так и в русскоговорящих.</string>
+
+    <string name="categories_text">      На данный момент в подборке имеется 24 тематических категорий. Если вам не походит ни одна из данных категорий, то мы можем рассмотреть возможность добавления новой категории. При подаче заявки укажите желаемую категорию.\n\n
+ \n\n1) Новости и СМИ
+ \n\n2) Юмор и развлечения
+ \n\n3) Блоги
+ \n\n4) Политика и экономика
+ \n\n5) Технологии
+ \n\n6) Наука и образование
+ \n\n7) Музыка
+ \n\n8) Фильмы и сериалы
+ \n\n9) Лингвистика
+ \n\n10) Литература
+ \n\n11) Психология
+ \n\n12) Путешествия и эмиграция
+ \n\n13) Здоровье и спорт
+ \n\n14) Мода и красота
+ \n\n15) Еда и напитки
+ \n\n16) Медицина
+ \n\n17) Искусство и фото
+ \n\n18) Игры и приложения
+ \n\n19) Продажи
+ \n\n20) Карьера
+ \n\n21) Маркетинг и реклама
+ \n\n22) Бизнес и стартапы
+ \n\n23) Криптовалюты
+ \n\n24) Рукоделие
+</string>
+
+    <string name="apply_text">      Напишите нам сообщение на @iMeMessenger, с указанием названия вашего канала, username, желаемой категорией и страной размещения.</string>
+
+</resources>

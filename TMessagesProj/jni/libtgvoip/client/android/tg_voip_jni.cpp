@@ -20,6 +20,7 @@
 #include "../../audio/Resampler.h"
 #include "../../os/android/JNIUtilities.h"
 #include "../../PrivateDefines.h"
+#include "../../logging.h"
 
 #ifdef TGVOIP_HAS_CONFIG
 #include <tgvoip_config.h>
@@ -522,10 +523,40 @@ namespace tgvoip {
 		((video::VideoSourceAndroid*)(intptr_t)inst)->SendFrame(std::move(buf), static_cast<uint32_t>(flags));
 	}
 
+	void VideoSource_nativeSetRotation(JNIEnv* env, jobject thiz, jlong inst, jint rotation){
+		((video::VideoSourceAndroid*)(intptr_t)inst)->SetRotation((unsigned int)rotation);
+	}
+
 #pragma mark - VideoRenderer
 
 	jlong VideoRenderer_nativeInit(JNIEnv* env, jobject thiz){
 		return (jlong)(intptr_t)new video::VideoRendererAndroid(env->NewGlobalRef(thiz));
+	}
+
+#pragma mark - VLog
+
+	template<int level> void VLog_log(JNIEnv* env, jclass cls, jstring jmsg){
+		const char* format="[java] %s";
+		std::string msg=jni::JavaStringToStdString(env, jmsg);
+		switch(level){
+			case 0:
+				LOGV(format, msg.c_str());
+				break;
+			case 1:
+				LOGD(format, msg.c_str());
+				break;
+			case 2:
+				LOGI(format, msg.c_str());
+				break;
+			case 3:
+				LOGW(format, msg.c_str());
+				break;
+			case 4:
+				LOGE(format, msg.c_str());
+				break;
+			default:
+				break;
+		}
 	}
 }
 
@@ -546,6 +577,10 @@ extern "C" void tgvoipRegisterNatives(JNIEnv* env){
 	jclass videoRenderer=env->FindClass(TGVOIP_PACKAGE_PATH "/VideoRenderer");
 	if(env->ExceptionCheck()){
 		env->ExceptionClear(); // is returning NULL from FindClass not enough?
+	}
+	jclass vlog=env->FindClass(TGVOIP_PACKAGE_PATH "/VLog");
+	if(env->ExceptionCheck()){
+		env->ExceptionClear();
 	}
 	assert(controller && audioRecordJNI && audioTrackJNI && serverConfig && resampler);
 
@@ -573,6 +608,7 @@ extern "C" void tgvoipRegisterNatives(JNIEnv* env){
 			video::VideoRendererAndroid::decodeAndDisplayMethod=env->GetMethodID(videoRenderer, "decodeAndDisplay", "(Ljava/nio/ByteBuffer;IJ)V");
 			video::VideoRendererAndroid::resetMethod=env->GetMethodID(videoRenderer, "reset", "(Ljava/lang/String;II[[B)V");
 			video::VideoRendererAndroid::setStreamEnabledMethod=env->GetMethodID(videoRenderer, "setStreamEnabled", "(Z)V");
+			video::VideoRendererAndroid::setRotationMethod=env->GetMethodID(videoRenderer, "setRotation", "(I)V");
 		}
 	}
 
@@ -612,8 +648,8 @@ extern "C" void tgvoipRegisterNatives(JNIEnv* env){
 			{"nativeRequestCallUpgrade", "(J)V", (void*)&tgvoip::VoIPController_nativeRequestCallUpgrade},
 			{"nativeNeedRate", "(J)Z", (void*)&tgvoip::VoIPController_nativeNeedRate},
 			{"getConnectionMaxLayer", "()I", (void*)&tgvoip::VoIPController_getConnectionMaxLayer},
-			//{"nativeSetVideoSource", "(JJ)V", (void*)&tgvoip::VoIPController_nativeSetVideoSource},
-			//{"nativeSetVideoRenderer", "(JJ)V", (void*)&tgvoip::VoIPController_nativeSetVideoRenderer}
+			{"nativeSetVideoSource", "(JJ)V", (void*)&tgvoip::VoIPController_nativeSetVideoSource},
+			{"nativeSetVideoRenderer", "(JJ)V", (void*)&tgvoip::VoIPController_nativeSetVideoRenderer}
 	};
 	env->RegisterNatives(controller, controllerMethods, sizeof(controllerMethods)/sizeof(JNINativeMethod));
 
@@ -666,10 +702,11 @@ extern "C" void tgvoipRegisterNatives(JNIEnv* env){
 	if(videoSource){
 		// VideoSource
 		JNINativeMethod videoSourceMethods[]={
-				{"nativeInit",                     "()J",                          (void *) &tgvoip::VideoSource_nativeInit},
-				{"nativeRelease",                  "(J)V",                         (void *) &tgvoip::VideoSource_nativeRelease},
+				{"nativeInit", "()J", (void *) &tgvoip::VideoSource_nativeInit},
+				{"nativeRelease", "(J)V", (void *) &tgvoip::VideoSource_nativeRelease},
 				{"nativeSetVideoStreamParameters", "(J[Ljava/nio/ByteBuffer;II)V", (void *) &tgvoip::VideoSource_nativeSetVideoStreamParameters},
-				{"nativeSendFrame",                "(JLjava/nio/ByteBuffer;III)V", (void *) &tgvoip::VideoSource_nativeSendFrame}
+				{"nativeSendFrame", "(JLjava/nio/ByteBuffer;III)V", (void *) &tgvoip::VideoSource_nativeSendFrame},
+				{"nativeSetRotation", "(JI)V", (void*)&tgvoip::VideoSource_nativeSetRotation}
 		};
 		env->RegisterNatives(videoSource, videoSourceMethods, sizeof(videoSourceMethods)/sizeof(JNINativeMethod));
 	}
@@ -680,5 +717,17 @@ extern "C" void tgvoipRegisterNatives(JNIEnv* env){
 				{"nativeInit", "()J", (void *) &tgvoip::VideoRenderer_nativeInit}
 		};
 		env->RegisterNatives(videoRenderer, videoRendererMethods, sizeof(videoRendererMethods)/sizeof(JNINativeMethod));
+	}
+
+	if(vlog){
+		// VLog
+		JNINativeMethod vlogMethods[]={
+				{"v", "(Ljava/lang/String;)V", (void *) &tgvoip::VLog_log<0>},
+				{"d", "(Ljava/lang/String;)V", (void *) &tgvoip::VLog_log<1>},
+				{"i", "(Ljava/lang/String;)V", (void *) &tgvoip::VLog_log<2>},
+				{"w", "(Ljava/lang/String;)V", (void *) &tgvoip::VLog_log<3>},
+				{"e", "(Ljava/lang/String;)V", (void *) &tgvoip::VLog_log<4>}
+		};
+		env->RegisterNatives(vlog, vlogMethods, sizeof(vlogMethods)/sizeof(JNINativeMethod));
 	}
 }

@@ -1,0 +1,484 @@
+{
+    "classes": [
+        {
+            "tag": "True"
+        },
+        {
+            "tag": "False"
+        }
+    ],
+    "documents": [
+        {
+            "sent_tokens": [
+                "она",
+                "так",
+                "виляет",
+                "бедрами",
+                "что",
+                "меня",
+                "укачивает"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "ну",
+                "и",
+                "походка"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "еле",
+                "ногами",
+                "передвигает"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "понимаешь",
+                "он",
+                "косолапит"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "он",
+                "словно",
+                "учится",
+                "ходить"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "она",
+                "еле",
+                "ходит",
+                "на",
+                "каблуках"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "походка"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "идет"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "идёт"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "она",
+                "идет"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "она",
+                "идёт"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "он",
+                "идет"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "он",
+                "идёт"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "косолапит"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "косолапие"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "плоскостопие"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "у",
+                "меня",
+                "косолапие"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "у",
+                "меня",
+                "плоскостопие"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "у",
+                "него",
+                "косолапие"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "у",
+                "него",
+                "плоскостопие"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "у",
+                "нее",
+                "плоскостопие"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "у",
+                "нее",
+                "косолапие"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "у",
+                "неё",
+                "косолапие"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "у",
+                "неё",
+                "плоскостопие"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "она",
+                "странно",
+                "ходит"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "он",
+                "странно",
+                "ходит"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "она"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "так"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "виляет"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "бедрами"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "бёдрами"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "бедро"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "бёдра"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "что"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "меня"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "укачивает"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "ну"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "и"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "еле"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "ногами"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "передвигает"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "ноги"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "понимаешь"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "она"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "он"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "словно"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "учится"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "ходить"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "ходит"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "странно"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "передвигается"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "на"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "каблуках"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "на",
+                "каблуках"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "каблуки"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "каблук"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "у",
+                "него"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "него"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "нее"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "неё"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "у",
+                "нее"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "у",
+                "неё"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "у"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "у",
+                "меня"
+            ],
+            "tag": "False"
+        }
+    ],
+    "words": [
+        "бедрами",
+        "бедро",
+        "бёдра",
+        "бёдрами",
+        "виляет",
+        "еле",
+        "и",
+        "идет",
+        "идёт",
+        "каблук",
+        "каблуках",
+        "каблуки",
+        "косолапие",
+        "косолапит",
+        "меня",
+        "на",
+        "него",
+        "нее",
+        "неё",
+        "ногами",
+        "ноги",
+        "ну",
+        "он",
+        "она",
+        "передвигает",
+        "передвигается",
+        "плоскостопие",
+        "понимаешь",
+        "походка",
+        "словно",
+        "странно",
+        "так",
+        "у",
+        "укачивает",
+        "учится",
+        "ходит",
+        "ходить",
+        "что"
+    ]
+}

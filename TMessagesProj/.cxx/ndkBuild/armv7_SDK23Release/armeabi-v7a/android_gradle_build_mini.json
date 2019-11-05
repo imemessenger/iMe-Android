@@ -1,0 +1,66 @@
+{
+  "buildFiles": [
+    "/Users/sergey/StudioProjects/iMe/TMessagesProj/jni/Android.mk",
+    "/Users/sergey/StudioProjects/iMe/TMessagesProj/jni/Application.mk"
+  ],
+  "cleanCommands": [
+    "/Users/sergey/Library/Android/sdk/ndk-bundle/ndk-build NDK_PROJECT_PATH\u003dnull APP_BUILD_SCRIPT\u003d/Users/sergey/StudioProjects/iMe/TMessagesProj/jni/Android.mk NDK_APPLICATION_MK\u003d/Users/sergey/StudioProjects/iMe/TMessagesProj/jni/Application.mk APP_ABI\u003darmeabi-v7a NDK_ALL_ABIS\u003darmeabi-v7a NDK_DEBUG\u003d0 APP_PLATFORM\u003dandroid-23 NDK_OUT\u003d/Users/sergey/StudioProjects/iMe/TMessagesProj/build/intermediates/ndkBuild/armv7_SDK23Release/obj NDK_LIBS_OUT\u003d/Users/sergey/StudioProjects/iMe/TMessagesProj/build/intermediates/ndkBuild/armv7_SDK23Release/lib NDK_APPLICATION_MK:\u003djni/Application.mk APP_PLATFORM:\u003dandroid-16 clean"
+  ],
+  "buildTargetsCommand": "/Users/sergey/Library/Android/sdk/ndk-bundle/ndk-build NDK_PROJECT_PATH\u003dnull APP_BUILD_SCRIPT\u003d/Users/sergey/StudioProjects/iMe/TMessagesProj/jni/Android.mk NDK_APPLICATION_MK\u003d/Users/sergey/StudioProjects/iMe/TMessagesProj/jni/Application.mk APP_ABI\u003darmeabi-v7a NDK_ALL_ABIS\u003darmeabi-v7a NDK_DEBUG\u003d0 APP_PLATFORM\u003dandroid-23 NDK_OUT\u003d/Users/sergey/StudioProjects/iMe/TMessagesProj/build/intermediates/ndkBuild/armv7_SDK23Release/obj NDK_LIBS_OUT\u003d/Users/sergey/StudioProjects/iMe/TMessagesProj/build/intermediates/ndkBuild/armv7_SDK23Release/lib NDK_APPLICATION_MK:\u003djni/Application.mk APP_PLATFORM:\u003dandroid-16 -j8 {LIST_OF_TARGETS_TO_BUILD}",
+  "libraries": {
+    "cpufeatures-armv7_SDK23Release-armeabi-v7a": {
+      "artifactName": "cpufeatures",
+      "buildCommand": "/Users/sergey/Library/Android/sdk/ndk-bundle/ndk-build NDK_PROJECT_PATH\u003dnull APP_BUILD_SCRIPT\u003d/Users/sergey/StudioProjects/iMe/TMessagesProj/jni/Android.mk NDK_APPLICATION_MK\u003d/Users/sergey/StudioProjects/iMe/TMessagesProj/jni/Application.mk APP_ABI\u003darmeabi-v7a NDK_ALL_ABIS\u003darmeabi-v7a NDK_DEBUG\u003d0 APP_PLATFORM\u003dandroid-23 NDK_OUT\u003d/Users/sergey/StudioProjects/iMe/TMessagesProj/build/intermediates/ndkBuild/armv7_SDK23Release/obj NDK_LIBS_OUT\u003d/Users/sergey/StudioProjects/iMe/TMessagesProj/build/intermediates/ndkBuild/armv7_SDK23Release/lib NDK_APPLICATION_MK:\u003djni/Application.mk APP_PLATFORM:\u003dandroid-16 -j8 /Users/sergey/StudioProjects/iMe/TMessagesProj/build/intermediates/ndkBuild/armv7_SDK23Release/obj/local/armeabi-v7a/libcpufeatures.a",
+      "abi": "armeabi-v7a",
+      "output": "/Users/sergey/StudioProjects/iMe/TMessagesProj/build/intermediates/ndkBuild/armv7_SDK23Release/obj/local/armeabi-v7a/libcpufeatures.a"
+    },
+    "crypto_armeabi-v7a-armv7_SDK23Release-armeabi-v7a": {
+      "artifactName": "crypto_armeabi-v7a",
+      "buildCommand": "/Users/sergey/Library/Android/sdk/ndk-bundle/ndk-build NDK_PROJECT_PATH\u003dnull APP_BUILD_SCRIPT\u003d/Users/sergey/StudioProjects/iMe/TMessagesProj/jni/Android.mk NDK_APPLICATION_MK\u003d/Users/sergey/StudioProjects/iMe/TMessagesProj/jni/Application.mk APP_ABI\u003darmeabi-v7a NDK_ALL_ABIS\u003darmeabi-v7a NDK_DEBUG\u003d0 APP_PLATFORM\u003dandroid-23 NDK_OUT\u003d/Users/sergey/StudioProjects/iMe/TMessagesProj/build/intermediates/ndkBuild/armv7_SDK23Release/obj NDK_LIBS_OUT\u003d/Users/sergey/StudioProjects/iMe/TMessagesProj/build/intermediates/ndkBuild/armv7_SDK23Release/lib NDK_APPLICATION_MK:\u003djni/Application.mk APP_PLATFORM:\u003dandroid-16 -j8 /Users/sergey/StudioProjects/iMe/TMessagesProj/build/intermediates/ndkBuild/armv7_SDK23Release/obj/local/armeabi-v7a/libcrypto_armeabi-v7a.a",
+      "abi": "armeabi-v7a",
+      "output": "/Users/sergey/StudioProjects/iMe/TMessagesProj/build/intermediates/ndkBuild/armv7_SDK23Release/obj/local/armeabi-v7a/libcrypto_armeabi-v7a.a"
+    },
+    "flac-armv7_SDK23Release-armeabi-v7a": {
+      "artifactName": "flac",
+      "buildCommand": "/Users/sergey/Library/Android/sdk/ndk-bundle/ndk-build NDK_PROJECT_PATH\u003dnull APP_BUILD_SCRIPT\u003d/Users/sergey/StudioProjects/iMe/TMessagesProj/jni/Android.mk NDK_APPLICATION_MK\u003d/Users/sergey/StudioProjects/iMe/TMessagesProj/jni/Application.mk APP_ABI\u003darmeabi-v7a NDK_ALL_ABIS\u003darmeabi-v7a NDK_DEBUG\u003d0 APP_PLATFORM\u003dandroid-23 NDK_OUT\u003d/Users/sergey/StudioProjects/iMe/TMessagesProj/build/intermediates/ndkBuild/armv7_SDK23Release/obj NDK_LIBS_OUT\u003d/Users/sergey/StudioProjects/iMe/TMessagesProj/build/intermediates/ndkBuild/armv7_SDK23Release/lib NDK_APPLICATION_MK:\u003djni/Application.mk APP_PLATFORM:\u003dandroid-16 -j8 /Users/sergey/StudioProjects/iMe/TMessagesProj/build/intermediates/ndkBuild/armv7_SDK23Release/obj/local/armeabi-v7a/libflac.a",
+      "abi": "armeabi-v7a",
+      "output": "/Users/sergey/StudioProjects/iMe/TMessagesProj/build/intermediates/ndkBuild/armv7_SDK23Release/obj/local/armeabi-v7a/libflac.a"
+    },
+    "sqlite-armv7_SDK23Release-armeabi-v7a": {
+      "artifactName": "sqlite",
+      "buildCommand": "/Users/sergey/Library/Android/sdk/ndk-bundle/ndk-build NDK_PROJECT_PATH\u003dnull APP_BUILD_SCRIPT\u003d/Users/sergey/StudioProjects/iMe/TMessagesProj/jni/Android.mk NDK_APPLICATION_MK\u003d/Users/sergey/StudioProjects/iMe/TMessagesProj/jni/Application.mk APP_ABI\u003darmeabi-v7a NDK_ALL_ABIS\u003darmeabi-v7a NDK_DEBUG\u003d0 APP_PLATFORM\u003dandroid-23 NDK_OUT\u003d/Users/sergey/StudioProjects/iMe/TMessagesProj/build/intermediates/ndkBuild/armv7_SDK23Release/obj NDK_LIBS_OUT\u003d/Users/sergey/StudioProjects/iMe/TMessagesProj/build/intermediates/ndkBuild/armv7_SDK23Release/lib NDK_APPLICATION_MK:\u003djni/Application.mk APP_PLATFORM:\u003dandroid-16 -j8 /Users/sergey/StudioProjects/iMe/TMessagesProj/build/intermediates/ndkBuild/armv7_SDK23Release/obj/local/armeabi-v7a/libsqlite.a",
+      "abi": "armeabi-v7a",
+      "output": "/Users/sergey/StudioProjects/iMe/TMessagesProj/build/intermediates/ndkBuild/armv7_SDK23Release/obj/local/armeabi-v7a/libsqlite.a"
+    },
+    "tmessages.30-armv7_SDK23Release-armeabi-v7a": {
+      "artifactName": "tmessages.30",
+      "buildCommand": "/Users/sergey/Library/Android/sdk/ndk-bundle/ndk-build NDK_PROJECT_PATH\u003dnull APP_BUILD_SCRIPT\u003d/Users/sergey/StudioProjects/iMe/TMessagesProj/jni/Android.mk NDK_APPLICATION_MK\u003d/Users/sergey/StudioProjects/iMe/TMessagesProj/jni/Application.mk APP_ABI\u003darmeabi-v7a NDK_ALL_ABIS\u003darmeabi-v7a NDK_DEBUG\u003d0 APP_PLATFORM\u003dandroid-23 NDK_OUT\u003d/Users/sergey/StudioProjects/iMe/TMessagesProj/build/intermediates/ndkBuild/armv7_SDK23Release/obj NDK_LIBS_OUT\u003d/Users/sergey/StudioProjects/iMe/TMessagesProj/build/intermediates/ndkBuild/armv7_SDK23Release/lib NDK_APPLICATION_MK:\u003djni/Application.mk APP_PLATFORM:\u003dandroid-16 -j8 /Users/sergey/StudioProjects/iMe/TMessagesProj/build/intermediates/ndkBuild/armv7_SDK23Release/obj/local/armeabi-v7a/libtmessages.30.so",
+      "abi": "armeabi-v7a",
+      "output": "/Users/sergey/StudioProjects/iMe/TMessagesProj/build/intermediates/ndkBuild/armv7_SDK23Release/obj/local/armeabi-v7a/libtmessages.30.so"
+    },
+    "tgnet-armv7_SDK23Release-armeabi-v7a": {
+      "artifactName": "tgnet",
+      "buildCommand": "/Users/sergey/Library/Android/sdk/ndk-bundle/ndk-build NDK_PROJECT_PATH\u003dnull APP_BUILD_SCRIPT\u003d/Users/sergey/StudioProjects/iMe/TMessagesProj/jni/Android.mk NDK_APPLICATION_MK\u003d/Users/sergey/StudioProjects/iMe/TMessagesProj/jni/Application.mk APP_ABI\u003darmeabi-v7a NDK_ALL_ABIS\u003darmeabi-v7a NDK_DEBUG\u003d0 APP_PLATFORM\u003dandroid-23 NDK_OUT\u003d/Users/sergey/StudioProjects/iMe/TMessagesProj/build/intermediates/ndkBuild/armv7_SDK23Release/obj NDK_LIBS_OUT\u003d/Users/sergey/StudioProjects/iMe/TMessagesProj/build/intermediates/ndkBuild/armv7_SDK23Release/lib NDK_APPLICATION_MK:\u003djni/Application.mk APP_PLATFORM:\u003dandroid-16 -j8 /Users/sergey/StudioProjects/iMe/TMessagesProj/build/intermediates/ndkBuild/armv7_SDK23Release/obj/local/armeabi-v7a/libtgnet.a",
+      "abi": "armeabi-v7a",
+      "output": "/Users/sergey/StudioProjects/iMe/TMessagesProj/build/intermediates/ndkBuild/armv7_SDK23Release/obj/local/armeabi-v7a/libtgnet.a"
+    },
+    "rlottie-armv7_SDK23Release-armeabi-v7a": {
+      "artifactName": "rlottie",
+      "buildCommand": "/Users/sergey/Library/Android/sdk/ndk-bundle/ndk-build NDK_PROJECT_PATH\u003dnull APP_BUILD_SCRIPT\u003d/Users/sergey/StudioProjects/iMe/TMessagesProj/jni/Android.mk NDK_APPLICATION_MK\u003d/Users/sergey/StudioProjects/iMe/TMessagesProj/jni/Application.mk APP_ABI\u003darmeabi-v7a NDK_ALL_ABIS\u003darmeabi-v7a NDK_DEBUG\u003d0 APP_PLATFORM\u003dandroid-23 NDK_OUT\u003d/Users/sergey/StudioProjects/iMe/TMessagesProj/build/intermediates/ndkBuild/armv7_SDK23Release/obj NDK_LIBS_OUT\u003d/Users/sergey/StudioProjects/iMe/TMessagesProj/build/intermediates/ndkBuild/armv7_SDK23Release/lib NDK_APPLICATION_MK:\u003djni/Application.mk APP_PLATFORM:\u003dandroid-16 -j8 /Users/sergey/StudioProjects/iMe/TMessagesProj/build/intermediates/ndkBuild/armv7_SDK23Release/obj/local/armeabi-v7a/librlottie.a",
+      "abi": "armeabi-v7a",
+      "output": "/Users/sergey/StudioProjects/iMe/TMessagesProj/build/intermediates/ndkBuild/armv7_SDK23Release/obj/local/armeabi-v7a/librlottie.a"
+    },
+    "webp-armv7_SDK23Release-armeabi-v7a": {
+      "artifactName": "webp",
+      "buildCommand": "/Users/sergey/Library/Android/sdk/ndk-bundle/ndk-build NDK_PROJECT_PATH\u003dnull APP_BUILD_SCRIPT\u003d/Users/sergey/StudioProjects/iMe/TMessagesProj/jni/Android.mk NDK_APPLICATION_MK\u003d/Users/sergey/StudioProjects/iMe/TMessagesProj/jni/Application.mk APP_ABI\u003darmeabi-v7a NDK_ALL_ABIS\u003darmeabi-v7a NDK_DEBUG\u003d0 APP_PLATFORM\u003dandroid-23 NDK_OUT\u003d/Users/sergey/StudioProjects/iMe/TMessagesProj/build/intermediates/ndkBuild/armv7_SDK23Release/obj NDK_LIBS_OUT\u003d/Users/sergey/StudioProjects/iMe/TMessagesProj/build/intermediates/ndkBuild/armv7_SDK23Release/lib NDK_APPLICATION_MK:\u003djni/Application.mk APP_PLATFORM:\u003dandroid-16 -j8 /Users/sergey/StudioProjects/iMe/TMessagesProj/build/intermediates/ndkBuild/armv7_SDK23Release/obj/local/armeabi-v7a/libwebp.a",
+      "abi": "armeabi-v7a",
+      "output": "/Users/sergey/StudioProjects/iMe/TMessagesProj/build/intermediates/ndkBuild/armv7_SDK23Release/obj/local/armeabi-v7a/libwebp.a"
+    },
+    "lz4-armv7_SDK23Release-armeabi-v7a": {
+      "artifactName": "lz4",
+      "buildCommand": "/Users/sergey/Library/Android/sdk/ndk-bundle/ndk-build NDK_PROJECT_PATH\u003dnull APP_BUILD_SCRIPT\u003d/Users/sergey/StudioProjects/iMe/TMessagesProj/jni/Android.mk NDK_APPLICATION_MK\u003d/Users/sergey/StudioProjects/iMe/TMessagesProj/jni/Application.mk APP_ABI\u003darmeabi-v7a NDK_ALL_ABIS\u003darmeabi-v7a NDK_DEBUG\u003d0 APP_PLATFORM\u003dandroid-23 NDK_OUT\u003d/Users/sergey/StudioProjects/iMe/TMessagesProj/build/intermediates/ndkBuild/armv7_SDK23Release/obj NDK_LIBS_OUT\u003d/Users/sergey/StudioProjects/iMe/TMessagesProj/build/intermediates/ndkBuild/armv7_SDK23Release/lib NDK_APPLICATION_MK:\u003djni/Application.mk APP_PLATFORM:\u003dandroid-16 -j8 /Users/sergey/StudioProjects/iMe/TMessagesProj/build/intermediates/ndkBuild/armv7_SDK23Release/obj/local/armeabi-v7a/liblz4.a",
+      "abi": "armeabi-v7a",
+      "output": "/Users/sergey/StudioProjects/iMe/TMessagesProj/build/intermediates/ndkBuild/armv7_SDK23Release/obj/local/armeabi-v7a/liblz4.a"
+    }
+  }
+}

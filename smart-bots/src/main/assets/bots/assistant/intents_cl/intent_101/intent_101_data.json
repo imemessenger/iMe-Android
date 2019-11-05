@@ -1,0 +1,153 @@
+{
+    "classes": [
+        {
+            "tag": "True"
+        },
+        {
+            "tag": "False"
+        }
+    ],
+    "documents": [
+        {
+            "sent_tokens": [
+                "ебаный",
+                "в",
+                "рот"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "ебать",
+                "того",
+                "в",
+                "рот"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "ебаные",
+                "рога"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "етить",
+                "колотить"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "едрить",
+                "мадрид"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "твою",
+                "мать"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "твою",
+                "то",
+                "мать"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "мать",
+                "твою"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "епать",
+                "того",
+                "в",
+                "рот"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "в"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "рот"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "того"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "рога"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "воробушки"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "колотить"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "твою"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "мать"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "то"
+            ],
+            "tag": "False"
+        }
+    ],
+    "words": [
+        "в",
+        "воробушки",
+        "ебаные",
+        "ебаный",
+        "ебать",
+        "едрить",
+        "епать",
+        "етить",
+        "колотить",
+        "мадрид",
+        "мать",
+        "рога",
+        "рот",
+        "твою",
+        "то",
+        "того"
+    ]
+}

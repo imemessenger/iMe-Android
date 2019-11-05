@@ -1,0 +1,449 @@
+{
+    "classes": [
+        {
+            "tag": "True"
+        },
+        {
+            "tag": "False"
+        }
+    ],
+    "documents": [
+        {
+            "sent_tokens": [
+                "мне",
+                "надо",
+                "туда",
+                "пойти"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "я",
+                "должен",
+                "это",
+                "сделать"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "не",
+                "знаю",
+                "как",
+                "быть"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "что",
+                "мне",
+                "делать",
+                "не",
+                "представляю"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "может",
+                "надо",
+                "было",
+                "поступить",
+                "иначе"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "я",
+                "был",
+                "обязан",
+                "сделать",
+                "это"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "не",
+                "знал",
+                "что",
+                "еще",
+                "можно",
+                "было",
+                "сделать"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "это",
+                "ультиматум"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "либо",
+                "я",
+                "либо",
+                "он"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "выбирай"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "выбор"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "да",
+                "или",
+                "нет"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "сделай",
+                "выбор"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "выбери",
+                "уже"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "я",
+                "не",
+                "могу",
+                "выбрать"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "мне",
+                "сложно",
+                "выбрать"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "мне",
+                "сложно",
+                "сделать",
+                "выбор"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "мне"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "надо"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "туда"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "пойти"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "я"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "должен"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "это"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "сделать"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "не",
+                "знаю"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "как"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "поступить"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "быть"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "не"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "знаю"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "что"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "делать"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "не"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "представляю"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "не",
+                "представляю"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "может"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "надо",
+                "было"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "было"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "иначе"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "обязан"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "был"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "не",
+                "знал"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "знал"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "еще"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "ещё"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "можно"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "было"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "либо"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "я"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "он"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "или"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "да"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "нет"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "не",
+                "могу"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "могу"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "сделай"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "сложно"
+            ],
+            "tag": "False"
+        }
+    ],
+    "words": [
+        "был",
+        "было",
+        "быть",
+        "выбери",
+        "выбирай",
+        "выбор",
+        "выбрать",
+        "да",
+        "делать",
+        "должен",
+        "еще",
+        "ещё",
+        "знал",
+        "знаю",
+        "или",
+        "иначе",
+        "как",
+        "либо",
+        "мне",
+        "могу",
+        "может",
+        "можно",
+        "надо",
+        "не",
+        "нет",
+        "обязан",
+        "он",
+        "пойти",
+        "поступить",
+        "представляю",
+        "сделай",
+        "сделать",
+        "сложно",
+        "туда",
+        "уже",
+        "ультиматум",
+        "что",
+        "это",
+        "я"
+    ]
+}

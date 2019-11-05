@@ -20,6 +20,7 @@ import android.graphics.Rect;
 import android.graphics.Typeface;
 import android.graphics.drawable.ColorDrawable;
 import android.graphics.drawable.Drawable;
+import android.graphics.drawable.GradientDrawable;
 import android.os.Build;
 import android.os.SystemClock;
 import android.os.Vibrator;
@@ -977,7 +978,11 @@ public class PasscodeView extends FrameLayout {
                     builder.setOnDismissListener(dialog -> {
                         if (cancellationSignal != null) {
                             selfCancelled = true;
-                            cancellationSignal.cancel();
+                            try {
+                                cancellationSignal.cancel();
+                            } catch (Exception e) {
+                                FileLog.e(e);
+                            }
                             cancellationSignal = null;
                         }
                     });
@@ -1232,7 +1237,7 @@ public class PasscodeView extends FrameLayout {
             return;
         }
         if (backgroundDrawable != null) {
-            if (backgroundDrawable instanceof ColorDrawable) {
+            if (backgroundDrawable instanceof ColorDrawable || backgroundDrawable instanceof GradientDrawable) {
                 backgroundDrawable.setBounds(0, 0, getMeasuredWidth(), getMeasuredHeight());
                 backgroundDrawable.draw(canvas);
             } else {

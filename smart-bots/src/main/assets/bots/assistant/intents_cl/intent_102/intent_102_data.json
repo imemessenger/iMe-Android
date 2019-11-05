@@ -1,0 +1,162 @@
+{
+    "classes": [
+        {
+            "tag": "True"
+        },
+        {
+            "tag": "False"
+        }
+    ],
+    "documents": [
+        {
+            "sent_tokens": [
+                "ну",
+                "ты",
+                "и",
+                "ска"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "ну",
+                "ты",
+                "и",
+                "сука"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "вот",
+                "сука"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "вот",
+                "сучка"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "сучка"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "сучара"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "сука",
+                "ебанная"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "сука",
+                "ты"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "сучара",
+                "ты"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "вот",
+                "же",
+                "ж",
+                "сука"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "сукааааа"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "сукаааа"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "сукааа"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "ну"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "ты"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "и"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "ска"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "вот"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "же"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "ж"
+            ],
+            "tag": "False"
+        }
+    ],
+    "words": [
+        "вот",
+        "ебанная",
+        "ж",
+        "же",
+        "и",
+        "ну",
+        "ска",
+        "сука",
+        "сукааа",
+        "сукаааа",
+        "сукааааа",
+        "сучара",
+        "сучка",
+        "ты"
+    ]
+}

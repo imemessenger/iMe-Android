@@ -1,0 +1,394 @@
+{
+    "classes": [
+        {
+            "tag": "True"
+        },
+        {
+            "tag": "False"
+        }
+    ],
+    "documents": [
+        {
+            "sent_tokens": [
+                "кому",
+                "нужны",
+                "эти",
+                "правила"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "я",
+                "не",
+                "люблю",
+                "следовать",
+                "инструкциям"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "не",
+                "указывай",
+                "мне"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "без",
+                "тебя",
+                "знаю"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "каковы",
+                "твои",
+                "заповеди"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "правила",
+                "даны",
+                "чтобы",
+                "их",
+                "нарушать"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "правила",
+                "для",
+                "слабаков"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "я",
+                "не",
+                "буду",
+                "делать",
+                "так",
+                "как",
+                "мне",
+                "говорят"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "не",
+                "собираюсь",
+                "ходить",
+                "по",
+                "его",
+                "дудке"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "правила"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "постулаты"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "инструкции"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "инструкциям"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "кому"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "нужны"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "эти"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "я"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "не",
+                "люблю"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "люблю"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "не"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "следовать"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "указывай"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "не",
+                "указывай"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "мне"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "без"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "без",
+                "тебя"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "тебя"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "знаю"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "каковы"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "твои"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "заповеди"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "даны"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "чтобы"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "их"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "нарушать"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "для"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "слабаков"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "не",
+                "буду"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "буду"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "делать",
+                "так"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "так"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "делать"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "как",
+                "говорят"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "говорят"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "не",
+                "собираюсь"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "собираюсь"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "ходить"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "ходить",
+                "по"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "по"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "дудке"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "его"
+            ],
+            "tag": "False"
+        }
+    ],
+    "words": [
+        "без",
+        "буду",
+        "говорят",
+        "даны",
+        "делать",
+        "для",
+        "дудке",
+        "его",
+        "заповеди",
+        "знаю",
+        "инструкции",
+        "инструкциям",
+        "их",
+        "как",
+        "каковы",
+        "кому",
+        "люблю",
+        "мне",
+        "нарушать",
+        "не",
+        "нужны",
+        "по",
+        "постулаты",
+        "правила",
+        "слабаков",
+        "следовать",
+        "собираюсь",
+        "так",
+        "твои",
+        "тебя",
+        "указывай",
+        "ходить",
+        "чтобы",
+        "эти",
+        "я"
+    ]
+}

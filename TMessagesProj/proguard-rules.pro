@@ -28,7 +28,7 @@
 -dontwarn com.opencsv.bean.**
 -dontwarn org.apache.**
 -keep,includedescriptorclasses class com.smedialink.responses.** { *; }
--keep,includedescriptorclasses class com.smedialink.** { *; }
+-keep,includedescriptorclasses class com.smedialink.aigram.** { *; }
 -keep,includedescriptorclasses class com.google.android.gms.** { *; }
 -keep,includedescriptorclasses class com.stripe.android.** { *; }
 -keep,includedescriptorclasses class com.google.android.exoplayer2.** { *; }
@@ -45,3 +45,5 @@
 # Use -keep to explicitly keep any other classes shrinking would remove
 -dontoptimize
 -dontobfuscate
+
+-keep class com.smedialink.shop.configuration.** { *; }

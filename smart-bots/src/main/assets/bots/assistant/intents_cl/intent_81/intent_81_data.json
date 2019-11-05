@@ -1,0 +1,421 @@
+{
+    "classes": [
+        {
+            "tag": "True"
+        },
+        {
+            "tag": "False"
+        }
+    ],
+    "documents": [
+        {
+            "sent_tokens": [
+                "я",
+                "понял"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "я",
+                "понял",
+                "тебя"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "до",
+                "меня",
+                "дошло"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "да",
+                "понял",
+                "я"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "я",
+                "тебя",
+                "услышал"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "ок",
+                "понятно"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "ясно"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "понятно"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "все",
+                "ясно"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "это",
+                "понятно"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "принято"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "принял"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "так",
+                "точно"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "я",
+                "вразумил"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "я",
+                "догнал"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "я",
+                "догоняю"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "я",
+                "усвоил"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "я",
+                "осознал"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "осознаю"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "я",
+                "врубился"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "я",
+                "начал",
+                "понимать",
+                "что",
+                "ты",
+                "имела",
+                "в",
+                "виду"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "я",
+                "вкурил"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "ясненько"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "понятненько"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "я",
+                "прозрел"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "понял"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "всё",
+                "ясно"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "всё",
+                "понятно"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "всё",
+                "понял"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "я"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "тебя"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "до"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "меня"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "дошло"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "да"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "услышал"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "ок"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "все"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "всё"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "это"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "так"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "точно"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "вразумил"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "вразумил",
+                "его"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "догоняю"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "усвоил"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "врубился"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "начал"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "что"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "ты"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "имел"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "имела"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "в",
+                "виду"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "в"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "виду"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "прозрел"
+            ],
+            "tag": "False"
+        }
+    ],
+    "words": [
+        "в",
+        "виду",
+        "вкурил",
+        "вразумил",
+        "врубился",
+        "все",
+        "всё",
+        "да",
+        "до",
+        "догнал",
+        "догоняю",
+        "дошло",
+        "его",
+        "имел",
+        "имела",
+        "меня",
+        "начал",
+        "ок",
+        "осознал",
+        "осознаю",
+        "понимать",
+        "понял",
+        "понятненько",
+        "понятно",
+        "принял",
+        "принято",
+        "прозрел",
+        "так",
+        "тебя",
+        "точно",
+        "ты",
+        "усвоил",
+        "услышал",
+        "что",
+        "это",
+        "я",
+        "ясненько",
+        "ясно"
+    ]
+}

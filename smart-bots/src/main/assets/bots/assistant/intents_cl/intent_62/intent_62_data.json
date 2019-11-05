@@ -1,0 +1,181 @@
+{
+    "classes": [
+        {
+            "tag": "True"
+        },
+        {
+            "tag": "False"
+        }
+    ],
+    "documents": [
+        {
+            "sent_tokens": [
+                "уверена"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "уверен",
+                "сейчас"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "ты",
+                "в",
+                "этом",
+                "уверена"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "ты",
+                "в",
+                "этом",
+                "не",
+                "сомневаешься"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "ты",
+                "уверен"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "ты",
+                "был",
+                "в",
+                "этом",
+                "уверен"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "ты",
+                "сейчас",
+                "уверена"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "не",
+                "сомневаешься"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "я",
+                "уверен"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "я",
+                "уверена"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "сейчас"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "ты"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "в"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "этом"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "в",
+                "этом"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "ты",
+                "был"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "был"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "сомневаешься"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "ты",
+                "не",
+                "был"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "не",
+                "в",
+                "этом"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "не",
+                "уверен"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "я"
+            ],
+            "tag": "False"
+        }
+    ],
+    "words": [
+        "был",
+        "в",
+        "не",
+        "сейчас",
+        "сомневаешься",
+        "ты",
+        "уверен",
+        "уверена",
+        "этом",
+        "я"
+    ]
+}

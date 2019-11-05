@@ -1,0 +1,172 @@
+{
+    "classes": [
+        {
+            "tag": "True"
+        },
+        {
+            "tag": "False"
+        }
+    ],
+    "documents": [
+        {
+            "sent_tokens": [
+                "дай",
+                "денег"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "дай",
+                "в",
+                "долг"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "займи",
+                "денег"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "одолжи"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "дай",
+                "бабла"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "дашь",
+                "денег"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "займи",
+                "бобла"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "займи",
+                "бабла"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "дай",
+                "бабла"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "одолжи",
+                "до",
+                "зарплаты"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "займи",
+                "бабло"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "дай",
+                "бабло"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "дай"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "в"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "долг"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "займи"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "денег"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "деньги"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "бабло"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "бабла"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "до"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "зарплаты"
+            ],
+            "tag": "False"
+        }
+    ],
+    "words": [
+        "бабла",
+        "бабло",
+        "бобла",
+        "в",
+        "дай",
+        "дашь",
+        "денег",
+        "деньги",
+        "до",
+        "долг",
+        "займи",
+        "зарплаты",
+        "одолжи"
+    ]
+}

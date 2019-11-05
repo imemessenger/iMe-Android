@@ -87,6 +87,10 @@ public class CallLogActivity extends BaseFragment implements NotificationCenter.
 	@SuppressWarnings("unchecked")
 	public void didReceivedNotification(int id, int account, Object... args) {
 		if (id == NotificationCenter.didReceiveNewMessages && firstLoaded) {
+			boolean scheduled = (Boolean) args[2];
+			if (scheduled) {
+				return;
+			}
 			ArrayList<MessageObject> arr = (ArrayList<MessageObject>) args[1];
 			for (MessageObject msg : arr) {
 				if (msg.messageOwner.action instanceof TLRPC.TL_messageActionPhoneCall) {
@@ -114,6 +118,10 @@ public class CallLogActivity extends BaseFragment implements NotificationCenter.
 				}
 			}
 		} else if (id == NotificationCenter.messagesDeleted && firstLoaded) {
+			boolean scheduled = (Boolean) args[2];
+			if (scheduled) {
+				return;
+			}
 			boolean didChange = false;
 			ArrayList<Integer> ids = (ArrayList<Integer>) args[0];
 			Iterator<CallLogRow> itrtr = calls.iterator();
@@ -137,8 +145,28 @@ public class CallLogActivity extends BaseFragment implements NotificationCenter.
 
 	private class CustomCell extends FrameLayout {
 
+		private ImageView imageView;
+		private ProfileSearchCell profileSearchCell;
+
 		public CustomCell(Context context) {
 			super(context);
+
+			setBackgroundColor(Theme.getColor(Theme.key_windowBackgroundWhite));
+
+			profileSearchCell = new ProfileSearchCell(context);
+			profileSearchCell.setPadding(LocaleController.isRTL ? AndroidUtilities.dp(32) : 0, 0, LocaleController.isRTL ? 0 : AndroidUtilities.dp(32), 0);
+			profileSearchCell.setSublabelOffset(AndroidUtilities.dp(LocaleController.isRTL ? 2 : -2), -AndroidUtilities.dp(4));
+			addView(profileSearchCell, LayoutHelper.createFrame(LayoutHelper.MATCH_PARENT, LayoutHelper.MATCH_PARENT));
+
+			imageView = new ImageView(context);
+			imageView.setImageResource(R.drawable.profile_phone);
+			imageView.setAlpha(214);
+			imageView.setColorFilter(new PorterDuffColorFilter(Theme.getColor(Theme.key_featuredStickers_addButton), PorterDuff.Mode.MULTIPLY));
+			imageView.setBackgroundDrawable(Theme.createSelectorDrawable(Theme.getColor(Theme.key_listSelector), 1));
+			imageView.setScaleType(ImageView.ScaleType.CENTER);
+			imageView.setOnClickListener(callBtnClickListener);
+			imageView.setContentDescription(LocaleController.getString("Call", R.string.Call));
+			addView(imageView, LayoutHelper.createFrame(48, 48, (LocaleController.isRTL ? Gravity.LEFT : Gravity.RIGHT) | Gravity.CENTER_VERTICAL, 8, 0, 8, 0));
 		}
 	}
 
@@ -424,7 +452,7 @@ public class CallLogActivity extends BaseFragment implements NotificationCenter.
 					for (TLRPC.Message msg : row.calls) {
 						ids.add(msg.id);
 					}
-					MessagesController.getInstance(currentAccount).deleteMessages(ids, null, null, 0, false);
+					MessagesController.getInstance(currentAccount).deleteMessages(ids, null, null, 0, 0, false, false);
 				})
 				.setNegativeButton(LocaleController.getString("Cancel", R.string.Cancel), null)
 				.show()
@@ -479,30 +507,12 @@ public class CallLogActivity extends BaseFragment implements NotificationCenter.
 			View view;
 			switch (viewType) {
 				case 0:
-					CustomCell frameLayout = new CustomCell(mContext);
-					frameLayout.setBackgroundColor(Theme.getColor(Theme.key_windowBackgroundWhite));
-
-					ProfileSearchCell cell = new ProfileSearchCell(mContext);
-					cell.setPadding(LocaleController.isRTL ? AndroidUtilities.dp(32) : 0, 0, LocaleController.isRTL ? 0 : AndroidUtilities.dp(32), 0);
-					cell.setSublabelOffset(AndroidUtilities.dp(LocaleController.isRTL ? 2 : -2), -AndroidUtilities.dp(4));
-					frameLayout.addView(cell);
-
-					ImageView imageView = new ImageView(mContext);
-					imageView.setImageResource(R.drawable.profile_phone);
-					imageView.setAlpha(214);
-					imageView.setColorFilter(new PorterDuffColorFilter(Theme.getColor(Theme.key_windowBackgroundWhiteGrayIcon), PorterDuff.Mode.MULTIPLY));
-					imageView.setBackgroundDrawable(Theme.createSelectorDrawable(Theme.ACTION_BAR_AUDIO_SELECTOR_COLOR, 0));
-					imageView.setScaleType(ImageView.ScaleType.CENTER);
-					imageView.setOnClickListener(callBtnClickListener);
-					imageView.setContentDescription(LocaleController.getString("Call", R.string.Call));
-					frameLayout.addView(imageView, LayoutHelper.createFrame(48, 48, (LocaleController.isRTL ? Gravity.LEFT : Gravity.RIGHT) | Gravity.CENTER_VERTICAL, 8, 0, 8, 0));
-
-					view = frameLayout;
-					view.setTag(new ViewItem(imageView, cell));
+					CustomCell cell = new CustomCell(mContext);
+					view = cell;
+					view.setTag(new ViewItem(cell.imageView, cell.profileSearchCell));
 					break;
 				case 1:
 					view = new LoadingCell(mContext);
-					view.setBackgroundColor(Theme.getColor(Theme.key_windowBackgroundWhite));
 					break;
 				case 2:
 				default:
@@ -581,8 +591,9 @@ public class CallLogActivity extends BaseFragment implements NotificationCenter.
 				int count = listView.getChildCount();
 				for (int a = 0; a < count; a++) {
 					View child = listView.getChildAt(a);
-					if (child instanceof ProfileSearchCell) {
-						((ProfileSearchCell) child).update(0);
+					if (child instanceof CustomCell) {
+						CustomCell cell = (CustomCell) child;
+						cell.profileSearchCell.update(0);
 					}
 				}
 			}
@@ -614,13 +625,14 @@ public class CallLogActivity extends BaseFragment implements NotificationCenter.
 				new ThemeDescription(floatingButton, ThemeDescription.FLAG_BACKGROUNDFILTER, null, null, null, null, Theme.key_chats_actionBackground),
 				new ThemeDescription(floatingButton, ThemeDescription.FLAG_BACKGROUNDFILTER | ThemeDescription.FLAG_DRAWABLESELECTEDSTATE, null, null, null, null, Theme.key_chats_actionPressedBackground),
 
-				new ThemeDescription(listView, 0, new Class[]{ProfileSearchCell.class}, null, new Drawable[]{Theme.dialogs_verifiedCheckDrawable}, null, Theme.key_chats_verifiedCheck),
-				new ThemeDescription(listView, 0, new Class[]{ProfileSearchCell.class}, null, new Drawable[]{Theme.dialogs_verifiedDrawable}, null, Theme.key_chats_verifiedBackground),
-				new ThemeDescription(listView, 0, new Class[]{ProfileSearchCell.class}, Theme.dialogs_offlinePaint, null, null, Theme.key_windowBackgroundWhiteGrayText3),
-				new ThemeDescription(listView, 0, new Class[]{ProfileSearchCell.class}, Theme.dialogs_onlinePaint, null, null, Theme.key_windowBackgroundWhiteBlueText3),
-				new ThemeDescription(listView, 0, new Class[]{ProfileSearchCell.class}, null, new Paint[]{Theme.dialogs_namePaint, Theme.dialogs_searchNamePaint}, null, null, Theme.key_chats_name),
-				new ThemeDescription(listView, 0, new Class[]{ProfileSearchCell.class}, null, new Paint[]{Theme.dialogs_nameEncryptedPaint, Theme.dialogs_searchNameEncryptedPaint}, null, null, Theme.key_chats_secretName),
-				new ThemeDescription(listView, 0, new Class[]{ProfileSearchCell.class}, null, new Drawable[]{Theme.avatar_broadcastDrawable, Theme.avatar_savedDrawable}, null, Theme.key_avatar_text),
+				new ThemeDescription(listView, 0, new Class[]{CustomCell.class}, new String[]{"imageView"}, null, null, null, Theme.key_featuredStickers_addButton),
+				new ThemeDescription(listView, 0, new Class[]{CustomCell.class}, null, new Drawable[]{Theme.dialogs_verifiedCheckDrawable}, null, Theme.key_chats_verifiedCheck),
+				new ThemeDescription(listView, 0, new Class[]{CustomCell.class}, null, new Drawable[]{Theme.dialogs_verifiedDrawable}, null, Theme.key_chats_verifiedBackground),
+				new ThemeDescription(listView, 0, new Class[]{CustomCell.class}, Theme.dialogs_offlinePaint, null, null, Theme.key_windowBackgroundWhiteGrayText3),
+				new ThemeDescription(listView, 0, new Class[]{CustomCell.class}, Theme.dialogs_onlinePaint, null, null, Theme.key_windowBackgroundWhiteBlueText3),
+				new ThemeDescription(listView, 0, new Class[]{CustomCell.class}, null, new Paint[]{Theme.dialogs_namePaint, Theme.dialogs_searchNamePaint}, null, null, Theme.key_chats_name),
+				new ThemeDescription(listView, 0, new Class[]{CustomCell.class}, null, new Paint[]{Theme.dialogs_nameEncryptedPaint, Theme.dialogs_searchNameEncryptedPaint}, null, null, Theme.key_chats_secretName),
+				new ThemeDescription(listView, 0, new Class[]{CustomCell.class}, null, new Drawable[]{Theme.avatar_savedDrawable}, null, Theme.key_avatar_text),
 				new ThemeDescription(null, 0, null, null, null, cellDelegate, Theme.key_avatar_backgroundRed),
 				new ThemeDescription(null, 0, null, null, null, cellDelegate, Theme.key_avatar_backgroundOrange),
 				new ThemeDescription(null, 0, null, null, null, cellDelegate, Theme.key_avatar_backgroundViolet),

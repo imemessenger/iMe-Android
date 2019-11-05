@@ -1,0 +1,135 @@
+{
+    "classes": [
+        {
+            "tag": "True"
+        },
+        {
+            "tag": "False"
+        }
+    ],
+    "documents": [
+        {
+            "sent_tokens": [
+                "песда"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "пипец"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "писец"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "пиздец"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "ппц"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "полный",
+                "писец"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "это",
+                "пиздец"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "тебе",
+                "песда"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "пиздец",
+                "тебе"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "полный",
+                "пиздец"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "совсем",
+                "пиздец"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "пиздес"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "тобi",
+                "пiзда"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "это"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "тебе"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "полный"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "совсем"
+            ],
+            "tag": "False"
+        }
+    ],
+    "words": [
+        "пiзда",
+        "песда",
+        "пиздес",
+        "пиздец",
+        "пипец",
+        "писец",
+        "полный",
+        "ппц",
+        "совсем",
+        "тебе",
+        "тобi",
+        "это"
+    ]
+}

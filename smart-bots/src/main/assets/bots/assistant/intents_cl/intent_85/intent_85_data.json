@@ -1,0 +1,202 @@
+{
+    "classes": [
+        {
+            "tag": "True"
+        },
+        {
+            "tag": "False"
+        }
+    ],
+    "documents": [
+        {
+            "sent_tokens": [
+                "уже",
+                "еду"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "скоро",
+                "буду"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "я",
+                "уже",
+                "рядом"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "еду",
+                "домой"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "уже",
+                "еду",
+                "до",
+                "дома"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "я",
+                "домой",
+                "уехал"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "еду",
+                "ну"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "несусь",
+                "домой"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "мчу",
+                "уже"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "лечу",
+                "уже",
+                "домой"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "да",
+                "еду",
+                "уже"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "уже"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "скоро"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "буду"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "еду"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "я"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "рядом"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "до"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "дома"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "домой"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "уехал"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "ну"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "несусь"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "мчу"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "лечу"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "да"
+            ],
+            "tag": "False"
+        }
+    ],
+    "words": [
+        "буду",
+        "да",
+        "до",
+        "дома",
+        "домой",
+        "еду",
+        "лечу",
+        "мчу",
+        "несусь",
+        "ну",
+        "рядом",
+        "скоро",
+        "уехал",
+        "уже",
+        "я"
+    ]
+}

@@ -1,0 +1,200 @@
+{
+    "classes": [
+        {
+            "tag": "True"
+        },
+        {
+            "tag": "False"
+        }
+    ],
+    "documents": [
+        {
+            "sent_tokens": [
+                "я",
+                "по",
+                "тебе",
+                "правда",
+                "скучал"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "уже",
+                "соскучился"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "я",
+                "скучал",
+                "по",
+                "тебе"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "я",
+                "соскучилась"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "так",
+                "сильно",
+                "по",
+                "тебе",
+                "скучаю"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "скучаю"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "уже",
+                "скучаю"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "я",
+                "скучаю",
+                "по",
+                "тебе"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "скучаю",
+                "по",
+                "тебе"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "я"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "по"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "тебе"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "тебя"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "ты"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "уже"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "правда"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "по",
+                "тебе"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "сильно"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "для",
+                "тебя"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "так"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "скучно"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "не",
+                "скучаю"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "не",
+                "скучаешь"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "не",
+                "сильно",
+                "скучаю"
+            ],
+            "tag": "False"
+        }
+    ],
+    "words": [
+        "для",
+        "не",
+        "по",
+        "правда",
+        "сильно",
+        "скучаешь",
+        "скучал",
+        "скучаю",
+        "скучно",
+        "соскучилась",
+        "соскучился",
+        "так",
+        "тебе",
+        "тебя",
+        "ты",
+        "уже",
+        "я"
+    ]
+}

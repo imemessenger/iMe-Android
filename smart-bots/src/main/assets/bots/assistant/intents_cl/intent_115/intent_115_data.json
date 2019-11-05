@@ -1,0 +1,114 @@
+{
+    "classes": [
+        {
+            "tag": "True"
+        },
+        {
+            "tag": "False"
+        }
+    ],
+    "documents": [
+        {
+            "sent_tokens": [
+                "я",
+                "заболел"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "я",
+                "простыл"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "я",
+                "болею"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "я",
+                "плохо",
+                "себя",
+                "чувствую"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "заболел"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "простыл"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "болею"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "болезнь"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "простуда"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "простудился"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "я"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "плохо"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "себя"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "чувствую"
+            ],
+            "tag": "False"
+        }
+    ],
+    "words": [
+        "болезнь",
+        "болею",
+        "заболел",
+        "плохо",
+        "простуда",
+        "простудился",
+        "простыл",
+        "себя",
+        "чувствую",
+        "я"
+    ]
+}

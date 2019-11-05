@@ -1,0 +1,366 @@
+{
+    "classes": [
+        {
+            "tag": "True"
+        },
+        {
+            "tag": "False"
+        }
+    ],
+    "documents": [
+        {
+            "sent_tokens": [
+                "а",
+                "ты",
+                "смешная"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "у",
+                "тебя",
+                "совсем",
+                "нет",
+                "чувства",
+                "юмора"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "давай",
+                "покажу",
+                "мемы"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "зацени",
+                "мемесы"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "у",
+                "тебя",
+                "черный",
+                "юмор"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "юмор",
+                "как",
+                "у",
+                "висельника"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "ты",
+                "можешь",
+                "быть",
+                "серьезнее"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "ахаха"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "как",
+                "смешно"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "xd"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "d"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "lol"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "это",
+                "смешно"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "смешно"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "лол",
+                "нет"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "хаха"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "ахаха",
+                "лол"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "ха",
+                "ха",
+                "очень",
+                "забавно"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "хе",
+                "хе"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "очень",
+                "смешно"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "ха"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "ахах"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "хах"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "ахаха"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "забавно"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "вот",
+                "умора"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "ха",
+                "ха",
+                "ха"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "хехехе"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "лол"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "а"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "ты"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "у",
+                "тебя"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "у"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "тебя"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "совсем"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "нет"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "чувства"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "давай"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "покажу"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "ты"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "можешь"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "быть"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "серьезнее"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "как"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "вот"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "это"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "очень"
+            ],
+            "tag": "False"
+        }
+    ],
+    "words": [
+        "d",
+        "lol",
+        "xd",
+        "а",
+        "ахах",
+        "ахаха",
+        "быть",
+        "висельника",
+        "вот",
+        "давай",
+        "забавно",
+        "зацени",
+        "как",
+        "лол",
+        "мемесы",
+        "мемы",
+        "можешь",
+        "нет",
+        "очень",
+        "покажу",
+        "серьезнее",
+        "смешная",
+        "смешно",
+        "совсем",
+        "тебя",
+        "ты",
+        "у",
+        "умора",
+        "ха",
+        "хах",
+        "хаха",
+        "хе",
+        "хехехе",
+        "черный",
+        "чувства",
+        "это",
+        "юмор",
+        "юмора"
+    ]
+}

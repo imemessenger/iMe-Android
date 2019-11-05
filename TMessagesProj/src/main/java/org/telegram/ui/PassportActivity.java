@@ -8,7 +8,6 @@ import android.animation.ObjectAnimator;
 import android.annotation.SuppressLint;
 import android.app.Activity;
 import android.app.Dialog;
-import android.app.PendingIntent;
 import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
@@ -27,10 +26,7 @@ import android.os.Build;
 import android.os.Bundle;
 import android.os.Vibrator;
 import android.provider.MediaStore;
-import androidx.core.content.FileProvider;
-
 import android.telephony.PhoneNumberUtils;
-import android.telephony.SmsManager;
 import android.telephony.TelephonyManager;
 import android.text.Editable;
 import android.text.InputFilter;
@@ -64,6 +60,8 @@ import android.widget.ScrollView;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import androidx.core.content.FileProvider;
+
 import org.json.JSONArray;
 import org.json.JSONObject;
 import org.telegram.PhoneFormat.PhoneFormat;
@@ -87,7 +85,6 @@ import org.telegram.messenger.SecureDocument;
 import org.telegram.messenger.SecureDocumentKey;
 import org.telegram.messenger.SendMessagesHelper;
 import org.telegram.messenger.SharedConfig;
-import org.telegram.messenger.SmsReceiver;
 import org.telegram.messenger.UserConfig;
 import org.telegram.messenger.UserObject;
 import org.telegram.messenger.Utilities;
@@ -111,8 +108,8 @@ import org.telegram.ui.Cells.TextInfoPrivacyCell;
 import org.telegram.ui.Cells.TextSettingsCell;
 import org.telegram.ui.Components.AlertsCreator;
 import org.telegram.ui.Components.AvatarDrawable;
-import org.telegram.ui.Components.ChatAttachAlert;
 import org.telegram.ui.Components.BackupImageView;
+import org.telegram.ui.Components.ChatAttachAlert;
 import org.telegram.ui.Components.ContextProgressView;
 import org.telegram.ui.Components.EditTextBoldCursor;
 import org.telegram.ui.Components.EmptyTextProgressView;
@@ -807,30 +804,38 @@ public class PassportActivity extends BaseFragment implements NotificationCenter
                         } else {
                             hash = "";
                         }
-                        if ("data".equals(target)) {
-                            if (field != null) {
-                                vals.put(field, description);
-                            }
-                        } else if ("files".equals(target)) {
-                            if (file_hash != null) {
-                                vals.put("files" + hash, description);
-                            } else {
-                                vals.put("files_all", description);
-                            }
-                        } else if ("selfie".equals(target)) {
-                            vals.put("selfie" + hash, description);
-                        } else if ("translation".equals(target)) {
-                            if (file_hash != null) {
-                                vals.put("translation" + hash, description);
-                            } else {
-                                vals.put("translation_all", description);
-                            }
-                        } else if ("front".equals(target)) {
-                            vals.put("front" + hash, description);
-                        } else if ("reverse".equals(target)) {
-                            vals.put("reverse" + hash, description);
-                        } else if ("error_all".equals(target)) {
-                            vals.put("error_all", description);
+                        switch (target) {
+                            case "data":
+                                if (field != null) {
+                                    vals.put(field, description);
+                                }
+                                break;
+                            case "files":
+                                if (file_hash != null) {
+                                    vals.put("files" + hash, description);
+                                } else {
+                                    vals.put("files_all", description);
+                                }
+                                break;
+                            case "selfie":
+                                vals.put("selfie" + hash, description);
+                                break;
+                            case "translation":
+                                if (file_hash != null) {
+                                    vals.put("translation" + hash, description);
+                                } else {
+                                    vals.put("translation_all", description);
+                                }
+                                break;
+                            case "front":
+                                vals.put("front" + hash, description);
+                                break;
+                            case "reverse":
+                                vals.put("reverse" + hash, description);
+                                break;
+                            case "error_all":
+                                vals.put("error_all", description);
+                                break;
                         }
                     }
                 } catch (Exception ignore) {
@@ -1448,11 +1453,7 @@ public class PassportActivity extends BaseFragment implements NotificationCenter
             inputFields[a].setInputType(InputType.TYPE_CLASS_PHONE);
 
             inputFields[a].setImeOptions(EditorInfo.IME_ACTION_DONE | EditorInfo.IME_FLAG_NO_EXTRACT_UI);
-            switch (a) {
-                case FIELD_EMAIL:
-                    inputFields[a].setHint(LocaleController.getString("PassportEmailCode", R.string.PassportEmailCode));
-                    break;
-            }
+            inputFields[a].setHint(LocaleController.getString("PassportEmailCode", R.string.PassportEmailCode));
             inputFields[a].setSelection(inputFields[a].length());
             inputFields[a].setPadding(0, 0, 0, AndroidUtilities.dp(6));
             inputFields[a].setGravity(LocaleController.isRTL ? Gravity.RIGHT : Gravity.LEFT);
@@ -2745,18 +2746,13 @@ public class PassportActivity extends BaseFragment implements NotificationCenter
             inputFields[a].setCursorSize(AndroidUtilities.dp(20));
             inputFields[a].setCursorWidth(1.5f);
             inputFields[a].setInputType(EditorInfo.TYPE_CLASS_TEXT | EditorInfo.TYPE_TEXT_VARIATION_EMAIL_ADDRESS);
-
             inputFields[a].setImeOptions(EditorInfo.IME_ACTION_DONE | EditorInfo.IME_FLAG_NO_EXTRACT_UI);
-            switch (a) {
-                case FIELD_EMAIL:
-                    inputFields[a].setHint(LocaleController.getString("PaymentShippingEmailPlaceholder", R.string.PaymentShippingEmailPlaceholder));
-                    if (currentTypeValue != null && currentTypeValue.plain_data instanceof TLRPC.TL_securePlainEmail) {
-                        TLRPC.TL_securePlainEmail securePlainEmail = (TLRPC.TL_securePlainEmail) currentTypeValue.plain_data;
-                        if (!TextUtils.isEmpty(securePlainEmail.email)) {
-                            inputFields[a].setText(securePlainEmail.email);
-                        }
-                    }
-                    break;
+            inputFields[a].setHint(LocaleController.getString("PaymentShippingEmailPlaceholder", R.string.PaymentShippingEmailPlaceholder));
+            if (currentTypeValue != null && currentTypeValue.plain_data instanceof TLRPC.TL_securePlainEmail) {
+                TLRPC.TL_securePlainEmail securePlainEmail = (TLRPC.TL_securePlainEmail) currentTypeValue.plain_data;
+                if (!TextUtils.isEmpty(securePlainEmail.email)) {
+                    inputFields[a].setText(securePlainEmail.email);
+                }
             }
             inputFields[a].setSelection(inputFields[a].length());
             inputFields[a].setPadding(0, 0, 0, AndroidUtilities.dp(6));
@@ -6251,51 +6247,42 @@ public class PassportActivity extends BaseFragment implements NotificationCenter
 
     private void startPhoneVerification(boolean checkPermissions, final String phone, Runnable finishRunnable, ErrorRunnable errorRunnable, final PassportActivityDelegate delegate) {
         TelephonyManager tm = (TelephonyManager) ApplicationLoader.applicationContext.getSystemService(Context.TELEPHONY_SERVICE);
-        boolean simcardAvailable = tm.getSimState() != TelephonyManager.SIM_STATE_ABSENT && tm.getPhoneType() != TelephonyManager.PHONE_TYPE_NONE;
-        boolean allowCall = true;
-        if (getParentActivity() != null && Build.VERSION.SDK_INT >= 23 && simcardAvailable) {
-            allowCall = getParentActivity().checkSelfPermission(Manifest.permission.READ_PHONE_STATE) == PackageManager.PERMISSION_GRANTED;
-            if (checkPermissions) {
-                permissionsItems.clear();
-                if (!allowCall) {
-                    permissionsItems.add(Manifest.permission.READ_PHONE_STATE);
-                }
-                if (!permissionsItems.isEmpty()) {
-                    if (getParentActivity().shouldShowRequestPermissionRationale(Manifest.permission.READ_PHONE_STATE)) {
-                        AlertDialog.Builder builder = new AlertDialog.Builder(getParentActivity());
-                        builder.setTitle(LocaleController.getString("AppName", R.string.AppName));
-                        builder.setPositiveButton(LocaleController.getString("OK", R.string.OK), null);
-                        builder.setMessage(LocaleController.getString("AllowReadCall", R.string.AllowReadCall));
-                        permissionsDialog = showDialog(builder.create());
-                    } else {
-                        getParentActivity().requestPermissions(permissionsItems.toArray(new String[0]), 6);
-                    }
-                    pendingPhone = phone;
-                    pendingErrorRunnable = errorRunnable;
-                    pendingFinishRunnable = finishRunnable;
-                    pendingDelegate = delegate;
-                    return;
-                }
-            }
-        }
+        //todo disable call logs
+        boolean simcardAvailable = false;
+        boolean allowCall = false;
+//        if (getParentActivity() != null && Build.VERSION.SDK_INT >= 23 && simcardAvailable) {
+//            allowCall = getParentActivity().checkSelfPermission(Manifest.permission.READ_PHONE_STATE) == PackageManager.PERMISSION_GRANTED;
+//            if (checkPermissions) {
+//                permissionsItems.clear();
+//                if (!allowCall) {
+//                    permissionsItems.add(Manifest.permission.READ_PHONE_STATE);
+//                }
+//                if (!permissionsItems.isEmpty()) {
+//                    if (getParentActivity().shouldShowRequestPermissionRationale(Manifest.permission.READ_PHONE_STATE)) {
+//                        AlertDialog.Builder builder = new AlertDialog.Builder(getParentActivity());
+//                        builder.setTitle(LocaleController.getString("AppName", R.string.AppName));
+//                        builder.setPositiveButton(LocaleController.getString("OK", R.string.OK), null);
+//                        builder.setMessage(LocaleController.getString("AllowReadCall", R.string.AllowReadCall));
+//                        permissionsDialog = showDialog(builder.create());
+//                    } else {
+//                        getParentActivity().requestPermissions(permissionsItems.toArray(new String[0]), 6);
+//                    }
+//                    pendingPhone = phone;
+//                    pendingErrorRunnable = errorRunnable;
+//                    pendingFinishRunnable = finishRunnable;
+//                    pendingDelegate = delegate;
+//                    return;
+//                }
+//            }
+//        }
         final TLRPC.TL_account_sendVerifyPhoneCode req = new TLRPC.TL_account_sendVerifyPhoneCode();
         req.phone_number = phone;
         req.settings = new TLRPC.TL_codeSettings();
         req.settings.allow_flashcall = simcardAvailable && allowCall;
-        if (Build.VERSION.SDK_INT >= 26) {
-            try {
-                req.settings.app_hash = SmsManager.getDefault().createAppSpecificSmsToken(PendingIntent.getBroadcast(ApplicationLoader.applicationContext, 0, new Intent(ApplicationLoader.applicationContext, SmsReceiver.class), PendingIntent.FLAG_UPDATE_CURRENT));
-            } catch (Throwable e) {
-                FileLog.e(e);
-            }
-        } else {
-            req.settings.app_hash = BuildVars.SMS_HASH;
-            req.settings.app_hash_persistent = true;
-        }
+        req.settings.allow_app_hash = ApplicationLoader.hasPlayServices;
         SharedPreferences preferences = ApplicationLoader.applicationContext.getSharedPreferences("mainconfig", Activity.MODE_PRIVATE);
-        if (!TextUtils.isEmpty(req.settings.app_hash)) {
-            req.settings.flags |= 8;
-            preferences.edit().putString("sms_hash", req.settings.app_hash).commit();
+        if (req.settings.allow_app_hash) {
+            preferences.edit().putString("sms_hash", BuildVars.SMS_HASH).commit();
         } else {
             preferences.edit().remove("sms_hash").commit();
         }
@@ -6398,22 +6385,22 @@ public class PassportActivity extends BaseFragment implements NotificationCenter
                 progressView.setVisibility(View.VISIBLE);
                 doneItem.setEnabled(false);
                 doneItemAnimation.playTogether(
-                        ObjectAnimator.ofFloat(doneItem.getImageView(), View.SCALE_X, 0.1f),
-                        ObjectAnimator.ofFloat(doneItem.getImageView(), View.SCALE_Y, 0.1f),
-                        ObjectAnimator.ofFloat(doneItem.getImageView(), View.ALPHA, 0.0f),
+                        ObjectAnimator.ofFloat(doneItem.getContentView(), View.SCALE_X, 0.1f),
+                        ObjectAnimator.ofFloat(doneItem.getContentView(), View.SCALE_Y, 0.1f),
+                        ObjectAnimator.ofFloat(doneItem.getContentView(), View.ALPHA, 0.0f),
                         ObjectAnimator.ofFloat(progressView, View.SCALE_X, 1.0f),
                         ObjectAnimator.ofFloat(progressView, View.SCALE_Y, 1.0f),
                         ObjectAnimator.ofFloat(progressView, View.ALPHA, 1.0f));
             } else {
-                doneItem.getImageView().setVisibility(View.VISIBLE);
+                doneItem.getContentView().setVisibility(View.VISIBLE);
                 doneItem.setEnabled(true);
                 doneItemAnimation.playTogether(
                         ObjectAnimator.ofFloat(progressView, View.SCALE_X, 0.1f),
                         ObjectAnimator.ofFloat(progressView, View.SCALE_Y, 0.1f),
                         ObjectAnimator.ofFloat(progressView, View.ALPHA, 0.0f),
-                        ObjectAnimator.ofFloat(doneItem.getImageView(), View.SCALE_X, 1.0f),
-                        ObjectAnimator.ofFloat(doneItem.getImageView(), View.SCALE_Y, 1.0f),
-                        ObjectAnimator.ofFloat(doneItem.getImageView(), View.ALPHA, 1.0f));
+                        ObjectAnimator.ofFloat(doneItem.getContentView(), View.SCALE_X, 1.0f),
+                        ObjectAnimator.ofFloat(doneItem.getContentView(), View.SCALE_Y, 1.0f),
+                        ObjectAnimator.ofFloat(doneItem.getContentView(), View.ALPHA, 1.0f));
             }
             doneItemAnimation.addListener(new AnimatorListenerAdapter() {
                 @Override
@@ -6422,7 +6409,7 @@ public class PassportActivity extends BaseFragment implements NotificationCenter
                         if (!show) {
                             progressView.setVisibility(View.INVISIBLE);
                         } else {
-                            doneItem.getImageView().setVisibility(View.INVISIBLE);
+                            doneItem.getContentView().setVisibility(View.INVISIBLE);
                         }
                     }
                 }
@@ -6808,7 +6795,7 @@ public class PassportActivity extends BaseFragment implements NotificationCenter
         }
         createChatAttachView();
         chatAttachAlert.setOpenWithFrontFaceCamera(uploadingFileType == UPLOADING_TYPE_SELFIE);
-        chatAttachAlert.setMaxSelectedPhotos(getMaxSelectedDocuments());
+        chatAttachAlert.setMaxSelectedPhotos(getMaxSelectedDocuments(), false);
         chatAttachAlert.loadGalleryPhotos();
         if (Build.VERSION.SDK_INT == 21 || Build.VERSION.SDK_INT == 22) {
             AndroidUtilities.hideKeyboard(fragmentView.findFocus());
@@ -6826,7 +6813,7 @@ public class PassportActivity extends BaseFragment implements NotificationCenter
             chatAttachAlert.setDelegate(new ChatAttachAlert.ChatAttachViewDelegate() {
 
                 @Override
-                public void didPressedButton(int button) {
+                public void didPressedButton(int button, boolean arg, boolean notify, int scheduleDate) {
                     if (getParentActivity() == null || chatAttachAlert == null) {
                         return;
                     }
@@ -6875,8 +6862,8 @@ public class PassportActivity extends BaseFragment implements NotificationCenter
                 }
 
                 @Override
-                public boolean allowGroupPhotos() {
-                    return false;
+                public void needEnterComment() {
+
                 }
             });
         }
@@ -6922,11 +6909,11 @@ public class PassportActivity extends BaseFragment implements NotificationCenter
             }
             PhotoAlbumPickerActivity fragment = new PhotoAlbumPickerActivity(0, false, false, null);
             fragment.setCurrentAccount(currentAccount);
-            fragment.setMaxSelectedPhotos(getMaxSelectedDocuments());
+            fragment.setMaxSelectedPhotos(getMaxSelectedDocuments(), false);
             fragment.setAllowSearchImages(false);
             fragment.setDelegate(new PhotoAlbumPickerActivity.PhotoAlbumPickerActivityDelegate() {
                 @Override
-                public void didSelectPhotos(ArrayList<SendMessagesHelper.SendingMediaInfo> photos) {
+                public void didSelectPhotos(ArrayList<SendMessagesHelper.SendingMediaInfo> photos, boolean notify, int scheduleDate) {
                     processSelectedFiles(photos);
                 }
 
@@ -6952,8 +6939,9 @@ public class PassportActivity extends BaseFragment implements NotificationCenter
             fragment.setCanSelectOnlyImageFiles(true);
             fragment.setMaxSelectedFiles(getMaxSelectedDocuments());
             fragment.setDelegate(new DocumentSelectActivity.DocumentSelectActivityDelegate() {
+
                 @Override
-                public void didSelectFiles(DocumentSelectActivity activity, ArrayList<String> files) {
+                public void didSelectFiles(DocumentSelectActivity activity, ArrayList<String> files, boolean notify, int scheduleDate) {
                     activity.finishFragment();
                     ArrayList<SendMessagesHelper.SendingMediaInfo> arrayList = new ArrayList<>();
                     for (int a = 0, count = files.size(); a < count; a++) {

@@ -1,0 +1,287 @@
+{
+    "classes": [
+        {
+            "tag": "True"
+        },
+        {
+            "tag": "False"
+        }
+    ],
+    "documents": [
+        {
+            "sent_tokens": [
+                "не",
+                "день",
+                "а",
+                "дерьмо"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "черная",
+                "кошка",
+                "перебежала",
+                "мне",
+                "дорогу"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "кому",
+                "ж",
+                "я",
+                "так",
+                "насолил"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "у",
+                "меня",
+                "несчастье"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "я",
+                "в",
+                "депрессии"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "неудача"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "неудачлив"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "еще",
+                "бы"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "не"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "день"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "а"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "дерьмо"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "черная",
+                "кошка"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "кошка"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "черная"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "перебежала"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "перебежать"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "перебегает"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "дорогу"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "мне"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "кому"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "ж"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "так"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "кому",
+                "ж",
+                "так"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "насолил"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "у",
+                "меня"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "у"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "меня"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "несчастье"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "плохо"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "без"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "нее"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "неё"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "еще"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "ещё"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "бы"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "чуть"
+            ],
+            "tag": "False"
+        }
+    ],
+    "words": [
+        "а",
+        "без",
+        "бы",
+        "в",
+        "день",
+        "депрессии",
+        "дерьмо",
+        "дорогу",
+        "еще",
+        "ещё",
+        "ж",
+        "кому",
+        "кошка",
+        "меня",
+        "мне",
+        "насолил",
+        "не",
+        "нее",
+        "несчастье",
+        "неудача",
+        "неудачлив",
+        "неё",
+        "перебегает",
+        "перебежала",
+        "перебежать",
+        "плохо",
+        "так",
+        "у",
+        "черная",
+        "чуть",
+        "я"
+    ]
+}

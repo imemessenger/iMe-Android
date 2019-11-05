@@ -22,6 +22,8 @@ import org.telegram.messenger.AndroidUtilities;
 import org.telegram.messenger.FileLoader;
 import org.telegram.messenger.ImageLocation;
 import org.telegram.messenger.LocaleController;
+import org.telegram.messenger.MessageObject;
+import org.telegram.tgnet.TLObject;
 import org.telegram.tgnet.TLRPC;
 import org.telegram.ui.ActionBar.Theme;
 import org.telegram.ui.Components.BackupImageView;
@@ -63,6 +65,7 @@ public class ArchivedStickerSetCell extends FrameLayout {
 
         imageView = new BackupImageView(context);
         imageView.setAspectFit(true);
+        imageView.setLayerNum(1);
         addView(imageView, LayoutHelper.createFrame(48, 48, (LocaleController.isRTL ? Gravity.RIGHT : Gravity.LEFT) | Gravity.TOP, LocaleController.isRTL ? 0 : 12, 8, LocaleController.isRTL ? 12 : 0, 0));
 
         if (needCheckBox) {
@@ -97,13 +100,39 @@ public class ArchivedStickerSetCell extends FrameLayout {
         textView.setText(stickersSet.set.title);
 
         valueTextView.setText(LocaleController.formatPluralString("Stickers", set.set.count));
-        TLRPC.PhotoSize thumb = set.cover != null ? FileLoader.getClosestPhotoSizeWithSize(set.cover.thumbs, 90) : null;
-        if (thumb != null && thumb.location != null) {
-            imageView.setImage(ImageLocation.getForDocument(thumb, set.cover), null, "webp", null, set);
+
+        TLRPC.Document sticker;
+        if (set.cover != null) {
+            sticker = set.cover;
         } else if (!set.covers.isEmpty()) {
-            TLRPC.Document document = set.covers.get(0);
-            thumb = FileLoader.getClosestPhotoSizeWithSize(document.thumbs, 90);
-            imageView.setImage(ImageLocation.getForDocument(thumb, document), null, "webp", null, set);
+            sticker = set.covers.get(0);
+        } else {
+            sticker = null;
+        }
+        if (sticker != null) {
+            TLObject object;
+            if (set.set.thumb instanceof TLRPC.TL_photoSize) {
+                object = set.set.thumb;
+            } else {
+                object = sticker;
+            }
+            ImageLocation imageLocation;
+
+            if (object instanceof TLRPC.Document) {
+                TLRPC.PhotoSize thumb = FileLoader.getClosestPhotoSizeWithSize(sticker.thumbs, 90);
+                imageLocation = ImageLocation.getForDocument(thumb, sticker);
+            } else {
+                TLRPC.PhotoSize thumb = (TLRPC.PhotoSize) object;
+                imageLocation = ImageLocation.getForSticker(thumb, sticker);
+            }
+
+            if (object instanceof TLRPC.Document && MessageObject.isAnimatedStickerDocument(sticker)) {
+                imageView.setImage(ImageLocation.getForDocument(sticker), "50_50", imageLocation, null, 0, set);
+            } else if (imageLocation != null && imageLocation.lottieAnimation) {
+                imageView.setImage(imageLocation, "50_50", "tgs", null, set);
+            } else {
+                imageView.setImage(imageLocation, "50_50", "webp", null, set);
+            }
         } else {
             imageView.setImage(null, null, "webp", null, set);
         }

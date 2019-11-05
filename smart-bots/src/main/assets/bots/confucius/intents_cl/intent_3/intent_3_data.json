@@ -1,0 +1,374 @@
+{
+    "classes": [
+        {
+            "tag": "True"
+        },
+        {
+            "tag": "False"
+        }
+    ],
+    "documents": [
+        {
+            "sent_tokens": [
+                "эти",
+                "военные",
+                "действия",
+                "ужасны"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "я",
+                "боюсь",
+                "войны"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "я",
+                "бы",
+                "не",
+                "хотел",
+                "участвовать",
+                "в",
+                "войне"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "занимайтесь",
+                "любовью",
+                "а",
+                "не",
+                "войной"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "make",
+                "love",
+                "not",
+                "war"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "зачем",
+                "вы",
+                "воюете"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "для",
+                "чего",
+                "нужна",
+                "война"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "может",
+                "не",
+                "будем",
+                "воевать"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "зачем",
+                "воевать"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "в",
+                "чем",
+                "смысл",
+                "войны"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "война"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "войны"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "военные",
+                "действия"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "war"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "воюете"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "воюют"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "воевать"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "эти"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "действия"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "ужасны"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "боюсь"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "я"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "бы"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "не",
+                "хотел"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "хотел"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "участвовать"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "в"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "заниматься"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "любовью"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "заниматься",
+                "любовью"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "а"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "не"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "make"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "love"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "not"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "зачем"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "вы"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "для"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "чего"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "нужна"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "может"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "не",
+                "будем"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "будем"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "в",
+                "чем"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "чем"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "чём"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "в",
+                "чём"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "смысл"
+            ],
+            "tag": "False"
+        }
+    ],
+    "words": [
+        "love",
+        "make",
+        "not",
+        "war",
+        "а",
+        "боюсь",
+        "будем",
+        "бы",
+        "в",
+        "воевать",
+        "военные",
+        "война",
+        "войне",
+        "войной",
+        "войны",
+        "воюете",
+        "воюют",
+        "вы",
+        "действия",
+        "для",
+        "занимайтесь",
+        "заниматься",
+        "зачем",
+        "любовью",
+        "может",
+        "не",
+        "нужна",
+        "смысл",
+        "ужасны",
+        "участвовать",
+        "хотел",
+        "чего",
+        "чем",
+        "чём",
+        "эти",
+        "я"
+    ]
+}

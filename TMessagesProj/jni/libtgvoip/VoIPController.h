@@ -511,8 +511,8 @@ namespace tgvoip{
 		void SendStreamCSD(Stream& stream);
 		void InitializeTimers();
 		void ResetEndpointPingStats();
-		void SendVideoFrame(const Buffer& frame, uint32_t flags);
-		void ProcessIncomingVideoFrame(Buffer frame, uint32_t pts, bool keyframe);
+		void SendVideoFrame(const Buffer& frame, uint32_t flags, uint32_t rotation);
+		void ProcessIncomingVideoFrame(Buffer frame, uint32_t pts, bool keyframe, uint16_t rotation);
 		std::shared_ptr<Stream> GetStreamByType(int type, bool outgoing);
 		Endpoint* GetEndpointForPacket(const PendingOutgoingPacket& pkt);
 		bool SendOrEnqueuePacket(PendingOutgoingPacket pkt, bool enqueue=true);

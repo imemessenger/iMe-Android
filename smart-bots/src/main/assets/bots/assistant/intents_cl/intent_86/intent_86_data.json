@@ -1,0 +1,135 @@
+{
+    "classes": [
+        {
+            "tag": "True"
+        },
+        {
+            "tag": "False"
+        }
+    ],
+    "documents": [
+        {
+            "sent_tokens": [
+                "ты",
+                "доехал"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "ты",
+                "приехал"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "ты",
+                "добрался"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "ты",
+                "уже",
+                "доехал"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "доехал",
+                "ли",
+                "ты"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "ты",
+                "приехала"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "ты",
+                "доехала"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "ты",
+                "добралась"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "ты"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "добрался"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "уже"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "ли"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "доехал"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "приехал"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "доехала"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "приехала"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "добралась"
+            ],
+            "tag": "False"
+        }
+    ],
+    "words": [
+        "добралась",
+        "добрался",
+        "доехал",
+        "доехала",
+        "ли",
+        "приехал",
+        "приехала",
+        "ты",
+        "уже"
+    ]
+}

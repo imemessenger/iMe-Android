@@ -1,0 +1,387 @@
+{
+    "classes": [
+        {
+            "tag": "True"
+        },
+        {
+            "tag": "False"
+        }
+    ],
+    "documents": [
+        {
+            "sent_tokens": [
+                "мне",
+                "надо",
+                "туда",
+                "пойти"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "я",
+                "должен",
+                "это",
+                "сделать"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "мне",
+                "надо",
+                "вернуть",
+                "долг"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "это",
+                "моя",
+                "обязанность"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "мне",
+                "необходимо",
+                "было",
+                "так",
+                "поступить"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "я",
+                "был",
+                "обязан",
+                "сделать",
+                "это"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "это",
+                "мой",
+                "долг"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "я",
+                "должен",
+                "был",
+                "тебе"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "мой",
+                "долг",
+                "оплачен"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "я",
+                "тебе",
+                "ничем",
+                "не",
+                "обязан"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "ничего",
+                "тебе",
+                "не",
+                "должен",
+                "больше"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "обязанность"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "должен",
+                "был"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "обязан"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "ты",
+                "должен"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "я",
+                "должен",
+                "сделать"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "ты",
+                "должен",
+                "сделать"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "я",
+                "обязан"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "ты",
+                "обязан"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "не",
+                "обязан"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "не",
+                "должен"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "дай",
+                "в",
+                "долг"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "мне"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "надо"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "туда"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "пойти"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "я"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "сделать"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "это"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "вернуть"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "моя"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "ты"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "необходимо"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "было"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "так"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "поступить"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "был"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "я"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "тебе"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "мой"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "долг"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "в",
+                "долг"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "оплачен"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "ничем"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "взять",
+                "в",
+                "долг"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "должники"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "ничего"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "больше"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "был"
+            ],
+            "tag": "False"
+        }
+    ],
+    "words": [
+        "больше",
+        "был",
+        "было",
+        "в",
+        "вернуть",
+        "взять",
+        "дай",
+        "долг",
+        "должен",
+        "должники",
+        "мне",
+        "мой",
+        "моя",
+        "надо",
+        "не",
+        "необходимо",
+        "ничего",
+        "ничем",
+        "обязан",
+        "обязанность",
+        "оплачен",
+        "пойти",
+        "поступить",
+        "сделать",
+        "так",
+        "тебе",
+        "туда",
+        "ты",
+        "это",
+        "я"
+    ]
+}

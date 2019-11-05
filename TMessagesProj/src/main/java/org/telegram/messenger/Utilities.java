@@ -91,19 +91,19 @@ public class Utilities {
         aesCbcEncryptionByteArray(buffer, key, iv.clone(), offset, length, n, encrypt);
     }
 
-    public static Integer parseInt(String value) {
+    public static Integer parseInt(CharSequence value) {
         if (value == null) {
             return 0;
         }
-        Integer val = 0;
+        int val = 0;
         try {
             Matcher matcher = pattern.matcher(value);
             if (matcher.find()) {
                 String num = matcher.group(0);
                 val = Integer.parseInt(num);
             }
-        } catch (Exception e) {
-            FileLog.e(e);
+        } catch (Exception ignore) {
+
         }
         return val;
     }
@@ -112,15 +112,15 @@ public class Utilities {
         if (value == null) {
             return 0L;
         }
-        Long val = 0L;
+        long val = 0L;
         try {
             Matcher matcher = pattern.matcher(value);
             if (matcher.find()) {
                 String num = matcher.group(0);
                 val = Long.parseLong(num);
             }
-        } catch (Exception e) {
-            FileLog.e(e);
+        } catch (Exception ignore) {
+
         }
         return val;
     }

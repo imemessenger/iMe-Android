@@ -1,0 +1,142 @@
+{
+    "classes": [
+        {
+            "tag": "True"
+        },
+        {
+            "tag": "False"
+        }
+    ],
+    "documents": [
+        {
+            "sent_tokens": [
+                "гулять",
+                "пойдешь"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "выходи",
+                "на",
+                "улицу"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "пошли",
+                "гулять"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "пойдем",
+                "погуляем"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "выходи",
+                "из",
+                "дома",
+                "на",
+                "улицу"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "пойдем",
+                "на",
+                "улицу"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "хватит",
+                "сидеть",
+                "дома",
+                "выходи"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "пойдешь"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "выходи"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "на"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "пошли"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "пойдем"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "из"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "дома"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "улицу"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "хватит"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "сидеть"
+            ],
+            "tag": "False"
+        }
+    ],
+    "words": [
+        "выходи",
+        "гулять",
+        "дома",
+        "из",
+        "на",
+        "погуляем",
+        "пойдем",
+        "пойдешь",
+        "пошли",
+        "сидеть",
+        "улицу",
+        "хватит"
+    ]
+}

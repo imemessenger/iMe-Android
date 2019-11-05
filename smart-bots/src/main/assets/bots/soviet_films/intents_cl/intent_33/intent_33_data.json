@@ -1,0 +1,287 @@
+{
+    "classes": [
+        {
+            "tag": "True"
+        },
+        {
+            "tag": "False"
+        }
+    ],
+    "documents": [
+        {
+            "sent_tokens": [
+                "совести",
+                "у",
+                "тебя",
+                "нет"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "какой",
+                "же",
+                "ты",
+                "бессовестный"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "это",
+                "будет",
+                "на",
+                "твоей",
+                "совести"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "как",
+                "тебе",
+                "не",
+                "стыдно"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "думаешь",
+                "ты",
+                "красиво",
+                "поступил"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "за",
+                "это",
+                "ответственность",
+                "на",
+                "тебе"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "совесть"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "совестливый"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "бессовестный"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "бессовестные"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "бессовестная"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "совестливая"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "совесть",
+                "проснулась"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "у"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "тебя"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "у",
+                "тебя"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "нет"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "какой"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "же"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "ты"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "это"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "будет"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "на"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "твоей"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "твоя"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "твои"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "как"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "тебе"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "не"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "думаешь"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "красиво"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "поступил"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "за"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "ответственность"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "на"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "тебе"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "проснулась"
+            ],
+            "tag": "False"
+        }
+    ],
+    "words": [
+        "бессовестная",
+        "бессовестные",
+        "бессовестный",
+        "будет",
+        "думаешь",
+        "же",
+        "за",
+        "как",
+        "какой",
+        "красиво",
+        "на",
+        "не",
+        "нет",
+        "ответственность",
+        "поступил",
+        "проснулась",
+        "совести",
+        "совестливая",
+        "совестливый",
+        "совесть",
+        "стыдно",
+        "твоей",
+        "твои",
+        "твоя",
+        "тебе",
+        "тебя",
+        "ты",
+        "у",
+        "это"
+    ]
+}

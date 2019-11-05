@@ -1,0 +1,150 @@
+{
+    "classes": [
+        {
+            "tag": "True"
+        },
+        {
+            "tag": "False"
+        }
+    ],
+    "documents": [
+        {
+            "sent_tokens": [
+                "какой",
+                "ты",
+                "маленький"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "ты",
+                "словно",
+                "дюймовочка"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "такая",
+                "миниатюрная"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "ты",
+                "хоббит"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "размер",
+                "не",
+                "главное"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "какой"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "ты"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "маленький"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "словно"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "дюймовочка"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "такая"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "миниатюрная"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "миниатюра"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "хоббит"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "хоббиты"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "размер"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "не"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "главное"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "не",
+                "главное"
+            ],
+            "tag": "False"
+        }
+    ],
+    "words": [
+        "главное",
+        "дюймовочка",
+        "какой",
+        "маленький",
+        "миниатюра",
+        "миниатюрная",
+        "не",
+        "размер",
+        "словно",
+        "такая",
+        "ты",
+        "хоббит",
+        "хоббиты"
+    ]
+}

@@ -1,0 +1,334 @@
+{
+    "classes": [
+        {
+            "tag": "True"
+        },
+        {
+            "tag": "False"
+        }
+    ],
+    "documents": [
+        {
+            "sent_tokens": [
+                "конечно",
+                "она",
+                "мне",
+                "не",
+                "изменяет"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "они",
+                "не",
+                "предадут",
+                "меня"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "он",
+                "предал",
+                "ее"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "мне",
+                "кажется",
+                "что",
+                "он",
+                "мне",
+                "изменяет"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "он",
+                "мне",
+                "изменяет",
+                "это",
+                "точно"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "да",
+                "я",
+                "не",
+                "изменяю"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "я",
+                "только",
+                "раз",
+                "ей",
+                "изменил"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "я",
+                "не",
+                "хотел",
+                "ей",
+                "изменять"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "измена"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "изменил"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "изменить"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "он",
+                "изменил"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "она",
+                "изменила"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "он",
+                "изменяет"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "она",
+                "изменяет"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "изменяет"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "они",
+                "изменяют"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "конечно"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "она"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "мне"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "не"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "они"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "он"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "не"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "меня"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "ее"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "её"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "да"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "не"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "кажется"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "что"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "это",
+                "точно"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "это"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "точно"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "только",
+                "раз"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "только"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "раз"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "ей"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "не",
+                "хотел"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "хотел"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "я"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "измена",
+                "родине"
+            ],
+            "tag": "False"
+        }
+    ],
+    "words": [
+        "да",
+        "ее",
+        "ей",
+        "её",
+        "измена",
+        "изменил",
+        "изменила",
+        "изменить",
+        "изменяет",
+        "изменять",
+        "изменяю",
+        "изменяют",
+        "кажется",
+        "конечно",
+        "меня",
+        "мне",
+        "не",
+        "он",
+        "она",
+        "они",
+        "предадут",
+        "предал",
+        "раз",
+        "родине",
+        "только",
+        "точно",
+        "хотел",
+        "что",
+        "это",
+        "я"
+    ]
+}

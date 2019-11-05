@@ -1,0 +1,638 @@
+{
+    "classes": [
+        {
+            "tag": "True"
+        },
+        {
+            "tag": "False"
+        }
+    ],
+    "documents": [
+        {
+            "sent_tokens": [
+                "ты",
+                "меня",
+                "заебал"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "отпиздил",
+                "бы",
+                "его"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "как",
+                "же",
+                "ты",
+                "меня",
+                "задолбал"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "иди",
+                "нахуй"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "мамку",
+                "твою",
+                "в",
+                "кино",
+                "водил"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "как",
+                "же",
+                "у",
+                "меня",
+                "бомбит"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "ненавижу",
+                "его"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "ты",
+                "хочешь",
+                "встретиться",
+                "с",
+                "моим",
+                "кулаком"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "ты",
+                "меня",
+                "бесишь"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "выводишь",
+                "меня",
+                "из",
+                "себя"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "бомбит",
+                "от",
+                "тебя"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "тошно",
+                "находится",
+                "с",
+                "тобой",
+                "в",
+                "одной",
+                "комнате"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "ты",
+                "мне",
+                "неприятен"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "выбешиваешь",
+                "меня"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "свинья",
+                "ты"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "ну",
+                "ты",
+                "и",
+                "свинья"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "свинота"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "бесишь"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "выбешиваешь"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "выбесил",
+                "меня"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "бомбит"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "ты"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "меня"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "бы"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "его"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "как"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "же"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "ты"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "как",
+                "ты"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "мамку"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "иди"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "нахуй"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "отпиздил"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "твою"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "в"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "кино"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "водил"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "же"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "у",
+                "меня"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "у"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "меня"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "бомбит"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "ненавижу"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "хочешь"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "встретиться"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "с"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "моим"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "кулаком"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "выводишь"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "из"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "себя"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "от"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "тошно"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "находится"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "с",
+                "тобой"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "тобой"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "с"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "в"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "одной"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "комнате"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "мне"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "неприятен"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "ну",
+                "ты"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "ну"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "свинья"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "и"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "как",
+                "они"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "они"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "она"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "раздражает"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "присутствие"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "выводит",
+                "из"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "выводит"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "себя"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "себе"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "он",
+                "меня"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "дико"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "вымораживает"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "выморозил"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "заморозил"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "замораживает"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "заморозка"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "задолбал"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "как",
+                "же"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "же"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "ты"
+            ],
+            "tag": "False"
+        }
+    ],
+    "words": [
+        "бесишь",
+        "бомбит",
+        "бы",
+        "в",
+        "водил",
+        "встретиться",
+        "выбесил",
+        "выбешиваешь",
+        "выводит",
+        "выводишь",
+        "вымораживает",
+        "выморозил",
+        "дико",
+        "его",
+        "же",
+        "задолбал",
+        "заебал",
+        "замораживает",
+        "заморозил",
+        "заморозка",
+        "и",
+        "иди",
+        "из",
+        "как",
+        "кино",
+        "комнате",
+        "кулаком",
+        "мамку",
+        "меня",
+        "мне",
+        "моим",
+        "находится",
+        "нахуй",
+        "ненавижу",
+        "неприятен",
+        "ну",
+        "одной",
+        "он",
+        "она",
+        "они",
+        "от",
+        "отпиздил",
+        "присутствие",
+        "раздражает",
+        "с",
+        "свинота",
+        "свинья",
+        "себе",
+        "себя",
+        "твою",
+        "тебя",
+        "тобой",
+        "тошно",
+        "ты",
+        "у",
+        "хочешь"
+    ]
+}

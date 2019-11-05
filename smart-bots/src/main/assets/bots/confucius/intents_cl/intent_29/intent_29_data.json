@@ -1,0 +1,606 @@
+{
+    "classes": [
+        {
+            "tag": "True"
+        },
+        {
+            "tag": "False"
+        }
+    ],
+    "documents": [
+        {
+            "sent_tokens": [
+                "хочу",
+                "заказать",
+                "услугу",
+                "на",
+                "дом"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "думаю",
+                "заказать",
+                "уборку"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "хочу",
+                "осуществить",
+                "доставку",
+                "еды"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "жду",
+                "курьера"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "в",
+                "ресторане",
+                "ужасное",
+                "обслуживание"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "в",
+                "банке",
+                "сплошные",
+                "очереди"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "в",
+                "магазине",
+                "не",
+                "кассиры",
+                "а",
+                "хамы"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "заказала",
+                "пиццу"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "жду",
+                "суши"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "что",
+                "за",
+                "ужасное",
+                "обслуживание"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "почта",
+                "россии",
+                "как",
+                "всегда",
+                "отличилась",
+                "своим",
+                "обслуживанием"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "услуга"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "услуги"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "услужи"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "услужи",
+                "мне",
+                "службу"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "ужасное",
+                "обслуживание"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "хорошее",
+                "обслуживание"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "отличное",
+                "обслуживание"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "обслуживание",
+                "на",
+                "уровне"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "хочу"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "заказать"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "на"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "дом"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "на",
+                "дом"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "думаю"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "уборку"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "уборка"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "осуществить"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "доставку"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "доставка"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "еды"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "еда"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "жду"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "курьера"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "в"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "ресторане"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "в",
+                "ресторане"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "ужасное"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "обслуживание"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "в",
+                "банке"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "банке"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "банка"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "банк"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "сплошные"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "сплошная"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "очереди"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "очередь"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "в",
+                "магазине"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "магазине"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "магазин"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "не"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "кассиры"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "кассир"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "а"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "хамы"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "хам"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "заказала"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "пицце"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "пиццу"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "пицца"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "суши"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "суша"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "что",
+                "за"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "за"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "почта"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "россии"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "почта",
+                "россии"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "как",
+                "всегда"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "как"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "всегда"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "отличилась"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "своим"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "обслуживанием"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "мне"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "службу"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "служба"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "хорошее"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "отличное"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "на",
+                "уровне"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "уровне"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "уровень"
+            ],
+            "tag": "False"
+        }
+    ],
+    "words": [
+        "а",
+        "банк",
+        "банка",
+        "банке",
+        "в",
+        "всегда",
+        "дом",
+        "доставка",
+        "доставку",
+        "думаю",
+        "еда",
+        "еды",
+        "жду",
+        "за",
+        "заказала",
+        "заказать",
+        "как",
+        "кассир",
+        "кассиры",
+        "курьера",
+        "магазин",
+        "магазине",
+        "мне",
+        "на",
+        "не",
+        "обслуживание",
+        "обслуживанием",
+        "осуществить",
+        "отличилась",
+        "отличное",
+        "очереди",
+        "очередь",
+        "пицца",
+        "пицце",
+        "пиццу",
+        "почта",
+        "ресторане",
+        "россии",
+        "своим",
+        "служба",
+        "службу",
+        "сплошная",
+        "сплошные",
+        "суша",
+        "суши",
+        "уборка",
+        "уборку",
+        "ужасное",
+        "уровень",
+        "уровне",
+        "услуга",
+        "услуги",
+        "услугу",
+        "услужи",
+        "хам",
+        "хамы",
+        "хорошее",
+        "хочу",
+        "что"
+    ]
+}

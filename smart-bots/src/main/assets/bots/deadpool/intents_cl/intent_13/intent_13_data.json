@@ -1,0 +1,2250 @@
+{
+    "classes": [
+        {
+            "tag": "True"
+        },
+        {
+            "tag": "False"
+        }
+    ],
+    "documents": [
+        {
+            "sent_tokens": [
+                "уйди"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "надеюсь",
+                "скоро",
+                "увидимся"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "оставь",
+                "меня"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "мне",
+                "пора",
+                "идти"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "увидимся"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "пока",
+                "пока"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "окей",
+                "до",
+                "скорого"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "поговорим",
+                "позже"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "должен",
+                "оставить",
+                "тебя"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "теперь",
+                "прощаемся"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "счастливо",
+                "оставаться"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "иди",
+                "спать"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "чао"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "пока"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "на",
+                "этом",
+                "всё",
+                "пока"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "до",
+                "завтра"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "до",
+                "свидания"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "спасибо",
+                "и",
+                "пока"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "вот",
+                "и",
+                "всё",
+                "прощай"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "увидимся",
+                "на",
+                "неделе"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "вынужден",
+                "тебя",
+                "покинуть"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "счастливо"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "до",
+                "скорой",
+                "встречи"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "ты",
+                "свободна"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "теперь",
+                "ты",
+                "свободен"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "пока",
+                "увидимся",
+                "позже"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "увидимся",
+                "завтра"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "до",
+                "скорого"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "прощай"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "пока",
+                "пока"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "пора",
+                "прощаться"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "оставь",
+                "меня",
+                "в",
+                "покое"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "пока",
+                "не",
+                "позвонит"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "пока",
+                "не",
+                "сообщит"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "пока",
+                "общаемся"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "пока",
+                "обедал"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "пока",
+                "не",
+                "время"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "время",
+                "пока",
+                "не",
+                "пришло"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "должен",
+                "не",
+                "должен"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "не",
+                "должен"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "должен",
+                "денег"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "сходим",
+                "на",
+                "свидание"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "свидание",
+                "прошло",
+                "успешно"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "мы",
+                "ходили",
+                "на",
+                "свидание"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "увидел",
+                "тебя"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "увидел"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "я",
+                "увидел"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "скоро",
+                "будет"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "скоро",
+                "пройдет"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "скоро",
+                "встретимся"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "он",
+                "должен",
+                "находиться",
+                "в",
+                "покое"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "ему",
+                "нужен",
+                "покой"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "он",
+                "покоится",
+                "здесь"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "пока",
+                "не",
+                "пришел"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "позже",
+                "обычного",
+                "пришел"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "позже",
+                "намеченного"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "позже",
+                "увидел"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "встреча",
+                "у",
+                "дома"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "встречи",
+                "намечаются"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "встречаются",
+                "люди"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "и",
+                "тут",
+                "я",
+                "пошел",
+                "к",
+                "ним"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "я",
+                "подошел",
+                "к",
+                "нему",
+                "и",
+                "сказал"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "я",
+                "пошел",
+                "за",
+                "ним",
+                "и",
+                "увидел"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "поживем",
+                "увидим"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "я",
+                "бежал",
+                "за",
+                "автобусом"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "я",
+                "бежал",
+                "но",
+                "не",
+                "падал"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "я",
+                "побежал",
+                "за",
+                "ним",
+                "но",
+                "не",
+                "догнал"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "я",
+                "бы",
+                "ушел",
+                "за",
+                "ним"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "я",
+                "побежал",
+                "за",
+                "собакой"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "ушел",
+                "из",
+                "комнаты"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "ушел",
+                "от",
+                "гостей"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "ушел",
+                "от",
+                "родителей"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "ушел",
+                "от",
+                "девушки"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "ушел",
+                "и",
+                "не",
+                "вернулся"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "ушел",
+                "сразу",
+                "после",
+                "титров"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "ушел",
+                "после",
+                "фильма"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "уходил",
+                "за",
+                "приставкой"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "вот",
+                "и",
+                "все",
+                "закончилось"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "вот",
+                "и",
+                "все",
+                "случилось"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "вот",
+                "и",
+                "все",
+                "дела"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "вот",
+                "и",
+                "все",
+                "поступки"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "вот",
+                "и",
+                "вся",
+                "работа"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "ты",
+                "свободен",
+                "в",
+                "выборе"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "ты",
+                "свободная",
+                "женщина"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "ты",
+                "свободный",
+                "человек"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "счастливо",
+                "жилось"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "счастливо",
+                "жили"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "счастливо",
+                "проводили",
+                "время"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "счастливые",
+                "часы"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "счастливчик"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "счастливо",
+                "отдыхалось"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "скорый",
+                "поезд"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "скоро",
+                "прийдет"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "ты",
+                "скоро"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "скоро",
+                "будешь"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "скорее",
+                "давай"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "завтра",
+                "наступило"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "подумаю",
+                "об",
+                "этом",
+                "завтра"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "завтра",
+                "какое",
+                "число"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "завтра",
+                "что",
+                "у",
+                "нас"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "иди",
+                "на",
+                "работу"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "иди",
+                "на",
+                "завод"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "иди",
+                "на",
+                "тренировку"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "иди",
+                "на",
+                "ютуб"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "иди",
+                "на",
+                "твитч"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "иди",
+                "на",
+                "олимпиаду"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "иди",
+                "на",
+                "занятия"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "иди",
+                "на",
+                "уроки"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "захожу",
+                "в",
+                "здание"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "захожу",
+                "в",
+                "магазин"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "захожу",
+                "в",
+                "трамвай"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "захожу",
+                "в",
+                "маршрутку"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "захожу",
+                "в",
+                "машину"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "захожу",
+                "за",
+                "дом"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "захожу",
+                "в",
+                "школу"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "захожу",
+                "на",
+                "работу"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "захожу",
+                "домой"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "захожу",
+                "в",
+                "метро"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "пока",
+                "не",
+                "объявили"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "пока",
+                "не",
+                "знаем"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "пока",
+                "не",
+                "известно"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "пока",
+                "неизвестно"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "пока",
+                "нет",
+                "знаний"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "пока",
+                "нет",
+                "наработок"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "пока",
+                "не",
+                "готово"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "пока",
+                "не",
+                "понятно"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "пока",
+                "не",
+                "хочу"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "пока",
+                "не",
+                "могу"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "пока",
+                "не",
+                "понимаю"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "пока",
+                "не",
+                "умею"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "пока",
+                "не",
+                "заработало"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "пока",
+                "не",
+                "нужно"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "пока",
+                "вбивал"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "пока",
+                "заполнял"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "пока",
+                "узнавал"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "пока",
+                "исполнял"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "пока",
+                "кодил"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "пока",
+                "писал"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "пока",
+                "уходил"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "пока",
+                "ел"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "пока",
+                "отходил"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "мне",
+                "надо"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "мне",
+                "дай"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "передашь",
+                "мне"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "мне",
+                "не",
+                "хочется"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "мне",
+                "не",
+                "нужно"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "куда",
+                "мне"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "поможешь",
+                "мне"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "зачем",
+                "мне"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "пока",
+                "посмотрю"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "сделай",
+                "покороче"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "длину",
+                "надо",
+                "покороче"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "можешь",
+                "говорить",
+                "покороче"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "покороче",
+                "отрежь"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "покороче",
+                "отрезать"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "не",
+                "надо",
+                "покороче"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "до",
+                "достижения"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "до",
+                "утра",
+                "сидеть",
+                "буду"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "до",
+                "вечера",
+                "останусь"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "до",
+                "обеда",
+                "посижу"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "до",
+                "определенного",
+                "возраста"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "до",
+                "дома",
+                "провожу"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "довезу",
+                "до",
+                "работы"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "довезу",
+                "до",
+                "дома"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "довезу",
+                "до",
+                "метро"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "довезу",
+                "до",
+                "остановки"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "довезу",
+                "до",
+                "вокзала"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "завтра",
+                "будет",
+                "проще"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "наступит",
+                "завтра"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "завтра",
+                "узнаем"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "завтра",
+                "посмотрим"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "позже",
+                "узнаем"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "позже",
+                "посмотрим"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "позже",
+                "поймем"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "позже",
+                "посмотрю"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "позже",
+                "послушаю"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "завтра",
+                "экзамен"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "завтра",
+                "дэдлайн"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "завтра",
+                "дедлайн"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "завтра",
+                "просмотр"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "завтра",
+                "презентация"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "завтра",
+                "выступление"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "завтра",
+                "концерт"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "завтра",
+                "сходим"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "завтра",
+                "тест"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "завтра",
+                "контрольная"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "завтра",
+                "зачем"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "завтра",
+                "зачет"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "я",
+                "позже",
+                "загружу"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "я",
+                "позже",
+                "гляну"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "я",
+                "позже",
+                "посмотрю"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "пока",
+                "писала"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "пока",
+                "считала"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "пока",
+                "смотрела"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "пока",
+                "снимала"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "пока",
+                "играла"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "пока",
+                "работала"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "пока",
+                "читала"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "пока",
+                "спала"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "пока",
+                "ела"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "пока",
+                "сидела"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "пока",
+                "стояли"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "пока",
+                "шли"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "пока",
+                "ехали"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "оставлю",
+                "на",
+                "месте"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "оставлю",
+                "пока"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "оставлю",
+                "себе"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "оставлю",
+                "тебе"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "оставляю",
+                "вам"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "оставь",
+                "потом",
+                "заберу"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "оставь",
+                "я",
+                "уберу"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "оставь",
+                "я",
+                "помою"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "оставь",
+                "я",
+                "заберу"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "оставь",
+                "мне"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "оставь",
+                "мне",
+                "пожалуйста"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "оставь",
+                "это"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "подожди",
+                "оставь"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "если",
+                "нужен",
+                "оставь"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "а",
+                "теперь"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "до"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "до",
+                "сих",
+                "пор"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "надеюсь"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "скоро"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "увидимся"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "оставь"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "меня"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "мне"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "пора"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "идти"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "окей"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "до"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "скорого"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "скорый"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "скорая"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "поговорим"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "позже"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "должен"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "оставить"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "тебя"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "теперь"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "счастливо"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "оставаться"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "иди"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "спать"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "завтра"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "свидания"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "свидание"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "спасибо"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "и"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "на"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "этом"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "все"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "всё"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "на",
+                "неделе"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "неделе"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "неделя"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "вынужден"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "тебя"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "покинуть"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "встречи"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "свободна"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "свободен"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "позже"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "оставь"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "в",
+                "покое"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "покое"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "покой"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "а"
+            ],
+            "tag": "False"
+        }
+    ],
+    "words": [
+        "а",
+        "автобусом",
+        "бежал",
+        "будет",
+        "будешь",
+        "буду",
+        "бы",
+        "в",
+        "вам",
+        "вбивал",
+        "вернулся",
+        "вечера",
+        "возраста",
+        "вокзала",
+        "вот",
+        "время",
+        "все",
+        "встретимся",
+        "встреча",
+        "встречаются",
+        "встречи",
+        "вся",
+        "всё",
+        "выборе",
+        "вынужден",
+        "выступление",
+        "гляну",
+        "говорить",
+        "гостей",
+        "готово",
+        "давай",
+        "дай",
+        "девушки",
+        "дедлайн",
+        "дела",
+        "денег",
+        "длину",
+        "до",
+        "довезу",
+        "догнал",
+        "должен",
+        "дом",
+        "дома",
+        "домой",
+        "достижения",
+        "дэдлайн",
+        "ел",
+        "ела",
+        "ему",
+        "если",
+        "ехали",
+        "женщина",
+        "жили",
+        "жилось",
+        "за",
+        "заберу",
+        "завод",
+        "завтра",
+        "загружу",
+        "закончилось",
+        "занятия",
+        "заполнял",
+        "заработало",
+        "захожу",
+        "зачем",
+        "зачет",
+        "здание",
+        "здесь",
+        "знаем",
+        "знаний",
+        "и",
+        "играла",
+        "иди",
+        "идти",
+        "из",
+        "известно",
+        "исполнял",
+        "к",
+        "какое",
+        "кодил",
+        "комнаты",
+        "контрольная",
+        "концерт",
+        "куда",
+        "люди",
+        "магазин",
+        "маршрутку",
+        "машину",
+        "меня",
+        "месте",
+        "метро",
+        "мне",
+        "могу",
+        "можешь",
+        "мы",
+        "на",
+        "надеюсь",
+        "надо",
+        "намечаются",
+        "намеченного",
+        "наработок",
+        "нас",
+        "наступило",
+        "наступит",
+        "находиться",
+        "не",
+        "неделе",
+        "неделя",
+        "неизвестно",
+        "нему",
+        "нет",
+        "ним",
+        "но",
+        "нужен",
+        "нужно",
+        "об",
+        "обеда",
+        "обедал",
+        "общаемся",
+        "объявили",
+        "обычного",
+        "окей",
+        "олимпиаду",
+        "он",
+        "определенного",
+        "оставаться",
+        "оставить",
+        "оставлю",
+        "оставляю",
+        "оставь",
+        "остановки",
+        "останусь",
+        "от",
+        "отдыхалось",
+        "отрежь",
+        "отрезать",
+        "отходил",
+        "падал",
+        "передашь",
+        "писал",
+        "писала",
+        "побежал",
+        "поговорим",
+        "подожди",
+        "подошел",
+        "подумаю",
+        "поезд",
+        "пожалуйста",
+        "поживем",
+        "позвонит",
+        "позже",
+        "поймем",
+        "пока",
+        "покинуть",
+        "покое",
+        "покоится",
+        "покой",
+        "покороче",
+        "поможешь",
+        "помою",
+        "понимаю",
+        "понятно",
+        "пор",
+        "пора",
+        "посижу",
+        "после",
+        "послушаю",
+        "посмотрим",
+        "посмотрю",
+        "поступки",
+        "потом",
+        "пошел",
+        "презентация",
+        "прийдет",
+        "приставкой",
+        "пришел",
+        "пришло",
+        "проводили",
+        "провожу",
+        "пройдет",
+        "просмотр",
+        "прошло",
+        "прощаемся",
+        "прощай",
+        "прощаться",
+        "проще",
+        "работа",
+        "работала",
+        "работу",
+        "работы",
+        "родителей",
+        "свидание",
+        "свидания",
+        "свободен",
+        "свободна",
+        "свободная",
+        "свободный",
+        "сделай",
+        "себе",
+        "сидела",
+        "сидеть",
+        "сих",
+        "сказал",
+        "скорая",
+        "скорее",
+        "скоро",
+        "скорого",
+        "скорой",
+        "скорый",
+        "случилось",
+        "смотрела",
+        "снимала",
+        "собакой",
+        "сообщит",
+        "спала",
+        "спасибо",
+        "спать",
+        "сразу",
+        "стояли",
+        "сходим",
+        "счастливо",
+        "счастливчик",
+        "счастливые",
+        "считала",
+        "твитч",
+        "тебе",
+        "тебя",
+        "теперь",
+        "тест",
+        "титров",
+        "трамвай",
+        "тренировку",
+        "тут",
+        "ты",
+        "у",
+        "уберу",
+        "увидел",
+        "увидим",
+        "увидимся",
+        "узнавал",
+        "узнаем",
+        "уйди",
+        "умею",
+        "уроки",
+        "успешно",
+        "утра",
+        "уходил",
+        "ушел",
+        "фильма",
+        "ходили",
+        "хочется",
+        "хочу",
+        "чао",
+        "часы",
+        "человек",
+        "число",
+        "читала",
+        "что",
+        "школу",
+        "шли",
+        "экзамен",
+        "это",
+        "этом",
+        "ютуб",
+        "я"
+    ]
+}

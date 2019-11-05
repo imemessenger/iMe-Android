@@ -17,6 +17,7 @@ namespace tgvoip{
 			virtual void Reset(uint32_t codec, unsigned int width, unsigned int height, std::vector<Buffer>& csd)=0;
 			virtual void DecodeAndDisplay(Buffer frame, uint32_t pts)=0;
 			virtual void SetStreamEnabled(bool enabled)=0;
+			virtual void SetRotation(uint16_t rotation)=0;
 			static int GetMaximumResolution();
 		};
 	}

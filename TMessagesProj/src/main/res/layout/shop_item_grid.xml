@@ -33,39 +33,45 @@
         style="@style/ShopBotStatusText"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="@dimen/margin_tiny"
+        android:layout_marginEnd="2dp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/bot_new_label"
+        app:layout_constraintEnd_toStartOf="@+id/layoutLabel"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintHorizontal_chainStyle="packed"
         app:layout_constraintStart_toStartOf="@+id/bot_name"
         app:layout_constraintTop_toBottomOf="@+id/bot_name"
         tools:text="199 ₽" />
 
-    <TextView
-        android:id="@+id/bot_new_label"
-        style="@style/ShopNewLabel"
+    <FrameLayout
+        android:id="@+id/layoutLabel"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/new_bot"
-        android:visibility="visible"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="@+id/bot_name"
         app:layout_constraintStart_toEndOf="@+id/bot_status"
-        app:layout_constraintTop_toBottomOf="@+id/bot_name" />
+        app:layout_constraintTop_toBottomOf="@+id/bot_name">
+        <TextView
+            android:id="@+id/bot_new_label"
+            style="@style/ShopNewLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/new_bot"
+            android:visibility="visible"
+            tools:visibility="gone"
+    />
 
-    <ImageView
-        android:id="@+id/bot_installed_icon"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="@dimen/margin_tiny"
-        android:layout_marginBottom="@dimen/margin_tiny"
-        android:src="@drawable/ic_bot_installed"
-        android:visibility="gone"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@+id/bot_avatar"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:ignore="ContentDescription" />
+        <ImageView
+            android:id="@+id/bot_installed_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/margin_tiny"
+            android:layout_marginBottom="@dimen/margin_tiny"
+            android:src="@drawable/ic_bot_installed"
+            android:visibility="gone"
+            tools:visibility="visible"
+         tools:ignore="ContentDescription" />
+
+    </FrameLayout>
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -13,6 +13,7 @@ import android.app.Activity;
 import android.app.Dialog;
 import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Build;
 import android.os.Bundle;
 import android.text.TextUtils;
@@ -24,11 +25,18 @@ import android.view.accessibility.AccessibilityManager;
 import org.telegram.messenger.AccountInstance;
 import org.telegram.messenger.ApplicationLoader;
 import org.telegram.messenger.ContactsController;
-import org.telegram.messenger.DataQuery;
+import org.telegram.messenger.DownloadController;
+import org.telegram.messenger.FileLoader;
+import org.telegram.messenger.MediaController;
+import org.telegram.messenger.MediaDataController;
 import org.telegram.messenger.FileLog;
+import org.telegram.messenger.LocationController;
 import org.telegram.messenger.MessagesController;
+import org.telegram.messenger.MessagesStorage;
 import org.telegram.messenger.NotificationCenter;
 import org.telegram.messenger.NotificationsController;
+import org.telegram.messenger.SecretChatHelper;
+import org.telegram.messenger.SendMessagesHelper;
 import org.telegram.messenger.UserConfig;
 import org.telegram.tgnet.ConnectionsManager;
 
@@ -47,6 +55,7 @@ public class BaseFragment {
     protected Bundle arguments;
     protected boolean swipeBackEnabled = true;
     protected boolean hasOwnBackground = false;
+    protected boolean isPaused = true;
 
     public BaseFragment() {
         classGuid = ConnectionsManager.generateClassGuid();
@@ -82,6 +91,10 @@ public class BaseFragment {
 
     public int getCurrentAccount() {
         return currentAccount;
+    }
+
+    public int getClassGuid() {
+        return classGuid;
     }
 
     protected void setInPreviewMode(boolean value) {
@@ -124,6 +137,11 @@ public class BaseFragment {
 
     protected void onRemoveFromParent() {
 
+    }
+
+    public void setParentFragment(BaseFragment fragment) {
+        setParentLayout(fragment.parentLayout);
+        fragmentView = createView(parentLayout.getContext());
     }
 
     protected void setParentLayout(ActionBarLayout layout) {
@@ -227,13 +245,14 @@ public class BaseFragment {
     }
 
     public void onResume() {
-
+        isPaused = false;
     }
 
     public void onPause() {
         if (actionBar != null) {
             actionBar.onPause();
         }
+        isPaused = true;
         try {
             if (visibleDialog != null && visibleDialog.isShowing() && dismissDialogOnPause(visibleDialog)) {
                 visibleDialog.dismiss();
@@ -379,14 +398,21 @@ public class BaseFragment {
     }
 
     public Dialog showDialog(Dialog dialog) {
-        return showDialog(dialog, false, null);
+        return showDialog(dialog, false, null, true);
+    }
+
+    public Dialog showDialog(Dialog dialog, Boolean canceledOnTouchOutside) {
+        return showDialog(dialog, false, null, canceledOnTouchOutside);
     }
 
     public Dialog showDialog(Dialog dialog, Dialog.OnDismissListener onDismissListener) {
-        return showDialog(dialog, false, onDismissListener);
+        return showDialog(dialog, false, onDismissListener, true);
+    }
+    public Dialog showDialog(Dialog dialog, boolean allowInTransition, final Dialog.OnDismissListener onDismissListener) {
+        return showDialog(dialog,allowInTransition,onDismissListener,true);
     }
 
-    public Dialog showDialog(Dialog dialog, boolean allowInTransition, final Dialog.OnDismissListener onDismissListener) {
+    public Dialog showDialog(Dialog dialog, boolean allowInTransition, final Dialog.OnDismissListener onDismissListener, Boolean canceledOnTouchOutside) {
         if (dialog == null || parentLayout == null || parentLayout.animationInProgress || parentLayout.startedTracking || !allowInTransition && parentLayout.checkTransitionAnimation()) {
             return null;
         }
@@ -400,7 +426,7 @@ public class BaseFragment {
         }
         try {
             visibleDialog = dialog;
-            visibleDialog.setCanceledOnTouchOutside(true);
+            visibleDialog.setCanceledOnTouchOutside(canceledOnTouchOutside);
             visibleDialog.setOnDismissListener(dialog1 -> {
                 if (onDismissListener != null) {
                     onDismissListener.onDismiss(dialog1);
@@ -436,7 +462,7 @@ public class BaseFragment {
         return new ThemeDescription[0];
     }
 
-    protected AccountInstance getAccountInstance() {
+    public AccountInstance getAccountInstance() {
         return AccountInstance.getInstance(currentAccount);
     }
 
@@ -448,20 +474,52 @@ public class BaseFragment {
         return getAccountInstance().getContactsController();
     }
 
-    protected DataQuery getDataQuery() {
-        return getAccountInstance().getDataQuery();
+    protected MediaDataController getMediaDataController() {
+        return getAccountInstance().getMediaDataController();
     }
 
     protected ConnectionsManager getConnectionsManager() {
         return getAccountInstance().getConnectionsManager();
     }
 
+    protected LocationController getLocationController() {
+        return getAccountInstance().getLocationController();
+    }
+
     protected NotificationsController getNotificationsController() {
         return getAccountInstance().getNotificationsController();
     }
 
+    protected MessagesStorage getMessagesStorage() {
+        return getAccountInstance().getMessagesStorage();
+    }
+
+    protected SendMessagesHelper getSendMessagesHelper() {
+        return getAccountInstance().getSendMessagesHelper();
+    }
+
+    protected FileLoader getFileLoader() {
+        return getAccountInstance().getFileLoader();
+    }
+
+    protected SecretChatHelper getSecretChatHelper() {
+        return getAccountInstance().getSecretChatHelper();
+    }
+
+    protected DownloadController getDownloadController() {
+        return getAccountInstance().getDownloadController();
+    }
+
+    protected SharedPreferences getNotificationsSettings() {
+        return getAccountInstance().getNotificationsSettings();
+    }
+
     public NotificationCenter getNotificationCenter() {
         return getAccountInstance().getNotificationCenter();
+    }
+
+    public MediaController getMediaController() {
+        return MediaController.getInstance();
     }
 
     public UserConfig getUserConfig() {

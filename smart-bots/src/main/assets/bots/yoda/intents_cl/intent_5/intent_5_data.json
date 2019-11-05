@@ -1,0 +1,398 @@
+{
+    "classes": [
+        {
+            "tag": "True"
+        },
+        {
+            "tag": "False"
+        }
+    ],
+    "documents": [
+        {
+            "sent_tokens": [
+                "ничего",
+                "не",
+                "ясно"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "да",
+                "как"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "но",
+                "как",
+                "это",
+                "случилось"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "каким",
+                "образом",
+                "это",
+                "произошло"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "ты",
+                "понял"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "это",
+                "недоразумение"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "не",
+                "понимаю",
+                "как",
+                "так",
+                "вышло"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "понял"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "ничего",
+                "не",
+                "понимаю"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "я",
+                "думал",
+                "все",
+                "иначе"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "вон",
+                "оно",
+                "как",
+                "вышло"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "не",
+                "понял"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "не",
+                "понимаю"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "у",
+                "меня",
+                "есть",
+                "вопросы"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "я",
+                "хочу",
+                "задать",
+                "вопрос"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "есть",
+                "вопрос"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "не",
+                "понимаю"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "у",
+                "меня",
+                "остались",
+                "вопросы"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "ничего"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "не"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "ясно"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "не",
+                "ясно"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "да"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "как"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "так"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "то"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "каким"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "образом"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "образы"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "образ"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "это"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "произошло"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "ты"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "что"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "нибудь"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "понял"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "понимаю"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "какое"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "как"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "недоразумение"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "вышло"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "выходит"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "вошло"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "входит"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "есть"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "хочу"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "задать"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "остались"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "у",
+                "меня"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "меня"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "у"
+            ],
+            "tag": "False"
+        }
+    ],
+    "words": [
+        "вон",
+        "вопрос",
+        "вопросы",
+        "вошло",
+        "все",
+        "входит",
+        "выходит",
+        "вышло",
+        "да",
+        "думал",
+        "есть",
+        "задать",
+        "иначе",
+        "как",
+        "каким",
+        "какое",
+        "меня",
+        "не",
+        "недоразумение",
+        "нибудь",
+        "ничего",
+        "но",
+        "образ",
+        "образом",
+        "образы",
+        "оно",
+        "остались",
+        "понимаю",
+        "понял",
+        "произошло",
+        "случилось",
+        "так",
+        "то",
+        "ты",
+        "у",
+        "хочу",
+        "что",
+        "это",
+        "я",
+        "ясно"
+    ]
+}

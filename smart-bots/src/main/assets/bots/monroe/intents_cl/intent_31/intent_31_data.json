@@ -1,0 +1,304 @@
+{
+    "classes": [
+        {
+            "tag": "True"
+        },
+        {
+            "tag": "False"
+        }
+    ],
+    "documents": [
+        {
+            "sent_tokens": [
+                "упс",
+                "я",
+                "просто",
+                "блондинка"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "чего",
+                "вы",
+                "от",
+                "меня",
+                "хотите",
+                "я",
+                "блондинка"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "какой",
+                "у",
+                "тебя",
+                "цвет",
+                "волос"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "ты",
+                "случайно",
+                "не",
+                "блондинка"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "блондинка",
+                "это",
+                "состояние",
+                "души"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "ну",
+                "ты",
+                "и",
+                "блондинка"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "да",
+                "я",
+                "просто",
+                "блондинка"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "вот",
+                "ты",
+                "блондинка"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "блондинка",
+                "состояние",
+                "души"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "ты",
+                "случаем",
+                "не",
+                "блондинка"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "ты",
+                "что",
+                "блондинка"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "блондинка"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "упс"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "я"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "просто"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "чего"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "вы"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "от"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "меня"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "хотите"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "вот"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "какой"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "у"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "тебя"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "цвет"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "волос"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "случайно"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "не"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "это"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "состояние",
+                "души"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "состояние"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "души"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "ну"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "и"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "да"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "случаем"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "что"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "не",
+                "блондинка"
+            ],
+            "tag": "False"
+        }
+    ],
+    "words": [
+        "блондинка",
+        "волос",
+        "вот",
+        "вы",
+        "да",
+        "души",
+        "и",
+        "какой",
+        "меня",
+        "не",
+        "ну",
+        "от",
+        "просто",
+        "случаем",
+        "случайно",
+        "состояние",
+        "тебя",
+        "ты",
+        "у",
+        "упс",
+        "хотите",
+        "цвет",
+        "чего",
+        "что",
+        "это",
+        "я"
+    ]
+}

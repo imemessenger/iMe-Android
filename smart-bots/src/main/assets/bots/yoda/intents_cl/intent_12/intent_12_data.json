@@ -1,0 +1,302 @@
+{
+    "classes": [
+        {
+            "tag": "True"
+        },
+        {
+            "tag": "False"
+        }
+    ],
+    "documents": [
+        {
+            "sent_tokens": [
+                "что",
+                "ждет",
+                "нас",
+                "впереди"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "я",
+                "гордо",
+                "смотрю",
+                "в",
+                "будущее"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "доживем",
+                "до",
+                "понедельника"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "утро",
+                "вечера",
+                "мудренее"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "поживем",
+                "увидим"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "что",
+                "будет",
+                "завтра"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "кто",
+                "знает",
+                "что",
+                "будет",
+                "завтра"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "что",
+                "ждёт",
+                "нас",
+                "впереди"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "доживём",
+                "до",
+                "понедельника"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "поживём",
+                "увидим"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "завтра"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "будущее"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "в",
+                "будущем"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "на",
+                "завтра"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "завтра",
+                "узнаем"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "что"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "ждет"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "ждёт"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "нас"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "впереди"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "я"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "гордо"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "смотрю"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "в"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "доживем"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "доживём"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "до"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "понедельника"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "утро"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "вечера"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "мудренее"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "поживем"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "поживём"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "увидим"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "что"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "будет"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "узнаем"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "кто"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "знает"
+            ],
+            "tag": "False"
+        }
+    ],
+    "words": [
+        "будет",
+        "будущее",
+        "будущем",
+        "в",
+        "вечера",
+        "впереди",
+        "гордо",
+        "до",
+        "доживем",
+        "доживём",
+        "ждет",
+        "ждёт",
+        "завтра",
+        "знает",
+        "кто",
+        "мудренее",
+        "на",
+        "нас",
+        "поживем",
+        "поживём",
+        "понедельника",
+        "смотрю",
+        "увидим",
+        "узнаем",
+        "утро",
+        "что",
+        "я"
+    ]
+}

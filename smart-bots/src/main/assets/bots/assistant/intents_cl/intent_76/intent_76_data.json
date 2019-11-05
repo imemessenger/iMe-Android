@@ -1,0 +1,223 @@
+{
+    "classes": [
+        {
+            "tag": "True"
+        },
+        {
+            "tag": "False"
+        }
+    ],
+    "documents": [
+        {
+            "sent_tokens": [
+                "это",
+                "мой",
+                "день",
+                "рождения"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "у",
+                "меня",
+                "день",
+                "рождения"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "мой",
+                "день",
+                "рождения",
+                "сегодня"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "сегодня",
+                "я",
+                "праздную",
+                "свой",
+                "день",
+                "рождения"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "сегодня",
+                "у",
+                "меня",
+                "день",
+                "рождения"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "в",
+                "этот",
+                "день",
+                "я",
+                "родился"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "праздную",
+                "свой",
+                "день",
+                "рождения"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "у",
+                "меня",
+                "др"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "это",
+                "мой"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "это"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "мой"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "день"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "рождение"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "у"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "меня"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "сегодня"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "я"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "праздную"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "я"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "свой"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "у",
+                "меня"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "родился"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "этот"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "в"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "в",
+                "этот"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "в",
+                "этот",
+                "день"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "др"
+            ],
+            "tag": "False"
+        }
+    ],
+    "words": [
+        "в",
+        "день",
+        "др",
+        "меня",
+        "мой",
+        "праздную",
+        "родился",
+        "рождение",
+        "рождения",
+        "свой",
+        "сегодня",
+        "у",
+        "это",
+        "этот",
+        "я"
+    ]
+}

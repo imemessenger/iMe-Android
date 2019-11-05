@@ -23,12 +23,12 @@ public class CustomTabView extends FrameLayout {
         super(context);
 
         icon = new ImageView(context);
-        addView(icon, LayoutHelper.createFrame(LayoutHelper.WRAP_CONTENT, LayoutHelper.WRAP_CONTENT, Gravity.CENTER, 8, 4, 8, 4));
+        addView(icon, LayoutHelper.createFrame(LayoutHelper.WRAP_CONTENT, LayoutHelper.WRAP_CONTENT, Gravity.CENTER, 0, 0, 0, 0));
         indicator = new ImageView(context);
         indicator.setImageResource(R.drawable.ic_new_indicator);
         indicator.setVisibility(View.INVISIBLE);
         indicator.setColorFilter(mainColor, PorterDuff.Mode.SRC_IN);
-        addView(indicator, LayoutHelper.createFrame(LayoutHelper.WRAP_CONTENT, LayoutHelper.WRAP_CONTENT, Gravity.CENTER | Gravity.TOP, 12, 0, 0, 0));
+        addView(indicator, LayoutHelper.createFrame(LayoutHelper.WRAP_CONTENT, LayoutHelper.WRAP_CONTENT, Gravity.CENTER | Gravity.TOP, 10, 0, 0, 0));
     }
 
     public void setIcon(int iconResId) {

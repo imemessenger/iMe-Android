@@ -1,50 +1,130 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/smart_panel_root"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/colorSmartPanelBackground"
     android:orientation="vertical">
 
-    <com.google.android.material.appbar.AppBarLayout
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:id="@+id/smart_panel_root"
         android:layout_width="match_parent"
-        app:elevation="0dp"
-        android:layout_height="wrap_content">
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="@color/colorSmartPanelBackground"
+        android:orientation="vertical">
 
-        <LinearLayout
+        <com.google.android.material.appbar.AppBarLayout
+            android:id="@+id/appbar"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            app:layout_scrollFlags="scroll|enterAlways|snap"
-            android:orientation="vertical">
+            app:elevation="0dp">
 
-            <com.google.android.material.tabs.TabLayout
-                android:id="@+id/tabs"
-                style="@style/MyCustomTabLayout"
+            <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:background="@color/colorTabsBackground"
-                app:tabGravity="center"
-                app:tabMode="scrollable"
-                tools:targetApi="lollipop" />
+                android:orientation="vertical"
+                app:layout_scrollFlags="scroll|enterAlways|snap">
 
-            <View
-                android:id="@+id/divider"
+                <com.google.android.material.tabs.TabLayout
+                    android:id="@+id/tabs"
+                    style="@style/MyCustomTabLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/white"
+                    app:tabGravity="center"
+                    app:tabPaddingStart="9dp"
+                    app:tabPaddingEnd="9dp"
+                    app:tabMode="scrollable"
+                    tools:targetApi="lollipop" />
+
+                <View
+                    android:id="@+id/divider"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/colorTabsDivider" />
+
+            </LinearLayout>
+
+
+        </com.google.android.material.appbar.AppBarLayout>
+
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+            <androidx.viewpager.widget.ViewPager
+                android:id="@+id/viewpager"
                 android:layout_width="match_parent"
-                android:layout_height="1dp"
-                android:background="@color/colorTabsDivider" />
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/textEmptyBots"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="50dp"
+                android:gravity="center"
+                android:text="@string/bots_empty_resp"
+                android:textColor="@color/gray_message"
+                android:textSize="14sp" />
+        </FrameLayout>
+
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+    <FrameLayout
+        android:id="@+id/layoutBottom"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:layout_gravity="bottom">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/colorTabsDivider" />
+
+        <ImageView
+            android:id="@+id/imageBots"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="11dp"
+            android:padding="@dimen/padding_small"
+            android:src="@drawable/ic_bots_shop" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            tools:background="@color/colorBlack"
+            android:layout_gravity="center">
+
+            <ImageView
+                android:id="@+id/imageTextResponses"
+                android:layout_width="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/padding_small"
+                tools:src="@drawable/ic_bots_responses" />
+
+            <ImageView
+                android:id="@+id/imageGifResponses"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:padding="@dimen/padding_small"
+                tools:src="@drawable/smiles_tab_gif" />
 
         </LinearLayout>
 
+        <ImageView
+            android:id="@+id/imageSettings"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|center_vertical"
+            android:layout_marginRight="11dp"
+            android:padding="@dimen/padding_small"
+            android:src="@drawable/menu_settings" />
 
-    </com.google.android.material.appbar.AppBarLayout>
-
-
-    <androidx.viewpager.widget.ViewPager
-        android:id="@+id/viewpager"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        app:layout_behavior="@string/appbar_scrolling_view_behavior" />
-
-</androidx.coordinatorlayout.widget.CoordinatorLayout>
+    </FrameLayout>
+</LinearLayout>

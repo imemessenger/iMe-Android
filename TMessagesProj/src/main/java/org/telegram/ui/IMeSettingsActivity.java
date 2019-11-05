@@ -2,7 +2,6 @@ package org.telegram.ui;
 
 import android.annotation.SuppressLint;
 import android.content.Context;
-import android.content.SharedPreferences;
 import android.graphics.Canvas;
 import android.view.View;
 import android.view.ViewGroup;
@@ -12,6 +11,8 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.ItemTouchHelper;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
+
+import com.smedialink.settings.BackupManager;
 
 import org.telegram.messenger.LocaleController;
 import org.telegram.messenger.MessagesController;
@@ -32,16 +33,24 @@ import org.telegram.ui.Cells2.TextCheckCell3;
 import org.telegram.ui.Components.LayoutHelper;
 import org.telegram.ui.Components.RecyclerListView;
 
+import java.util.concurrent.TimeUnit;
+
+import io.reactivex.android.schedulers.AndroidSchedulers;
+import io.reactivex.disposables.CompositeDisposable;
+import io.reactivex.subjects.PublishSubject;
+
 public class IMeSettingsActivity extends BaseFragment {
 
     private RecyclerListView listView;
     private ListAdapter listAdapter;
 
     private DialogsTabManager tabsManager = DialogsTabManager.getInstance();
+    private BackupManager backupManager = BackupManager.Companion.getInstance(getMessagesController(), MessagesController.getInstance(currentAccount).aigramStorage);
+    private PublishSubject<Object> settingsChangesSubject = PublishSubject.create();
+    private CompositeDisposable disposables = new CompositeDisposable();
 
-    private int autoBotsSettingRow;
-    private int dividerRow1;
     private int tabsHeaderRow;
+    private int tabsAllRow;
     private int tabsRowStart;
     private int tabsRowEnd;
     private int tabsDragInfo;
@@ -100,9 +109,8 @@ public class IMeSettingsActivity extends BaseFragment {
 
     @Override
     public boolean onFragmentCreate() {
-        autoBotsSettingRow = mainRowCount++;    // Переключатель автоботов
-        dividerRow1 = mainRowCount++;           // Разделитель
         tabsHeaderRow = mainRowCount++;         // Заголовок настройки табов
+        tabsAllRow = mainRowCount++;            // Свитч "Все вкладки"
         tabsRowStart = mainRowCount;            // Начало списка табов
         mainRowCount += tabsManager.allTabs.size();
         tabsRowEnd = mainRowCount++;            // Конец списка табов
@@ -116,6 +124,8 @@ public class IMeSettingsActivity extends BaseFragment {
         tabsManager.refreshActiveTabs();
         tabsManager.storeCurrentTabsData();
         NotificationCenter.getInstance(currentAccount).postNotificationName(NotificationCenter.refreshTabState);
+        NotificationCenter.getInstance(currentAccount).postNotificationName(NotificationCenter.refreshTabIcons);
+        disposables.clear();
         super.onFragmentDestroy();
     }
 
@@ -148,28 +158,20 @@ public class IMeSettingsActivity extends BaseFragment {
         itemTouchHelper.attachToRecyclerView(listView);
         listView.setAdapter(listAdapter = new ListAdapter(context));
         listView.setOnItemClickListener((view, position, x, y) -> {
-            boolean enabled = false;
-            if (position == autoBotsSettingRow) {
-                SharedPreferences preferences = MessagesController.getGlobalMainSettings();
-                enabled = preferences.getBoolean("autoBotsEnabled", true);
-                SharedPreferences.Editor editor = preferences.edit();
-                editor.putBoolean("autoBotsEnabled", !enabled);
-                editor.commit();
+            if (position == tabsAllRow) {
+                changeAllSelection(!allTabsSelected());
+                listAdapter.notifyDataSetChanged();
             } else if (position >= tabsRowStart && position < tabsRowEnd) {
                 int tabPosition = position - tabsRowStart;
-                DialogsTabManager.DialogsTab tab = tabsManager.allTabs.get(tabPosition);
-                enabled = tab.isEnabled();
-                tab.setEnabled(!enabled);
+                DialogsTab tab = tabsManager.allTabs.get(tabPosition);
+                tab.setEnabled(!tab.isEnabled());
                 tabsManager.allTabs.set(tabPosition, tab);
+                listAdapter.notifyDataSetChanged();
             }
-            if (view instanceof TextCheckCell) {
-                ((TextCheckCell) view).setChecked(!enabled);
-            } else if (view instanceof TextCheckCell3) {
-                ((TextCheckCell3) view).setChecked(!enabled);
-            }
+            settingsChangesSubject.onNext(0);
         });
         frameLayout.addView(listView, LayoutHelper.createFrame(LayoutHelper.MATCH_PARENT, LayoutHelper.MATCH_PARENT));
-
+        observeChanges();
         return fragmentView;
     }
 
@@ -242,7 +244,7 @@ public class IMeSettingsActivity extends BaseFragment {
             View view;
             switch (viewType) {
                 case 1:
-                    view = new TextCheckCell(mContext);
+                    view = new TextCheckCell3(mContext);
                     view.setBackgroundColor(Theme.getColor(Theme.key_windowBackgroundWhite));
                     break;
                 case 2:
@@ -250,7 +252,7 @@ public class IMeSettingsActivity extends BaseFragment {
                     view.setBackgroundColor(Theme.getColor(Theme.key_windowBackgroundWhite));
                     break;
                 case 3:
-                    view = new TextCheckCell3(mContext);
+                    view = new TextCheckCell3(mContext, true);
                     view.setBackgroundColor(Theme.getColor(Theme.key_windowBackgroundWhite));
                     break;
                 case 4:
@@ -268,10 +270,8 @@ public class IMeSettingsActivity extends BaseFragment {
         public void onBindViewHolder(@NonNull RecyclerView.ViewHolder holder, int position) {
             switch (holder.getItemViewType()) {
                 case 1:
-                    TextCheckCell checkCell = (TextCheckCell) holder.itemView;
-                    if (position == autoBotsSettingRow) {
-                        SharedPreferences preferences = MessagesController.getGlobalMainSettings();
-                        checkCell.setTextAndCheck(LocaleController.getInternalString(R.string.AutoBots), preferences.getBoolean("autoBotsEnabled", true), true);
+                    if (position == tabsAllRow) {
+                        ((TextCheckCell3) holder.itemView).setTextAndCheck(LocaleController.getInternalString(R.string.tabAllSettings), allTabsSelected(), true);
                     }
                     break;
                 case 2:
@@ -283,10 +283,11 @@ public class IMeSettingsActivity extends BaseFragment {
                 case 3:
                     TextCheckCell3 tabCell = (TextCheckCell3) holder.itemView;
                     if (position >= tabsRowStart && position < tabsRowEnd) {
-                        DialogsTabManager.DialogsTab tab = tabsManager.allTabs.get(position - tabsRowStart);
+                        DialogsTab tab = tabsManager.allTabs.get(position - tabsRowStart);
                         int resId = tab.getType().getStringRes();
                         boolean isChecked = tab.isEnabled();
                         tabCell.setTextAndCheck(LocaleController.getInternalString(resId), isChecked, true);
+                        tabCell.setIcon(tab.getType().getIconRes());
                     }
                     break;
                 case 4:
@@ -300,16 +301,14 @@ public class IMeSettingsActivity extends BaseFragment {
         @Override
         public boolean isEnabled(RecyclerView.ViewHolder holder) {
             int position = holder.getAdapterPosition();
-            return position != dividerRow1 && position != tabsHeaderRow;
+            return position != tabsHeaderRow;
         }
 
         @Override
         public int getItemViewType(int i) {
-            //TODO Change it before bots release
-//            if (i == autoBotsSettingRow) {
-//                return 1;
-//            } else
-                if (i == tabsHeaderRow) {
+            if (i == tabsAllRow) {
+                return 1;
+            } else if (i == tabsHeaderRow) {
                 return 2;
             } else if (i >= tabsRowStart && i < tabsRowEnd) {
                 return 3;
@@ -320,13 +319,46 @@ public class IMeSettingsActivity extends BaseFragment {
         }
 
         void swapElements(int fromIndex, int toIndex) {
-            DialogsTabManager.DialogsTab from = tabsManager.allTabs.get(fromIndex - tabsRowStart);
-            DialogsTabManager.DialogsTab to = tabsManager.allTabs.get(toIndex - tabsRowStart);
+            DialogsTab from = tabsManager.allTabs.get(fromIndex - tabsRowStart);
+            DialogsTab to = tabsManager.allTabs.get(toIndex - tabsRowStart);
             from.setPosition(toIndex - tabsRowStart);
             to.setPosition(fromIndex - tabsRowStart);
             tabsManager.allTabs.set(fromIndex - tabsRowStart, to);
             tabsManager.allTabs.set(toIndex - tabsRowStart, from);
             notifyItemMoved(fromIndex, toIndex);
+            settingsChangesSubject.onNext(0);
+        }
+    }
+
+    private void observeChanges() {
+        disposables.add(settingsChangesSubject
+                .debounce(500, TimeUnit.MILLISECONDS)
+                .observeOn(AndroidSchedulers.mainThread())
+                .subscribe((o) -> handleChanges(),
+                        (t) -> {
+                        }));
+    }
+
+    private void handleChanges() {
+        NotificationCenter.getInstance(currentAccount).postNotificationName(NotificationCenter.saveIMeBackup);
+    }
+
+
+
+    private boolean allTabsSelected() {
+        for (DialogsTab tab : tabsManager.allTabs) {
+            if (!tab.isEnabled()) {
+                return false;
+            }
+        }
+        return true;
+    }
+
+    private void changeAllSelection(boolean selected) {
+        for (int i = 0; i < tabsManager.allTabs.size(); i++) {
+            DialogsTab tab = tabsManager.allTabs.get(i);
+            tab.setEnabled(selected);
+            tabsManager.allTabs.set(i, tab);
         }
     }
 }

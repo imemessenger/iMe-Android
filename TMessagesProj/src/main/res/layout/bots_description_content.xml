@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -7,261 +7,315 @@
     android:layout_gravity="bottom"
     android:orientation="vertical">
 
-    <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/avatar_container"
+    <FrameLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        >
 
-        <ImageView
-            android:id="@+id/bot_avatar"
-            android:layout_width="@dimen/avatar_size"
-            android:layout_height="@dimen/avatar_size"
-            android:layout_marginStart="@dimen/margin_normal"
-            android:layout_marginLeft="@dimen/margin_normal"
-            android:layout_marginTop="@dimen/margin_normal"
-            android:layout_marginBottom="@dimen/margin_normal"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            tools:ignore="ContentDescription"
-            tools:src="@drawable/bot_avatar_rounded_any" />
-
-        <TextView
-            android:id="@+id/bot_name"
-            style="@style/BotInfoBoldText"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="@dimen/margin_normal"
-            android:layout_marginLeft="@dimen/margin_normal"
-            app:layout_constraintStart_toEndOf="@+id/bot_avatar"
-            app:layout_constraintTop_toTopOf="@+id/bot_avatar"
-            tools:text="Churchill" />
+        <ScrollView
+            android:id="@+id/scroll"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="false">
 
 
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/layoutContainer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
 
-        <com.google.android.flexbox.FlexboxLayout
-            android:id="@+id/tags_container"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="@dimen/margin_small"
-            android:layout_marginLeft="@dimen/margin_small"
-            android:layout_marginEnd="@dimen/margin_normal"
-            android:layout_marginRight="@dimen/margin_normal"
-            android:layout_marginTop="@dimen/margin_big"
-            app:alignContent="space_between"
-            app:alignItems="baseline"
-            app:flexDirection="row"
-            app:flexWrap="wrap"
-            app:justifyContent="flex_start"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toEndOf="@+id/bot_avatar"
-            app:layout_constraintTop_toBottomOf="@+id/bot_name" />
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/avatar_container"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
 
-    </androidx.constraintlayout.widget.ConstraintLayout>
+                    <ImageView
+                        android:id="@+id/bot_avatar"
+                        android:layout_width="@dimen/avatar_size"
+                        android:layout_height="@dimen/avatar_size"
+                        android:layout_marginStart="@dimen/margin_normal"
+                        android:layout_marginLeft="@dimen/margin_normal"
+                        android:layout_marginTop="@dimen/margin_normal"
+                        android:layout_marginBottom="@dimen/margin_normal"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        tools:ignore="ContentDescription"
+                        tools:src="@drawable/bot_avatar_rounded_any" />
 
-    <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/stats_container"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="@dimen/margin_normal"
-        android:background="@color/colorSmartPanelBackground"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/avatar_container">
+                    <TextView
+                        android:id="@+id/bot_name"
+                        style="@style/BotInfoBoldText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/margin_normal"
+                        android:layout_marginLeft="@dimen/margin_normal"
+                        app:layout_constraintStart_toEndOf="@+id/bot_avatar"
+                        app:layout_constraintTop_toTopOf="@+id/bot_avatar"
+                        tools:text="Churchill" />
 
-        <TextView
-            android:id="@+id/rating_number"
-            style="@style/BotInfoBoldText"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="@dimen/margin_small"
-            android:drawableStart="@drawable/ic_star_black"
-            android:drawableLeft="@drawable/ic_star_black"
-            android:drawablePadding="@dimen/padding_tiny"
-            android:gravity="center"
-            app:layout_constraintEnd_toEndOf="@+id/rating_label"
-            app:layout_constraintStart_toStartOf="@+id/rating_label"
-            app:layout_constraintTop_toTopOf="parent"
-            tools:text="4.8" />
 
-        <TextView
-            android:id="@+id/rating_label"
-            style="@style/BotInfoNormalText"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="@dimen/margin_normal"
-            android:layout_marginLeft="@dimen/margin_normal"
-            android:layout_marginTop="@dimen/margin_small"
-            android:layout_marginBottom="@dimen/margin_small"
-            android:gravity="center"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toStartOf="@+id/installs_label"
-            app:layout_constraintHorizontal_bias="0.5"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/rating_number"
-            tools:text="1к отзывов " />
+                    <com.google.android.flexbox.FlexboxLayout
+                        android:id="@+id/tags_container"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/margin_small"
+                        android:layout_marginLeft="@dimen/margin_small"
+                        android:layout_marginTop="@dimen/margin_big"
+                        android:layout_marginEnd="@dimen/margin_normal"
+                        android:layout_marginRight="@dimen/margin_normal"
+                        app:alignContent="space_between"
+                        app:alignItems="baseline"
+                        app:flexDirection="row"
+                        app:flexWrap="wrap"
+                        app:justifyContent="flex_start"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.0"
+                        app:layout_constraintStart_toEndOf="@+id/bot_avatar"
+                        app:layout_constraintTop_toBottomOf="@+id/bot_name" />
 
-        <TextView
-            android:id="@+id/installs_label"
-            style="@style/BotInfoNormalText"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="@dimen/margin_normal"
-            android:layout_marginLeft="@dimen/margin_normal"
-            android:gravity="center"
-            android:text="@string/installs"
-            app:layout_constraintBottom_toBottomOf="@+id/rating_label"
-            app:layout_constraintEnd_toStartOf="@+id/themes_label"
-            app:layout_constraintHorizontal_bias="0.5"
-            app:layout_constraintStart_toEndOf="@+id/rating_label" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
 
-        <TextView
-            style="@style/BotInfoBoldText"
-            android:id="@+id/installs_counter"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            app:layout_constraintEnd_toEndOf="@+id/installs_label"
-            app:layout_constraintStart_toStartOf="@+id/installs_label"
-            app:layout_constraintTop_toTopOf="@+id/rating_number"
-            tools:text="13245к" />
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/stats_container"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_normal"
+                    android:background="@color/colorSmartPanelBackground"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/avatar_container">
 
-        <TextView
-            style="@style/BotInfoBoldText"
-            android:id="@+id/themes_counter"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="@dimen/margin_small"
-            app:layout_constraintEnd_toEndOf="@+id/themes_label"
-            app:layout_constraintStart_toStartOf="@+id/themes_label"
-            app:layout_constraintTop_toTopOf="parent"
-            tools:text="132446" />
+                    <TextView
+                        android:id="@+id/rating_number"
+                        style="@style/BotInfoBoldText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/margin_small"
+                        android:drawableStart="@drawable/ic_star_black"
+                        android:drawableLeft="@drawable/ic_star_black"
+                        android:drawablePadding="@dimen/padding_tiny"
+                        android:gravity="center"
+                        app:layout_constraintEnd_toEndOf="@+id/rating_label"
+                        app:layout_constraintStart_toStartOf="@+id/rating_label"
+                        app:layout_constraintTop_toTopOf="parent"
+                        tools:text="4.8" />
 
-        <TextView
-            android:id="@+id/themes_label"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="@dimen/margin_normal"
-            android:layout_marginLeft="@dimen/margin_normal"
-            style="@style/BotInfoNormalText"
-            android:gravity="center"
-            android:text="@string/themes"
-            app:layout_constraintBottom_toBottomOf="@+id/rating_label"
-            app:layout_constraintEnd_toStartOf="@+id/phrases_label"
-            app:layout_constraintHorizontal_bias="0.5"
-            app:layout_constraintStart_toEndOf="@+id/installs_label" />
+                    <TextView
+                        android:id="@+id/rating_label"
+                        style="@style/BotInfoNormalText"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/margin_normal"
+                        android:layout_marginLeft="@dimen/margin_normal"
+                        android:layout_marginTop="@dimen/margin_small"
+                        android:layout_marginBottom="@dimen/margin_small"
+                        android:gravity="center"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toStartOf="@+id/installs_label"
+                        app:layout_constraintHorizontal_bias="0.5"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/rating_number"
+                        tools:text="1к отзывов " />
 
-        <TextView
-            style="@style/BotInfoBoldText"
-            android:id="@+id/phrases_counter"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="@dimen/margin_small"
-            app:layout_constraintEnd_toEndOf="@+id/phrases_label"
-            app:layout_constraintStart_toStartOf="@+id/phrases_label"
-            app:layout_constraintTop_toTopOf="parent"
-            tools:text="678211" />
+                    <TextView
+                        android:id="@+id/installs_label"
+                        style="@style/BotInfoNormalText"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/margin_normal"
+                        android:layout_marginLeft="@dimen/margin_normal"
+                        android:gravity="center"
+                        android:text="@string/installs"
+                        app:layout_constraintBottom_toBottomOf="@+id/rating_label"
+                        app:layout_constraintEnd_toStartOf="@+id/themes_label"
+                        app:layout_constraintHorizontal_bias="0.5"
+                        app:layout_constraintStart_toEndOf="@+id/rating_label" />
 
-        <TextView
-            android:id="@+id/phrases_label"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="@dimen/margin_normal"
-            android:layout_marginLeft="@dimen/margin_normal"
-            style="@style/BotInfoNormalText"
-            android:gravity="center"
-            android:text="@string/phrases"
-            android:textSize="12sp"
-            app:layout_constraintBottom_toBottomOf="@+id/rating_label"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.5"
-            app:layout_constraintStart_toEndOf="@+id/themes_label" />
+                    <TextView
+                        android:id="@+id/installs_counter"
+                        style="@style/BotInfoBoldText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:layout_constraintEnd_toEndOf="@+id/installs_label"
+                        app:layout_constraintStart_toStartOf="@+id/installs_label"
+                        app:layout_constraintTop_toTopOf="@+id/rating_number"
+                        tools:text="13245к" />
 
-    </androidx.constraintlayout.widget.ConstraintLayout>
+                    <TextView
+                        android:id="@+id/themes_counter"
+                        style="@style/BotInfoBoldText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/margin_small"
+                        app:layout_constraintEnd_toEndOf="@+id/themes_label"
+                        app:layout_constraintStart_toStartOf="@+id/themes_label"
+                        app:layout_constraintTop_toTopOf="parent"
+                        tools:text="132446" />
 
-    <TextView
-        android:id="@+id/bot_description"
-        style="@style/BotInfoNormalText"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="@dimen/margin_normal"
-        android:layout_marginLeft="@dimen/margin_normal"
-        android:layout_marginTop="@dimen/margin_normal"
-        android:layout_marginEnd="@dimen/margin_normal"
-        android:layout_marginRight="@dimen/margin_normal"
-        android:layout_marginBottom="@dimen/margin_normal"
-        android:textAlignment="center"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/stats_container"
-        tools:text="Искусство реально понимает под собой неоднозначный даосизм Искусство реально понимает под собой неоднозначный даосизм " />
+                    <TextView
+                        android:id="@+id/themes_label"
+                        style="@style/BotInfoNormalText"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/margin_normal"
+                        android:layout_marginLeft="@dimen/margin_normal"
+                        android:gravity="center"
+                        android:text="@string/themes"
+                        app:layout_constraintBottom_toBottomOf="@+id/rating_label"
+                        app:layout_constraintEnd_toStartOf="@+id/phrases_label"
+                        app:layout_constraintHorizontal_bias="0.5"
+                        app:layout_constraintStart_toEndOf="@+id/installs_label" />
 
-    <TextView
-        android:id="@+id/bot_date_added"
-        style="@style/BotInfoNormalText"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="@dimen/margin_normal"
-        app:layout_constraintStart_toStartOf="@+id/bot_description"
-        app:layout_constraintTop_toBottomOf="@+id/bot_description"
-        tools:text="Добавлен: 01.01.2018" />
+                    <TextView
+                        android:id="@+id/phrases_counter"
+                        style="@style/BotInfoBoldText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/margin_small"
+                        app:layout_constraintEnd_toEndOf="@+id/phrases_label"
+                        app:layout_constraintStart_toStartOf="@+id/phrases_label"
+                        app:layout_constraintTop_toTopOf="parent"
+                        tools:text="678211" />
 
-    <TextView
-        android:id="@+id/bot_date_updated"
-        style="@style/BotInfoNormalText"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:layout_constraintStart_toStartOf="@+id/bot_date_added"
-        app:layout_constraintTop_toBottomOf="@+id/bot_date_added"
-        tools:text="Обновлен: 01.01.2018" />
+                    <TextView
+                        android:id="@+id/phrases_label"
+                        style="@style/BotInfoNormalText"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/margin_normal"
+                        android:layout_marginLeft="@dimen/margin_normal"
+                        android:gravity="center"
+                        android:text="@string/phrases"
+                        android:textSize="12sp"
+                        app:layout_constraintBottom_toBottomOf="@+id/rating_label"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.5"
+                        app:layout_constraintStart_toEndOf="@+id/themes_label" />
 
-    <TextView
-        android:id="@+id/bot_developer"
-        style="@style/BotInfoNormalText"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/developer"
-        app:layout_constraintStart_toStartOf="@+id/bot_date_updated"
-        app:layout_constraintTop_toBottomOf="@+id/bot_date_updated" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
 
-    <LinearLayout
-        android:id="@+id/rating_container"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="@dimen/margin_normal"
-        android:background="@color/colorSmartPanelBackground"
-        android:orientation="vertical"
-        android:padding="@dimen/padding_normal"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/bot_developer">
+                <TextView
+                    android:id="@+id/bot_description"
+                    style="@style/BotInfoNormalText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/margin_normal"
+                    android:layout_marginLeft="@dimen/margin_normal"
+                    android:layout_marginTop="@dimen/margin_normal"
+                    android:layout_marginEnd="@dimen/margin_normal"
+                    android:layout_marginRight="@dimen/margin_normal"
+                    android:layout_marginBottom="@dimen/margin_normal"
+                    android:textAlignment="center"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/stats_container"
+                    tools:text="Искусство реально понимает под собой неоднозначный даосизм Искусство реально понимает под собой неоднозначный даосизм " />
 
-        <TextView
-            style="@style/BotInfoGrayText"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="start"
-            android:text="@string/rate_bot" />
+                <TextView
+                    android:id="@+id/bot_date_added"
+                    style="@style/BotInfoNormalText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_normal"
+                    app:layout_constraintStart_toStartOf="@+id/bot_description"
+                    app:layout_constraintTop_toBottomOf="@+id/bot_description"
+                    tools:text="Добавлен: 01.01.2018" />
 
-        <me.zhanghai.android.materialratingbar.MaterialRatingBar
-            android:id="@+id/rating"
-            style="@style/Widget.MaterialRatingBar.RatingBar.Indicator"
+                <TextView
+                    android:id="@+id/bot_date_updated"
+                    style="@style/BotInfoNormalText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintStart_toStartOf="@+id/bot_date_added"
+                    app:layout_constraintTop_toBottomOf="@+id/bot_date_added"
+                    tools:text="Обновлен: 01.01.2018" />
+
+                <TextView
+                    android:id="@+id/bot_developer"
+                    style="@style/BotInfoNormalText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/developer"
+                    app:layout_constraintStart_toStartOf="@+id/bot_date_updated"
+                    app:layout_constraintTop_toBottomOf="@+id/bot_date_updated" />
+
+
+                <TextView
+                    android:id="@+id/bot_current_language"
+                    style="@style/BotInfoNormalText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintStart_toStartOf="@+id/bot_developer"
+                    app:layout_constraintTop_toBottomOf="@+id/bot_developer"
+                    tools:text="Поодерживаемы языки: \nРусский" />
+
+                <TextView
+                    android:id="@+id/bot_analog_language"
+                    style="@style/BotInfoNormalText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/imecolor"
+                    app:layout_constraintStart_toStartOf="@+id/bot_current_language"
+                    app:layout_constraintTop_toBottomOf="@+id/bot_current_language"
+                    tools:text="Английский" />
+
+                <LinearLayout
+                    android:id="@+id/rating_container"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_normal"
+                    android:background="@color/colorSmartPanelBackground"
+                    android:orientation="vertical"
+                    android:padding="@dimen/padding_normal"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/bot_analog_language">
+
+                    <TextView
+                        android:id="@+id/textRateBot"
+                        style="@style/BotInfoGrayText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="start"
+                        android:text="@string/rate_bot" />
+
+                    <me.zhanghai.android.materialratingbar.MaterialRatingBar
+                        android:id="@+id/rating"
+                        style="@style/Widget.MaterialRatingBar.RatingBar.Indicator"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="-3dp"
+                        android:layout_marginTop="16dp"
+                        android:layout_marginRight="-3dp"
+                        android:numStars="5"
+                        android:rating="0"
+                        android:secondaryProgress="5"
+                        android:stepSize="1"
+                        app:mrb_progressTint="@color/colorThemeBlue" />
+
+                </LinearLayout>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        </ScrollView>
+
+        <ProgressBar
+            android:id="@+id/progressBar"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:layout_marginLeft="-3dp"
-            android:layout_marginTop="16dp"
-            android:layout_marginRight="-3dp"
-            android:numStars="5"
-            android:rating="0"
-            android:secondaryProgress="5"
-            android:stepSize="1"
-            app:mrb_progressTint="@color/colorBotRating" />
 
-    </LinearLayout>
+            />
+    </FrameLayout>
 
     <TextView
         android:id="@+id/bot_info_button"
@@ -277,9 +331,6 @@
         android:textSize="18sp"
         android:textStyle="normal"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/rating_container"
         app:layout_constraintVertical_bias="1.0" />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>

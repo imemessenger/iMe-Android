@@ -1,0 +1,376 @@
+{
+    "classes": [
+        {
+            "tag": "True"
+        },
+        {
+            "tag": "False"
+        }
+    ],
+    "documents": [
+        {
+            "sent_tokens": [
+                "ты",
+                "так",
+                "добр",
+                "со",
+                "мной"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "ты",
+                "такой",
+                "добрый"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "думаю",
+                "отдать",
+                "деньги",
+                "в",
+                "приют"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "пошли",
+                "на",
+                "выходных",
+                "в",
+                "собачий",
+                "приют"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "ты",
+                "такой",
+                "отзывчивый"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "ты",
+                "очень",
+                "порядочный"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "у",
+                "тебя",
+                "золотое",
+                "сердце"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "он",
+                "по",
+                "натуре",
+                "добряк"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "это",
+                "человек",
+                "большого",
+                "сердца"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "она",
+                "просто",
+                "ангел",
+                "во",
+                "плоти"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "ты",
+                "такой",
+                "участливый"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "добрый"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "ты"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "так"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "со"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "мной"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "такой"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "думаю"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "отдать"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "деньги"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "в"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "приют"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "пошли"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "на"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "выходных"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "отзывчивый"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "собачий"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "очень"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "порядочный"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "у"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "тебя"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "золотое"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "сердце"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "по"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "натуре"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "натура"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "это"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "человек"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "большого"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "сердца"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "она"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "просто"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "ангел"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "во"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "плоти"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "во",
+                "плоти"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "плоть"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "участливый"
+            ],
+            "tag": "False"
+        }
+    ],
+    "words": [
+        "ангел",
+        "большого",
+        "в",
+        "во",
+        "выходных",
+        "деньги",
+        "добр",
+        "добрый",
+        "добряк",
+        "думаю",
+        "золотое",
+        "мной",
+        "на",
+        "натура",
+        "натуре",
+        "он",
+        "она",
+        "отдать",
+        "отзывчивый",
+        "очень",
+        "плоти",
+        "плоть",
+        "по",
+        "порядочный",
+        "пошли",
+        "приют",
+        "просто",
+        "сердца",
+        "сердце",
+        "со",
+        "собачий",
+        "так",
+        "такой",
+        "тебя",
+        "ты",
+        "у",
+        "участливый",
+        "человек",
+        "это"
+    ]
+}

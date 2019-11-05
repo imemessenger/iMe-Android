@@ -1,0 +1,218 @@
+{
+    "classes": [
+        {
+            "tag": "True"
+        },
+        {
+            "tag": "False"
+        }
+    ],
+    "documents": [
+        {
+            "sent_tokens": [
+                "ты",
+                "рядом",
+                "правда"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "ты",
+                "тут",
+                "всё",
+                "ещё",
+                "не",
+                "так",
+                "ли"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "ты",
+                "здесь"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "ты",
+                "до",
+                "сих",
+                "пор",
+                "тут"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "ты",
+                "тут"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "ты",
+                "сейчас",
+                "рядом"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "ты",
+                "всё",
+                "ещё",
+                "здесь"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "ты"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "рядом"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "правдва"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "тут"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "все"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "еще"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "всё"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "ещё"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "все",
+                "еще"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "всё",
+                "ещё"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "не",
+                "так",
+                "ли"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "не"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "так"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "ли"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "здесь"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "до",
+                "сих",
+                "пор"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "до"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "сих"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "пор"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "сейчас"
+            ],
+            "tag": "False"
+        }
+    ],
+    "words": [
+        "все",
+        "всё",
+        "до",
+        "еще",
+        "ещё",
+        "здесь",
+        "ли",
+        "не",
+        "пор",
+        "правда",
+        "правдва",
+        "рядом",
+        "сейчас",
+        "сих",
+        "так",
+        "тут",
+        "ты"
+    ]
+}

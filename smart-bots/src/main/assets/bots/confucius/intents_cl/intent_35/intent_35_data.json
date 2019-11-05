@@ -1,0 +1,319 @@
+{
+    "classes": [
+        {
+            "tag": "True"
+        },
+        {
+            "tag": "False"
+        }
+    ],
+    "documents": [
+        {
+            "sent_tokens": [
+                "у",
+                "меня",
+                "нет",
+                "денег"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "у",
+                "меня",
+                "денег",
+                "нет"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "совсем",
+                "нет",
+                "бабла"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "денег",
+                "ни",
+                "капли"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "пусто",
+                "в",
+                "кармане"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "пусто",
+                "в",
+                "карманах"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "кошелек",
+                "пуст"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "пустой",
+                "кошелек"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "нет",
+                "денег"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "бедность"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "я",
+                "беден"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "у",
+                "меня",
+                "нет",
+                "средств"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "денег",
+                "совсем",
+                "нет"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "бабло",
+                "кончилось"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "бабло",
+                "закончилось"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "пустой",
+                "кошелёк"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "пуст",
+                "кошелёк"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "у",
+                "меня"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "меня"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "у"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "нет"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "денег"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "совсем"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "бабла"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "бабло"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "ни"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "капли"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "ни",
+                "капли"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "пусто"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "в"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "кармане"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "карманах"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "пуст"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "кошелек"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "кошелёк"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "я"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "средств"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "средство"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "кончилось"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "закончилось"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "кошелек"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "кошелёк"
+            ],
+            "tag": "False"
+        }
+    ],
+    "words": [
+        "бабла",
+        "бабло",
+        "беден",
+        "бедность",
+        "в",
+        "денег",
+        "закончилось",
+        "капли",
+        "карманах",
+        "кармане",
+        "кончилось",
+        "кошелек",
+        "кошелёк",
+        "меня",
+        "нет",
+        "ни",
+        "пуст",
+        "пусто",
+        "пустой",
+        "совсем",
+        "средств",
+        "средство",
+        "у",
+        "я"
+    ]
+}

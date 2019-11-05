@@ -1762,14 +1762,14 @@ JNIEXPORT void Java_org_telegram_messenger_Intro_onDrawFrame(JNIEnv *env, jclass
 
         float tt = MINf(0, (float) (-M_PI * 125. / 180. + time * M_PI * 2 * 1.5));
 
-        float dx = sinf(tt) * 10;
-        float dy = -sinf(tt) * 5;
+        float dx = sinf(tt) * 75;
+        float dy = -sinf(tt) * 60;
 
-//        telegram_plane.params.position = xyzMake(dx, dy, 0);
+        telegram_plane.params.position = xyzMake(dx, dy, 0);
 
         float scale = (cosf(tt) + 1) * 0.5f;
 
-        telegram_plane.params.scale = xyzMake(scale, scale, scale);
+        telegram_plane.params.scale = xyzMake(cosf(tt) * scale, scale, 1);
 
         if (tt < D2R(125)) {
             glBlendFunc(GL_ONE, GL_ONE_MINUS_SRC_ALPHA);
@@ -2140,11 +2140,11 @@ JNIEXPORT void Java_org_telegram_messenger_Intro_onDrawFrame(JNIEnv *env, jclass
             draw_textured_shape(&telegram_sphere, main_matrix, NORMAL);
 
             float tt = MINf(0, (float) (-M_PI * 125.0f / 180.0f + time * M_PI * 2 * 1.5f));
-            float dx = sinf(tt) * 10;
-            float dy = -sinf(tt) * 5;
-//            telegram_plane.params.position = xyzMake(dx, dy, 0);
+            float dx = sinf(tt) * 75;
+            float dy = -sinf(tt) * 60;
+            telegram_plane.params.position = xyzMake(dx, dy, 0);
             float scale = (cosf(tt) + 1) * 0.5f;
-            telegram_plane.params.scale = xyzMake(scale, scale, scale);
+            telegram_plane.params.scale = xyzMake(cosf(tt) * scale, scale, 1);
 
             if (tt < D2R(125)) {
                 glBlendFunc(GL_ONE, GL_ONE_MINUS_SRC_ALPHA);
@@ -2159,15 +2159,14 @@ JNIEXPORT void Java_org_telegram_messenger_Intro_onDrawFrame(JNIEnv *env, jclass
 
             double tt = time * M_PI * 2 * 1.5f;
 
-            float dx = (float) sin(tt) * 10;
-            float dy = (float) -sin(tt) * 5;
+            float dx = (float) sin(tt) * 75;
+            float dy = (float) -sin(tt) * 60;
 
-//            telegram_plane.params.position = xyzMake(dx, dy, 0);
+            telegram_plane.params.position = xyzMake(dx, dy, 0);
 
             float scale = (float) (cos(tt) + 1) * 0.5f;
 
-            telegram_plane.params.scale = xyzMake(scale, scale, scale);
-            telegram_plane.params.alpha = 0.5f;
+            telegram_plane.params.scale = xyzMake((float) cos(tt) * scale, scale, 1);
 
             if (tt < D2R(125)) {
                 glBlendFunc(GL_ONE, GL_ONE_MINUS_SRC_ALPHA);
@@ -2693,7 +2692,7 @@ JNIEXPORT void Java_org_telegram_messenger_Intro_onSurfaceCreated(JNIEnv *env, j
 
     telegram_sphere = create_textured_rectangle(CSizeMake(150, 150), telegram_sphere_texture);
     telegram_plane = create_textured_rectangle(CSizeMake(82, 74), telegram_plane_texture);
-    telegram_plane.params.anchor = xyzMake(0, 0, 0);
+    telegram_plane.params.anchor = xyzMake(6, -5, 0);
 
     fast_body = create_textured_rectangle(CSizeMake(148, 148), fast_body_texture);
 

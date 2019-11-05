@@ -19,7 +19,7 @@ import org.telegram.tgnet.TLRPC;
 
 import java.io.File;
 
-public class UserConfig {
+public class UserConfig extends BaseController {
 
     public static int selectedAccount;
     public final static int MAX_ACCOUNT_COUNT = 3;
@@ -32,7 +32,6 @@ public class UserConfig {
     public int lastBroadcastId = -1;
     public int contactsSavedCount;
     public int clientUserId;
-    public boolean blockedUsersLoaded;
     public int lastContactsSyncTime;
     public int lastHintsSyncTime;
     public boolean draftsLoaded;
@@ -66,7 +65,6 @@ public class UserConfig {
     public volatile byte[] savedSaltedPassword;
     public volatile long savedPasswordTime;
 
-    private int currentAccount;
     private static volatile UserConfig[] Instance = new UserConfig[UserConfig.MAX_ACCOUNT_COUNT];
     public static UserConfig getInstance(int num) {
         UserConfig localInstance = Instance[num];
@@ -84,7 +82,7 @@ public class UserConfig {
     public static int getActivatedAccountsCount() {
         int count = 0;
         for (int a = 0; a < MAX_ACCOUNT_COUNT; a++) {
-            if (getInstance(a).isClientActivated()) {
+            if (AccountInstance.getInstance(a).getUserConfig().isClientActivated()) {
                 count++;
             }
         }
@@ -92,7 +90,7 @@ public class UserConfig {
     }
 
     public UserConfig(int instance) {
-        currentAccount = instance;
+        super(instance);
     }
 
     public int getNewMessageId() {
@@ -119,7 +117,6 @@ public class UserConfig {
                 editor.putInt("lastSendMessageId", lastSendMessageId);
                 editor.putInt("contactsSavedCount", contactsSavedCount);
                 editor.putInt("lastBroadcastId", lastBroadcastId);
-                editor.putBoolean("blockedUsersLoaded", blockedUsersLoaded);
                 editor.putInt("lastContactsSyncTime", lastContactsSyncTime);
                 editor.putInt("lastHintsSyncTime", lastHintsSyncTime);
                 editor.putBoolean("draftsLoaded", draftsLoaded);
@@ -256,7 +253,6 @@ public class UserConfig {
             lastSendMessageId = preferences.getInt("lastSendMessageId", -210000);
             contactsSavedCount = preferences.getInt("contactsSavedCount", 0);
             lastBroadcastId = preferences.getInt("lastBroadcastId", -1);
-            blockedUsersLoaded = preferences.getBoolean("blockedUsersLoaded", false);
             lastContactsSyncTime = preferences.getInt("lastContactsSyncTime", (int) (System.currentTimeMillis() / 1000) - 23 * 60 * 60);
             lastHintsSyncTime = preferences.getInt("lastHintsSyncTime", (int) (System.currentTimeMillis() / 1000) - 25 * 60 * 60);
             draftsLoaded = preferences.getBoolean("draftsLoaded", false);
@@ -400,7 +396,6 @@ public class UserConfig {
         contactsSavedCount = 0;
         lastSendMessageId = -210000;
         lastBroadcastId = -1;
-        blockedUsersLoaded = false;
         notificationsSettingsLoaded = false;
         notificationsSignUpSettingsLoaded = false;
         migrateOffsetId = -1;
@@ -426,7 +421,7 @@ public class UserConfig {
         resetSavedPassword();
         boolean hasActivated = false;
         for (int a = 0; a < MAX_ACCOUNT_COUNT; a++) {
-            if (UserConfig.getInstance(a).isClientActivated()) {
+            if (AccountInstance.getInstance(a).getUserConfig().isClientActivated()) {
                 hasActivated = true;
                 break;
             }

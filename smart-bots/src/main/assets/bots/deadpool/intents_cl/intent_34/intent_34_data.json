@@ -1,0 +1,571 @@
+{
+    "classes": [
+        {
+            "tag": "True"
+        },
+        {
+            "tag": "False"
+        }
+    ],
+    "documents": [
+        {
+            "sent_tokens": [
+                "он",
+                "бьет",
+                "свою",
+                "женщину"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "она",
+                "вся",
+                "в",
+                "синяках",
+                "ходит"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "ее",
+                "парень",
+                "избивает"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "бьет",
+                "значит",
+                "любит"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "ббпе"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "пиздани",
+                "ее"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "въеби",
+                "ей",
+                "хорошенько"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "устрой",
+                "ей",
+                "взбучку"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "вмажь",
+                "ей",
+                "по",
+                "первое",
+                "число"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "она",
+                "заслуживает",
+                "порки"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "устрой",
+                "ей",
+                "трепку"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "бей",
+                "бабу",
+                "по",
+                "ебалу"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "те",
+                "кто",
+                "поднимает",
+                "руку",
+                "на",
+                "женщин",
+                "не",
+                "мужчины"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "не",
+                "смей",
+                "ее",
+                "бить"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "он",
+                "бьёт",
+                "свою",
+                "женщину"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "бьёт",
+                "значит",
+                "любит"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "её",
+                "парень",
+                "избивает"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "пиздани",
+                "её"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "не",
+                "бей",
+                "ее"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "не",
+                "бей",
+                "её"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "устрой",
+                "ей",
+                "трёпку"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "не",
+                "смей",
+                "её",
+                "бить"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "он"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "бьет"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "свою"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "женщину"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "не",
+                "бьет"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "бьёт"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "не",
+                "бьёт"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "она"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "вся"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "в"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "синяках"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "ходит"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "ее"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "её"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "парень"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "избивает"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "значит"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "любит"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "б"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "п"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "е"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "пиздани"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "чем"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "нибудь"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "въеби"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "ей"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "хорошенько"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "устрой"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "взбучку"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "трепку"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "трёпку"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "вмажь"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "по"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "первое"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "число"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "ебалу"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "она"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "заслуживает"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "порки"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "бей"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "бабу"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "те"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "кто"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "поднимает"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "руку"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "на"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "женщин"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "не"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "мужчины"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "не",
+                "мужчины"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "не",
+                "смей"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "смей"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "бить"
+            ],
+            "tag": "False"
+        }
+    ],
+    "words": [
+        "б",
+        "бабу",
+        "ббпе",
+        "бей",
+        "бить",
+        "бьет",
+        "бьёт",
+        "в",
+        "взбучку",
+        "вмажь",
+        "вся",
+        "въеби",
+        "е",
+        "ебалу",
+        "ее",
+        "ей",
+        "её",
+        "женщин",
+        "женщину",
+        "заслуживает",
+        "значит",
+        "избивает",
+        "кто",
+        "любит",
+        "мужчины",
+        "на",
+        "не",
+        "нибудь",
+        "он",
+        "она",
+        "п",
+        "парень",
+        "первое",
+        "пиздани",
+        "по",
+        "поднимает",
+        "порки",
+        "руку",
+        "свою",
+        "синяках",
+        "смей",
+        "те",
+        "трепку",
+        "трёпку",
+        "устрой",
+        "ходит",
+        "хорошенько",
+        "чем",
+        "число"
+    ]
+}

@@ -1,0 +1,252 @@
+{
+    "classes": [
+        {
+            "tag": "True"
+        },
+        {
+            "tag": "False"
+        }
+    ],
+    "documents": [
+        {
+            "sent_tokens": [
+                "как",
+                "я",
+                "выгляжу"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "я",
+                "хорошо",
+                "выгляжу"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "как",
+                "я",
+                "выгляжу"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "ты",
+                "видишь",
+                "как",
+                "я",
+                "выгляжу"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "я",
+                "правда",
+                "хорошо",
+                "выгляжу"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "ты",
+                "знаешь",
+                "как",
+                "я",
+                "выгляжу"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "нормально",
+                "ли",
+                "я",
+                "выгляжу"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "я",
+                "выгляжу",
+                "нормально"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "как"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "я"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "выгляжу"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "выглядел"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "выглядит"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "выглядывает"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "взгляд"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "твоему"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "по"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "хорошо"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "ты"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "видишь"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "видел"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "видела"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "видели"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "видеть"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "правда"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "так"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "нормально"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "ли"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "знаешь"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "ты",
+                "знаешь"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "я",
+                "нормально"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "ты",
+                "хорошо"
+            ],
+            "tag": "False"
+        }
+    ],
+    "words": [
+        "взгляд",
+        "видел",
+        "видела",
+        "видели",
+        "видеть",
+        "видишь",
+        "выглядел",
+        "выглядит",
+        "выглядывает",
+        "выгляжу",
+        "знаешь",
+        "как",
+        "ли",
+        "нормально",
+        "по",
+        "правда",
+        "так",
+        "твоему",
+        "ты",
+        "хорошо",
+        "я"
+    ]
+}

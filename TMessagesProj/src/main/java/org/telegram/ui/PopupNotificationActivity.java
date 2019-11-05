@@ -37,33 +37,32 @@ import android.widget.RelativeLayout;
 import android.widget.ScrollView;
 import android.widget.TextView;
 
-import org.telegram.PhoneFormat.PhoneFormat;
 import org.telegram.messenger.AndroidUtilities;
-import org.telegram.messenger.ApplicationLoader;
 import org.telegram.messenger.ContactsController;
 import org.telegram.messenger.DownloadController;
-import org.telegram.messenger.FileLoader;
-import org.telegram.messenger.FileLog;
 import org.telegram.messenger.ImageLocation;
 import org.telegram.messenger.LocaleController;
 import org.telegram.messenger.MediaController;
-import org.telegram.messenger.MessageObject;
 import org.telegram.messenger.MessagesController;
-import org.telegram.messenger.NotificationCenter;
+import org.telegram.PhoneFormat.PhoneFormat;
 import org.telegram.messenger.NotificationsController;
-import org.telegram.messenger.R;
 import org.telegram.messenger.SendMessagesHelper;
 import org.telegram.messenger.SharedConfig;
 import org.telegram.messenger.UserConfig;
 import org.telegram.messenger.UserObject;
+import org.telegram.messenger.ApplicationLoader;
+import org.telegram.messenger.FileLoader;
+import org.telegram.messenger.FileLog;
+import org.telegram.messenger.NotificationCenter;
+import org.telegram.messenger.R;
 import org.telegram.messenger.WebFile;
 import org.telegram.tgnet.ConnectionsManager;
 import org.telegram.tgnet.TLRPC;
+import org.telegram.messenger.MessageObject;
 import org.telegram.ui.ActionBar.ActionBar;
 import org.telegram.ui.ActionBar.ActionBarMenu;
 import org.telegram.ui.ActionBar.ActionBarMenuItem;
 import org.telegram.ui.ActionBar.AlertDialog;
-import org.telegram.ui.ActionBar.Theme;
 import org.telegram.ui.Components.AvatarDrawable;
 import org.telegram.ui.Components.BackupImageView;
 import org.telegram.ui.Components.ChatActivityEnterView;
@@ -74,6 +73,7 @@ import org.telegram.ui.Components.RecordStatusDrawable;
 import org.telegram.ui.Components.RoundStatusDrawable;
 import org.telegram.ui.Components.SendingFileDrawable;
 import org.telegram.ui.Components.SizeNotifierFrameLayout;
+import org.telegram.ui.ActionBar.Theme;
 import org.telegram.ui.Components.StatusDrawable;
 import org.telegram.ui.Components.TypingDotsDrawable;
 
@@ -318,14 +318,14 @@ public class PopupNotificationActivity extends Activity implements NotificationC
         popupContainer.addView(chatActivityEnterView, LayoutHelper.createRelative(LayoutHelper.MATCH_PARENT, LayoutHelper.WRAP_CONTENT, RelativeLayout.ALIGN_PARENT_BOTTOM));
         chatActivityEnterView.setDelegate(new ChatActivityEnterView.ChatActivityEnterViewDelegate() {
             @Override
-            public void onMessageSend(CharSequence message) {
+            public void onMessageSend(CharSequence message, boolean notify, int scheduleDate) {
                 if (currentMessageObject == null) {
                     return;
                 }
                 if (currentMessageNum >= 0 && currentMessageNum < popupMessages.size()) {
                     popupMessages.remove(currentMessageNum);
                 }
-                MessagesController.getInstance(currentMessageObject.currentAccount).markDialogAsRead(currentMessageObject.getDialogId(), currentMessageObject.getId(), Math.max(0, currentMessageObject.getId()), currentMessageObject.messageOwner.date, true, 0, true);
+                MessagesController.getInstance(currentMessageObject.currentAccount).markDialogAsRead(currentMessageObject.getDialogId(), currentMessageObject.getId(), Math.max(0, currentMessageObject.getId()), currentMessageObject.messageOwner.date, true, 0, true, 0);
                 currentMessageObject = null;
                 getNewMessage();
             }
@@ -349,7 +349,6 @@ public class PopupNotificationActivity extends Activity implements NotificationC
             public void onStickersExpandedChange() {
 
             }
-
 
             @Override
             public void onSwitchRecordMode(boolean video) {
@@ -398,10 +397,8 @@ public class PopupNotificationActivity extends Activity implements NotificationC
 
             }
 
-
-
             @Override
-            public void needStartRecordVideo(int state) {
+            public void needStartRecordVideo(int state, boolean notify, int scheduleDate) {
 
             }
 
@@ -417,6 +414,36 @@ public class PopupNotificationActivity extends Activity implements NotificationC
 
             @Override
             public void needShowMediaBanHint() {
+
+            }
+
+            @Override
+            public void onUpdateSlowModeButton(View button, boolean show, CharSequence time) {
+
+            }
+
+            @Override
+            public void didPressedSmartBotsButton() {
+
+            }
+
+            @Override
+            public void onSmartPanelExpandedChange() {
+
+            }
+
+            @Override
+            public void invokeBotsRefreshing() {
+
+            }
+
+            @Override
+            public void showGifsViewer(PhotoViewer.PhotoViewerProvider provider, ArrayList<Object> gifs, int position) {
+
+            }
+
+            @Override
+            public void sendGif(int index, int botId, String botName) {
 
             }
         });

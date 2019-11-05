@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "00000000000",
+    "firebase_url": "https://xxx-xxxxxxxxx.firebaseio.com",
+    "project_id": "xxx-xxxxxxxxx",
+    "storage_bucket": "xxx-xxxxxxxxx.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:00000000000:android:xxxxxxxxxxxxxxxx",
+        "android_client_info": {
+          "package_name": "com.iMe.android"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "00000000000-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "xxxxxxxxx-xxxxxxx_xxxxxxxxxxxxxxxxxxxxx"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "00000000000-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

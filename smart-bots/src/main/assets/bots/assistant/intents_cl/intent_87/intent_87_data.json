@@ -1,0 +1,77 @@
+{
+    "classes": [
+        {
+            "tag": "True"
+        },
+        {
+            "tag": "False"
+        }
+    ],
+    "documents": [
+        {
+            "sent_tokens": [
+                "ты",
+                "долетел"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "ты",
+                "приземлился"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "ты",
+                "долетела"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "ты",
+                "приземлилась"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "ты"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "долетел"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "приземлился"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "долетела"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "приземлилась"
+            ],
+            "tag": "False"
+        }
+    ],
+    "words": [
+        "долетел",
+        "долетела",
+        "приземлилась",
+        "приземлился",
+        "ты"
+    ]
+}

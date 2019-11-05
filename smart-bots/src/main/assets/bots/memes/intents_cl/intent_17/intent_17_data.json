@@ -1,0 +1,570 @@
+{
+    "classes": [
+        {
+            "tag": "True"
+        },
+        {
+            "tag": "False"
+        }
+    ],
+    "documents": [
+        {
+            "sent_tokens": [
+                "я",
+                "с",
+                "тобой",
+                "не",
+                "разговариваю"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "ты",
+                "поступил",
+                "со",
+                "мной",
+                "грубо"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "я",
+                "разочаровался",
+                "в",
+                "тебе"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "ты",
+                "меня",
+                "сильно",
+                "обидел"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "она",
+                "меня",
+                "оскорбила",
+                "на",
+                "глазах",
+                "у",
+                "сотрудников"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "выставила",
+                "меня",
+                "в",
+                "дураках",
+                "при",
+                "всех"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "ты",
+                "мне",
+                "словно",
+                "в",
+                "душу",
+                "плюнул"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "видеть",
+                "его",
+                "не",
+                "хочу",
+                "он",
+                "меня",
+                "унизил"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "он",
+                "надругался",
+                "надо",
+                "мной"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "хватит",
+                "меня",
+                "оскорблять"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "нет",
+                "я",
+                "не",
+                "обиделась"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "ты",
+                "на",
+                "меня",
+                "обиделся"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "я",
+                "обиделась"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "обидно"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "мне",
+                "обидно"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "с",
+                "тобой"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "с"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "тобой"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "я"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "не"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "разговариваю"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "не",
+                "разговариваю"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "поступил"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "со",
+                "мной"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "со"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "мной"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "грубо"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "разочаровался"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "в",
+                "тебе"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "в"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "тебе"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "ты"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "сильно"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "меня"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "она"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "оскорбила"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "на",
+                "глазах"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "на"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "глазах"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "глаза"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "у",
+                "сотрудников"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "сотрудников"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "сотрудники"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "у"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "выставила"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "в",
+                "дураках"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "дураках"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "дурак"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "при",
+                "всех"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "при"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "всех"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "все"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "словно"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "в",
+                "душу"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "душу"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "душ"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "душа"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "плюнул"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "видеть"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "его"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "не",
+                "хочу"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "хочу"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "он",
+                "меня"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "унизил"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "унижает"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "надругался"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "надо"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "надо",
+                "мной"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "хватит"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "над"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "нет"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "мне"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "ты"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "я"
+            ],
+            "tag": "False"
+        }
+    ],
+    "words": [
+        "в",
+        "видеть",
+        "все",
+        "всех",
+        "выставила",
+        "глаза",
+        "глазах",
+        "грубо",
+        "дурак",
+        "дураках",
+        "душ",
+        "душа",
+        "душу",
+        "его",
+        "меня",
+        "мне",
+        "мной",
+        "на",
+        "над",
+        "надо",
+        "надругался",
+        "не",
+        "нет",
+        "обидел",
+        "обиделась",
+        "обиделся",
+        "обидно",
+        "он",
+        "она",
+        "оскорбила",
+        "оскорблять",
+        "плюнул",
+        "поступил",
+        "при",
+        "разговариваю",
+        "разочаровался",
+        "с",
+        "сильно",
+        "словно",
+        "со",
+        "сотрудники",
+        "сотрудников",
+        "тебе",
+        "тобой",
+        "ты",
+        "у",
+        "унижает",
+        "унизил",
+        "хватит",
+        "хочу",
+        "я"
+    ]
+}

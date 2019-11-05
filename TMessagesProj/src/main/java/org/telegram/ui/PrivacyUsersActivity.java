@@ -44,6 +44,7 @@ import androidx.recyclerview.widget.RecyclerView;
 public class PrivacyUsersActivity extends BaseFragment implements NotificationCenter.NotificationCenterDelegate, ContactsActivity.ContactsActivityDelegate {
 
     private RecyclerListView listView;
+    private LinearLayoutManager layoutManager;
     private ListAdapter listViewAdapter;
     private EmptyTextProgressView emptyView;
 
@@ -86,7 +87,6 @@ public class PrivacyUsersActivity extends BaseFragment implements NotificationCe
         NotificationCenter.getInstance(currentAccount).addObserver(this, NotificationCenter.updateInterfaces);
         if (blockedUsersActivity) {
             NotificationCenter.getInstance(currentAccount).addObserver(this, NotificationCenter.blockedUsersDidLoad);
-            getMessagesController().getBlockedUsers(false);
         }
         return true;
     }
@@ -144,7 +144,7 @@ public class PrivacyUsersActivity extends BaseFragment implements NotificationCe
 
         listView = new RecyclerListView(context);
         listView.setEmptyView(emptyView);
-        listView.setLayoutManager(new LinearLayoutManager(context, LinearLayoutManager.VERTICAL, false));
+        listView.setLayoutManager(layoutManager = new LinearLayoutManager(context, LinearLayoutManager.VERTICAL, false));
         listView.setVerticalScrollBarEnabled(false);
         listView.setAdapter(listViewAdapter = new ListAdapter(context));
         listView.setVerticalScrollbarPosition(LocaleController.isRTL ? RecyclerListView.SCROLLBAR_POSITION_LEFT : RecyclerListView.SCROLLBAR_POSITION_RIGHT);
@@ -153,13 +153,7 @@ public class PrivacyUsersActivity extends BaseFragment implements NotificationCe
         listView.setOnItemClickListener((view, position) -> {
             if (position == blockUserRow) {
                 if (blockedUsersActivity) {
-                    Bundle args = new Bundle();
-                    args.putBoolean("onlyUsers", true);
-                    args.putBoolean("destroyAfterSelect", true);
-                    args.putBoolean("returnAsResult", true);
-                    ContactsActivity fragment = new ContactsActivity(args);
-                    fragment.setDelegate(PrivacyUsersActivity.this);
-                    presentFragment(fragment);
+                    presentFragment(new DialogOrContactPickerActivity());
                 } else {
                     Bundle args = new Bundle();
                     args.putBoolean(isAlwaysShare ? "isAlwaysShare" : "isNeverShare", true);
@@ -209,7 +203,26 @@ public class PrivacyUsersActivity extends BaseFragment implements NotificationCe
             return false;
         });
 
-        if (getMessagesController().loadingBlockedUsers) {
+        if (blockedUsersActivity) {
+            listView.setOnScrollListener(new RecyclerView.OnScrollListener() {
+                @Override
+                public void onScrolled(RecyclerView recyclerView, int dx, int dy) {
+                    if (getMessagesController().blockedEndReached) {
+                        return;
+                    }
+                    int firstVisibleItem = layoutManager.findFirstVisibleItemPosition();
+                    int visibleItemCount = Math.abs(layoutManager.findLastVisibleItemPosition() - firstVisibleItem) + 1;
+                    int totalItemCount = recyclerView.getAdapter().getItemCount();
+                    if (visibleItemCount > 0) {
+                        if (layoutManager.findLastVisibleItemPosition() >= totalItemCount - 10) {
+                            getMessagesController().getBlockedUsers(false);
+                        }
+                    }
+                }
+            });
+        }
+
+        if (getMessagesController().totalBlockedCount < 0) {
             emptyView.showProgress();
         } else {
             emptyView.showTextView();
@@ -254,7 +267,7 @@ public class PrivacyUsersActivity extends BaseFragment implements NotificationCe
 
     private void updateRows() {
         rowCount = 0;
-        if (!blockedUsersActivity || !getMessagesController().loadingBlockedUsers) {
+        if (!blockedUsersActivity || getMessagesController().totalBlockedCount >= 0) {
             blockUserRow = rowCount++;
             blockUserDetailRow = rowCount++;
 
@@ -406,6 +419,8 @@ public class PrivacyUsersActivity extends BaseFragment implements NotificationCe
                             String subtitle;
                             if (chat.participants_count != 0) {
                                 subtitle = LocaleController.formatPluralString("Members", chat.participants_count);
+                            } else if (chat.has_geo) {
+                                subtitle = LocaleController.getString("MegaLocation", R.string.MegaLocation);
                             } else if (TextUtils.isEmpty(chat.username)) {
                                 subtitle = LocaleController.getString("MegaPrivate", R.string.MegaPrivate);
                             } else {
@@ -446,7 +461,7 @@ public class PrivacyUsersActivity extends BaseFragment implements NotificationCe
                     HeaderCell headerCell = (HeaderCell) holder.itemView;
                     if (position == usersHeaderRow) {
                         if (blockedUsersActivity) {
-                            headerCell.setText(LocaleController.formatPluralString("BlockedUsersCount", getMessagesController().blockedUsers.size()));
+                            headerCell.setText(LocaleController.formatPluralString("BlockedUsersCount", getMessagesController().totalBlockedCount));
                         } else {
                             headerCell.setText(LocaleController.getString("PrivacyExceptions", R.string.PrivacyExceptions));
                         }
@@ -504,7 +519,7 @@ public class PrivacyUsersActivity extends BaseFragment implements NotificationCe
                 new ThemeDescription(listView, 0, new Class[]{ManageChatUserCell.class}, new String[]{"nameTextView"}, null, null, null, Theme.key_windowBackgroundWhiteBlackText),
                 new ThemeDescription(listView, 0, new Class[]{ManageChatUserCell.class}, new String[]{"statusColor"}, null, null, cellDelegate, Theme.key_windowBackgroundWhiteGrayText),
                 new ThemeDescription(listView, 0, new Class[]{ManageChatUserCell.class}, new String[]{"statusOnlineColor"}, null, null, cellDelegate, Theme.key_windowBackgroundWhiteBlueText),
-                new ThemeDescription(listView, 0, new Class[]{ManageChatUserCell.class}, null, new Drawable[]{Theme.avatar_broadcastDrawable, Theme.avatar_savedDrawable}, null, Theme.key_avatar_text),
+                new ThemeDescription(listView, 0, new Class[]{ManageChatUserCell.class}, null, new Drawable[]{Theme.avatar_savedDrawable}, null, Theme.key_avatar_text),
                 new ThemeDescription(null, 0, null, null, null, cellDelegate, Theme.key_avatar_backgroundRed),
                 new ThemeDescription(null, 0, null, null, null, cellDelegate, Theme.key_avatar_backgroundOrange),
                 new ThemeDescription(null, 0, null, null, null, cellDelegate, Theme.key_avatar_backgroundViolet),

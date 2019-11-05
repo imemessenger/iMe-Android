@@ -1,0 +1,119 @@
+{
+    "classes": [
+        {
+            "tag": "True"
+        },
+        {
+            "tag": "False"
+        }
+    ],
+    "documents": [
+        {
+            "sent_tokens": [
+                "ужас"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "кошмар"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "ебануться"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "ебнуться"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "ахренеть",
+                "можно"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "акуеть"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "вот",
+                "это",
+                "жесть"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "кошмар"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "ужас"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "жесть"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "можно"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "то"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "какой"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "вот"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "это"
+            ],
+            "tag": "False"
+        }
+    ],
+    "words": [
+        "акуеть",
+        "ахренеть",
+        "вот",
+        "ебануться",
+        "ебнуться",
+        "жесть",
+        "какой",
+        "кошмар",
+        "можно",
+        "то",
+        "ужас",
+        "это"
+    ]
+}

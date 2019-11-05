@@ -1,0 +1,667 @@
+{
+    "classes": [
+        {
+            "tag": "True"
+        },
+        {
+            "tag": "False"
+        }
+    ],
+    "documents": [
+        {
+            "sent_tokens": [
+                "вижу",
+                "цель",
+                "иду",
+                "к",
+                "ней"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "вижу",
+                "цель",
+                "не",
+                "вижу",
+                "препятствий"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "у",
+                "меня",
+                "серьезные",
+                "намерения"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "это",
+                "недостижимая",
+                "цель"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "тяжелую",
+                "задачу",
+                "я",
+                "выбрал"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "я",
+                "стремлюсь",
+                "быть",
+                "лучше"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "мною",
+                "движет",
+                "высшая",
+                "цель"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "хочу",
+                "свой",
+                "дом"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "хотелось",
+                "бы",
+                "иметь",
+                "свой",
+                "уголок"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "как",
+                "бы",
+                "мне",
+                "хотелось",
+                "новый",
+                "айфон"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "хочу",
+                "осуществить",
+                "мечту"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "моя",
+                "мечта",
+                "сбудется"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "ничего",
+                "не",
+                "хочу"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "у",
+                "меня",
+                "нет",
+                "мечты"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "нет",
+                "желания",
+                "делать"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "желание"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "цель"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "мечта"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "желаю"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "хочу"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "я",
+                "желаю"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "я",
+                "хочу"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "хотел"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "хотела"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "хотели"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "желал"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "желала"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "желали"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "хочет"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "она",
+                "хочет"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "он",
+                "хочет"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "они",
+                "хотят"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "не",
+                "хочу"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "хочу"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "хотеть"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "хочется"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "хотелось",
+                "бы"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "хотелось"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "вижу"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "иду"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "к"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "ней"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "к",
+                "ней"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "не",
+                "вижу"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "препятствий"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "препятствия"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "у",
+                "меня"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "меня"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "у"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "серьезные"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "недостижимая"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "это"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "недостижимо"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "тяжелую"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "задачу"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "тяжелая",
+                "задача"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "тяжелая"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "задача"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "я",
+                "выбрал"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "выбрал"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "я"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "стремлюсь"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "быть"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "лучше"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "быть",
+                "лучше"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "мною"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "движет"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "высшая"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "высший"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "свой"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "дом"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "бы"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "иметь"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "уголок"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "угол"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "как",
+                "бы"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "как"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "новый"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "айфон"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "он"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "она"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "они"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "ничего"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "не"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "нет"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "либо"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "делать"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "что"
+            ],
+            "tag": "False"
+        }
+    ],
+    "words": [
+        "айфон",
+        "бы",
+        "быть",
+        "вижу",
+        "выбрал",
+        "высшая",
+        "высший",
+        "движет",
+        "делать",
+        "дом",
+        "желал",
+        "желала",
+        "желали",
+        "желание",
+        "желания",
+        "желаю",
+        "задача",
+        "задачу",
+        "иду",
+        "иметь",
+        "к",
+        "как",
+        "либо",
+        "лучше",
+        "меня",
+        "мечта",
+        "мечту",
+        "мечты",
+        "мне",
+        "мною",
+        "моя",
+        "намерения",
+        "не",
+        "недостижимая",
+        "недостижимо",
+        "ней",
+        "нет",
+        "ничего",
+        "новый",
+        "он",
+        "она",
+        "они",
+        "осуществить",
+        "препятствий",
+        "препятствия",
+        "сбудется",
+        "свой",
+        "серьезные",
+        "стремлюсь",
+        "тяжелая",
+        "тяжелую",
+        "у",
+        "угол",
+        "уголок",
+        "хотел",
+        "хотела",
+        "хотели",
+        "хотелось",
+        "хотеть",
+        "хотят",
+        "хочет",
+        "хочется",
+        "хочу",
+        "цель",
+        "что",
+        "это",
+        "я"
+    ]
+}

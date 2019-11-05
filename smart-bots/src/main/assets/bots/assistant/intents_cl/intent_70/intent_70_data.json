@@ -1,0 +1,253 @@
+{
+    "classes": [
+        {
+            "tag": "True"
+        },
+        {
+            "tag": "False"
+        }
+    ],
+    "documents": [
+        {
+            "sent_tokens": [
+                "кто",
+                "твой",
+                "хозяин"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "кто",
+                "ты",
+                "думаешь",
+                "твой",
+                "начальник"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "на",
+                "кого",
+                "ты",
+                "работаешь"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "кто",
+                "твой",
+                "босс"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "кто",
+                "здесь",
+                "главный"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "кто",
+                "твой",
+                "начальник"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "я",
+                "должен",
+                "быть",
+                "твоим",
+                "боссом"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "кто",
+                "твой",
+                "владелец"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "кто"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "кто",
+                "твой"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "твой"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "хозяин"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "ты"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "кто",
+                "ты"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "думаешь"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "начальник"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "на"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "кого"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "на",
+                "кого"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "на",
+                "кого",
+                "ты"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "работаешь"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "кто",
+                "здесь"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "здесь"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "главный"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "кто",
+                "твой"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "я"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "должен"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "я",
+                "должен"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "быть"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "боссом"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "босс"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "владелец"
+            ],
+            "tag": "False"
+        }
+    ],
+    "words": [
+        "босс",
+        "боссом",
+        "быть",
+        "владелец",
+        "главный",
+        "должен",
+        "думаешь",
+        "здесь",
+        "кого",
+        "кто",
+        "на",
+        "начальник",
+        "работаешь",
+        "твоим",
+        "твой",
+        "ты",
+        "хозяин",
+        "я"
+    ]
+}

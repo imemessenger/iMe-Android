@@ -1,0 +1,106 @@
+<resources>
+    <string name="app_name">Responses</string>
+    <string name="bot_title_trade_binbank">BinBank</string>
+    <string name="bot_title_chanel">Коко Шанель</string>
+    <string name="bot_title_churchill">Черчилль</string>
+    <string name="bot_title_confucius">Конфуций</string>
+    <string name="bot_title_memes">Мемы</string>
+    <string name="bot_title_monroe">Мэрилин Монро</string>
+    <string name="bot_title_soviet_films">Советские фильмы</string>
+    <string name="bot_title_yoda">Магистр Йода</string>
+    <string name="bot_title_celentano">Челентано</string>
+    <string name="bot_title_corleone">Дон Корлеоне</string>
+    <string name="bot_title_einstein">Эйнштейн</string>
+    <string name="bot_title_terminator">Терминатор</string>
+    <string name="bot_title_tsoy">Виктор Цой</string>
+    <string name="bot_title_napoleon">Наполеон</string>
+    <string name="bot_title_teresa">Мать Тереза</string>
+    <string name="bot_title_karlson">Карлсон</string>
+    <string name="bot_title_daenerys">Дейенерис</string>
+    <string name="bot_title_scooby_doo">Скуби-Ду</string>
+    <string name="bot_title_sponge_bob">Губка Боб</string>
+    <string name="bot_title_panda">Кунг-фу Панда</string>
+    <string name="bot_title_shrek">Шрек</string>
+    <string name="bot_title_jon_snow">Джон Сноу</string>
+    <string name="bot_title_tyrion">Тирион Ланнистер</string>
+    <string name="bot_title_assistant">Ассистент</string>
+    <string name="bot_title_deadpool">Дэдпул</string>
+    <string name="bot_title_pushkin">Пушкин</string>
+    <string name="bot_title_lenin">Ленин</string>
+    <string name="bot_title_minions">Миньоны</string>
+    <string name="bot_title_lotr">Властелин Колец</string>
+    <string name="bot_title_simpsons">Симпсоны</string>
+    <string name="bot_title_south_park">Южный Парк</string>
+    <string name="bot_title_adage">Поговорки и пословицы</string>
+    <string name="bot_title_darth_vader">Дарт Вейдер</string>
+    <string name="bot_title_garfield">Гарфилд</string>
+    <string name="bot_title_nu_pogodi">Ну, погоди!</string>
+
+    <string name="bot_title_recent">Часто используемые</string>
+
+    <string name="bot_title_holidays">Праздники</string>
+    <string name="bot_title_holiday_23rd_feb">День защитника Отечества</string>
+    <string name="bot_title_holiday_8th_mar">Международный женский день</string>
+    <string name="bot_title_holiday_1st_apr">День смеха</string>
+    <string name="bot_title_holiday_12th_apr">День космонавтики</string>
+    <string name="bot_title_holiday_28th_apr">Пасха</string>
+    <string name="bot_title_holiday_1st_may">День труда</string>
+    <string name="bot_title_holiday_9th_may">День Победы</string>
+
+    <string name="bot_description_trade_binbank">Описание</string>
+    <string name="bot_description_chanel">Французский модельер, основавшая модный дом «Chanel».</string>
+    <string name="bot_description_churchill">Британский государственный и политический деятель.</string>
+    <string name="bot_description_confucius">Древний мыслитель и философ Китая.</string>
+    <string name="bot_description_memes">Текстовая информация состоящая из базовых единиц популярных фраз.</string>
+    <string name="bot_description_monroe">Американская киноактриса, секс-символ 1950-х годов, певица и модель.</string>
+    <string name="bot_description_soviet_films">Сборник популярных фраз и цитат из лучших советских фильмов.</string>
+    <string name="bot_description_yoda">Один из главных персонажей «Звёздных войн», мудрейший и самый сильный джедай.</string>
+    <string name="bot_description_celentano">Очень харизматичный итальянский музыкант, киноактёр.</string>
+    <string name="bot_description_corleone">Главный герой романа Марио Пьюзо «Крёстный отец» и основанного на нём фильма.</string>
+    <string name="bot_description_einstein">Гений, физик-теоретик, незаурядная фигура.</string>
+    <string name="bot_description_terminator">Персонаж, сыгранный Арнольдом Шварценеггером.</string>
+    <string name="bot_description_tsoy">Советский рок-музыкант. Основатель и лидер рок-группы «Кино».</string>
+    <string name="bot_description_napoleon">Выдающийся французский полководец и государственный деятель.</string>
+    <string name="bot_description_teresa">Католическая монахиня, основательница женской монашеской конгрегации сестёр.</string>
+    <string name="bot_description_karlson">Красивый и в меру упитанный мужчина в самом расцвете сил, живущий на крыше.</string>
+    <string name="bot_description_daenerys">Представительница рода Таргариенов из сериала «Игра престолов».</string>
+    <string name="bot_description_scooby_doo">Немецкий дог, решает загадки с участием якобы сверхъестественных существ.</string>
+    <string name="bot_description_sponge_bob">Чрезмерно оптимистичный мульт-герой, всегда раздражает остальных.</string>
+    <string name="bot_description_panda">Персонаж панды По – настоящий мастер Кунг-фу.</string>
+    <string name="bot_description_shrek">Огромный зелёный огр из одноименного мультфильма.</string>
+    <string name="bot_description_jon_snow">Бастард Старков и брат Ночного Дозора из сериала «Игра престолов».</string>
+    <string name="bot_description_tyrion">Остроумный и красноречивый карлик из сериала «Игра престолов».</string>
+    <string name="bot_description_assistant">Личный помощник для общения на популярные темы.</string>
+    <string name="bot_description_deadpool">Антигерой комиксов Marvel, обладает нестандартным, циничным чувством юмора.</string>
+    <string name="bot_description_pushkin">Русский поэт, драматург и прозаик.</string>
+    <string name="bot_description_lenin">Российский революционер, политический и государственный деятель.</string>
+    <string name="bot_description_minions">Маленькие приспешники всех злодеев.</string>
+    <string name="bot_description_lotr">Роман-эпопея английского писателя Дж.Р.Р.Толкина.</string>
+    <string name="bot_description_simpsons">Сатирический мультсериал про жизнь семейства Симпсонов.</string>
+    <string name="bot_description_south_park">Мультсериал о приключениях четырёх мальчиков.</string>
+    <string name="bot_description_adage">Русские пословицы и поговорки, короткие изречения и устойчивые сочетания.</string>
+    <string name="bot_description_darth_vader">Руководитель армии Галактической Империи в киноэпопее «Звёздные войны».</string>
+    <string name="bot_description_garfield">Ленивый рыжий кот из одноименного фильма.</string>
+    <string name="bot_description_nu_pogodi">Культовый советский мультсериал про волка и зайца.</string>
+
+    <string name="bot_description_holidays">Праздники России. Бот активируется в даты праздников.</string>
+
+    <string name="bot_tag_free">Бесплатные</string>
+    <string name="bot_tag_paid">Платные</string>
+    <string name="bot_tag_man">Мужские</string>
+    <string name="bot_tag_woman">Женские</string>
+    <string name="bot_tag_great">Великие</string>
+    <string name="bot_tag_famous">Известные</string>
+    <string name="bot_tag_hero_movie">Киногерои</string>
+    <string name="bot_tag_hero_cartoon">Мультгерои</string>
+    <string name="bot_tag_pack">Сборники</string>
+    <string name="bot_tag_gif">GIF</string>
+
+    <string name="bot_label_neuro">NeuroBot</string>
+    <string name="bot_label_normal">Bot</string>
+    <string name="bot_label_advert">Adverts Bot</string>
+    <string name="bot_label_most_used">Favorites</string>
+
+
+
+</resources>

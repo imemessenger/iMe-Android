@@ -1,0 +1,160 @@
+{
+    "classes": [
+        {
+            "tag": "True"
+        },
+        {
+            "tag": "False"
+        }
+    ],
+    "documents": [
+        {
+            "sent_tokens": [
+                "нет",
+                "проблем"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "никаких",
+                "проблем"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "не",
+                "переживай",
+                "это",
+                "не",
+                "проблема"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "это",
+                "не",
+                "проблема"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "без",
+                "проблем"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "не",
+                "беспокойся"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "конечно",
+                "без",
+                "проблем"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "не",
+                "переживай"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "нет"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "никаких"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "проблемы"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "проблема"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "не",
+                "переживай"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "переживай"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "не"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "это"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "без"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "беспокойся"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "беспокойство"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "конечно"
+            ],
+            "tag": "False"
+        }
+    ],
+    "words": [
+        "без",
+        "беспокойство",
+        "беспокойся",
+        "конечно",
+        "не",
+        "нет",
+        "никаких",
+        "переживай",
+        "проблем",
+        "проблема",
+        "проблемы",
+        "это"
+    ]
+}

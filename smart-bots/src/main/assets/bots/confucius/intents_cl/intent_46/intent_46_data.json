@@ -1,0 +1,401 @@
+{
+    "classes": [
+        {
+            "tag": "True"
+        },
+        {
+            "tag": "False"
+        }
+    ],
+    "documents": [
+        {
+            "sent_tokens": [
+                "давай",
+                "поговорим"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "о",
+                "чем",
+                "говорить",
+                "будем"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "на",
+                "чем",
+                "я",
+                "остановился"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "продолжим",
+                "после",
+                "перерыва"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "позже",
+                "поговорим"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "давай",
+                "побалакаем"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "есть",
+                "что",
+                "сказать"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "давай",
+                "поболтаем"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "мне",
+                "скучно",
+                "давай",
+                "пообщаемся"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "хочу",
+                "с",
+                "тобой",
+                "поболтать"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "давай",
+                "пообщаемся"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "говорить"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "общаться"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "пообщаемся"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "поболтаем"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "побалакаем"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "поговорим"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "поговорить"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "пообщаться"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "не",
+                "молчи"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "хватит",
+                "молчать"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "почему",
+                "молчишь"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "не",
+                "надо",
+                "молчать"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "давай"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "о"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "чем"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "о",
+                "чем"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "чём"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "о",
+                "чём"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "будем"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "на",
+                "чем"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "на"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "я"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "остановился"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "продолжим"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "после"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "перерыва"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "перерыв"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "позже"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "есть"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "что"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "мне",
+                "скучно"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "мне"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "скучно"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "хочу"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "с",
+                "тобой"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "с"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "тобой"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "не"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "хватит"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "почему"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "не",
+                "надо"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "надо"
+            ],
+            "tag": "False"
+        }
+    ],
+    "words": [
+        "будем",
+        "говорить",
+        "давай",
+        "есть",
+        "мне",
+        "молчать",
+        "молчи",
+        "молчишь",
+        "на",
+        "надо",
+        "не",
+        "о",
+        "общаться",
+        "остановился",
+        "перерыв",
+        "перерыва",
+        "побалакаем",
+        "поболтаем",
+        "поболтать",
+        "поговорим",
+        "поговорить",
+        "позже",
+        "пообщаемся",
+        "пообщаться",
+        "после",
+        "почему",
+        "продолжим",
+        "с",
+        "сказать",
+        "скучно",
+        "тобой",
+        "хватит",
+        "хочу",
+        "чем",
+        "что",
+        "чём",
+        "я"
+    ]
+}

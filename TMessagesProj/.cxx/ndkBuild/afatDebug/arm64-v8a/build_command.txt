@@ -1,0 +1,20 @@
+Executable : /Users/sergey/Library/Android/sdk/ndk-bundle/ndk-build
+arguments : 
+NDK_PROJECT_PATH=null
+APP_BUILD_SCRIPT=/Users/sergey/StudioProjects/iMe/TMessagesProj/jni/Android.mk
+NDK_APPLICATION_MK=/Users/sergey/StudioProjects/iMe/TMessagesProj/jni/Application.mk
+APP_ABI=arm64-v8a
+NDK_ALL_ABIS=arm64-v8a
+NDK_DEBUG=1
+APP_PLATFORM=android-16
+NDK_OUT=/Users/sergey/StudioProjects/iMe/TMessagesProj/build/intermediates/ndkBuild/afatDebug/obj
+NDK_LIBS_OUT=/Users/sergey/StudioProjects/iMe/TMessagesProj/build/intermediates/ndkBuild/afatDebug/lib
+NDK_APPLICATION_MK:=jni/Application.mk
+APP_PLATFORM:=android-16
+-j8
+APP_SHORT_COMMANDS=false
+LOCAL_SHORT_COMMANDS=false
+-B
+-n
+jvmArgs : 
+

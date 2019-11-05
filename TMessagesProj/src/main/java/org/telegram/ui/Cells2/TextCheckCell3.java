@@ -5,7 +5,9 @@ import android.graphics.Canvas;
 import android.text.TextUtils;
 import android.util.TypedValue;
 import android.view.Gravity;
-import android.widget.LinearLayout;
+import android.view.View;
+import android.widget.FrameLayout;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import org.telegram.messenger.AndroidUtilities;
@@ -14,22 +16,34 @@ import org.telegram.ui.ActionBar.Theme;
 import org.telegram.ui.Components.CheckBoxSquare;
 import org.telegram.ui.Components.LayoutHelper;
 
-public class TextCheckCell3 extends LinearLayout {
+public class TextCheckCell3 extends FrameLayout {
 
     private TextView textView;
+    private ImageView imageView;
     private CheckBoxSquare checkBox;
     private boolean needDivider;
 
     public TextCheckCell3(Context context) {
-        this(context, 21);
+        this(context, 21, false);
     }
 
-    public TextCheckCell3(Context context, int padding) {
-        this(context, padding, false);
+    public TextCheckCell3(Context context, boolean needIcon) {
+        this(context, 21, needIcon);
     }
 
-    public TextCheckCell3(Context context, int padding, boolean dialog) {
+
+    public TextCheckCell3(Context context, int padding, boolean needIcon) {
+        this(context, padding, false, needIcon);
+    }
+
+
+    public TextCheckCell3(Context context, int padding, boolean dialog, boolean needIcon) {
         super(context);
+
+        imageView = new ImageView(context);
+        imageView.setVisibility(View.GONE);
+        imageView.setScaleType(ImageView.ScaleType.CENTER_INSIDE);
+        addView(imageView, LayoutHelper.createFrame(LayoutHelper.WRAP_CONTENT, LayoutHelper.WRAP_CONTENT, Gravity.START | Gravity.CENTER_VERTICAL, padding, 0, padding, 0));
 
         textView = new TextView(context);
         textView.setTextColor(Theme.getColor(dialog ? Theme.key_dialogTextBlack : Theme.key_windowBackgroundWhiteBlackText));
@@ -39,10 +53,10 @@ public class TextCheckCell3 extends LinearLayout {
         textView.setSingleLine(true);
         textView.setGravity(Gravity.CENTER_VERTICAL);
         textView.setEllipsize(TextUtils.TruncateAt.END);
-        addView(textView, LayoutHelper.createLinear(0, LayoutHelper.MATCH_PARENT, 1, (LocaleController.isRTL ? Gravity.RIGHT : Gravity.LEFT) | Gravity.CENTER_VERTICAL, padding, 0, padding, 0));
+        addView(textView, LayoutHelper.createFrame(LayoutHelper.WRAP_CONTENT, LayoutHelper.MATCH_PARENT, Gravity.START | Gravity.CENTER_VERTICAL, needIcon ? 70 : padding, 0, padding, 0));
 
         checkBox = new CheckBoxSquare(context, false);
-        addView(checkBox, LayoutHelper.createLinear(18, 18,  (LocaleController.isRTL ? Gravity.LEFT : Gravity.RIGHT) | Gravity.CENTER_VERTICAL, padding, 0, padding, 0));
+        addView(checkBox, LayoutHelper.createFrame(18, 18, (LocaleController.isRTL ? Gravity.START : Gravity.END) | Gravity.CENTER_VERTICAL, padding, 0, padding, 0));
 
         setClipChildren(false);
     }
@@ -65,6 +79,13 @@ public class TextCheckCell3 extends LinearLayout {
 
     public boolean isChecked() {
         return checkBox.isChecked();
+    }
+
+    public void setIcon(int iconResId) {
+        if (imageView != null) {
+            imageView.setVisibility(View.VISIBLE);
+            imageView.setImageResource(iconResId);
+        }
     }
 
     @Override

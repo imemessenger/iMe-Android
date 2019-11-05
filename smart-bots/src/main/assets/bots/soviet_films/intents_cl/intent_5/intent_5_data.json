@@ -1,0 +1,296 @@
+{
+    "classes": [
+        {
+            "tag": "True"
+        },
+        {
+            "tag": "False"
+        }
+    ],
+    "documents": [
+        {
+            "sent_tokens": [
+                "воспринимай",
+                "это",
+                "как",
+                "начало",
+                "новой",
+                "жизни"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "я",
+                "оптимист"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "посмотри",
+                "на",
+                "это",
+                "со",
+                "светлой",
+                "стороны"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "взгляни",
+                "на",
+                "ситуацию",
+                "под",
+                "другим",
+                "углом"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "веселей"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "ищи",
+                "в",
+                "этом",
+                "позитивные",
+                "стороны"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "оптимизм"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "оптимист"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "позитив"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "позитивные",
+                "мысли"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "воспринимай"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "это"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "как"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "начало"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "новой"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "жизни"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "я"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "посмотри"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "на"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "со"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "светлой"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "стороны"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "светлая"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "сторона"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "взгляни"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "под"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "ситуацию"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "другим"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "другой"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "углом"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "угол"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "другая"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "ищи"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "ищу"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "ища"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "в"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "этом"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "мысли"
+            ],
+            "tag": "False"
+        }
+    ],
+    "words": [
+        "в",
+        "веселей",
+        "взгляни",
+        "воспринимай",
+        "другая",
+        "другим",
+        "другой",
+        "жизни",
+        "ища",
+        "ищи",
+        "ищу",
+        "как",
+        "мысли",
+        "на",
+        "начало",
+        "новой",
+        "оптимизм",
+        "оптимист",
+        "под",
+        "позитив",
+        "позитивные",
+        "посмотри",
+        "светлая",
+        "светлой",
+        "ситуацию",
+        "со",
+        "сторона",
+        "стороны",
+        "углом",
+        "угол",
+        "это",
+        "этом",
+        "я"
+    ]
+}

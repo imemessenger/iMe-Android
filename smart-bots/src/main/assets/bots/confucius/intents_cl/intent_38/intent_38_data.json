@@ -1,0 +1,236 @@
+{
+    "classes": [
+        {
+            "tag": "True"
+        },
+        {
+            "tag": "False"
+        }
+    ],
+    "documents": [
+        {
+            "sent_tokens": [
+                "рад",
+                "что",
+                "все",
+                "обошлось"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "я",
+                "безумно",
+                "рад"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "я",
+                "так",
+                "рад"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "очень",
+                "рад"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "радуюсь"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "так",
+                "рад"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "мы",
+                "рады"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "я",
+                "рад"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "я",
+                "рада"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "я",
+                "так",
+                "рада"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "мы",
+                "так",
+                "рады"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "так",
+                "рада"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "так",
+                "рады"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "рада",
+                "что",
+                "все",
+                "обошлось"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "я",
+                "безумно",
+                "рада"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "она",
+                "рада"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "он",
+                "рад"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "они",
+                "рады"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "что"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "все"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "всё"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "обошлось"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "я"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "безумно"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "так"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "очень"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "мы"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "он"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "она"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "они"
+            ],
+            "tag": "False"
+        }
+    ],
+    "words": [
+        "безумно",
+        "все",
+        "всё",
+        "мы",
+        "обошлось",
+        "он",
+        "она",
+        "они",
+        "очень",
+        "рад",
+        "рада",
+        "радуюсь",
+        "рады",
+        "так",
+        "что",
+        "я"
+    ]
+}

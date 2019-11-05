@@ -81,6 +81,7 @@ public class ActionBarMenuItem extends FrameLayout {
     private TextView searchFieldCaption;
     private ImageView clearButton;
     protected ImageView iconView;
+    protected TextView textView;
     private FrameLayout searchContainer;
     private boolean isSearchField;
     private ActionBarMenuItemSearchListener listener;
@@ -98,22 +99,39 @@ public class ActionBarMenuItem extends FrameLayout {
     private boolean animationEnabled = true;
     private boolean ignoreOnTextChange;
     private CloseProgressDrawable2 progressDrawable;
-    private int additionalOffset;
+    private int additionalYOffset;
+    private int additionalXOffset;
     private boolean longClickEnabled = true;
     private boolean animateClear = true;
 
     public ActionBarMenuItem(Context context, ActionBarMenu menu, int backgroundColor, int iconColor) {
+        this(context, menu, backgroundColor, iconColor, false);
+    }
+
+    public ActionBarMenuItem(Context context, ActionBarMenu menu, int backgroundColor, int iconColor, boolean text) {
         super(context);
         if (backgroundColor != 0) {
-            setBackgroundDrawable(Theme.createSelectorDrawable(backgroundColor));
+            setBackgroundDrawable(Theme.createSelectorDrawable(backgroundColor, text ? 5 : 1));
         }
         parentMenu = menu;
 
-        iconView = new ImageView(context);
-        iconView.setScaleType(ImageView.ScaleType.CENTER);
-        addView(iconView, LayoutHelper.createFrame(LayoutHelper.MATCH_PARENT, LayoutHelper.MATCH_PARENT));
-        if (iconColor != 0) {
-            iconView.setColorFilter(new PorterDuffColorFilter(iconColor, PorterDuff.Mode.MULTIPLY));
+        if (text) {
+            textView = new TextView(context);
+            textView.setTextSize(TypedValue.COMPLEX_UNIT_DIP, 15);
+            textView.setTypeface(AndroidUtilities.getTypeface("fonts/rmedium.ttf"));
+            textView.setGravity(Gravity.CENTER);
+            textView.setPadding(AndroidUtilities.dp(4), 0, AndroidUtilities.dp(4), 0);
+            if (iconColor != 0) {
+                textView.setTextColor(iconColor);
+            }
+            addView(textView, LayoutHelper.createFrame(LayoutHelper.WRAP_CONTENT, LayoutHelper.MATCH_PARENT));
+        } else {
+            iconView = new ImageView(context);
+            iconView.setScaleType(ImageView.ScaleType.CENTER);
+            addView(iconView, LayoutHelper.createFrame(LayoutHelper.MATCH_PARENT, LayoutHelper.MATCH_PARENT));
+            if (iconColor != 0) {
+                iconView.setColorFilter(new PorterDuffColorFilter(iconColor, PorterDuff.Mode.MULTIPLY));
+            }
         }
     }
 
@@ -200,7 +218,12 @@ public class ActionBarMenuItem extends FrameLayout {
     }
 
     public void setIconColor(int color) {
-        iconView.setColorFilter(new PorterDuffColorFilter(color, PorterDuff.Mode.MULTIPLY));
+        if (iconView != null) {
+            iconView.setColorFilter(new PorterDuffColorFilter(color, PorterDuff.Mode.MULTIPLY));
+        }
+        if (textView != null) {
+            textView.setTextColor(color);
+        }
         if (clearButton != null) {
             clearButton.setColorFilter(new PorterDuffColorFilter(color, PorterDuff.Mode.MULTIPLY));
         }
@@ -237,6 +260,13 @@ public class ActionBarMenuItem extends FrameLayout {
                 popupWindow.dismiss();
             }
         });
+    }
+
+    public void removeAllSubItems() {
+        if (popupLayout == null) {
+            return;
+        }
+        popupLayout.removeInnerViews();
     }
 
     public void addSubItem(View view, int width, int height) {
@@ -279,6 +309,8 @@ public class ActionBarMenuItem extends FrameLayout {
         textView.setPadding(AndroidUtilities.dp(16), 0, AndroidUtilities.dp(16), 0);
         textView.setTextSize(TypedValue.COMPLEX_UNIT_DIP, 16);
         textView.setMinWidth(AndroidUtilities.dp(196));
+        textView.setSingleLine(true);
+        textView.setEllipsize(TextUtils.TruncateAt.END);
         textView.setTag(id);
         textView.setText(text);
         popupLayout.addView(textView);
@@ -468,16 +500,29 @@ public class ActionBarMenuItem extends FrameLayout {
         }
     }
 
-    public void setIcon(int resId) {
-        iconView.setImageResource(resId);
-    }
-
     public void setIcon(Drawable drawable) {
+        if (iconView == null) {
+            return;
+        }
         iconView.setImageDrawable(drawable);
     }
 
-    public ImageView getImageView() {
-        return iconView;
+    public void setIcon(int resId) {
+        if (iconView == null) {
+            return;
+        }
+        iconView.setImageResource(resId);
+    }
+
+    public void setText(CharSequence text) {
+        if (textView == null) {
+            return;
+        }
+        textView.setText(text);
+    }
+
+    public View getContentView() {
+        return iconView != null ? iconView : textView;
     }
 
     public void setSearchFieldHint(CharSequence hint) {
@@ -496,6 +541,12 @@ public class ActionBarMenuItem extends FrameLayout {
         searchField.setText(text);
         if (!TextUtils.isEmpty(text)) {
             searchField.setSelection(text.length());
+        }
+    }
+
+    public void onSearchPressed() {
+        if (listener != null) {
+            listener.onSearchPressed(searchField);
         }
     }
 
@@ -792,8 +843,12 @@ public class ActionBarMenuItem extends FrameLayout {
         }
     }
 
-    public void setAdditionalOffset(int value) {
-        additionalOffset = value;
+    public void setAdditionalYOffset(int value) {
+        additionalYOffset = value;
+    }
+
+    public void setAdditionalXOffset(int value) {
+        additionalXOffset = value;
     }
 
     private void updateOrShowPopup(boolean show, boolean update) {
@@ -803,7 +858,7 @@ public class ActionBarMenuItem extends FrameLayout {
             offsetY = -parentMenu.parentActionBar.getMeasuredHeight() + parentMenu.getTop() + parentMenu.getPaddingTop();
         } else {
             float scaleY = getScaleY();
-            offsetY = -(int) (getMeasuredHeight() * scaleY - (subMenuOpenSide != 2 ? getTranslationY() : 0) / scaleY) + additionalOffset;
+            offsetY = -(int) (getMeasuredHeight() * scaleY - (subMenuOpenSide != 2 ? getTranslationY() : 0) / scaleY) + additionalYOffset;
         }
         offsetY += yOffset;
 
@@ -833,25 +888,25 @@ public class ActionBarMenuItem extends FrameLayout {
                 if (getParent() != null) {
                     View parent = (View) getParent();
                     if (show) {
-                        popupWindow.showAsDropDown(parent, getLeft() + getMeasuredWidth() - popupLayout.getMeasuredWidth(), offsetY);
+                        popupWindow.showAsDropDown(parent, getLeft() + getMeasuredWidth() - popupLayout.getMeasuredWidth() + additionalXOffset, offsetY);
                     }
                     if (update) {
-                        popupWindow.update(parent, getLeft() + getMeasuredWidth() - popupLayout.getMeasuredWidth(), offsetY, -1, -1);
+                        popupWindow.update(parent, getLeft() + getMeasuredWidth() - popupLayout.getMeasuredWidth() + additionalXOffset, offsetY, -1, -1);
                     }
                 }
             } else if (subMenuOpenSide == 1) {
                 if (show) {
-                    popupWindow.showAsDropDown(this, -AndroidUtilities.dp(8), offsetY);
+                    popupWindow.showAsDropDown(this, -AndroidUtilities.dp(8) + additionalXOffset, offsetY);
                 }
                 if (update) {
-                    popupWindow.update(this, -AndroidUtilities.dp(8), offsetY, -1, -1);
+                    popupWindow.update(this, -AndroidUtilities.dp(8) + additionalXOffset, offsetY, -1, -1);
                 }
             } else {
                 if (show) {
-                    popupWindow.showAsDropDown(this, getMeasuredWidth() - popupLayout.getMeasuredWidth(), offsetY);
+                    popupWindow.showAsDropDown(this, getMeasuredWidth() - popupLayout.getMeasuredWidth() + additionalXOffset, offsetY);
                 }
                 if (update) {
-                    popupWindow.update(this, getMeasuredWidth() - popupLayout.getMeasuredWidth(), offsetY, -1, -1);
+                    popupWindow.update(this, getMeasuredWidth() - popupLayout.getMeasuredWidth() + additionalXOffset, offsetY, -1, -1);
                 }
             }
         }

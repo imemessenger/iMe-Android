@@ -1,0 +1,220 @@
+{
+    "classes": [
+        {
+            "tag": "True"
+        },
+        {
+            "tag": "False"
+        }
+    ],
+    "documents": [
+        {
+            "sent_tokens": [
+                "я",
+                "взлетаю"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "я",
+                "уже",
+                "взлетаю"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "самолет",
+                "взлетает"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "все",
+                "самолет",
+                "на",
+                "взлет"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "взлетаю",
+                "отключаюсь"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "пошел",
+                "на",
+                "взлет"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "я",
+                "полетел"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "я",
+                "взлетел"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "я",
+                "в",
+                "самолете",
+                "взлетаю"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "уже",
+                "в",
+                "самолете"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "уже",
+                "взлетаю"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "скоро",
+                "взлетаю"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "пошёл",
+                "на",
+                "взлёт"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "взлетаю"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "я"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "уже"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "самолет"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "взлетает"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "отключаюсь"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "пошел"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "пошёл"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "на"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "взлёт"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "полетел"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "взлетел"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "самолете"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "уже"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "скоро"
+            ],
+            "tag": "False"
+        }
+    ],
+    "words": [
+        "в",
+        "взлет",
+        "взлетает",
+        "взлетаю",
+        "взлетел",
+        "взлёт",
+        "все",
+        "на",
+        "отключаюсь",
+        "полетел",
+        "пошел",
+        "пошёл",
+        "самолет",
+        "самолете",
+        "скоро",
+        "уже",
+        "я"
+    ]
+}

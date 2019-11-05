@@ -1,0 +1,322 @@
+{
+    "classes": [
+        {
+            "tag": "True"
+        },
+        {
+            "tag": "False"
+        }
+    ],
+    "documents": [
+        {
+            "sent_tokens": [
+                "люблю",
+                "жизнь"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "жизнь",
+                "отстой"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "ненавижу",
+                "эту",
+                "жизнь"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "кайфую",
+                "от",
+                "жизни"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "не",
+                "знаю",
+                "что",
+                "мне",
+                "с",
+                "этой",
+                "жизнью",
+                "делать"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "мне",
+                "незачем",
+                "жить"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "не",
+                "вижу",
+                "смысла",
+                "в",
+                "жизни"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "жить",
+                "здорово"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "это",
+                "не",
+                "жизнь",
+                "а",
+                "существование"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "эх",
+                "жизнь",
+                "моя",
+                "жестянка"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "люблю"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "отстой"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "ненавижу"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "эту"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "это"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "кайфую"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "от"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "не",
+                "знаю"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "знаю"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "что"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "мне"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "делать"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "что",
+                "мне",
+                "делать"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "с"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "с",
+                "этой"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "этой"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "незачем"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "зачем"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "не"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "вижу"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "смысла"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "в"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "здорово"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "это"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "а"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "какое"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "то"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "существование"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "эх"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "жестянка"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "моя"
+            ],
+            "tag": "False"
+        }
+    ],
+    "words": [
+        "а",
+        "в",
+        "вижу",
+        "делать",
+        "жестянка",
+        "жизни",
+        "жизнь",
+        "жизнью",
+        "жить",
+        "зачем",
+        "здорово",
+        "знаю",
+        "кайфую",
+        "какое",
+        "люблю",
+        "мне",
+        "моя",
+        "не",
+        "незачем",
+        "ненавижу",
+        "от",
+        "отстой",
+        "с",
+        "смысла",
+        "существование",
+        "то",
+        "что",
+        "это",
+        "этой",
+        "эту",
+        "эх"
+    ]
+}

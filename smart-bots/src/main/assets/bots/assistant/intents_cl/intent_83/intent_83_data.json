@@ -1,0 +1,1076 @@
+{
+    "classes": [
+        {
+            "tag": "True"
+        },
+        {
+            "tag": "False"
+        }
+    ],
+    "documents": [
+        {
+            "sent_tokens": [
+                "купи",
+                "хлеб"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "хлеба",
+                "купи"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "хлеб",
+                "возьми"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "купи",
+                "батон"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "хлеб",
+                "не",
+                "забудь"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "и",
+                "хлеб"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "хлеб",
+                "тоже"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "булку",
+                "купи"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "купи",
+                "булок"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "купи",
+                "сухарей"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "лаваш",
+                "купи"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "лепешку",
+                "купи"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "дома",
+                "хлеба",
+                "нет"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "хлеба",
+                "нет"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "хлеб",
+                "домой",
+                "купи"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "купи",
+                "кирпичек",
+                "хлеба"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "купи",
+                "булку",
+                "белого"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "купи",
+                "нарезной",
+                "батон"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "ты",
+                "хлеб",
+                "купил"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "ты",
+                "хлеб",
+                "покупал"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "хлеб",
+                "брал"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "хлеб",
+                "не",
+                "забыл"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "сиги",
+                "купи"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "купи",
+                "сигарет"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "купи",
+                "папирос"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "табак",
+                "купи"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "сигареты",
+                "возьми"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "сигареты",
+                "не",
+                "забудь"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "сиги",
+                "не",
+                "забыл"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "сигареты",
+                "взял"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "покурить",
+                "возьми"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "купи",
+                "покурить"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "сигарет",
+                "нет"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "сигареты",
+                "кончились"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "курить",
+                "нечего"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "курево",
+                "купи"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "закончились",
+                "сигареты"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "кент",
+                "купи"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "купи",
+                "парламент"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "пачку",
+                "кента"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "честера",
+                "купи"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "мальборо",
+                "не",
+                "забудь"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "сигареты",
+                "купить"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "захвати",
+                "пива"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "купи",
+                "пива"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "купи",
+                "пиво"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "пивасик",
+                "захвати"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "купи",
+                "пиваса"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "купи",
+                "пару",
+                "сисек"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "одну",
+                "сиську",
+                "купи"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "купи",
+                "пивасика"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "не",
+                "забудь",
+                "пиво"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "пиво",
+                "возьми"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "принеси",
+                "пива"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "зацепи",
+                "пива"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "пару",
+                "банок",
+                "пива",
+                "купи"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "купи",
+                "разливного"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "на",
+                "разлив",
+                "возьми"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "лучше",
+                "живого",
+                "пива"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "живое",
+                "пиво"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "пивчанского",
+                "купи"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "пенного",
+                "купи"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "закинь",
+                "пивка"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "пивка",
+                "купи"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "пивка",
+                "принеси"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "пивка",
+                "не",
+                "забудь"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "купи",
+                "молоко"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "молока",
+                "купи"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "молоко",
+                "возьми"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "купи",
+                "молочка"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "молоко",
+                "не",
+                "забудь"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "и",
+                "молоко"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "молоко",
+                "тоже"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "дома",
+                "молока",
+                "нет"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "молока",
+                "нет"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "молоко",
+                "домой",
+                "купи"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "ты",
+                "молоко",
+                "купил"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "ты",
+                "молоко",
+                "покупал"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "молоко",
+                "брал"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "молоко",
+                "не",
+                "забыл"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "хлеб"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "хлеба"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "взять"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "возьми"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "не",
+                "забудь"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "забудь"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "тоже"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "булку"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "булок"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "сухарей"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "лаваш"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "лепешку"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "дома"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "нет"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "домой"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "кирпичек"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "белого"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "нарезной"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "батон"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "ты"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "брал"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "не",
+                "забыл"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "забыл"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "сиги"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "сигарет"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "братски"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "брат"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "по"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "папирос"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "табак"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "сигареты"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "кончились"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "покурить"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "нечего"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "курево"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "закончились"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "кент"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "парламент"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "пачка"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "пачку"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "мальборо"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "захвати"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "пива"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "пивасик"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "пивас"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "сиську"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "пивасика"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "пиво"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "принеси"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "зацепи"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "разливного"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "пару"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "банок"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "на",
+                "разлив"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "наразлив"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "лучше"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "живого"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "живое"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "пивчанского"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "пенного"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "закинь"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "пивка"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "молоко"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "молока"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "молочка"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "и"
+            ],
+            "tag": "False"
+        }
+    ],
+    "words": [
+        "банок",
+        "батон",
+        "белого",
+        "брал",
+        "брат",
+        "братски",
+        "булку",
+        "булок",
+        "взял",
+        "взять",
+        "возьми",
+        "дома",
+        "домой",
+        "живого",
+        "живое",
+        "забудь",
+        "забыл",
+        "закинь",
+        "закончились",
+        "захвати",
+        "зацепи",
+        "и",
+        "кент",
+        "кента",
+        "кирпичек",
+        "кончились",
+        "купи",
+        "купил",
+        "купить",
+        "курево",
+        "курить",
+        "лаваш",
+        "лепешку",
+        "лучше",
+        "мальборо",
+        "молока",
+        "молоко",
+        "молочка",
+        "на",
+        "наразлив",
+        "нарезной",
+        "не",
+        "нет",
+        "нечего",
+        "одну",
+        "папирос",
+        "парламент",
+        "пару",
+        "пачка",
+        "пачку",
+        "пенного",
+        "пива",
+        "пивас",
+        "пиваса",
+        "пивасик",
+        "пивасика",
+        "пивка",
+        "пиво",
+        "пивчанского",
+        "по",
+        "покупал",
+        "покурить",
+        "принеси",
+        "разлив",
+        "разливного",
+        "сигарет",
+        "сигареты",
+        "сиги",
+        "сисек",
+        "сиську",
+        "сухарей",
+        "табак",
+        "тоже",
+        "ты",
+        "хлеб",
+        "хлеба",
+        "честера"
+    ]
+}

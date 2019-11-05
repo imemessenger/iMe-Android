@@ -1,0 +1,181 @@
+{
+    "classes": [
+        {
+            "tag": "True"
+        },
+        {
+            "tag": "False"
+        }
+    ],
+    "documents": [
+        {
+            "sent_tokens": [
+                "позвони",
+                "мне"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "набери",
+                "мне"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "срочно",
+                "набери",
+                "мне"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "срочно",
+                "позвони",
+                "мне"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "колл",
+                "ми"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "кол",
+                "ми"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "колл",
+                "ми",
+                "плиз"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "перезвони",
+                "мне",
+                "срочно"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "перезвони",
+                "мне"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "набери",
+                "мне",
+                "плиз"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "пожалуйста",
+                "позвони",
+                "мне"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "набери",
+                "мне",
+                "пожалуйста"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "мне"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "набери"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "срочно"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "позвони"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "колл"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "ми"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "кол"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "плиз"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "перезвони"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "срочно"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "пожалуйста"
+            ],
+            "tag": "False"
+        }
+    ],
+    "words": [
+        "кол",
+        "колл",
+        "ми",
+        "мне",
+        "набери",
+        "перезвони",
+        "плиз",
+        "пожалуйста",
+        "позвони",
+        "срочно"
+    ]
+}

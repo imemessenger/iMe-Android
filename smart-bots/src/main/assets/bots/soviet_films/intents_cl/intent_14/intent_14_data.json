@@ -1,0 +1,367 @@
+{
+    "classes": [
+        {
+            "tag": "True"
+        },
+        {
+            "tag": "False"
+        }
+    ],
+    "documents": [
+        {
+            "sent_tokens": [
+                "отличное",
+                "начало",
+                "дня"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "что",
+                "за",
+                "чудный",
+                "день"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "давно",
+                "так",
+                "хорошо",
+                "себя",
+                "не",
+                "чувствовал"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "меня",
+                "переполняет",
+                "счастье"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "я",
+                "летаю",
+                "я",
+                "в",
+                "раю"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "я",
+                "так",
+                "счастлив"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "прекрасный",
+                "день"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "счастье"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "счастлив"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "счастлива"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "счастливы"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "это",
+                "счастье"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "счастье",
+                "ли"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "счастье",
+                "ли",
+                "это"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "я",
+                "счастлив"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "я",
+                "счастлива"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "мы",
+                "счастливы"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "ты",
+                "счастлив"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "счастливо",
+                "оставаться"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "отличное"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "отлично"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "начало"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "дня"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "что"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "за"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "чудный"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "день"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "давно"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "так"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "хорошо"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "себя"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "себе"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "не"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "чувствовала"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "не",
+                "чувствовала"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "меня"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "переполняет"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "я"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "летаю"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "в",
+                "раю"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "раю"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "рая"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "рай"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "в"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "ли"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "это"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "мы"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "ты"
+            ],
+            "tag": "False"
+        }
+    ],
+    "words": [
+        "в",
+        "давно",
+        "день",
+        "дня",
+        "за",
+        "летаю",
+        "ли",
+        "меня",
+        "мы",
+        "начало",
+        "не",
+        "оставаться",
+        "отлично",
+        "отличное",
+        "переполняет",
+        "прекрасный",
+        "рай",
+        "раю",
+        "рая",
+        "себе",
+        "себя",
+        "счастлив",
+        "счастлива",
+        "счастливо",
+        "счастливы",
+        "счастье",
+        "так",
+        "ты",
+        "хорошо",
+        "что",
+        "чувствовал",
+        "чувствовала",
+        "чудный",
+        "это",
+        "я"
+    ]
+}

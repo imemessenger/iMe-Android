@@ -1,0 +1,576 @@
+{
+    "classes": [
+        {
+            "tag": "True"
+        },
+        {
+            "tag": "False"
+        }
+    ],
+    "documents": [
+        {
+            "sent_tokens": [
+                "он",
+                "к",
+                "ней",
+                "ничего",
+                "не",
+                "чувствует"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "нам",
+                "надо",
+                "поговорить",
+                "об",
+                "этом"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "давай",
+                "обсудим",
+                "эту",
+                "ситуацию"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "нас",
+                "ждет",
+                "серьезный",
+                "разговор"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "надо",
+                "провести",
+                "тщательный",
+                "анализ",
+                "этой",
+                "ситуации"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "наши",
+                "отношения",
+                "зашли",
+                "в",
+                "тупик"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "куда",
+                "движутся",
+                "наши",
+                "отношения"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "давай",
+                "придумаем",
+                "как",
+                "нам",
+                "теперь",
+                "быть"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "что",
+                "с",
+                "нами",
+                "будет"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "между",
+                "нами",
+                "все",
+                "кончено"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "ты",
+                "не",
+                "уделяешь",
+                "мне",
+                "время"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "ты",
+                "состоишь",
+                "в",
+                "отношениях"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "ты",
+                "связан",
+                "отношениями"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "он"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "к"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "ней"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "ничего"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "не"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "чувствует"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "не",
+                "чувствует"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "нам"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "надо"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "поговорить"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "об"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "этом"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "об",
+                "этом"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "давай"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "обсудим"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "ситуацию"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "эту"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "нас"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "ждет"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "ждёт"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "серьезный"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "серьёзный"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "разговор"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "провести"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "серьезно"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "анализ"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "ситуации"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "этой"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "наши"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "зашли"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "в"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "тупик"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "в",
+                "тупик"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "тупике"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "куда"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "движутся"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "давай"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "придумаем"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "придумать"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "как"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "с",
+                "нами"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "теперь"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "быть"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "как",
+                "теперь"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "нами"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "с"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "будет"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "между"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "все"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "всё"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "кончено"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "ты"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "не"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "уделяешь"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "мне"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "время"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "не",
+                "уделяешь"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "состоишь"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "состоишь",
+                "в"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "связан"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "связана"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "связаны"
+            ],
+            "tag": "False"
+        }
+    ],
+    "words": [
+        "анализ",
+        "будет",
+        "быть",
+        "в",
+        "время",
+        "все",
+        "всё",
+        "давай",
+        "движутся",
+        "ждет",
+        "ждёт",
+        "зашли",
+        "к",
+        "как",
+        "кончено",
+        "куда",
+        "между",
+        "мне",
+        "надо",
+        "нам",
+        "нами",
+        "нас",
+        "наши",
+        "не",
+        "ней",
+        "ничего",
+        "об",
+        "обсудим",
+        "он",
+        "отношения",
+        "отношениями",
+        "отношениях",
+        "поговорить",
+        "придумаем",
+        "придумать",
+        "провести",
+        "разговор",
+        "с",
+        "связан",
+        "связана",
+        "связаны",
+        "серьезно",
+        "серьезный",
+        "серьёзный",
+        "ситуации",
+        "ситуацию",
+        "состоишь",
+        "теперь",
+        "тупик",
+        "тупике",
+        "тщательный",
+        "ты",
+        "уделяешь",
+        "что",
+        "чувствует",
+        "этой",
+        "этом",
+        "эту"
+    ]
+}

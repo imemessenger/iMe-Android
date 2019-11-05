@@ -1,0 +1,210 @@
+{
+    "classes": [
+        {
+            "tag": "True"
+        },
+        {
+            "tag": "False"
+        }
+    ],
+    "documents": [
+        {
+            "sent_tokens": [
+                "ты",
+                "меня",
+                "рассмешил"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "lol"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "это",
+                "смешно"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "смешно"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "лол",
+                "нет"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "хаха"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "ахаха",
+                "лол"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "ха",
+                "ха",
+                "очень",
+                "забавно"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "хе",
+                "хе"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "очень",
+                "смешно"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "ха"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "ахах"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "хах"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "ахаха"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "забавно"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "вот",
+                "умора"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "ха",
+                "ха",
+                "ха"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "хехехе"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "лол"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "вот",
+                "лол"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "ы"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "ты"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "меня"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "рассмешил"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "нет"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "очень"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "вот"
+            ],
+            "tag": "False"
+        }
+    ],
+    "words": [
+        "lol",
+        "ахах",
+        "ахаха",
+        "вот",
+        "забавно",
+        "лол",
+        "меня",
+        "нет",
+        "очень",
+        "рассмешил",
+        "смешно",
+        "ты",
+        "умора",
+        "ха",
+        "хах",
+        "хаха",
+        "хе",
+        "хехехе",
+        "ы",
+        "это"
+    ]
+}

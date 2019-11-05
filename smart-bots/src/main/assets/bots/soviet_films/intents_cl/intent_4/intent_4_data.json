@@ -1,0 +1,192 @@
+{
+    "classes": [
+        {
+            "tag": "True"
+        },
+        {
+            "tag": "False"
+        }
+    ],
+    "documents": [
+        {
+            "sent_tokens": [
+                "у",
+                "тебя",
+                "есть",
+                "машина"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "обожаю",
+                "машины"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "зацени",
+                "тачку"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "глянь",
+                "на",
+                "мою",
+                "ласточку"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "я",
+                "тебя",
+                "отвезу",
+                "на",
+                "своей",
+                "машине"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "машина"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "автомобиль"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "у"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "тебя"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "у",
+                "тебя"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "есть"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "обожаю"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "зацени"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "тачку"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "тачка"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "глянь"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "на"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "мою"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "ласточку"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "ласточка"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "я"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "отвезу"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "своей"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "а"
+            ],
+            "tag": "False"
+        }
+    ],
+    "words": [
+        "а",
+        "автомобиль",
+        "глянь",
+        "есть",
+        "зацени",
+        "ласточка",
+        "ласточку",
+        "машина",
+        "машине",
+        "машины",
+        "мою",
+        "на",
+        "обожаю",
+        "отвезу",
+        "своей",
+        "тачка",
+        "тачку",
+        "тебя",
+        "у",
+        "я"
+    ]
+}

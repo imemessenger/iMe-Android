@@ -17,17 +17,12 @@ import android.text.TextUtils;
 import android.util.TypedValue;
 import android.view.Gravity;
 import android.view.View;
+import android.view.ViewGroup;
 import android.view.animation.DecelerateInterpolator;
 import android.widget.FrameLayout;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
-
-import com.airbnb.lottie.LottieAnimationView;
-import com.airbnb.lottie.LottieProperty;
-import com.airbnb.lottie.SimpleColorFilter;
-import com.airbnb.lottie.model.KeyPath;
-import com.airbnb.lottie.value.LottieValueCallback;
 
 import org.telegram.messenger.AndroidUtilities;
 import org.telegram.messenger.ChatObject;
@@ -35,6 +30,7 @@ import org.telegram.messenger.LocaleController;
 import org.telegram.messenger.MessagesController;
 import org.telegram.messenger.R;
 import org.telegram.messenger.UserConfig;
+import org.telegram.messenger.UserObject;
 import org.telegram.tgnet.TLRPC;
 import org.telegram.ui.ActionBar.Theme;
 
@@ -45,8 +41,9 @@ public class UndoView extends FrameLayout {
     private TextView subinfoTextView;
     private TextView undoTextView;
     private ImageView undoImageView;
-    private LottieAnimationView leftImageView;
+    private RLottieImageView leftImageView;
     private LinearLayout undoButton;
+    private int undoViewHeight;
 
     private int currentAccount = UserConfig.selectedAccount;
 
@@ -66,6 +63,8 @@ public class UndoView extends FrameLayout {
 
     private long lastUpdateTime;
 
+    private float additionalTranslationY;
+
     private boolean isShowed;
 
     public final static int ACTION_CLEAR = 0;
@@ -76,6 +75,9 @@ public class UndoView extends FrameLayout {
     public final static int ACTION_ARCHIVE_FEW_HINT = 5;
     public final static int ACTION_ARCHIVE_HIDDEN = 6;
     public final static int ACTION_ARCHIVE_PINNED = 7;
+    public final static int ACTION_CONTACT_ADDED = 8;
+    public final static int ACTION_OWNER_TRANSFERED_CHANNEL = 9;
+    public final static int ACTION_OWNER_TRANSFERED_GROUP = 10;
 
     public UndoView(Context context) {
         super(context);
@@ -92,23 +94,23 @@ public class UndoView extends FrameLayout {
         subinfoTextView.setEllipsize(TextUtils.TruncateAt.END);
         addView(subinfoTextView, LayoutHelper.createFrame(LayoutHelper.WRAP_CONTENT, LayoutHelper.WRAP_CONTENT, Gravity.TOP | Gravity.LEFT, 58, 27, 8, 0));
 
-        leftImageView = new LottieAnimationView(context);
+        leftImageView = new RLottieImageView(context);
         leftImageView.setScaleType(ImageView.ScaleType.CENTER);
-        leftImageView.addValueCallback(new KeyPath("info1", "**"), LottieProperty.COLOR_FILTER, new LottieValueCallback<>(new SimpleColorFilter(Theme.getColor(Theme.key_undo_background) | 0xff000000)));
-        leftImageView.addValueCallback(new KeyPath("info2", "**"), LottieProperty.COLOR_FILTER, new LottieValueCallback<>(new SimpleColorFilter(Theme.getColor(Theme.key_undo_background) | 0xff000000)));
-        leftImageView.addValueCallback(new KeyPath("luc12", "**"), LottieProperty.COLOR_FILTER, new LottieValueCallback<>(new SimpleColorFilter(Theme.getColor(Theme.key_undo_infoColor))));
-        leftImageView.addValueCallback(new KeyPath("luc11", "**"), LottieProperty.COLOR_FILTER, new LottieValueCallback<>(new SimpleColorFilter(Theme.getColor(Theme.key_undo_infoColor))));
-        leftImageView.addValueCallback(new KeyPath("luc10", "**"), LottieProperty.COLOR_FILTER, new LottieValueCallback<>(new SimpleColorFilter(Theme.getColor(Theme.key_undo_infoColor))));
-        leftImageView.addValueCallback(new KeyPath("luc9", "**"), LottieProperty.COLOR_FILTER, new LottieValueCallback<>(new SimpleColorFilter(Theme.getColor(Theme.key_undo_infoColor))));
-        leftImageView.addValueCallback(new KeyPath("luc8", "**"), LottieProperty.COLOR_FILTER, new LottieValueCallback<>(new SimpleColorFilter(Theme.getColor(Theme.key_undo_infoColor))));
-        leftImageView.addValueCallback(new KeyPath("luc7", "**"), LottieProperty.COLOR_FILTER, new LottieValueCallback<>(new SimpleColorFilter(Theme.getColor(Theme.key_undo_infoColor))));
-        leftImageView.addValueCallback(new KeyPath("luc6", "**"), LottieProperty.COLOR_FILTER, new LottieValueCallback<>(new SimpleColorFilter(Theme.getColor(Theme.key_undo_infoColor))));
-        leftImageView.addValueCallback(new KeyPath("luc5", "**"), LottieProperty.COLOR_FILTER, new LottieValueCallback<>(new SimpleColorFilter(Theme.getColor(Theme.key_undo_infoColor))));
-        leftImageView.addValueCallback(new KeyPath("luc4", "**"), LottieProperty.COLOR_FILTER, new LottieValueCallback<>(new SimpleColorFilter(Theme.getColor(Theme.key_undo_infoColor))));
-        leftImageView.addValueCallback(new KeyPath("luc3", "**"), LottieProperty.COLOR_FILTER, new LottieValueCallback<>(new SimpleColorFilter(Theme.getColor(Theme.key_undo_infoColor))));
-        leftImageView.addValueCallback(new KeyPath("luc2", "**"), LottieProperty.COLOR_FILTER, new LottieValueCallback<>(new SimpleColorFilter(Theme.getColor(Theme.key_undo_infoColor))));
-        leftImageView.addValueCallback(new KeyPath("luc1", "**"), LottieProperty.COLOR_FILTER, new LottieValueCallback<>(new SimpleColorFilter(Theme.getColor(Theme.key_undo_infoColor))));
-        leftImageView.addValueCallback(new KeyPath("Oval", "**"), LottieProperty.COLOR_FILTER, new LottieValueCallback<>(new SimpleColorFilter(Theme.getColor(Theme.key_undo_infoColor))));
+        leftImageView.setLayerColor("info1.**", Theme.getColor(Theme.key_undo_background) | 0xff000000);
+        leftImageView.setLayerColor("info2.**", Theme.getColor(Theme.key_undo_background) | 0xff000000);
+        leftImageView.setLayerColor("luc12.**", Theme.getColor(Theme.key_undo_infoColor));
+        leftImageView.setLayerColor("luc11.**", Theme.getColor(Theme.key_undo_infoColor));
+        leftImageView.setLayerColor("luc10.**", Theme.getColor(Theme.key_undo_infoColor));
+        leftImageView.setLayerColor("luc9.**", Theme.getColor(Theme.key_undo_infoColor));
+        leftImageView.setLayerColor("luc8.**", Theme.getColor(Theme.key_undo_infoColor));
+        leftImageView.setLayerColor("luc7.**", Theme.getColor(Theme.key_undo_infoColor));
+        leftImageView.setLayerColor("luc6.**", Theme.getColor(Theme.key_undo_infoColor));
+        leftImageView.setLayerColor("luc5.**", Theme.getColor(Theme.key_undo_infoColor));
+        leftImageView.setLayerColor("luc4.**", Theme.getColor(Theme.key_undo_infoColor));
+        leftImageView.setLayerColor("luc3.**", Theme.getColor(Theme.key_undo_infoColor));
+        leftImageView.setLayerColor("luc2.**", Theme.getColor(Theme.key_undo_infoColor));
+        leftImageView.setLayerColor("luc1.**", Theme.getColor(Theme.key_undo_infoColor));
+        leftImageView.setLayerColor("Oval.**", Theme.getColor(Theme.key_undo_infoColor));
         addView(leftImageView, LayoutHelper.createFrame(54, LayoutHelper.WRAP_CONTENT, Gravity.CENTER_VERTICAL | Gravity.LEFT, 3, 0, 0, 0));
 
         undoButton = new LinearLayout(context);
@@ -154,7 +156,17 @@ public class UndoView extends FrameLayout {
     }
 
     private boolean isTooltipAction() {
+        return currentAction == ACTION_ARCHIVE_HIDDEN || currentAction == ACTION_ARCHIVE_HINT || currentAction == ACTION_ARCHIVE_FEW_HINT ||
+                currentAction == ACTION_ARCHIVE_PINNED || currentAction == ACTION_CONTACT_ADDED || currentAction == ACTION_OWNER_TRANSFERED_CHANNEL ||
+                currentAction == ACTION_OWNER_TRANSFERED_GROUP;
+    }
+
+    private boolean hasSubInfo() {
         return currentAction == ACTION_ARCHIVE_HIDDEN || currentAction == ACTION_ARCHIVE_HINT || currentAction == ACTION_ARCHIVE_FEW_HINT || currentAction == ACTION_ARCHIVE_PINNED;
+    }
+
+    public void setAdditionalTranslationY(float value) {
+        additionalTranslationY = value;
     }
 
     public void hide(boolean apply, int animated) {
@@ -180,7 +192,7 @@ public class UndoView extends FrameLayout {
         if (animated != 0) {
             AnimatorSet animatorSet = new AnimatorSet();
             if (animated == 1) {
-                animatorSet.playTogether(ObjectAnimator.ofFloat(this, View.TRANSLATION_Y, AndroidUtilities.dp(8 + (isTooltipAction() ? 52 : 48))));
+                animatorSet.playTogether(ObjectAnimator.ofFloat(this, View.TRANSLATION_Y, AndroidUtilities.dp(8) + undoViewHeight));
                 animatorSet.setDuration(250);
             } else {
                 animatorSet.playTogether(
@@ -201,16 +213,24 @@ public class UndoView extends FrameLayout {
             });
             animatorSet.start();
         } else {
-            setTranslationY(AndroidUtilities.dp(8 + (isTooltipAction() ? 52 : 48)));
+            setTranslationY(AndroidUtilities.dp(8) + undoViewHeight);
             setVisibility(INVISIBLE);
         }
     }
 
     public void showWithAction(long did, int action, Runnable actionRunnable) {
-        showWithAction(did, action, actionRunnable, null);
+        showWithAction(did, action, null, actionRunnable, null);
+    }
+
+    public void showWithAction(long did, int action, Object infoObject) {
+        showWithAction(did, action, infoObject, null, null);
     }
 
     public void showWithAction(long did, int action, Runnable actionRunnable, Runnable cancelRunnable) {
+        showWithAction(did, action, null, actionRunnable, cancelRunnable);
+    }
+
+    public void showWithAction(long did, int action, Object infoObject, Runnable actionRunnable, Runnable cancelRunnable) {
         if (currentActionRunnable != null) {
             currentActionRunnable.run();
         }
@@ -223,33 +243,64 @@ public class UndoView extends FrameLayout {
         lastUpdateTime = SystemClock.uptimeMillis();
 
         if (isTooltipAction()) {
-            if (action == ACTION_ARCHIVE_HIDDEN) {
-                infoTextView.setText(LocaleController.getString("ArchiveHidden", R.string.ArchiveHidden));
-                subinfoTextView.setText(LocaleController.getString("ArchiveHiddenInfo", R.string.ArchiveHiddenInfo));
-                leftImageView.setAnimation(R.raw.chats_swipearchive);
+            CharSequence infoText;
+            String subInfoText;
+            int icon;
+            int size = 36;
+            if (action == ACTION_OWNER_TRANSFERED_CHANNEL || action == ACTION_OWNER_TRANSFERED_GROUP) {
+                TLRPC.User user = (TLRPC.User) infoObject;
+                if (action == ACTION_OWNER_TRANSFERED_CHANNEL) {
+                    infoText = AndroidUtilities.replaceTags(LocaleController.formatString("EditAdminTransferChannelToast", R.string.EditAdminTransferChannelToast, UserObject.getFirstName(user)));
+                } else {
+                    infoText = AndroidUtilities.replaceTags(LocaleController.formatString("EditAdminTransferGroupToast", R.string.EditAdminTransferGroupToast, UserObject.getFirstName(user)));
+                }
+                subInfoText = null;
+                icon = R.raw.contact_check;
+            } else if (action == ACTION_CONTACT_ADDED) {
+                TLRPC.User user = (TLRPC.User) infoObject;
+                infoText = LocaleController.formatString("NowInContacts", R.string.NowInContacts, UserObject.getFirstName(user));
+                subInfoText = null;
+                icon = R.raw.contact_check;
+            } else if (action == ACTION_ARCHIVE_HIDDEN) {
+                infoText = LocaleController.getString("ArchiveHidden", R.string.ArchiveHidden);
+                subInfoText = LocaleController.getString("ArchiveHiddenInfo", R.string.ArchiveHiddenInfo);
+                icon = R.raw.chats_swipearchive;
+                size = 48;
             } else if (action == ACTION_ARCHIVE_PINNED) {
-                infoTextView.setText(LocaleController.getString("ArchivePinned", R.string.ArchivePinned));
-                subinfoTextView.setText(LocaleController.getString("ArchivePinnedInfo", R.string.ArchivePinnedInfo));
-                leftImageView.setAnimation(R.raw.chats_infotip);
+                infoText = LocaleController.getString("ArchivePinned", R.string.ArchivePinned);
+                subInfoText = LocaleController.getString("ArchivePinnedInfo", R.string.ArchivePinnedInfo);
+                icon = R.raw.chats_infotip;
             } else {
                 if (action == ACTION_ARCHIVE_HINT) {
-                    infoTextView.setText(LocaleController.getString("ChatArchived", R.string.ChatArchived));
+                    infoText = LocaleController.getString("ChatArchived", R.string.ChatArchived);
                 } else {
-                    infoTextView.setText(LocaleController.getString("ChatsArchived", R.string.ChatsArchived));
+                    infoText = LocaleController.getString("ChatsArchived", R.string.ChatsArchived);
                 }
-                subinfoTextView.setText(LocaleController.getString("ChatArchivedInfo", R.string.ChatArchivedInfo));
-                leftImageView.setAnimation(R.raw.chats_infotip);
+                subInfoText = LocaleController.getString("ChatArchivedInfo", R.string.ChatArchivedInfo);
+                icon = R.raw.chats_infotip;
             }
 
-            FrameLayout.LayoutParams layoutParams = (FrameLayout.LayoutParams) infoTextView.getLayoutParams();
-            layoutParams.leftMargin = AndroidUtilities.dp(58);
-            layoutParams.topMargin = AndroidUtilities.dp(6);
+            infoTextView.setText(infoText);
+            leftImageView.setAnimation(icon, size, size);
 
-            infoTextView.setTextSize(TypedValue.COMPLEX_UNIT_DIP, 14);
-            infoTextView.setTypeface(AndroidUtilities.getTypeface("fonts/rmedium.ttf"));
-            subinfoTextView.setVisibility(VISIBLE);
+            if (subInfoText != null) {
+                FrameLayout.LayoutParams layoutParams = (FrameLayout.LayoutParams) infoTextView.getLayoutParams();
+                layoutParams.leftMargin = AndroidUtilities.dp(58);
+                layoutParams.topMargin = AndroidUtilities.dp(6);
+                subinfoTextView.setText(subInfoText);
+                subinfoTextView.setVisibility(VISIBLE);
+                infoTextView.setTextSize(TypedValue.COMPLEX_UNIT_DIP, 14);
+                infoTextView.setTypeface(AndroidUtilities.getTypeface("fonts/rmedium.ttf"));
+            } else {
+                FrameLayout.LayoutParams layoutParams = (FrameLayout.LayoutParams) infoTextView.getLayoutParams();
+                layoutParams.leftMargin = AndroidUtilities.dp(58);
+                layoutParams.topMargin = AndroidUtilities.dp(13);
+                subinfoTextView.setVisibility(GONE);
+                infoTextView.setTextSize(TypedValue.COMPLEX_UNIT_DIP, 15);
+                infoTextView.setTypeface(Typeface.DEFAULT);
+            }
+
             undoButton.setVisibility(GONE);
-
             leftImageView.setVisibility(VISIBLE);
 
             leftImageView.setProgress(0);
@@ -271,7 +322,7 @@ public class UndoView extends FrameLayout {
             subinfoTextView.setVisibility(GONE);
 
             leftImageView.setVisibility(VISIBLE);
-            leftImageView.setAnimation(R.raw.chats_archived);
+            leftImageView.setAnimation(R.raw.chats_archived, 36, 36);
             leftImageView.setProgress(0);
             leftImageView.playAnimation();
         } else {
@@ -305,11 +356,23 @@ public class UndoView extends FrameLayout {
 
         AndroidUtilities.makeAccessibilityAnnouncement(infoTextView.getText() + (subinfoTextView.getVisibility() == VISIBLE ? ". " + subinfoTextView.getText() : ""));
 
+        if (hasSubInfo()) {
+            undoViewHeight = AndroidUtilities.dp(52);
+        } else if (getParent() instanceof ViewGroup) {
+            ViewGroup parent = (ViewGroup) getParent();
+            int width = parent.getMeasuredWidth();
+            if (width == 0) {
+                width = AndroidUtilities.displaySize.x;
+            }
+            measureChildWithMargins(infoTextView, MeasureSpec.makeMeasureSpec(width, MeasureSpec.EXACTLY), 0, MeasureSpec.makeMeasureSpec(0, MeasureSpec.UNSPECIFIED), 0);
+            undoViewHeight = infoTextView.getMeasuredHeight() + AndroidUtilities.dp(28);
+        }
+
         if (getVisibility() != VISIBLE) {
             setVisibility(VISIBLE);
-            setTranslationY(AndroidUtilities.dp(8 + (isTooltipAction() ? 52 : 48)));
+            setTranslationY(AndroidUtilities.dp(8) + undoViewHeight);
             AnimatorSet animatorSet = new AnimatorSet();
-            animatorSet.playTogether(ObjectAnimator.ofFloat(this, View.TRANSLATION_Y, AndroidUtilities.dp(8 + (isTooltipAction() ? 52 : 48)), 0));
+            animatorSet.playTogether(ObjectAnimator.ofFloat(this, View.TRANSLATION_Y, AndroidUtilities.dp(8) + undoViewHeight, -additionalTranslationY));
             animatorSet.setInterpolator(new DecelerateInterpolator());
             animatorSet.setDuration(180);
             animatorSet.start();
@@ -322,7 +385,7 @@ public class UndoView extends FrameLayout {
 
     @Override
     protected void onMeasure(int widthMeasureSpec, int heightMeasureSpec) {
-        super.onMeasure(MeasureSpec.makeMeasureSpec(MeasureSpec.getSize(widthMeasureSpec), MeasureSpec.EXACTLY), MeasureSpec.makeMeasureSpec(AndroidUtilities.dp(isTooltipAction() ? 52 : 48), MeasureSpec.EXACTLY));
+        super.onMeasure(MeasureSpec.makeMeasureSpec(MeasureSpec.getSize(widthMeasureSpec), MeasureSpec.EXACTLY), MeasureSpec.makeMeasureSpec(undoViewHeight, MeasureSpec.EXACTLY));
     }
 
     @Override

@@ -1,0 +1,581 @@
+{
+    "classes": [
+        {
+            "tag": "True"
+        },
+        {
+            "tag": "False"
+        }
+    ],
+    "documents": [
+        {
+            "sent_tokens": [
+                "брехня"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "ты",
+                "врешь"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "что",
+                "за",
+                "чушь"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "что",
+                "за",
+                "ересь"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "пиздишь"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "ты",
+                "вообще",
+                "понимаешь",
+                "что",
+                "несешь"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "он",
+                "наврал",
+                "мне"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "он",
+                "пиздабол"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "устал",
+                "лапшу",
+                "с",
+                "ушей",
+                "снимать"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "меня",
+                "обманули"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "она",
+                "говорит",
+                "не",
+                "правду"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "она",
+                "лгунья"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "устал",
+                "слушать",
+                "вранье"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "враньё"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "не",
+                "правда"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "лгунья"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "лгун"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "он",
+                "обманывал",
+                "меня"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "они",
+                "мне",
+                "врали"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "она",
+                "лгала"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "лжет"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "лжёт"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "он",
+                "лжёт"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "она",
+                "лжёт"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "он",
+                "лжет"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "она",
+                "лжет"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "врет"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "врёт"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "она",
+                "врет"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "он",
+                "врет"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "она",
+                "врёт"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "он",
+                "врёт"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "врут"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "они",
+                "врут"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "они",
+                "лгут"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "лгут"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "они",
+                "мне",
+                "соврали"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "они",
+                "соврали"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "она",
+                "соврала"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "он",
+                "соврал"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "соврала"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "соврал"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "соврали"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "наврал"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "напиздел"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "пиздабол"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "врун"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "соврёт"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "соврал"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "обманывает"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "обманула"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "ты"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "что",
+                "за"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "за"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "что"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "вообще"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "понимаешь"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "несешь"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "несёшь"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "он"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "мне"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "устал"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "лапшу"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "лапша"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "снимать"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "с",
+                "ушей"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "с"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "ушей"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "меня"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "говорит"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "не"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "правда"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "правду"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "устал",
+                "слушать"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "слушать"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "мне"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "она"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "они"
+            ],
+            "tag": "False"
+        }
+    ],
+    "words": [
+        "брехня",
+        "вообще",
+        "врали",
+        "вранье",
+        "враньё",
+        "врет",
+        "врешь",
+        "врун",
+        "врут",
+        "врёт",
+        "говорит",
+        "ересь",
+        "за",
+        "лапша",
+        "лапшу",
+        "лгала",
+        "лгун",
+        "лгунья",
+        "лгут",
+        "лжет",
+        "лжёт",
+        "меня",
+        "мне",
+        "наврал",
+        "напиздел",
+        "не",
+        "несешь",
+        "несёшь",
+        "обманула",
+        "обманули",
+        "обманывает",
+        "обманывал",
+        "он",
+        "она",
+        "они",
+        "пиздабол",
+        "пиздишь",
+        "понимаешь",
+        "правда",
+        "правду",
+        "с",
+        "слушать",
+        "снимать",
+        "соврал",
+        "соврала",
+        "соврали",
+        "соврёт",
+        "ты",
+        "устал",
+        "ушей",
+        "что",
+        "чушь"
+    ]
+}

@@ -12,7 +12,6 @@
 #include <stdint.h>
 #include <vector>
 #include <map>
-#include <bits/unique_ptr.h>
 #include "Defines.h"
 
 class TL_future_salt;
@@ -54,6 +53,7 @@ public:
     bool isHandshaking(HandshakeType type);
     bool hasAuthKey(ConnectionType connectionTyoe, int32_t allowPendingKey);
     bool hasPermanentAuthKey();
+    int64_t getPermanentAuthKeyId();
     bool isExportingAuthorization();
     bool hasMediaAddress();
     void resetInitVersion();
@@ -122,7 +122,7 @@ private:
 
     std::vector<std::unique_ptr<Handshake>> handshakes;
 
-    const uint32_t configVersion = 10;
+    const uint32_t configVersion = 11;
     const uint32_t paramsConfigVersion = 1;
 
     Connection *createProxyConnection(uint8_t num);

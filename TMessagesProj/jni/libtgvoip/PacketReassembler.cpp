@@ -21,7 +21,7 @@ void PacketReassembler::Reset(){
 
 }
 
-void PacketReassembler::AddFragment(Buffer pkt, unsigned int fragmentIndex, unsigned int fragmentCount, uint32_t pts, bool keyframe){
+void PacketReassembler::AddFragment(Buffer pkt, unsigned int fragmentIndex, unsigned int fragmentCount, uint32_t pts, bool keyframe, uint16_t rotation){
 	for(Packet& packet:packets){
 		if(packet.timestamp==pts){
 			if(fragmentCount!=packet.partCount){
@@ -52,6 +52,7 @@ void PacketReassembler::AddFragment(Buffer pkt, unsigned int fragmentIndex, unsi
 	packet.timestamp=pts;
 	packet.isKeyframe=keyframe;
 	packet.receivedPartCount=0;
+	packet.rotation=rotation;
 	packet.AddFragment(std::move(pkt), fragmentIndex);
 
 	packets.push_back(std::move(packet));
@@ -60,7 +61,7 @@ void PacketReassembler::AddFragment(Buffer pkt, unsigned int fragmentIndex, unsi
 		packets.erase(packets.begin());
 		if(old.receivedPartCount==old.partCount){
 			Buffer buffer=old.Reassemble();
-			callback(std::move(buffer), old.timestamp, old.isKeyframe);
+			callback(std::move(buffer), old.timestamp, old.isKeyframe, old.rotation);
 			//LOGV("Packet %u reassembled", old.timestamp);
 		}else{
 			LOGW("Packet %u not reassembled (%u of %u)", old.timestamp, old.receivedPartCount, old.partCount);
@@ -68,7 +69,7 @@ void PacketReassembler::AddFragment(Buffer pkt, unsigned int fragmentIndex, unsi
 	}
 }
 
-void PacketReassembler::SetCallback(std::function<void(Buffer packet, uint32_t pts, bool keyframe)> callback){
+void PacketReassembler::SetCallback(std::function<void(Buffer packet, uint32_t pts, bool keyframe, uint16_t rotation)> callback){
 	this->callback=callback;
 }
 

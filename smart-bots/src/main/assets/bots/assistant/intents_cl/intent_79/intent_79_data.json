@@ -1,0 +1,236 @@
+{
+    "classes": [
+        {
+            "tag": "True"
+        },
+        {
+            "tag": "False"
+        }
+    ],
+    "documents": [
+        {
+            "sent_tokens": [
+                "скажи",
+                "у",
+                "тебя",
+                "есть",
+                "хобби"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "какие",
+                "у",
+                "тебя",
+                "хобби"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "какие",
+                "у",
+                "тебя",
+                "увлечения"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "у",
+                "тебя",
+                "есть",
+                "увлечение"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "твои",
+                "увлечения"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "твои",
+                "хобби"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "расскажи",
+                "про",
+                "своё",
+                "хобби"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "скажи"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "у"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "тебя"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "у",
+                "тебя",
+                "есть"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "у",
+                "тебя"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "есть"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "какие"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "нет",
+                "хобби"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "не",
+                "увлекаюсь"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "нет",
+                "увлечений"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "расскажи"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "расскажи",
+                "про"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "про"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "свое"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "своё"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "свои"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "свой"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "твой"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "твое"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "твоё"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "тебе"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "твои"
+            ],
+            "tag": "False"
+        }
+    ],
+    "words": [
+        "есть",
+        "какие",
+        "не",
+        "нет",
+        "про",
+        "расскажи",
+        "свое",
+        "свои",
+        "свой",
+        "своё",
+        "скажи",
+        "твое",
+        "твои",
+        "твой",
+        "твоё",
+        "тебе",
+        "тебя",
+        "у",
+        "увлекаюсь",
+        "увлечение",
+        "увлечений",
+        "увлечения",
+        "хобби"
+    ]
+}

@@ -22,7 +22,7 @@ import org.telegram.messenger.UserConfig;
 import org.telegram.tgnet.TLRPC;
 import org.telegram.ui.ActionBar.Theme;
 import org.telegram.ui.Cells.DialogFolderCell;
-import org.telegram.ui.Cells.DialogGroupEmptyCell;
+import org.telegram.ui.Cells.DialogsEmptyCell;
 import org.telegram.ui.Cells.ShadowSectionCell;
 import org.telegram.ui.Components.CombinedDrawable;
 import org.telegram.ui.Components.DialogsFolder;
@@ -64,7 +64,7 @@ public class DialogsFolderAdapter extends RecyclerListView.SelectionAdapter {
                 view = new DialogFolderCell(mContext);
                 break;
             case 5:
-                view = new DialogGroupEmptyCell(mContext);
+                view = new DialogsEmptyCell(mContext, DialogsActivity.Tab.FOLDERS);
                 break;
             default:
                 view = new ShadowSectionCell(mContext);

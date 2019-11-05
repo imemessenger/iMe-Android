@@ -2388,10 +2388,10 @@ simpleAudioBlock random_id:long random_bytes:string raw_data:string = DecryptedA
 						stm->jitterBuffer->SetMinPacketCount((uint32_t) ServerConfig::GetSharedInstance()->GetInt("jitter_initial_delay_20", 6));
 					stm->decoder=NULL;
 				}else if(stm->type==STREAM_TYPE_VIDEO){
-					if(!stm->packetReassembler){
+					/*if(!stm->packetReassembler){
 						stm->packetReassembler=make_shared<PacketReassembler>();
-						stm->packetReassembler->SetCallback(bind(&VoIPController::ProcessIncomingVideoFrame, this, placeholders::_1, placeholders::_2, placeholders::_3));
-					}
+						stm->packetReassembler->SetCallback(bind(&VoIPController::ProcessIncomingVideoFrame, this, placeholders::_1, placeholders::_2, placeholders::_3, placeholders::_4));
+					}*/
 				}else{
 					LOGW("Unknown incoming stream type: %d", stm->type);
 					continue;
@@ -2498,8 +2498,32 @@ simpleAudioBlock random_id:long random_bytes:string raw_data:string = DecryptedA
 			}else if(stm && stm->type==STREAM_TYPE_VIDEO){
 				if(stm->packetReassembler){
 					Buffer pdata(sdlen);
+					uint16_t rotation=0;
+					if(fragmentIndex==0){
+						unsigned char _rotation=in.ReadByte() & (unsigned char)VIDEO_ROTATION_MASK;
+						switch(_rotation){
+							case VIDEO_ROTATION_0:
+								rotation=0;
+								break;
+							case VIDEO_ROTATION_90:
+								rotation=90;
+								break;
+							case VIDEO_ROTATION_180:
+								rotation=180;
+								break;
+							case VIDEO_ROTATION_270:
+								rotation=270;
+								break;
+							default: // unreachable on sane CPUs
+								abort();
+						}
+						//if(rotation!=stm->rotation){
+						//	stm->rotation=rotation;
+						//	LOGI("Video rotation: %u", rotation);
+						//}
+					}
 					pdata.CopyFrom(buffer+in.GetOffset(), 0, sdlen);
-					stm->packetReassembler->AddFragment(std::move(pdata), fragmentIndex, fragmentCount, pts, keyframe);
+					stm->packetReassembler->AddFragment(std::move(pdata), fragmentIndex, fragmentCount, pts, keyframe, rotation);
 				}
 				//LOGV("Received video fragment %u of %u", fragmentIndex, fragmentCount);
 			}else{
@@ -3325,7 +3349,7 @@ void VoIPController::SetVideoSource(video::VideoSource *source){
 		videoSource->SetBitrate(bitrate);
 		videoSource->Reset(stm->codec, stm->resolution=GetVideoResolutionForCurrentBitrate());
 		videoSource->Start();
-		videoSource->SetCallback(bind(&VoIPController::SendVideoFrame, this, placeholders::_1, placeholders::_2));
+		videoSource->SetCallback(bind(&VoIPController::SendVideoFrame, this, placeholders::_1, placeholders::_2, placeholders::_3));
 		lastVideoResolutionChangeTime=GetCurrentTime();
 	}else{
 		if(stm->enabled){
@@ -3347,7 +3371,7 @@ void VoIPController::SetVideoCodecSpecificData(const std::vector<Buffer>& data){
 	LOGI("Set outgoing video stream CSD");
 }
 
-void VoIPController::SendVideoFrame(const Buffer &frame, uint32_t flags){
+void VoIPController::SendVideoFrame(const Buffer &frame, uint32_t flags, uint32_t rotation){
 	//LOGI("Send video frame %u flags %u", (unsigned int)frame.Length(), flags);
 	shared_ptr<Stream> stm=GetStreamByType(STREAM_TYPE_VIDEO, true);
 	if(stm){
@@ -3360,18 +3384,17 @@ void VoIPController::SendVideoFrame(const Buffer &frame, uint32_t flags){
 			currentVideoBitrate=bitrate;
 			LOGD("Setting video bitrate to %u", bitrate);
 			videoSource->SetBitrate(bitrate);
-
-			int resolutionFromBitrate=GetVideoResolutionForCurrentBitrate();
-			if(resolutionFromBitrate!=stm->resolution && GetCurrentTime()-lastVideoResolutionChangeTime>3.0){
-				LOGI("Changing video resolution: %d -> %d", stm->resolution, resolutionFromBitrate);
-				stm->resolution=resolutionFromBitrate;
-				messageThread.Post([this, stm, resolutionFromBitrate]{
-    				videoSource->Reset(stm->codec, resolutionFromBitrate);
-    				stm->csdIsValid=false;
-				});
-				lastVideoResolutionChangeTime=GetCurrentTime();
-				return;
-			}
+		}
+		int resolutionFromBitrate=GetVideoResolutionForCurrentBitrate();
+		if(resolutionFromBitrate!=stm->resolution && GetCurrentTime()-lastVideoResolutionChangeTime>3.0){
+			LOGI("Changing video resolution: %d -> %d", stm->resolution, resolutionFromBitrate);
+			stm->resolution=resolutionFromBitrate;
+			messageThread.Post([this, stm, resolutionFromBitrate]{
+				videoSource->Reset(stm->codec, resolutionFromBitrate);
+				stm->csdIsValid=false;
+			});
+			lastVideoResolutionChangeTime=GetCurrentTime();
+			return;
 		}
 
 		if(videoKeyframeRequested){
@@ -3433,6 +3456,25 @@ void VoIPController::SendVideoFrame(const Buffer &frame, uint32_t flags){
 				pkt.WriteByte((unsigned char)seg);
 				pkt.WriteByte((unsigned char)segmentCount);
 			}
+			if(seg==0){
+				unsigned char _rotation;
+				switch(rotation){
+					case 90:
+						_rotation=VIDEO_ROTATION_90;
+						break;
+					case 180:
+						_rotation=VIDEO_ROTATION_180;
+						break;
+					case 270:
+						_rotation=VIDEO_ROTATION_270;
+						break;
+					case 0:
+					default:
+						_rotation=VIDEO_ROTATION_0;
+						break;
+				}
+				pkt.WriteByte(_rotation);
+			}
 			//LOGV("Sending segment %u of %u", (unsigned int)seg, (unsigned int)segmentCount);
 			pkt.WriteBytes(frame, offset, len);
 
@@ -3471,7 +3513,7 @@ void VoIPController::SendStreamCSD(VoIPController::Stream &stream){
 	SendExtra(buf, EXTRA_TYPE_STREAM_CSD);
 }
 
-void VoIPController::ProcessIncomingVideoFrame(Buffer frame, uint32_t pts, bool keyframe){
+void VoIPController::ProcessIncomingVideoFrame(Buffer frame, uint32_t pts, bool keyframe, uint16_t rotation){
 	//LOGI("Incoming video frame size %u pts %u", (unsigned int)frame.Length(), pts);
 	if(frame.Length()==0){
 		LOGE("EMPTY FRAME");
@@ -3485,6 +3527,10 @@ void VoIPController::ProcessIncomingVideoFrame(Buffer frame, uint32_t pts, bool 
 		if(lastReceivedVideoFrameNumber==UINT32_MAX || lastReceivedVideoFrameNumber==pts-1 || keyframe){
 			lastReceivedVideoFrameNumber=pts;
 			//LOGV("3 before decode %u", (unsigned int)frame.Length());
+			if(stm->rotation!=rotation){
+				stm->rotation=rotation;
+				videoRenderer->SetRotation(rotation);
+			}
 			videoRenderer->DecodeAndDisplay(move(frame), pts);
 		}else{
 			LOGW("Skipping non-keyframe after packet loss...");

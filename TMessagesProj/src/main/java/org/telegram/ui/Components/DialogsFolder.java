@@ -8,15 +8,17 @@ public class DialogsFolder {
 
     private long id;
     private String name;
+    private String avatar;
     private boolean pinned;
     private int unread;
     private int mentions;
     private int background;
     private ArrayList<TLRPC.Dialog> dialogs;
 
-    public DialogsFolder(long id, String name, boolean pinned, int unread, int mentions, int background, ArrayList<TLRPC.Dialog> dialogs) {
+    public DialogsFolder(long id, String name, String avatar, boolean pinned, int unread, int mentions, int background, ArrayList<TLRPC.Dialog> dialogs) {
         this.id = id;
         this.name = name;
+        this.avatar = avatar;
         this.pinned = pinned;
         this.unread = unread;
         this.mentions = mentions;
@@ -30,6 +32,10 @@ public class DialogsFolder {
 
     public String getName() {
         return name;
+    }
+
+    public String getAvatar() {
+        return avatar;
     }
 
     public boolean isPinned() {

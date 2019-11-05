@@ -1,0 +1,148 @@
+{
+    "classes": [
+        {
+            "tag": "True"
+        },
+        {
+            "tag": "False"
+        }
+    ],
+    "documents": [
+        {
+            "sent_tokens": [
+                "ты",
+                "когда",
+                "домой"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "ты",
+                "скоро",
+                "домой"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "дома",
+                "когда",
+                "будешь"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "домой",
+                "собираешься"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "ну",
+                "ты",
+                "скоро",
+                "уже",
+                "домой"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "давай",
+                "домой",
+                "уже"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "хватит",
+                "давай",
+                "домой"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "ты"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "когда"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "домой"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "скоро"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "будешь"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "собираешься"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "ну"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "уже"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "хватит"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "давай"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "дома"
+            ],
+            "tag": "False"
+        }
+    ],
+    "words": [
+        "будешь",
+        "давай",
+        "дома",
+        "домой",
+        "когда",
+        "ну",
+        "скоро",
+        "собираешься",
+        "ты",
+        "уже",
+        "хватит"
+    ]
+}

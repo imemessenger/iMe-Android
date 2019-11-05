@@ -46,7 +46,7 @@ import android.widget.TextView;
 import org.telegram.messenger.AndroidUtilities;
 import org.telegram.messenger.ChatObject;
 import org.telegram.messenger.ContactsController;
-import org.telegram.messenger.DataQuery;
+import org.telegram.messenger.MediaDataController;
 import org.telegram.messenger.LocaleController;
 import org.telegram.messenger.MediaController;
 import org.telegram.messenger.MessagesController;
@@ -64,7 +64,6 @@ import org.telegram.messenger.R;
 import org.telegram.messenger.Utilities;
 import org.telegram.ui.ActionBar.ActionBarMenu;
 import org.telegram.ui.ActionBar.ActionBarMenuItem;
-import org.telegram.ui.ActionBar.ActionBarPopupWindow;
 import org.telegram.ui.ActionBar.ActionBar;
 import org.telegram.ui.ActionBar.BackDrawable;
 import org.telegram.ui.ActionBar.BottomSheet;
@@ -128,7 +127,6 @@ public class MediaActivity extends BaseFragment implements NotificationCenter.No
     private Drawable pinnedHeaderShadowDrawable;
     private boolean ignoreSearchCollapse;
     private NumberTextView selectedMessagesCountTextView;
-    private ActionBarPopupWindow.ActionBarPopupWindowLayout popupLayout;
     private ArrayList<SharedPhotoVideoCell> cellCache = new ArrayList<>(10);
     private ArrayList<SharedPhotoVideoCell> cache = new ArrayList<>(10);
     private ArrayList<SharedAudioCell> audioCellCache = new ArrayList<>(10);
@@ -327,7 +325,7 @@ public class MediaActivity extends BaseFragment implements NotificationCenter.No
     private final static int gotochat = 7;
 
     public MediaActivity(Bundle args, int[] media) {
-        this(args, media, null, DataQuery.MEDIA_PHOTOVIDEO);
+        this(args, media, null, MediaDataController.MEDIA_PHOTOVIDEO);
     }
 
     public MediaActivity(Bundle args, int[] media, SharedMediaData[] mediaData, int initTab) {
@@ -387,16 +385,16 @@ public class MediaActivity extends BaseFragment implements NotificationCenter.No
     public View createView(Context context) {
         for (int a = 0; a < 10; a++) {
             cellCache.add(new SharedPhotoVideoCell(context));
-            if (initialTab == DataQuery.MEDIA_MUSIC) {
+            if (initialTab == MediaDataController.MEDIA_MUSIC) {
                 SharedAudioCell cell = new SharedAudioCell(context) {
                     @Override
                     public boolean needPlayMessage(MessageObject messageObject) {
                         if (messageObject.isVoice() || messageObject.isRoundVideo()) {
                             boolean result = MediaController.getInstance().playMessage(messageObject);
-                            MediaController.getInstance().setVoiceMessagesPlaylist(result ? sharedMediaData[DataQuery.MEDIA_MUSIC].messages : null, false);
+                            MediaController.getInstance().setVoiceMessagesPlaylist(result ? sharedMediaData[MediaDataController.MEDIA_MUSIC].messages : null, false);
                             return result;
                         } else if (messageObject.isMusic()) {
-                            return MediaController.getInstance().setPlaylist(sharedMediaData[DataQuery.MEDIA_MUSIC].messages, messageObject);
+                            return MediaController.getInstance().setPlaylist(sharedMediaData[MediaDataController.MEDIA_MUSIC].messages, messageObject);
                         }
                         return false;
                     }
@@ -476,7 +474,7 @@ public class MediaActivity extends BaseFragment implements NotificationCenter.No
                     } else {
                         currentEncryptedChat = MessagesController.getInstance(currentAccount).getEncryptedChat((int) (dialog_id >> 32));
                     }
-                    AlertsCreator.createDeleteMessagesAlert(MediaActivity.this, currentUser, currentChat, currentEncryptedChat, null, mergeDialogId, null, selectedFiles, null, 1, () -> {
+                    AlertsCreator.createDeleteMessagesAlert(MediaActivity.this, currentUser, currentChat, currentEncryptedChat, null, mergeDialogId, null, selectedFiles, null, false, 1, () -> {
                         actionBar.hideActionMode();
                         actionBar.closeSearchField();
                         cantDeleteMessagesCount = 0;
@@ -509,9 +507,9 @@ public class MediaActivity extends BaseFragment implements NotificationCenter.No
                             for (int a = 0; a < dids.size(); a++) {
                                 long did = dids.get(a);
                                 if (message != null) {
-                                    SendMessagesHelper.getInstance(currentAccount).sendMessage(message.toString(), did, null, null, true, null, null, null);
+                                    SendMessagesHelper.getInstance(currentAccount).sendMessage(message.toString(), did, null, null, true, null, null, null, true, 0);
                                 }
-                                SendMessagesHelper.getInstance(currentAccount).sendMessage(fmessages, did);
+                                SendMessagesHelper.getInstance(currentAccount).sendMessage(fmessages, did, true, 0);
                             }
                             fragment1.finishFragment();
                         } else {
@@ -555,19 +553,15 @@ public class MediaActivity extends BaseFragment implements NotificationCenter.No
                     int lower_part = (int) dialog_id;
                     int high_id = (int) (dialog_id >> 32);
                     if (lower_part != 0) {
-                        if (high_id == 1) {
-                            args.putInt("chat_id", lower_part);
-                        } else {
-                            if (lower_part > 0) {
-                                args.putInt("user_id", lower_part);
-                            } else if (lower_part < 0) {
-                                TLRPC.Chat chat = MessagesController.getInstance(currentAccount).getChat(-lower_part);
-                                if (chat != null && chat.migrated_to != null) {
-                                    args.putInt("migrated_to", lower_part);
-                                    lower_part = -chat.migrated_to.channel_id;
-                                }
-                                args.putInt("chat_id", -lower_part);
+                        if (lower_part > 0) {
+                            args.putInt("user_id", lower_part);
+                        } else if (lower_part < 0) {
+                            TLRPC.Chat chat = MessagesController.getInstance(currentAccount).getChat(-lower_part);
+                            if (chat != null && chat.migrated_to != null) {
+                                args.putInt("migrated_to", lower_part);
+                                lower_part = -chat.migrated_to.channel_id;
                             }
+                            args.putInt("chat_id", -lower_part);
                         }
                     } else {
                         args.putInt("enc_id", high_id);
@@ -1181,22 +1175,22 @@ public class MediaActivity extends BaseFragment implements NotificationCenter.No
                     if (visibleItemCount != 0 && firstVisibleItem + visibleItemCount > totalItemCount - 2 && !sharedMediaData[mediaPage.selectedType].loading) {
                         int type;
                         if (mediaPage.selectedType == 0) {
-                            type = DataQuery.MEDIA_PHOTOVIDEO;
+                            type = MediaDataController.MEDIA_PHOTOVIDEO;
                         } else if (mediaPage.selectedType == 1) {
-                            type = DataQuery.MEDIA_FILE;
+                            type = MediaDataController.MEDIA_FILE;
                         } else if (mediaPage.selectedType == 2) {
-                            type = DataQuery.MEDIA_AUDIO;
+                            type = MediaDataController.MEDIA_AUDIO;
                         } else if (mediaPage.selectedType == 4) {
-                            type = DataQuery.MEDIA_MUSIC;
+                            type = MediaDataController.MEDIA_MUSIC;
                         } else {
-                            type = DataQuery.MEDIA_URL;
+                            type = MediaDataController.MEDIA_URL;
                         }
                         if (!sharedMediaData[mediaPage.selectedType].endReached[0]) {
                             sharedMediaData[mediaPage.selectedType].loading = true;
-                            DataQuery.getInstance(currentAccount).loadMedia(dialog_id, 50, sharedMediaData[mediaPage.selectedType].max_id[0], type, 1, classGuid);
+                            MediaDataController.getInstance(currentAccount).loadMedia(dialog_id, 50, sharedMediaData[mediaPage.selectedType].max_id[0], type, 1, classGuid);
                         } else if (mergeDialogId != 0 && !sharedMediaData[mediaPage.selectedType].endReached[1]) {
                             sharedMediaData[mediaPage.selectedType].loading = true;
-                            DataQuery.getInstance(currentAccount).loadMedia(mergeDialogId, 50, sharedMediaData[mediaPage.selectedType].max_id[1], type, 1, classGuid);
+                            MediaDataController.getInstance(currentAccount).loadMedia(mergeDialogId, 50, sharedMediaData[mediaPage.selectedType].max_id[1], type, 1, classGuid);
                         }
                     }
                     if (recyclerView == mediaPages[0].listView && !searching && !actionBar.isActionModeShowed()) {
@@ -1353,7 +1347,7 @@ public class MediaActivity extends BaseFragment implements NotificationCenter.No
                 sharedMediaData[type].endReached[loadIndex] = (Boolean) args[5];
                 if (loadIndex == 0 && sharedMediaData[type].endReached[loadIndex] && mergeDialogId != 0) {
                     sharedMediaData[type].loading = true;
-                    DataQuery.getInstance(currentAccount).loadMedia(mergeDialogId, 50, sharedMediaData[type].max_id[1], type, 1, classGuid);
+                    MediaDataController.getInstance(currentAccount).loadMedia(mergeDialogId, 50, sharedMediaData[type].max_id[1], type, 1, classGuid);
                 }
                 if (adapter != null) {
                     for (int a = 0; a < mediaPages.length; a++) {
@@ -1391,6 +1385,10 @@ public class MediaActivity extends BaseFragment implements NotificationCenter.No
                 }
             }
         } else if (id == NotificationCenter.messagesDeleted) {
+            boolean scheduled = (Boolean) args[2];
+            if (scheduled) {
+                return;
+            }
             TLRPC.Chat currentChat = null;
             if ((int) dialog_id < 0) {
                 currentChat = MessagesController.getInstance(currentAccount).getChat(-(int) dialog_id);
@@ -1436,6 +1434,10 @@ public class MediaActivity extends BaseFragment implements NotificationCenter.No
                 }
             }
         } else if (id == NotificationCenter.didReceiveNewMessages) {
+            boolean scheduled = (Boolean) args[2];
+            if (scheduled) {
+                return;
+            }
             long uid = (Long) args[0];
             if (uid == dialog_id) {
                 ArrayList<MessageObject> arr = (ArrayList<MessageObject>) args[1];
@@ -1446,7 +1448,7 @@ public class MediaActivity extends BaseFragment implements NotificationCenter.No
                     if (obj.messageOwner.media == null || obj.needDrawBluredPreview()) {
                         continue;
                     }
-                    int type = DataQuery.getMediaType(obj.messageOwner);
+                    int type = MediaDataController.getMediaType(obj.messageOwner);
                     if (type == -1) {
                         return;
                     }
@@ -1486,6 +1488,10 @@ public class MediaActivity extends BaseFragment implements NotificationCenter.No
                 }
             }
         } else if (id == NotificationCenter.messageReceivedByServer) {
+            Boolean scheduled = (Boolean) args[6];
+            if (scheduled) {
+                return;
+            }
             Integer msgId = (Integer) args[0];
             Integer newMsgId = (Integer) args[1];
             for (SharedMediaData data : sharedMediaData) {
@@ -1912,7 +1918,7 @@ public class MediaActivity extends BaseFragment implements NotificationCenter.No
             }
             if (!sharedMediaData[mediaPages[a].selectedType].loading && !sharedMediaData[mediaPages[a].selectedType].endReached[0] && sharedMediaData[mediaPages[a].selectedType].messages.isEmpty()) {
                 sharedMediaData[mediaPages[a].selectedType].loading = true;
-                DataQuery.getInstance(currentAccount).loadMedia(dialog_id, 50, 0, mediaPages[a].selectedType, 1, classGuid);
+                MediaDataController.getInstance(currentAccount).loadMedia(dialog_id, 50, 0, mediaPages[a].selectedType, 1, classGuid);
             }
             if (sharedMediaData[mediaPages[a].selectedType].loading && sharedMediaData[mediaPages[a].selectedType].messages.isEmpty()) {
                 mediaPages[a].progressView.setVisibility(View.VISIBLE);
@@ -1940,7 +1946,7 @@ public class MediaActivity extends BaseFragment implements NotificationCenter.No
         }
         AndroidUtilities.hideKeyboard(getParentActivity().getCurrentFocus());
         selectedFiles[item.getDialogId() == dialog_id ? 0 : 1].put(item.getId(), item);
-        if (!item.canDeleteMessage(null)) {
+        if (!item.canDeleteMessage(false, null)) {
             cantDeleteMessagesCount++;
         }
         actionBar.createActionMode().getItem(delete).setVisibility(cantDeleteMessagesCount == 0 ? View.VISIBLE : View.GONE);
@@ -1983,7 +1989,7 @@ public class MediaActivity extends BaseFragment implements NotificationCenter.No
             int loadIndex = message.getDialogId() == dialog_id ? 0 : 1;
             if (selectedFiles[loadIndex].indexOfKey(message.getId()) >= 0) {
                 selectedFiles[loadIndex].remove(message.getId());
-                if (!message.canDeleteMessage(null)) {
+                if (!message.canDeleteMessage(false, null)) {
                     cantDeleteMessagesCount--;
                 }
             } else {
@@ -1991,7 +1997,7 @@ public class MediaActivity extends BaseFragment implements NotificationCenter.No
                     return;
                 }
                 selectedFiles[loadIndex].put(message.getId(), message);
-                if (!message.canDeleteMessage(null)) {
+                if (!message.canDeleteMessage(false, null)) {
                     cantDeleteMessagesCount++;
                 }
             }
@@ -2329,7 +2335,7 @@ public class MediaActivity extends BaseFragment implements NotificationCenter.No
                     break;
                 case 3:
                 default:
-                    if (currentType == DataQuery.MEDIA_MUSIC && !audioCellCache.isEmpty()) {
+                    if (currentType == MediaDataController.MEDIA_MUSIC && !audioCellCache.isEmpty()) {
                         view = audioCellCache.get(0);
                         audioCellCache.remove(0);
                         ViewGroup p = (ViewGroup) view.getParent();
@@ -2351,7 +2357,7 @@ public class MediaActivity extends BaseFragment implements NotificationCenter.No
                             }
                         };
                     }
-                    if (currentType == DataQuery.MEDIA_MUSIC) {
+                    if (currentType == MediaDataController.MEDIA_MUSIC) {
                         audioCache.add((SharedAudioCell) view);
                     }
                     break;

@@ -1,0 +1,272 @@
+{
+    "classes": [
+        {
+            "tag": "True"
+        },
+        {
+            "tag": "False"
+        }
+    ],
+    "documents": [
+        {
+            "sent_tokens": [
+                "не",
+                "забывай",
+                "о",
+                "самом",
+                "важном"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "это",
+                "ничего",
+                "не",
+                "значит"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "слишком",
+                "капитальное",
+                "известие"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "да",
+                "это",
+                "не",
+                "важно"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "не",
+                "важнецки"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "это",
+                "не",
+                "входит",
+                "в",
+                "список",
+                "дел"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "неважное"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "не",
+                "важное"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "важное"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "важно"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "это",
+                "важно"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "это",
+                "очень",
+                "важно"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "слишком",
+                "важно"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "не"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "забывай"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "о"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "самом"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "не",
+                "входит"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "входит"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "это"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "ничего"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "не",
+                "значит"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "значит"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "не"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "слишком"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "капитальное"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "известие"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "капитально"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "да"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "это"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "в"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "список"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "в",
+                "список"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "дел"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "очень"
+            ],
+            "tag": "False"
+        }
+    ],
+    "words": [
+        "в",
+        "важнецки",
+        "важно",
+        "важное",
+        "важном",
+        "входит",
+        "да",
+        "дел",
+        "забывай",
+        "значит",
+        "известие",
+        "капитально",
+        "капитальное",
+        "не",
+        "неважное",
+        "ничего",
+        "о",
+        "очень",
+        "самом",
+        "слишком",
+        "список",
+        "это"
+    ]
+}

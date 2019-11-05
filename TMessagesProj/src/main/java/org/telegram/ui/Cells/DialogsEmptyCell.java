@@ -24,6 +24,7 @@ import org.telegram.tgnet.TLRPC;
 import org.telegram.ui.ActionBar.ActionBar;
 import org.telegram.ui.ActionBar.Theme;
 import org.telegram.ui.Components.LayoutHelper;
+import org.telegram.ui.DialogsActivity;
 
 import java.util.ArrayList;
 
@@ -36,27 +37,52 @@ public class DialogsEmptyCell extends LinearLayout {
 
     private int currentAccount = UserConfig.selectedAccount;
 
-    public DialogsEmptyCell(Context context) {
+    public DialogsEmptyCell(Context context, DialogsActivity.Tab tab) {
         super(context);
 
-        setGravity(Gravity.CENTER);
+        setGravity(Gravity.TOP);
         setOrientation(VERTICAL);
         setOnTouchListener((v, event) -> true);
 
+        String titleText = LocaleController.getString("NoChats", R.string.NoChats);
+        String helpText = LocaleController.getString("NoChatsHelp", R.string.NoChatsHelp);
+        if(tab!=null){
+            switch (tab){
+                case UNREAD:{
+                    titleText = LocaleController.getInternalString(R.string.NoUnread);
+                    helpText = LocaleController.getInternalString( R.string.NoUnreadHelp);
+                    break;
+                }
+                case CHANNELS:{
+                    titleText = LocaleController.getInternalString(R.string.NoChannels);
+                    helpText = LocaleController.getInternalString( R.string.NoChannelsHelp);
+                    break;
+                }
+                case FOLDERS:{
+                    titleText = LocaleController.getInternalString(R.string.NoFolders);
+                    helpText = LocaleController.getInternalString( R.string.NoFoldersHelp);
+                    break;
+                }
+                default : {
+                    titleText = LocaleController.getString("NoChats", R.string.NoChats);
+                    helpText = LocaleController.getString("NoChatsHelp", R.string.NoChatsHelp);
+                }
+            }
+        }
+
         emptyTextView1 = new TextView(context);
-        emptyTextView1.setTextColor(Theme.getColor(Theme.key_chats_nameMessage_threeLines));
-        emptyTextView1.setText(LocaleController.getString("NoChats", R.string.NoChats));
+        emptyTextView1.setTextColor(Theme.getColor(Theme.key_emptyListPlaceholder));
+        emptyTextView1.setText(titleText);
         emptyTextView1.setTextSize(TypedValue.COMPLEX_UNIT_DIP, 20);
         emptyTextView1.setTypeface(AndroidUtilities.getTypeface("fonts/rmedium.ttf"));
         emptyTextView1.setGravity(Gravity.CENTER);
-        addView(emptyTextView1, LayoutHelper.createFrame(LayoutHelper.MATCH_PARENT, LayoutHelper.WRAP_CONTENT, Gravity.TOP | Gravity.LEFT, 52, 4, 52, 0));
+        addView(emptyTextView1, LayoutHelper.createFrame(LayoutHelper.MATCH_PARENT, LayoutHelper.WRAP_CONTENT, Gravity.TOP | Gravity.LEFT, 52, 14, 52, 0));
 
         emptyTextView2 = new TextView(context);
-        String help = LocaleController.getString("NoChatsHelp", R.string.NoChatsHelp);
         if (AndroidUtilities.isTablet() && !AndroidUtilities.isSmallTablet()) {
-            help = help.replace('\n', ' ');
+            helpText = helpText.replace('\n', ' ');
         }
-        emptyTextView2.setText(help);
+        emptyTextView2.setText(helpText);
         emptyTextView2.setTextColor(Theme.getColor(Theme.key_chats_message));
         emptyTextView2.setTextSize(TypedValue.COMPLEX_UNIT_DIP, 14);
         emptyTextView2.setGravity(Gravity.CENTER);

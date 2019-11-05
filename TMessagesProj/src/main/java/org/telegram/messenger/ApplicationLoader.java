@@ -29,12 +29,12 @@ import android.telephony.TelephonyManager;
 import android.text.TextUtils;
 
 import androidx.annotation.NonNull;
-import androidx.multidex.MultiDex;
 
 import com.google.android.gms.common.ConnectionResult;
 import com.google.android.gms.common.GooglePlayServicesUtil;
 import com.google.firebase.iid.FirebaseInstanceId;
-import com.smedialink.bots.usecase.IMeManager;
+import com.smedialink.bots.data.database.TagDbModel;
+import com.smedialink.bots.usecase.AiBotsManager;
 import com.smedialink.shop.PurchaseHelper;
 import com.smedialink.shop.configuration.BillingConfiguration;
 import com.smedialink.shop.configuration.BillingProvider;
@@ -46,6 +46,8 @@ import org.telegram.tgnet.TLRPC;
 import org.telegram.ui.Components.ForegroundDetector;
 
 import java.io.File;
+import java.util.Collections;
+import java.util.List;
 
 public class ApplicationLoader extends Application implements BillingProvider {
 
@@ -54,11 +56,16 @@ public class ApplicationLoader extends Application implements BillingProvider {
     public static volatile NetworkInfo currentNetworkInfo;
     public static volatile boolean unableGetCurrentNetwork;
     public static volatile Handler applicationHandler;
-    // iMe
-    public static volatile IMeManager manager;
+
+    // iMe - start
+    public static volatile AiBotsManager smartBotsManager;
     public static volatile AiChannelsManager channelsManager;
+    public static volatile List<TagDbModel> currentTags = Collections.emptyList();
 
     public static volatile PurchaseHelper purchaseHelper;
+
+    private final Billing mBilling = new Billing(this, new BillingConfiguration());
+    // iMe - end
 
     private static ConnectivityManager connectivityManager;
     private static volatile boolean applicationInited = false;
@@ -69,19 +76,7 @@ public class ApplicationLoader extends Application implements BillingProvider {
     public static volatile boolean mainInterfacePausedStageQueue = true;
     public static volatile long mainInterfacePausedStageQueueTime;
 
-    private final Billing mBilling = new Billing(this, new BillingConfiguration());
-
-    @NonNull
-    @Override
-    public Billing provideBilling() {
-        return mBilling;
-    }
-
-    @Override
-    protected void attachBaseContext(Context base) {
-        super.attachBaseContext(base);
-        MultiDex.install(this);
-    }
+    public static boolean hasPlayServices;
 
     public static File getFilesDirFixed() {
         for (int a = 0; a < 10; a++) {
@@ -98,7 +93,7 @@ public class ApplicationLoader extends Application implements BillingProvider {
         } catch (Exception e) {
             FileLog.e(e);
         }
-        return new File("/data/data/com.iMe.android/files");
+        return new File("/data/data/org.telegram.messenger/files");
     }
 
     public static File getBotsDownloadDir() {
@@ -108,6 +103,7 @@ public class ApplicationLoader extends Application implements BillingProvider {
     public static File getBotsInstallDir() {
         return new File(getFilesDirFixed().getAbsolutePath(), "ime");
     }
+
 
     public static void postInitApplication() {
         if (applicationInited) {
@@ -132,6 +128,7 @@ public class ApplicationLoader extends Application implements BillingProvider {
                     } catch (Throwable ignore) {
 
                     }
+
                     boolean isSlow = isConnectionSlow();
                     for (int a = 0; a < UserConfig.MAX_ACCOUNT_COUNT; a++) {
                         ConnectionsManager.getInstance(a).checkConnection();
@@ -169,11 +166,14 @@ public class ApplicationLoader extends Application implements BillingProvider {
         for (int a = 0; a < UserConfig.MAX_ACCOUNT_COUNT; a++) {
             UserConfig.getInstance(a).loadConfig();
             MessagesController.getInstance(a);
-            ConnectionsManager.getInstance(a);
+            if (a == 0) {
+                SharedConfig.pushStringStatus = "__FIREBASE_GENERATING_SINCE_" + ConnectionsManager.getInstance(a).getCurrentTime() + "__";
+            } else {
+                ConnectionsManager.getInstance(a);
+            }
             TLRPC.User user = UserConfig.getInstance(a).getCurrentUser();
             if (user != null) {
                 MessagesController.getInstance(a).putUser(user, true);
-                MessagesController.getInstance(a).getBlockedUsers(true);
                 SendMessagesHelper.getInstance(a).checkUnsentMessages();
             }
         }
@@ -192,6 +192,7 @@ public class ApplicationLoader extends Application implements BillingProvider {
 
         WearDataLayerListenerService.updateWatchConnectionState();
 
+        // iMe - start
         try {
             smartBotsManager = AiBotsManager.Companion.getInstance(applicationContext, getBotsDownloadDir(), getBotsInstallDir());
         } catch (Exception e) {
@@ -226,10 +227,17 @@ public class ApplicationLoader extends Application implements BillingProvider {
         } catch (Exception e) {
             e.printStackTrace();
         }
+        // iMe - end
     }
 
     public ApplicationLoader() {
         super();
+    }
+
+    @NonNull
+    @Override
+    public Billing provideBilling() {
+        return mBilling;
     }
 
     @Override
@@ -272,7 +280,7 @@ public class ApplicationLoader extends Application implements BillingProvider {
         applicationContext.stopService(new Intent(applicationContext, NotificationsService.class));
 
         PendingIntent pintent = PendingIntent.getService(applicationContext, 0, new Intent(applicationContext, NotificationsService.class), 0);
-        AlarmManager alarm = (AlarmManager) applicationContext.getSystemService(Context.ALARM_SERVICE);
+        AlarmManager alarm = (AlarmManager)applicationContext.getSystemService(Context.ALARM_SERVICE);
         alarm.cancel(pintent);
     }
 
@@ -287,13 +295,12 @@ public class ApplicationLoader extends Application implements BillingProvider {
         }
     }
 
-
     private void initPlayServices() {
         AndroidUtilities.runOnUIThread(() -> {
-            if (checkPlayServices()) {
+            if (hasPlayServices = checkPlayServices()) {
                 final String currentPushString = SharedConfig.pushString;
                 if (!TextUtils.isEmpty(currentPushString)) {
-                    if (BuildVars.LOGS_ENABLED) {
+                    if (BuildVars.DEBUG_PRIVATE_VERSION && BuildVars.LOGS_ENABLED) {
                         FileLog.d("GCM regId = " + currentPushString);
                     }
                 } else {
@@ -308,6 +315,12 @@ public class ApplicationLoader extends Application implements BillingProvider {
                             if (!TextUtils.isEmpty(token)) {
                                 GcmPushListenerService.sendRegistrationToServer(token);
                             }
+                        }).addOnFailureListener(e -> {
+                            if (BuildVars.LOGS_ENABLED) {
+                                FileLog.d("Failed to get regid");
+                            }
+                            SharedConfig.pushStringStatus = "__FIREBASE_FAILED__";
+                            GcmPushListenerService.sendRegistrationToServer(null);
                         });
                     } catch (Throwable e) {
                         FileLog.e(e);
@@ -317,6 +330,8 @@ public class ApplicationLoader extends Application implements BillingProvider {
                 if (BuildVars.LOGS_ENABLED) {
                     FileLog.d("No valid Google Play Services APK found.");
                 }
+                SharedConfig.pushStringStatus = "__NO_GOOGLE_PLAY_SERVICES__";
+                GcmPushListenerService.sendRegistrationToServer(null);
             }
         }, 1000);
     }

@@ -1,0 +1,191 @@
+{
+    "classes": [
+        {
+            "tag": "True"
+        },
+        {
+            "tag": "False"
+        }
+    ],
+    "documents": [
+        {
+            "sent_tokens": [
+                "есть",
+                "деньги"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "у",
+                "тебя",
+                "есть",
+                "деньги"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "есть",
+                "бабло"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "есть",
+                "бобло"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "есть",
+                "капуста"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "деньгами",
+                "богат"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "деньги",
+                "имеются"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "имеешь",
+                "деньги"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "как",
+                "с",
+                "деньгами",
+                "у",
+                "тебя"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "как",
+                "у",
+                "тебя",
+                "с",
+                "баблом"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "есть"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "у",
+                "тебя"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "у"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "тебя"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "капуста"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "богат"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "деньгами"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "имеются"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "имеешь"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "деньги"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "как"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "с"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "деньгами"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "баблом"
+            ],
+            "tag": "False"
+        }
+    ],
+    "words": [
+        "бабло",
+        "баблом",
+        "бобло",
+        "богат",
+        "деньгами",
+        "деньги",
+        "есть",
+        "имеешь",
+        "имеются",
+        "как",
+        "капуста",
+        "с",
+        "тебя",
+        "у"
+    ]
+}

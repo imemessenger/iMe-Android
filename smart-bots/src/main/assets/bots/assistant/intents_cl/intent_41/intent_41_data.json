@@ -1,0 +1,173 @@
+{
+    "classes": [
+        {
+            "tag": "True"
+        },
+        {
+            "tag": "False"
+        }
+    ],
+    "documents": [
+        {
+            "sent_tokens": [
+                "сколько",
+                "мне",
+                "ещё",
+                "ждать"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "ожидаю"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "я",
+                "подожду"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "всё",
+                "ещё",
+                "жду"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "больше",
+                "не",
+                "могу",
+                "ждать"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "хорошо",
+                "я",
+                "подожду"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "я",
+                "жду"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "жду",
+                "скидку"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "жду",
+                "скидочку"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "жду",
+                "скидки"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "жду"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "сколько"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "мне"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "еще"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "ещё"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "я"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "больше"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "не"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "могу"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "не",
+                "могу"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "хорошо"
+            ],
+            "tag": "False"
+        }
+    ],
+    "words": [
+        "больше",
+        "всё",
+        "еще",
+        "ещё",
+        "ждать",
+        "жду",
+        "мне",
+        "могу",
+        "не",
+        "ожидаю",
+        "подожду",
+        "скидки",
+        "скидку",
+        "скидочку",
+        "сколько",
+        "хорошо",
+        "я"
+    ]
+}

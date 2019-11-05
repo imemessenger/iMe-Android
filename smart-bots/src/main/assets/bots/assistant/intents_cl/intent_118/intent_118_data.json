@@ -1,0 +1,93 @@
+{
+    "classes": [
+        {
+            "tag": "True"
+        },
+        {
+            "tag": "False"
+        }
+    ],
+    "documents": [
+        {
+            "sent_tokens": [
+                "ты",
+                "на",
+                "работе"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "ты",
+                "в",
+                "офисе"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "ты",
+                "в",
+                "конторе"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "ты",
+                "на",
+                "базе"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "ты",
+                "на",
+                "объекте"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "ты"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "на"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "в"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "объекте"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "объект"
+            ],
+            "tag": "False"
+        }
+    ],
+    "words": [
+        "базе",
+        "в",
+        "конторе",
+        "на",
+        "объект",
+        "объекте",
+        "офисе",
+        "работе",
+        "ты"
+    ]
+}

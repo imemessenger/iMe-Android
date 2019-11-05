@@ -1,0 +1,224 @@
+{
+    "classes": [
+        {
+            "tag": "True"
+        },
+        {
+            "tag": "False"
+        }
+    ],
+    "documents": [
+        {
+            "sent_tokens": [
+                "сам",
+                "справлюсь"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "я",
+                "сам"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "я",
+                "один",
+                "разберусь"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "я",
+                "соло"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "сделаю",
+                "это",
+                "в",
+                "одиночку"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "мне",
+                "не",
+                "нужен",
+                "помощник"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "я",
+                "один",
+                "это",
+                "сделаю"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "я",
+                "сам",
+                "это",
+                "сделаю"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "я",
+                "сама",
+                "это",
+                "сделаю"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "я",
+                "одна",
+                "это",
+                "сделаю"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "я",
+                "сама"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "сама",
+                "справлюсь"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "сам"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "сама"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "справлюсь"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "я"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "один"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "разберусь"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "соло"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "сделаю"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "это"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "в"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "одиночку"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "мне"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "не",
+                "нужен"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "не"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "нужен"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "помощник"
+            ],
+            "tag": "False"
+        }
+    ],
+    "words": [
+        "в",
+        "мне",
+        "не",
+        "нужен",
+        "один",
+        "одиночку",
+        "одна",
+        "помощник",
+        "разберусь",
+        "сам",
+        "сама",
+        "сделаю",
+        "соло",
+        "справлюсь",
+        "это",
+        "я"
+    ]
+}

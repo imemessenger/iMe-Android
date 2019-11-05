@@ -1,0 +1,159 @@
+{
+    "classes": [
+        {
+            "tag": "True"
+        },
+        {
+            "tag": "False"
+        }
+    ],
+    "documents": [
+        {
+            "sent_tokens": [
+                "ты",
+                "с",
+                "кем"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "с",
+                "кем",
+                "ты"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "а",
+                "с",
+                "кем",
+                "ты"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "так",
+                "ты",
+                "не",
+                "один"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "ты",
+                "не",
+                "один",
+                "там"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "кто",
+                "с",
+                "тобой"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "с",
+                "кем",
+                "ты",
+                "там"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "с"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "кем"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "ты"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "а"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "не"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "один"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "не",
+                "один"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "там"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "кто"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "с",
+                "тобой"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "тобой"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "с",
+                "кем"
+            ],
+            "tag": "False"
+        }
+    ],
+    "words": [
+        "а",
+        "кем",
+        "кто",
+        "не",
+        "один",
+        "с",
+        "так",
+        "там",
+        "тобой",
+        "ты"
+    ]
+}

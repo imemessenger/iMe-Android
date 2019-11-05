@@ -1,0 +1,64 @@
+{
+  "variant": {
+    "module": {
+      "rootBuildGradleFolder": "/Users/sergey/StudioProjects/iMe",
+      "sdkFolder": "/Users/sergey/Library/Android/sdk",
+      "isNativeCompilerSettingsCacheEnabled": false,
+      "isBuildOnlyTargetAbiEnabled": true,
+      "splitsAbiFilterSet": [],
+      "intermediatesFolder": "/Users/sergey/StudioProjects/iMe/TMessagesProj/build/intermediates",
+      "gradleModulePathName": ":TMessagesProj",
+      "moduleRootFolder": "/Users/sergey/StudioProjects/iMe/TMessagesProj",
+      "makeFile": "/Users/sergey/StudioProjects/iMe/TMessagesProj/jni/Android.mk",
+      "buildSystem": "NDK_BUILD",
+      "compilerSettingsCacheFolder": "/Users/sergey/StudioProjects/iMe/.cxx",
+      "cxxFolder": "/Users/sergey/StudioProjects/iMe/TMessagesProj/.cxx",
+      "ndkFolder": "/Users/sergey/Library/Android/sdk/ndk-bundle",
+      "ndkVersion": "20.0.5594570",
+      "ndkSupportedAbiList": [
+        "ARMEABI_V7A",
+        "ARM64_V8A",
+        "X86",
+        "X86_64"
+      ],
+      "ndkDefaultAbiList": [
+        "ARMEABI_V7A",
+        "ARM64_V8A",
+        "X86",
+        "X86_64"
+      ],
+      "cmakeToolchainFile": "."
+    },
+    "buildSystemArgumentList": [
+      "NDK_APPLICATION_MK:\u003djni/Application.mk",
+      "APP_PLATFORM:\u003dandroid-16",
+      "-j8"
+    ],
+    "cFlagList": [],
+    "cppFlagsList": [],
+    "variantName": "afatRelease",
+    "soFolder": "/Users/sergey/StudioProjects/iMe/TMessagesProj/build/intermediates/ndkBuild/afatRelease/lib",
+    "objFolder": "/Users/sergey/StudioProjects/iMe/TMessagesProj/build/intermediates/ndkBuild/afatRelease/obj/local",
+    "jsonFolder": "/Users/sergey/StudioProjects/iMe/TMessagesProj/.cxx/ndkBuild/afatRelease",
+    "gradleBuildOutputFolder": "/Users/sergey/StudioProjects/iMe/TMessagesProj/.cxx/cxx/afatRelease",
+    "isDebuggableEnabled": false,
+    "validAbiList": [
+      "ARMEABI_V7A",
+      "ARM64_V8A",
+      "X86",
+      "X86_64"
+    ],
+    "buildTargetSet": []
+  },
+  "abi": "ARMEABI_V7A",
+  "abiPlatformVersion": 16,
+  "cxxBuildFolder": "/Users/sergey/StudioProjects/iMe/TMessagesProj/.cxx/ndkBuild/afatRelease/armeabi-v7a",
+  "jsonFile": "/Users/sergey/StudioProjects/iMe/TMessagesProj/.cxx/ndkBuild/afatRelease/armeabi-v7a/android_gradle_build.json",
+  "gradleBuildOutputFolder": "/Users/sergey/StudioProjects/iMe/TMessagesProj/.cxx/cxx/afatRelease/armeabi-v7a",
+  "objFolder": "/Users/sergey/StudioProjects/iMe/TMessagesProj/build/intermediates/ndkBuild/afatRelease/obj/local/armeabi-v7a",
+  "buildCommandFile": "/Users/sergey/StudioProjects/iMe/TMessagesProj/.cxx/ndkBuild/afatRelease/armeabi-v7a/build_command.txt",
+  "buildOutputFile": "/Users/sergey/StudioProjects/iMe/TMessagesProj/.cxx/ndkBuild/afatRelease/armeabi-v7a/build_output.txt",
+  "modelOutputFile": "/Users/sergey/StudioProjects/iMe/TMessagesProj/.cxx/ndkBuild/afatRelease/armeabi-v7a/build_model.json",
+  "jsonGenerationLoggingRecordFile": "/Users/sergey/StudioProjects/iMe/TMessagesProj/.cxx/ndkBuild/afatRelease/armeabi-v7a/json_generation_record.json",
+  "compileCommandsJsonFile": "/Users/sergey/StudioProjects/iMe/TMessagesProj/.cxx/ndkBuild/afatRelease/armeabi-v7a/compile_commands.json"
+}

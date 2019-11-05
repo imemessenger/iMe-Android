@@ -28,11 +28,6 @@ import android.graphics.drawable.Drawable;
 import android.net.Uri;
 import android.os.Build;
 import android.os.Bundle;
-
-import androidx.core.content.FileProvider;
-import androidx.recyclerview.widget.LinearLayoutManager;
-import androidx.recyclerview.widget.RecyclerView;
-
 import android.text.SpannableStringBuilder;
 import android.text.Spanned;
 import android.text.TextUtils;
@@ -52,34 +47,45 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import org.telegram.messenger.AndroidUtilities;
+import androidx.core.content.FileProvider;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
+
+import com.smedialink.shop.BotSettingsActivity;
+
 import org.telegram.PhoneFormat.PhoneFormat;
+import org.telegram.messenger.AndroidUtilities;
+import org.telegram.messenger.ApplicationLoader;
 import org.telegram.messenger.BuildConfig;
+import org.telegram.messenger.BuildVars;
 import org.telegram.messenger.ContactsController;
-import org.telegram.messenger.DataQuery;
+import org.telegram.messenger.FileLoader;
+import org.telegram.messenger.FileLog;
 import org.telegram.messenger.ImageLoader;
 import org.telegram.messenger.ImageLocation;
-import org.telegram.messenger.NotificationsController;
-import org.telegram.messenger.SharedConfig;
-import org.telegram.messenger.UserObject;
-import org.telegram.messenger.ApplicationLoader;
-import org.telegram.messenger.BuildVars;
 import org.telegram.messenger.LocaleController;
-import org.telegram.messenger.FileLoader;
+import org.telegram.messenger.MediaDataController;
+import org.telegram.messenger.MessageObject;
+import org.telegram.messenger.MessagesController;
+import org.telegram.messenger.MessagesStorage;
+import org.telegram.messenger.NotificationCenter;
+import org.telegram.messenger.NotificationsController;
+import org.telegram.messenger.R;
+import org.telegram.messenger.SharedConfig;
+import org.telegram.messenger.UserConfig;
+import org.telegram.messenger.UserObject;
 import org.telegram.messenger.Utilities;
 import org.telegram.messenger.browser.Browser;
 import org.telegram.tgnet.ConnectionsManager;
 import org.telegram.tgnet.SerializedData;
 import org.telegram.tgnet.TLRPC;
-import org.telegram.messenger.FileLog;
-import org.telegram.messenger.MessagesController;
-import org.telegram.messenger.MessagesStorage;
-import org.telegram.messenger.NotificationCenter;
-import org.telegram.messenger.R;
-import org.telegram.messenger.UserConfig;
-import org.telegram.messenger.MessageObject;
+import org.telegram.ui.ActionBar.ActionBar;
+import org.telegram.ui.ActionBar.ActionBarMenu;
+import org.telegram.ui.ActionBar.ActionBarMenuItem;
 import org.telegram.ui.ActionBar.AlertDialog;
+import org.telegram.ui.ActionBar.BaseFragment;
 import org.telegram.ui.ActionBar.BottomSheet;
+import org.telegram.ui.ActionBar.Theme;
 import org.telegram.ui.ActionBar.ThemeDescription;
 import org.telegram.ui.Cells.EmptyCell;
 import org.telegram.ui.Cells.GraySectionCell;
@@ -89,18 +95,14 @@ import org.telegram.ui.Cells.ShadowSectionCell;
 import org.telegram.ui.Cells.TextCell;
 import org.telegram.ui.Cells.TextDetailCell;
 import org.telegram.ui.Cells.TextInfoPrivacyCell;
-import org.telegram.ui.ActionBar.ActionBar;
-import org.telegram.ui.ActionBar.ActionBarMenu;
-import org.telegram.ui.ActionBar.ActionBarMenuItem;
 import org.telegram.ui.Components.AlertsCreator;
 import org.telegram.ui.Components.AvatarDrawable;
+import org.telegram.ui.Components.BackupImageView;
+import org.telegram.ui.Components.CombinedDrawable;
 import org.telegram.ui.Components.EmptyTextProgressView;
 import org.telegram.ui.Components.ImageUpdater;
-import org.telegram.ui.Components.BackupImageView;
-import org.telegram.ui.ActionBar.BaseFragment;
-import org.telegram.ui.Components.CombinedDrawable;
 import org.telegram.ui.Components.LayoutHelper;
-import org.telegram.ui.ActionBar.Theme;
+import org.telegram.ui.Components.RLottieDrawable;
 import org.telegram.ui.Components.RadialProgressView;
 import org.telegram.ui.Components.RecyclerListView;
 import org.telegram.ui.Components.voip.VoIPHelper;
@@ -149,6 +151,12 @@ public class SettingsActivity extends BaseFragment implements NotificationCenter
 
     private int extraHeight;
 
+    private RLottieDrawable chatSortingDrawable =
+        Theme.button_sortSettings;
+
+    private RLottieDrawable autoBotsDrawable =
+        Theme.button_autoBots;
+
     private int overscrollRow;
     private int numberSectionRow;
     private int numberRow;
@@ -156,7 +164,8 @@ public class SettingsActivity extends BaseFragment implements NotificationCenter
     private int bioRow;
     private int settingsSectionRow;
     private int settingsSectionRow2;
-    private int iMeRow;
+    private int iMeSortingRow;
+    private int iMeBotSettingsRow;
     private int notificationRow;
     private int languageRow;
     private int privacyRow;
@@ -224,7 +233,8 @@ public class SettingsActivity extends BaseFragment implements NotificationCenter
         bioRow = rowCount++;
         settingsSectionRow = rowCount++;
         settingsSectionRow2 = rowCount++;
-        iMeRow = rowCount++;
+        iMeSortingRow = rowCount++;
+        iMeBotSettingsRow = rowCount++;
         notificationRow = rowCount++;
         privacyRow = rowCount++;
         dataRow = rowCount++;
@@ -233,7 +243,7 @@ public class SettingsActivity extends BaseFragment implements NotificationCenter
         helpRow = rowCount++;
         versionRow = rowCount++;
 
-        DataQuery.getInstance(currentAccount).checkFeaturedStickers();
+        MediaDataController.getInstance(currentAccount).checkFeaturedStickers();
         userInfo = MessagesController.getInstance(currentAccount).getUserFull(UserConfig.getInstance(currentAccount).getClientUserId());
         MessagesController.getInstance(currentAccount).loadUserInfo(UserConfig.getInstance(currentAccount).getCurrentUser(), true, classGuid);
 
@@ -246,6 +256,7 @@ public class SettingsActivity extends BaseFragment implements NotificationCenter
         if (avatarImage != null) {
             avatarImage.setImageDrawable(null);
         }
+
         NotificationCenter.getInstance(currentAccount).removeObserver(this, NotificationCenter.updateInterfaces);
         NotificationCenter.getInstance(currentAccount).removeObserver(this, NotificationCenter.userInfoDidLoad);
         NotificationCenter.getGlobalInstance().removeObserver(this, NotificationCenter.emojiDidLoad);
@@ -366,8 +377,10 @@ public class SettingsActivity extends BaseFragment implements NotificationCenter
         listView.setOnItemClickListener((view, position) -> {
 
             if (listView.getAdapter() == listAdapter) {
-                if (position == iMeRow) {
+                if (position == iMeSortingRow) {
                     presentFragment(new IMeSettingsActivity());
+                } else if (position == iMeBotSettingsRow) {
+                    presentFragment(new BotSettingsActivity());
                 } else if (position == notificationRow) {
                     presentFragment(new NotificationsSettingsActivity());
                 } else if (position == privacyRow) {
@@ -387,7 +400,7 @@ public class SettingsActivity extends BaseFragment implements NotificationCenter
                         presentFragment(new ChangeBioActivity());
                     }
                 } else if (position == numberRow) {
-                    presentFragment(new ChangePhoneHelpActivity());
+                    presentFragment(new ActionIntroActivity(ActionIntroActivity.ACTION_TYPE_CHANGE_PHONE_NUMBER));
                 }
             } else {
                 if (position < 0) {
@@ -848,7 +861,18 @@ public class SettingsActivity extends BaseFragment implements NotificationCenter
         }
         updateUserData();
         fixLayout();
+        chatSortingDrawable.setProgress(0f);
+        chatSortingDrawable.start();
+        autoBotsDrawable.setProgress(0f);
+        autoBotsDrawable.start();
         setParentActivityTitle(LocaleController.getString("Settings", R.string.Settings));
+    }
+
+    @Override
+    public void onPause() {
+        super.onPause();
+        chatSortingDrawable.stop();
+        autoBotsDrawable.stop();
     }
 
     @Override
@@ -1013,30 +1037,36 @@ public class SettingsActivity extends BaseFragment implements NotificationCenter
         linearLayoutInviteContainer.setOrientation(LinearLayout.VERTICAL);
         linearLayout.addView(linearLayoutInviteContainer, LayoutHelper.createLinear(LayoutHelper.MATCH_PARENT, LayoutHelper.WRAP_CONTENT));
 
-        int count = 6;
+        int count = 8;
         for (int a = 0; a < count; a++) {
-            if (a >= 3 && a <= 4 && !BuildVars.LOGS_ENABLED || a == 5 && !BuildVars.DEBUG_VERSION) {
+            if (a >= 5 && a <= 6 && !BuildVars.LOGS_ENABLED || a == 7 && !BuildVars.DEBUG_VERSION) {
                 continue;
             }
             TextCell textCell = new TextCell(context);
             String text;
             switch (a) {
                 case 0:
-                    text = LocaleController.getString("AskAQuestion", R.string.AskAQuestion);
+                    text = LocaleController.getInternalString( R.string.iMeSupport);
                     break;
                 case 1:
-                    text = LocaleController.getString("TelegramFAQ", R.string.TelegramFAQ);
+                    text = LocaleController.getInternalString( R.string.iMeGroup);
                     break;
                 case 2:
                     text = LocaleController.getString("PrivacyPolicy", R.string.PrivacyPolicy);
                     break;
                 case 3:
-                    text = LocaleController.getString("DebugSendLogs", R.string.DebugSendLogs);
+                    text = LocaleController.getInternalString(R.string.AskAQuestionNew);
                     break;
                 case 4:
-                    text = LocaleController.getString("DebugClearLogs", R.string.DebugClearLogs);
+                    text = LocaleController.getString("TelegramFAQ", R.string.TelegramFAQ);
                     break;
                 case 5:
+                    text = LocaleController.getString("DebugSendLogs", R.string.DebugSendLogs);
+                    break;
+                case 6:
+                    text = LocaleController.getString("DebugClearLogs", R.string.DebugClearLogs);
+                    break;
+                case 7:
                 default:
                     text = "Switch Backend";
                     break;
@@ -1048,23 +1078,29 @@ public class SettingsActivity extends BaseFragment implements NotificationCenter
             textCell.setOnClickListener(v2 -> {
                 Integer tag = (Integer) v2.getTag();
                 switch (tag) {
-                    case 0: {
+                    case 0:
+                        openChatWithUser("imemessenger");
+                        break;
+                    case 1:
+                        openChatWithGroup("olportal_ai");
+                        break;
+                    case 2:
+                        Browser.openUrl(getParentActivity(), "https://imem.app/privacy-policy.html");
+                        break;
+                    case 3: {
                         showDialog(AlertsCreator.createSupportAlert(SettingsActivity.this));
                         break;
                     }
-                    case 1:
+                    case 4:
                         Browser.openUrl(getParentActivity(), LocaleController.getString("TelegramFaqUrl", R.string.TelegramFaqUrl));
                         break;
-                    case 2:
-                        Browser.openUrl(getParentActivity(), "https://www.imem.app/");
-                        break;
-                    case 3:
+                    case 5:
                         sendLogs();
                         break;
-                    case 4:
+                    case 6:
                         FileLog.cleanupLogs();
                         break;
-                    case 5: {
+                    case 7: {
                         if (getParentActivity() == null) {
                             return;
                         }
@@ -1175,6 +1211,53 @@ public class SettingsActivity extends BaseFragment implements NotificationCenter
                 e.printStackTrace();
             }
         });
+    }
+
+    private void openChatWithUser(String username) {
+        TLRPC.TL_contacts_resolveUsername req = new TLRPC.TL_contacts_resolveUsername();
+        req.username = username;
+        ConnectionsManager.getInstance(currentAccount).sendRequest(req, (response, error) -> AndroidUtilities.runOnUIThread(() -> {
+
+            TLRPC.User user = null;
+            if (error == null) {
+                TLRPC.TL_contacts_resolvedPeer res = (TLRPC.TL_contacts_resolvedPeer) response;
+                if (!res.users.isEmpty()) {
+                    user = res.users.get(0);
+                    MessagesController.getInstance(currentAccount).putUser(user, false);
+                    MessagesStorage.getInstance(currentAccount).putUsersAndChats(res.users, null, true, true);
+                }
+            }
+            processFoundUser(user);
+        }));
+    }
+
+    private void processFoundUser(TLRPC.User user) {
+        Bundle args = new Bundle();
+        args.putInt("user_id", user.id);
+        presentFragment(new ChatActivity(args));
+    }
+
+    private void openChatWithGroup(String groupName) {
+        TLRPC.TL_contacts_resolveUsername req = new TLRPC.TL_contacts_resolveUsername();
+        req.username = groupName;
+        ConnectionsManager.getInstance(currentAccount).sendRequest(req, (response, error) -> {
+            if (response != null && error == null) {
+                AndroidUtilities.runOnUIThread(() -> {
+                    TLRPC.TL_contacts_resolvedPeer res = (TLRPC.TL_contacts_resolvedPeer) response;
+                    if (!res.chats.isEmpty()) {
+                        TLRPC.Chat chat = res.chats.get(0);
+                        MessagesController.getInstance(currentAccount).putChat(chat, false);
+                        processFoundChat(chat);
+                    }
+                });
+            }
+        });
+    }
+
+    private void processFoundChat(TLRPC.Chat chat) {
+        Bundle args = new Bundle();
+        args.putInt("chat_id", chat.id);
+        presentFragment(new ChatActivity(args));
     }
 
     private class SearchAdapter extends RecyclerListView.SelectionAdapter {
@@ -1309,7 +1392,7 @@ public class SettingsActivity extends BaseFragment implements NotificationCenter
 
         private SearchResult[] searchArray = new SearchResult[]{
                 new SearchResult(500, LocaleController.getString("EditName", R.string.EditName), 0, () -> presentFragment(new ChangeNameActivity())),
-                new SearchResult(501, LocaleController.getString("ChangePhoneNumber", R.string.ChangePhoneNumber), 0, () -> presentFragment(new ChangePhoneHelpActivity())),
+                new SearchResult(501, LocaleController.getString("ChangePhoneNumber", R.string.ChangePhoneNumber), 0, () -> presentFragment(new ActionIntroActivity(ActionIntroActivity.ACTION_TYPE_CHANGE_PHONE_NUMBER))),
                 new SearchResult(502, LocaleController.getString("AddAnotherAccount", R.string.AddAnotherAccount), 0, () -> {
                     int freeAccount = -1;
                     for (int a = 0; a < UserConfig.MAX_ACCOUNT_COUNT; a++) {
@@ -1397,19 +1480,20 @@ public class SettingsActivity extends BaseFragment implements NotificationCenter
                 new SearchResult(310, LocaleController.getString("RaiseToSpeak", R.string.RaiseToSpeak), "raiseToSpeakRow", LocaleController.getString("ChatSettings", R.string.ChatSettings), R.drawable.menu_chats, () -> presentFragment(new ThemeActivity(ThemeActivity.THEME_TYPE_BASIC))),
                 new SearchResult(311, LocaleController.getString("SendByEnter", R.string.SendByEnter), "sendByEnterRow", LocaleController.getString("ChatSettings", R.string.ChatSettings), R.drawable.menu_chats, () -> presentFragment(new ThemeActivity(ThemeActivity.THEME_TYPE_BASIC))),
                 new SearchResult(312, LocaleController.getString("SaveToGallerySettings", R.string.SaveToGallerySettings), "saveToGalleryRow", LocaleController.getString("ChatSettings", R.string.ChatSettings), R.drawable.menu_chats, () -> presentFragment(new ThemeActivity(ThemeActivity.THEME_TYPE_BASIC))),
-                new SearchResult(313, LocaleController.getString("StickersAndMasks", R.string.StickersAndMasks), LocaleController.getString("ChatSettings", R.string.ChatSettings), R.drawable.menu_chats, () -> presentFragment(new StickersActivity(DataQuery.TYPE_IMAGE))),
-                new SearchResult(314, LocaleController.getString("SuggestStickers", R.string.SuggestStickers), "suggestRow", LocaleController.getString("ChatSettings", R.string.ChatSettings), LocaleController.getString("StickersAndMasks", R.string.StickersAndMasks), R.drawable.menu_chats, () -> presentFragment(new StickersActivity(DataQuery.TYPE_IMAGE))),
+                new SearchResult(312, LocaleController.getString("DistanceUnits", R.string.DistanceUnits), "distanceRow", LocaleController.getString("ChatSettings", R.string.ChatSettings), R.drawable.menu_chats, () -> presentFragment(new ThemeActivity(ThemeActivity.THEME_TYPE_BASIC))),
+                new SearchResult(313, LocaleController.getString("StickersAndMasks", R.string.StickersAndMasks), LocaleController.getString("ChatSettings", R.string.ChatSettings), R.drawable.menu_chats, () -> presentFragment(new StickersActivity(MediaDataController.TYPE_IMAGE))),
+                new SearchResult(314, LocaleController.getString("SuggestStickers", R.string.SuggestStickers), "suggestRow", LocaleController.getString("ChatSettings", R.string.ChatSettings), LocaleController.getString("StickersAndMasks", R.string.StickersAndMasks), R.drawable.menu_chats, () -> presentFragment(new StickersActivity(MediaDataController.TYPE_IMAGE))),
                 new SearchResult(315, LocaleController.getString("FeaturedStickers", R.string.FeaturedStickers), null, LocaleController.getString("ChatSettings", R.string.ChatSettings), LocaleController.getString("StickersAndMasks", R.string.StickersAndMasks), R.drawable.menu_chats, () -> presentFragment(new FeaturedStickersActivity())),
-                new SearchResult(316, LocaleController.getString("Masks", R.string.Masks), null, LocaleController.getString("ChatSettings", R.string.ChatSettings), LocaleController.getString("StickersAndMasks", R.string.StickersAndMasks), R.drawable.menu_chats, () -> presentFragment(new StickersActivity(DataQuery.TYPE_MASK))),
-                new SearchResult(317, LocaleController.getString("ArchivedStickers", R.string.ArchivedStickers), null, LocaleController.getString("ChatSettings", R.string.ChatSettings), LocaleController.getString("StickersAndMasks", R.string.StickersAndMasks), R.drawable.menu_chats, () -> presentFragment(new ArchivedStickersActivity(DataQuery.TYPE_IMAGE))),
-                new SearchResult(317, LocaleController.getString("ArchivedMasks", R.string.ArchivedMasks), null, LocaleController.getString("ChatSettings", R.string.ChatSettings), LocaleController.getString("StickersAndMasks", R.string.StickersAndMasks), R.drawable.menu_chats, () -> presentFragment(new ArchivedStickersActivity(DataQuery.TYPE_MASK))),
+                new SearchResult(316, LocaleController.getString("Masks", R.string.Masks), null, LocaleController.getString("ChatSettings", R.string.ChatSettings), LocaleController.getString("StickersAndMasks", R.string.StickersAndMasks), R.drawable.menu_chats, () -> presentFragment(new StickersActivity(MediaDataController.TYPE_MASK))),
+                new SearchResult(317, LocaleController.getString("ArchivedStickers", R.string.ArchivedStickers), null, LocaleController.getString("ChatSettings", R.string.ChatSettings), LocaleController.getString("StickersAndMasks", R.string.StickersAndMasks), R.drawable.menu_chats, () -> presentFragment(new ArchivedStickersActivity(MediaDataController.TYPE_IMAGE))),
+                new SearchResult(317, LocaleController.getString("ArchivedMasks", R.string.ArchivedMasks), null, LocaleController.getString("ChatSettings", R.string.ChatSettings), LocaleController.getString("StickersAndMasks", R.string.StickersAndMasks), R.drawable.menu_chats, () -> presentFragment(new ArchivedStickersActivity(MediaDataController.TYPE_MASK))),
 
                 new SearchResult(400, LocaleController.getString("Language", R.string.Language), R.drawable.menu_language, () -> presentFragment(new LanguageSelectActivity())),
 
                 new SearchResult(401, LocaleController.getString("SettingsHelp", R.string.SettingsHelp), R.drawable.menu_help, SettingsActivity.this::showHelpAlert),
                 new SearchResult(402, LocaleController.getString("AskAQuestion", R.string.AskAQuestion), LocaleController.getString("SettingsHelp", R.string.SettingsHelp), R.drawable.menu_help, () -> showDialog(AlertsCreator.createSupportAlert(SettingsActivity.this))),
                 new SearchResult(403, LocaleController.getString("TelegramFAQ", R.string.TelegramFAQ), LocaleController.getString("SettingsHelp", R.string.SettingsHelp), R.drawable.menu_help, () -> Browser.openUrl(getParentActivity(), LocaleController.getString("TelegramFaqUrl", R.string.TelegramFaqUrl))),
-                new SearchResult(404, LocaleController.getString("PrivacyPolicy", R.string.PrivacyPolicy), LocaleController.getString("SettingsHelp", R.string.SettingsHelp), R.drawable.menu_help, () -> Browser.openUrl(getParentActivity(), LocaleController.getString("PrivacyPolicyUrl", R.string.PrivacyPolicyUrl))),
+                new SearchResult(404, LocaleController.getString("PrivacyPolicy", R.string.PrivacyPolicy), LocaleController.getString("SettingsHelp", R.string.SettingsHelp), R.drawable.menu_help, () -> Browser.openUrl(getParentActivity(), "https://www.imem.app/")),
         };
         private ArrayList<FaqSearchResult> faqSearchArray = new ArrayList<>();
 
@@ -1805,8 +1889,10 @@ public class SettingsActivity extends BaseFragment implements NotificationCenter
                 }
                 case 2: {
                     TextCell textCell = (TextCell) holder.itemView;
-                    if (position == iMeRow) {
-                        textCell.setTextAndIcon(LocaleController.getInternalString(R.string.iMeSettings), R.drawable.ic_tabs_settings, true);
+                    if (position == iMeSortingRow) {
+                        textCell.setTextAndLottieDrawable(LocaleController.getInternalString(R.string.iMeSettings), chatSortingDrawable, true);
+                    } else if (position == iMeBotSettingsRow) {
+                        textCell.setTextAndLottieDrawable(LocaleController.getInternalString(R.string.iMeSettingsBots), autoBotsDrawable, true);
                     } else if (position == languageRow) {
                         textCell.setTextAndIcon(LocaleController.getString("Language", R.string.Language), R.drawable.menu_language, true);
                     } else if (position == notificationRow) {
@@ -1864,6 +1950,7 @@ public class SettingsActivity extends BaseFragment implements NotificationCenter
                 }
             }
         }
+
 
         @Override
         public boolean isEnabled(RecyclerView.ViewHolder holder) {
@@ -1999,7 +2086,7 @@ public class SettingsActivity extends BaseFragment implements NotificationCenter
                 new ThemeDescription(listView, ThemeDescription.FLAG_BACKGROUNDFILTER, new Class[]{TextInfoPrivacyCell.class}, null, null, null, Theme.key_windowBackgroundGrayShadow),
                 new ThemeDescription(listView, 0, new Class[]{TextInfoPrivacyCell.class}, new String[]{"textView"}, null, null, null, Theme.key_windowBackgroundWhiteGrayText3),
 
-                new ThemeDescription(avatarImage, 0, null, null, new Drawable[]{Theme.avatar_broadcastDrawable, Theme.avatar_savedDrawable}, null, Theme.key_avatar_text),
+                new ThemeDescription(avatarImage, 0, null, null, new Drawable[]{Theme.avatar_savedDrawable}, null, Theme.key_avatar_text),
                 new ThemeDescription(avatarImage, 0, null, null, new Drawable[]{avatarDrawable}, null, Theme.key_avatar_backgroundInProfileBlue),
 
                 new ThemeDescription(writeButton, ThemeDescription.FLAG_IMAGECOLOR, null, null, null, null, Theme.key_profile_actionIcon),

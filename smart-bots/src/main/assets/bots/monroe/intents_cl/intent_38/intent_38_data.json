@@ -1,0 +1,221 @@
+{
+    "classes": [
+        {
+            "tag": "True"
+        },
+        {
+            "tag": "False"
+        }
+    ],
+    "documents": [
+        {
+            "sent_tokens": [
+                "это",
+                "моя",
+                "старая",
+                "любовь"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "у",
+                "нас",
+                "раньше",
+                "были",
+                "отношения"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "между",
+                "нами",
+                "больше",
+                "ничего",
+                "нет"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "мы",
+                "с",
+                "ней",
+                "просто",
+                "дружим",
+                "теперь"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "мы",
+                "с",
+                "ним",
+                "раньше",
+                "встречались"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "это",
+                "просто",
+                "старая",
+                "любовь"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "это"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "моя"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "старая"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "любовь"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "у"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "нас"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "раньше"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "были"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "отношения"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "между"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "нами"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "больше"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "ничего"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "нет"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "мы"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "с"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "ней"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "просто"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "дружим"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "теперь"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "встречались"
+            ],
+            "tag": "False"
+        }
+    ],
+    "words": [
+        "больше",
+        "были",
+        "встречались",
+        "дружим",
+        "любовь",
+        "между",
+        "моя",
+        "мы",
+        "нами",
+        "нас",
+        "ней",
+        "нет",
+        "ним",
+        "ничего",
+        "отношения",
+        "просто",
+        "раньше",
+        "с",
+        "старая",
+        "теперь",
+        "у",
+        "это"
+    ]
+}

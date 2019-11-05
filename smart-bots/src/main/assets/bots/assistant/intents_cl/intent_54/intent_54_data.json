@@ -1,0 +1,211 @@
+{
+    "classes": [
+        {
+            "tag": "True"
+        },
+        {
+            "tag": "False"
+        }
+    ],
+    "documents": [
+        {
+            "sent_tokens": [
+                "я",
+                "горюю"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "у",
+                "меня",
+                "был",
+                "тяжелый",
+                "день"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "я",
+                "в",
+                "депрессии"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "хочу",
+                "плакать"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "я",
+                "горевал"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "просто",
+                "я",
+                "грустил"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "мне",
+                "грустно"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "я",
+                "расстроен"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "мне",
+                "не",
+                "радостно"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "я",
+                "грущу"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "я"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "горю"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "у"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "меня"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "был"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "тяжелый"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "день"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "в"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "просто"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "мне"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "не"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "радостно"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "радуюсь"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "радоваться"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "грушу"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "груша"
+            ],
+            "tag": "False"
+        }
+    ],
+    "words": [
+        "был",
+        "в",
+        "горевал",
+        "горю",
+        "горюю",
+        "грустил",
+        "грустно",
+        "груша",
+        "грушу",
+        "грущу",
+        "день",
+        "депрессии",
+        "меня",
+        "мне",
+        "не",
+        "плакать",
+        "просто",
+        "радоваться",
+        "радостно",
+        "радуюсь",
+        "расстроен",
+        "тяжелый",
+        "у",
+        "хочу",
+        "я"
+    ]
+}

@@ -1,0 +1,91 @@
+{
+    "classes": [
+        {
+            "tag": "True"
+        },
+        {
+            "tag": "False"
+        }
+    ],
+    "documents": [
+        {
+            "sent_tokens": [
+                "я",
+                "земля"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "я",
+                "приземлился"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "я",
+                "приземлилась"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "я",
+                "долетел"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "я",
+                "долетела"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "я"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "земля"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "приземлился"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "приземлилась"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "долетел"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "долетела"
+            ],
+            "tag": "False"
+        }
+    ],
+    "words": [
+        "долетел",
+        "долетела",
+        "земля",
+        "приземлилась",
+        "приземлился",
+        "я"
+    ]
+}

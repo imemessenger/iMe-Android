@@ -20,6 +20,7 @@ import android.widget.FrameLayout;
 import org.telegram.messenger.AndroidUtilities;
 import org.telegram.messenger.LocaleController;
 import org.telegram.messenger.R;
+import org.telegram.messenger.UserObject;
 import org.telegram.tgnet.TLRPC;
 import org.telegram.ui.ActionBar.ActionBar;
 import org.telegram.ui.ActionBar.ActionBarMenu;
@@ -34,6 +35,7 @@ import org.telegram.ui.Cells.PollEditTextCell;
 import org.telegram.ui.Cells.ShadowSectionCell;
 import org.telegram.ui.Cells.TextInfoPrivacyCell;
 import org.telegram.ui.Cells.TextSettingsCell;
+import org.telegram.ui.Components.AlertsCreator;
 import org.telegram.ui.Components.ContextProgressView;
 import org.telegram.ui.Components.EditTextBoldCursor;
 import org.telegram.ui.Components.LayoutHelper;
@@ -51,6 +53,7 @@ public class PollCreateActivity extends BaseFragment {
     private ContextProgressView progressView;
     private ListAdapter listAdapter;
     private RecyclerListView listView;
+    private ChatActivity parentFragment;
 
     private String[] answers = new String[10];
     private int answersCount = 1;
@@ -75,7 +78,7 @@ public class PollCreateActivity extends BaseFragment {
     private static final int done_button = 1;
 
     public interface PollCreateActivityDelegate {
-        void sendPoll(TLRPC.TL_messageMediaPoll poll);
+        void sendPoll(TLRPC.TL_messageMediaPoll poll, boolean notify, int scheduleDate);
     }
 
     public class TouchHelperCallback extends ItemTouchHelper.Callback {
@@ -128,6 +131,11 @@ public class PollCreateActivity extends BaseFragment {
         }
     }
 
+    public PollCreateActivity(ChatActivity chatActivity) {
+        super();
+        parentFragment = chatActivity;
+    }
+
     @Override
     public boolean onFragmentCreate() {
         super.onFragmentCreate();
@@ -165,8 +173,15 @@ public class PollCreateActivity extends BaseFragment {
                         poll.poll.answers.add(answer);
                     }
                     poll.results = new TLRPC.TL_pollResults();
-                    delegate.sendPoll(poll);
-                    finishFragment();
+                    if (parentFragment.isInScheduleMode()) {
+                        AlertsCreator.createScheduleDatePickerDialog(getParentActivity(), UserObject.isUserSelf(parentFragment.getCurrentUser()), (notify, scheduleDate) -> {
+                            delegate.sendPoll(poll, notify, scheduleDate);
+                            finishFragment();
+                        });
+                    } else {
+                        delegate.sendPoll(poll, true, 0);
+                        finishFragment();
+                    }
                 }
             }
         });
@@ -342,22 +357,22 @@ public class PollCreateActivity extends BaseFragment {
             progressView.setVisibility(View.VISIBLE);
             doneItem.setEnabled(false);
             doneItemAnimation.playTogether(
-                    ObjectAnimator.ofFloat(doneItem.getImageView(), View.SCALE_X, 0.1f),
-                    ObjectAnimator.ofFloat(doneItem.getImageView(), View.SCALE_Y, 0.1f),
-                    ObjectAnimator.ofFloat(doneItem.getImageView(), View.ALPHA, 0.0f),
+                    ObjectAnimator.ofFloat(doneItem.getContentView(), View.SCALE_X, 0.1f),
+                    ObjectAnimator.ofFloat(doneItem.getContentView(), View.SCALE_Y, 0.1f),
+                    ObjectAnimator.ofFloat(doneItem.getContentView(), View.ALPHA, 0.0f),
                     ObjectAnimator.ofFloat(progressView, View.SCALE_X, 1.0f),
                     ObjectAnimator.ofFloat(progressView, View.SCALE_Y, 1.0f),
                     ObjectAnimator.ofFloat(progressView, View.ALPHA, 1.0f));
         } else {
-            doneItem.getImageView().setVisibility(View.VISIBLE);
+            doneItem.getContentView().setVisibility(View.VISIBLE);
             doneItem.setEnabled(true);
             doneItemAnimation.playTogether(
                     ObjectAnimator.ofFloat(progressView, View.SCALE_X, 0.1f),
                     ObjectAnimator.ofFloat(progressView, View.SCALE_Y, 0.1f),
                     ObjectAnimator.ofFloat(progressView, View.ALPHA, 0.0f),
-                    ObjectAnimator.ofFloat(doneItem.getImageView(), View.SCALE_X, 1.0f),
-                    ObjectAnimator.ofFloat(doneItem.getImageView(), View.SCALE_Y, 1.0f),
-                    ObjectAnimator.ofFloat(doneItem.getImageView(), View.ALPHA, 1.0f));
+                    ObjectAnimator.ofFloat(doneItem.getContentView(), View.SCALE_X, 1.0f),
+                    ObjectAnimator.ofFloat(doneItem.getContentView(), View.SCALE_Y, 1.0f),
+                    ObjectAnimator.ofFloat(doneItem.getContentView(), View.ALPHA, 1.0f));
         }
         doneItemAnimation.addListener(new AnimatorListenerAdapter() {
             @Override
@@ -366,7 +381,7 @@ public class PollCreateActivity extends BaseFragment {
                     if (!show) {
                         progressView.setVisibility(View.INVISIBLE);
                     } else {
-                        doneItem.getImageView().setVisibility(View.INVISIBLE);
+                        doneItem.getContentView().setVisibility(View.INVISIBLE);
                     }
                 }
             }
@@ -495,11 +510,9 @@ public class PollCreateActivity extends BaseFragment {
 
         @Override
         public void onViewAttachedToWindow(RecyclerView.ViewHolder holder) {
-            switch (holder.getItemViewType()) {
-                case 0: {
-                    setTextLeft(holder.itemView, holder.getAdapterPosition() == questionHeaderRow ? -1 : 0);
-                    break;
-                }
+            int viewType = holder.getItemViewType();
+            if (viewType == 0 || viewType == 5) {
+                setTextLeft(holder.itemView, holder.getAdapterPosition() == questionHeaderRow ? -1 : 0);
             }
         }
 

@@ -1,0 +1,353 @@
+{
+    "classes": [
+        {
+            "tag": "True"
+        },
+        {
+            "tag": "False"
+        }
+    ],
+    "documents": [
+        {
+            "sent_tokens": [
+                "я",
+                "не",
+                "в",
+                "настроении",
+                "это",
+                "обсуждать"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "у",
+                "тебя",
+                "пмс"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "не",
+                "истери"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "что",
+                "с",
+                "тобой"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "опять",
+                "не",
+                "в",
+                "настроении"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "ты",
+                "вообще",
+                "бываешь",
+                "в",
+                "настроении"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "у",
+                "тебя",
+                "депрессия"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "ты",
+                "бываешь",
+                "в",
+                "хорошем",
+                "настроении"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "плохое",
+                "настроение"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "хорошее",
+                "настроение"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "нормальное",
+                "настроение"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "не",
+                "очень",
+                "настроение"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "ужасное",
+                "настроение"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "херовое",
+                "настроение"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "хреновое",
+                "настроение"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "я"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "не"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "в"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "это"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "обсуждать"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "у"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "тебя"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "у",
+                "тебя"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "пмс"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "не"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "истери"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "истерия"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "что"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "с"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "тобой"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "опять"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "ты"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "вообще"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "бываешь"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "в"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "депрессия"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "хорошим"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "плохом"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "плохое"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "хорошее"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "ужасное"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "херовое"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "хреновое"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "не",
+                "очень"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "очень"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "нормальное"
+            ],
+            "tag": "False"
+        }
+    ],
+    "words": [
+        "бываешь",
+        "в",
+        "вообще",
+        "депрессия",
+        "истери",
+        "истерия",
+        "настроение",
+        "настроении",
+        "не",
+        "нормальное",
+        "обсуждать",
+        "опять",
+        "очень",
+        "плохое",
+        "плохом",
+        "пмс",
+        "с",
+        "тебя",
+        "тобой",
+        "ты",
+        "у",
+        "ужасное",
+        "херовое",
+        "хорошее",
+        "хорошем",
+        "хорошим",
+        "хреновое",
+        "что",
+        "это",
+        "я"
+    ]
+}

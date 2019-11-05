@@ -13,11 +13,17 @@ import android.app.Dialog;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.content.SharedPreferences;
+import android.os.Bundle;
 import android.view.Gravity;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.FrameLayout;
 import android.widget.TextView;
+
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
+
+import com.smedialink.settings.BackupManager;
 
 import org.telegram.messenger.AndroidUtilities;
 import org.telegram.messenger.BuildVars;
@@ -43,9 +49,6 @@ import org.telegram.ui.Components.LayoutHelper;
 import org.telegram.ui.Components.RecyclerListView;
 import org.telegram.ui.Components.voip.VoIPHelper;
 
-import androidx.recyclerview.widget.LinearLayoutManager;
-import androidx.recyclerview.widget.RecyclerView;
-
 public class DataSettingsActivity extends BaseFragment {
 
     private ListAdapter listAdapter;
@@ -60,6 +63,9 @@ public class DataSettingsActivity extends BaseFragment {
     private int wifiRow;
     private int resetDownloadRow;
     private int mediaDownloadSection2Row;
+    private int iMeSectionRow;
+    private int autoBackupRow;
+    private int iMeSection2Row;
     private int usageSectionRow;
     private int storageUsageRow;
     private int dataUsageRow;
@@ -82,6 +88,19 @@ public class DataSettingsActivity extends BaseFragment {
     private int proxyRow;
     private int proxySection2Row;
     private int rowCount;
+    private boolean showAutoBackupDialog = false;
+    private BackupManager backupManager = BackupManager.Companion.getInstance(MessagesController.getInstance(currentAccount), MessagesController.getInstance(currentAccount).aigramStorage);
+
+    public static String SHOW_AUTO_BACKUP_DIALOG_KEY = "SHOW_AUTO_BACKUP_DIALOG_KEY";
+
+    public DataSettingsActivity() {
+        super();
+    }
+
+    public DataSettingsActivity(Bundle args) {
+        super(args);
+        showAutoBackupDialog = args.getBoolean(SHOW_AUTO_BACKUP_DIALOG_KEY, false);
+    }
 
     @Override
     public boolean onFragmentCreate() {
@@ -90,6 +109,9 @@ public class DataSettingsActivity extends BaseFragment {
         DownloadController.getInstance(currentAccount).loadAutoDownloadConfig(true);
 
         rowCount = 0;
+        iMeSectionRow = rowCount++;
+        autoBackupRow = rowCount++;
+        iMeSection2Row = rowCount++;
         usageSectionRow = rowCount++;
         storageUsageRow = rowCount++;
         dataUsageRow = rowCount++;
@@ -346,9 +368,16 @@ public class DataSettingsActivity extends BaseFragment {
                 if (view instanceof TextCheckCell) {
                     ((TextCheckCell) view).setChecked(SharedConfig.autoplayVideo);
                 }
+            }else if (position == autoBackupRow) {
+                backupManager.setSharedPrefAutoBackup(!backupManager.getSharedPrefAutoBackup());
+                if (view instanceof TextCheckCell) {
+                    ((TextCheckCell) view).setChecked(backupManager.getSharedPrefAutoBackup());
+                }
             }
         });
-
+        if (showAutoBackupDialog) {
+            showDialogAutoBackup();
+        }
         return fragmentView;
     }
 
@@ -364,6 +393,15 @@ public class DataSettingsActivity extends BaseFragment {
             listAdapter.notifyDataSetChanged();
         }
     }
+
+
+    private void showDialogAutoBackup() {
+        AlertDialog.Builder builder = new AlertDialog.Builder(getParentActivity());
+        builder.setMessage(LocaleController.getString("auto_backup_warning3", R.string.auto_backup_warning3));
+        builder.setPositiveButton(LocaleController.getString("OK", R.string.OK), (dialogInterface, i) -> dialogInterface.cancel());
+        showDialog(builder.create());
+    }
+
 
     private class ListAdapter extends RecyclerListView.SelectionAdapter {
 
@@ -421,7 +459,7 @@ public class DataSettingsActivity extends BaseFragment {
                         textCell.setCanDisable(true);
                         textCell.setTextColor(Theme.getColor(Theme.key_windowBackgroundWhiteRedText));
                         textCell.setText(LocaleController.getString("ResetAutomaticMediaDownload", R.string.ResetAutomaticMediaDownload), false);
-                    } else if (position == quickRepliesRow){
+                    } else if (position == quickRepliesRow) {
                         textCell.setText(LocaleController.getString("VoipQuickReplies", R.string.VoipQuickReplies), false);
                     }
                     break;
@@ -430,6 +468,8 @@ public class DataSettingsActivity extends BaseFragment {
                     HeaderCell headerCell = (HeaderCell) holder.itemView;
                     if (position == mediaDownloadSectionRow) {
                         headerCell.setText(LocaleController.getString("AutomaticMediaDownload", R.string.AutomaticMediaDownload));
+                    }else if (position == iMeSectionRow) {
+                        headerCell.setText(LocaleController.getString("iMe_setting", R.string.iMe_setting));
                     } else if (position == usageSectionRow) {
                         headerCell.setText(LocaleController.getString("DataUsage", R.string.DataUsage));
                     } else if (position == callsSectionRow) {
@@ -457,6 +497,9 @@ public class DataSettingsActivity extends BaseFragment {
                         checkCell.setTextAndCheck(LocaleController.getString("AutoplayGIF", R.string.AutoplayGIF), SharedConfig.autoplayGifs, true);
                     } else if (position == autoplayVideoRow) {
                         checkCell.setTextAndCheck(LocaleController.getString("AutoplayVideo", R.string.AutoplayVideo), SharedConfig.autoplayVideo, false);
+                    }
+                    else if (position == autoBackupRow) {
+                        checkCell.setTextAndCheck(LocaleController.getString("auto_backup_setting", R.string.auto_backup_setting), backupManager.getSharedPrefAutoBackup(), false);
                     }
                     break;
                 }
@@ -551,6 +594,8 @@ public class DataSettingsActivity extends BaseFragment {
                     checkCell.setChecked(SharedConfig.autoplayGifs);
                 } else if (position == autoplayVideoRow) {
                     checkCell.setChecked(SharedConfig.autoplayVideo);
+                } else if (position == autoBackupRow) {
+                    checkCell.setChecked(backupManager.getSharedPrefAutoBackup());
                 }
             }
         }
@@ -563,7 +608,7 @@ public class DataSettingsActivity extends BaseFragment {
                         !controller.highPreset.equals(controller.getCurrentWiFiPreset()) || controller.highPreset.isEnabled() != controller.wifiPreset.enabled;
             }
             return position == mobileRow || position == roamingRow || position == wifiRow || position == storageUsageRow || position == useLessDataForCallsRow || position == dataUsageRow || position == proxyRow ||
-                    position == enableCacheStreamRow || position == enableStreamRow || position == enableAllStreamRow || position == enableMkvRow || position == quickRepliesRow || position == autoplayVideoRow || position == autoplayGifsRow;
+                    position == enableCacheStreamRow || position == enableStreamRow || position == enableAllStreamRow || position == enableMkvRow || position == quickRepliesRow || position == autoplayVideoRow || position == autoplayGifsRow || position== autoBackupRow;
         }
 
         @Override
@@ -605,11 +650,11 @@ public class DataSettingsActivity extends BaseFragment {
 
         @Override
         public int getItemViewType(int position) {
-            if (position == mediaDownloadSection2Row || position == usageSection2Row || position == callsSection2Row || position == proxySection2Row || position == autoplaySectionRow) {
+            if (position == mediaDownloadSection2Row || position == usageSection2Row || position==iMeSection2Row|| position == callsSection2Row || position == proxySection2Row || position == autoplaySectionRow) {
                 return 0;
-            } else if (position == mediaDownloadSectionRow || position == streamSectionRow || position == callsSectionRow || position == usageSectionRow || position == proxySectionRow || position == autoplayHeaderRow) {
+            } else if (position == mediaDownloadSectionRow || position == streamSectionRow || position == callsSectionRow || position == usageSectionRow || position == iMeSectionRow || position == proxySectionRow || position == autoplayHeaderRow) {
                 return 2;
-            } else if (position == enableCacheStreamRow || position == enableStreamRow || position == enableAllStreamRow || position == enableMkvRow || position == autoplayGifsRow || position == autoplayVideoRow) {
+            } else if (position == enableCacheStreamRow || position == enableStreamRow || position == enableAllStreamRow || position == enableMkvRow || position == autoplayGifsRow || position==autoBackupRow || position == autoplayVideoRow) {
                 return 3;
             } else if (position == enableAllStreamInfoRow) {
                 return 4;

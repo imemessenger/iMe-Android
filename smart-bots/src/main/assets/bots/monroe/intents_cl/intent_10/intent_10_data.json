@@ -1,0 +1,253 @@
+{
+    "classes": [
+        {
+            "tag": "True"
+        },
+        {
+            "tag": "False"
+        }
+    ],
+    "documents": [
+        {
+            "sent_tokens": [
+                "что",
+                "делаешь"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "чем",
+                "занят"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "что",
+                "делал"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "чем",
+                "занимаешься"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "что",
+                "творишь"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "чем",
+                "маешься"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "чо",
+                "делаешь"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "че",
+                "делаешь"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "чё",
+                "делаешь"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "шо",
+                "делаешь"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "шо",
+                "творишь"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "че",
+                "творишь"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "чо",
+                "творишь"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "чё",
+                "творишь"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "щито",
+                "делаешь"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "щито",
+                "творишь"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "щито",
+                "поделываешь"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "что",
+                "поделываешь"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "че",
+                "поделываешь"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "чё",
+                "поделываешь"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "чо",
+                "поделываешь"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "что"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "делаешь"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "чем"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "занят"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "делал"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "творишь"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "маешься"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "чо"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "че"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "чё"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "шо"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "щито"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "поделываешь"
+            ],
+            "tag": "False"
+        }
+    ],
+    "words": [
+        "делаешь",
+        "делал",
+        "занимаешься",
+        "занят",
+        "маешься",
+        "поделываешь",
+        "творишь",
+        "че",
+        "чем",
+        "чо",
+        "что",
+        "чё",
+        "шо",
+        "щито"
+    ]
+}

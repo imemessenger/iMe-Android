@@ -1,0 +1,409 @@
+{
+    "classes": [
+        {
+            "tag": "True"
+        },
+        {
+            "tag": "False"
+        }
+    ],
+    "documents": [
+        {
+            "sent_tokens": [
+                "рад",
+                "что",
+                "все",
+                "обошлось"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "я",
+                "безумно",
+                "рад",
+                "что",
+                "сделал",
+                "это"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "я",
+                "справился"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "на",
+                "седьмом",
+                "небе",
+                "от",
+                "счастья"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "ахуенно",
+                "все"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "ребята",
+                "это",
+                "успех"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "я",
+                "в",
+                "восторге",
+                "я",
+                "смог"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "успех"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "получилось",
+                "у",
+                "нас"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "у",
+                "нас",
+                "удалось"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "у",
+                "меня",
+                "удалось"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "у",
+                "меня",
+                "это",
+                "вышло"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "у",
+                "меня",
+                "это",
+                "удалось"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "я",
+                "одержал",
+                "успех"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "это",
+                "успех"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "я",
+                "смог"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "у",
+                "меня",
+                "получилось"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "мы",
+                "справились"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "рад"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "что"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "все"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "всё"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "обошлось"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "безумно"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "я"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "сделал"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "это"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "справился"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "на"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "седьмом"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "небе"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "от"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "счастья"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "счастье"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "ахуенно"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "ребята"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "в"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "восторге"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "восторг"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "сможешь"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "смог"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "получилось"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "у"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "нас"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "у",
+                "нас"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "у",
+                "меня"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "меня"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "вышло"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "выходит"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "одержал"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "справился",
+                "о",
+                "самочувствии"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "справился",
+                "о",
+                "его",
+                "самочувствии"
+            ],
+            "tag": "False"
+        }
+    ],
+    "words": [
+        "ахуенно",
+        "безумно",
+        "в",
+        "восторг",
+        "восторге",
+        "все",
+        "всё",
+        "выходит",
+        "вышло",
+        "его",
+        "меня",
+        "мы",
+        "на",
+        "нас",
+        "небе",
+        "о",
+        "обошлось",
+        "одержал",
+        "от",
+        "получилось",
+        "рад",
+        "ребята",
+        "самочувствии",
+        "сделал",
+        "седьмом",
+        "смог",
+        "сможешь",
+        "справились",
+        "справился",
+        "счастье",
+        "счастья",
+        "у",
+        "удалось",
+        "успех",
+        "что",
+        "это",
+        "я"
+    ]
+}

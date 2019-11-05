@@ -1,0 +1,159 @@
+{
+    "classes": [
+        {
+            "tag": "True"
+        },
+        {
+            "tag": "False"
+        }
+    ],
+    "documents": [
+        {
+            "sent_tokens": [
+                "ты",
+                "замужем"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "ты",
+                "что",
+                "замужем"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "ты",
+                "семейная",
+                "похоже"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "ты",
+                "замужем"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "ты",
+                "замужняя"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "у",
+                "тебя",
+                "есть",
+                "муж"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "муж",
+                "то",
+                "есть"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "замужем"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "замужняя"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "замужество"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "ты"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "что"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "похоже"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "семейная"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "у",
+                "тебя"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "тебя"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "у"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "есть"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "то"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "муж"
+            ],
+            "tag": "False"
+        }
+    ],
+    "words": [
+        "есть",
+        "замужем",
+        "замужество",
+        "замужняя",
+        "муж",
+        "похоже",
+        "семейная",
+        "тебя",
+        "то",
+        "ты",
+        "у",
+        "что"
+    ]
+}

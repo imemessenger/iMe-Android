@@ -1,0 +1,127 @@
+{
+    "classes": [
+        {
+            "tag": "True"
+        },
+        {
+            "tag": "False"
+        }
+    ],
+    "documents": [
+        {
+            "sent_tokens": [
+                "в",
+                "пизду",
+                "тебя"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "иди",
+                "в",
+                "пизду"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "пошел",
+                "ты",
+                "в",
+                "пизду"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "иди",
+                "в",
+                "песду"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "в",
+                "песду",
+                "тебя"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "да",
+                "ну",
+                "тебя",
+                "в",
+                "пизду"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "ну",
+                "тя",
+                "в",
+                "песду"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "в"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "ебя"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "иди"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "да"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "ну"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "тебя"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "тя"
+            ],
+            "tag": "False"
+        }
+    ],
+    "words": [
+        "в",
+        "да",
+        "ебя",
+        "иди",
+        "ну",
+        "песду",
+        "пизду",
+        "пошел",
+        "тебя",
+        "ты",
+        "тя"
+    ]
+}

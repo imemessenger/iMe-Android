@@ -1,0 +1,535 @@
+{
+    "classes": [
+        {
+            "tag": "True"
+        },
+        {
+            "tag": "False"
+        }
+    ],
+    "documents": [
+        {
+            "sent_tokens": [
+                "ну",
+                "ты",
+                "дурак"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "ты",
+                "простофиля"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "вот",
+                "я",
+                "дебил"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "ты",
+                "ведешь",
+                "себя",
+                "как",
+                "даун"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "что",
+                "за",
+                "бред"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "ты",
+                "идиот"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "я",
+                "слишком",
+                "тупой"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "вот",
+                "я",
+                "тупица"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "попал",
+                "на",
+                "те",
+                "же",
+                "грабли"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "я",
+                "снова",
+                "это",
+                "сделал"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "я",
+                "написал",
+                "бывшей"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "я",
+                "позвонила",
+                "бывшему"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "я",
+                "решил",
+                "сойтись",
+                "с",
+                "бывшей"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "решила",
+                "дать",
+                "бывшему",
+                "второй",
+                "шанс"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "у",
+                "тебя",
+                "мозгов",
+                "как",
+                "у",
+                "хлебушка"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "глупый"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "какой",
+                "ты",
+                "глупый"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "глупышка"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "он",
+                "глупый"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "она",
+                "глупая"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "она",
+                "глупа"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "что",
+                "за",
+                "чушь"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "чушь",
+                "несут"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "это",
+                "чушь"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "фигня"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "что",
+                "за",
+                "глупость"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "тупица"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "глупый"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "тупой"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "ну"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "ты"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "вот"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "я"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "ведешь"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "себя"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "как"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "что",
+                "за"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "что"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "за"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "слишком"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "попал"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "на"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "те",
+                "же"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "те"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "же"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "грабли"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "снова"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "это"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "сделал"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "написал"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "бывшей"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "бывшему"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "бывшие"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "решила"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "дать"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "ему"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "дать",
+                "ему"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "второй"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "шанс"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "у",
+                "тебя"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "у"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "тебя"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "мозгов"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "мозги"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "как",
+                "у"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "хлебушка"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "хлебушек"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "хлеб"
+            ],
+            "tag": "False"
+        }
+    ],
+    "words": [
+        "бред",
+        "бывшей",
+        "бывшему",
+        "бывшие",
+        "ведешь",
+        "вот",
+        "второй",
+        "глупа",
+        "глупая",
+        "глупость",
+        "глупый",
+        "глупышка",
+        "грабли",
+        "дать",
+        "даун",
+        "дебил",
+        "дурак",
+        "ему",
+        "же",
+        "за",
+        "идиот",
+        "как",
+        "какой",
+        "мозги",
+        "мозгов",
+        "на",
+        "написал",
+        "несут",
+        "ну",
+        "он",
+        "она",
+        "позвонила",
+        "попал",
+        "простофиля",
+        "решил",
+        "решила",
+        "с",
+        "сделал",
+        "себя",
+        "слишком",
+        "снова",
+        "сойтись",
+        "те",
+        "тебя",
+        "тупица",
+        "тупой",
+        "ты",
+        "у",
+        "фигня",
+        "хлеб",
+        "хлебушек",
+        "хлебушка",
+        "что",
+        "чушь",
+        "шанс",
+        "это",
+        "я"
+    ]
+}

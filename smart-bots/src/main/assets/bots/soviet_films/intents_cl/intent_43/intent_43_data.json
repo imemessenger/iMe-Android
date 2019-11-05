@@ -1,0 +1,387 @@
+{
+    "classes": [
+        {
+            "tag": "True"
+        },
+        {
+            "tag": "False"
+        }
+    ],
+    "documents": [
+        {
+            "sent_tokens": [
+                "нет"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "не",
+                "трогай",
+                "это"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "нельзя",
+                "перестань"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "не",
+                "трожь"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "ни",
+                "под",
+                "каким",
+                "видом"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "ни",
+                "в",
+                "коем",
+                "разе"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "а",
+                "рожа",
+                "не",
+                "треснет"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "фигушки"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "ну",
+                "уж",
+                "нет"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "ни",
+                "за",
+                "какие",
+                "блага",
+                "в",
+                "мире"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "нашел",
+                "дурака"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "отказываюсь"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "я",
+                "отказываюсь"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "не",
+                "хочу"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "не",
+                "надо"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "нет"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "не",
+                "согласен"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "не",
+                "буду"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "не",
+                "заставляй",
+                "меня"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "не",
+                "заставляй"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "трогай"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "это"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "перестань"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "трожь"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "ни"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "под"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "каким"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "видом"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "в"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "коем"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "разе"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "а"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "рожа"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "треснет"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "накось"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "выкуси"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "ну"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "уж"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "за"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "какие"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "блага"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "мира"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "нашел"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "дурака"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "дурак"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "хочу"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "надо"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "буду"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "заставляй"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "меня"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "согласен"
+            ],
+            "tag": "False"
+        }
+    ],
+    "words": [
+        "а",
+        "блага",
+        "буду",
+        "в",
+        "видом",
+        "выкуси",
+        "дурак",
+        "дурака",
+        "за",
+        "заставляй",
+        "какие",
+        "каким",
+        "коем",
+        "меня",
+        "мира",
+        "мире",
+        "надо",
+        "накось",
+        "нашел",
+        "не",
+        "нельзя",
+        "нет",
+        "ни",
+        "ну",
+        "отказываюсь",
+        "перестань",
+        "под",
+        "разе",
+        "рожа",
+        "согласен",
+        "треснет",
+        "трогай",
+        "трожь",
+        "уж",
+        "фигушки",
+        "хочу",
+        "это",
+        "я"
+    ]
+}

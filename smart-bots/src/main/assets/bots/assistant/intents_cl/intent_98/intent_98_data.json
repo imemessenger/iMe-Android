@@ -1,0 +1,163 @@
+{
+    "classes": [
+        {
+            "tag": "True"
+        },
+        {
+            "tag": "False"
+        }
+    ],
+    "documents": [
+        {
+            "sent_tokens": [
+                "похуй"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "похрен"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "хрен",
+                "с",
+                "ним"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "пофиг"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "пох"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "нах"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "ваще",
+                "пох"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "вообще",
+                "похуй"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "не",
+                "важно"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "насрать"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "посрать"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "фиолетово"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "хрен"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "с"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "ним"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "ваще"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "вообще"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "не"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "важно"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "фиолетовый"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "фиолетовый",
+                "цвет"
+            ],
+            "tag": "False"
+        }
+    ],
+    "words": [
+        "важно",
+        "ваще",
+        "вообще",
+        "насрать",
+        "нах",
+        "не",
+        "ним",
+        "посрать",
+        "пофиг",
+        "пох",
+        "похрен",
+        "похуй",
+        "с",
+        "фиолетово",
+        "фиолетовый",
+        "хрен",
+        "цвет"
+    ]
+}

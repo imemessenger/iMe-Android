@@ -124,7 +124,6 @@ public class AlertDialog extends Dialog implements Drawable.Callback {
 
         public AlertDialogCell(Context context) {
             super(context);
-
             setBackgroundDrawable(Theme.createSelectorDrawable(Theme.getColor(Theme.key_dialogButtonSelector), 2));
             setPadding(AndroidUtilities.dp(23), 0, AndroidUtilities.dp(23), 0);
 
@@ -987,6 +986,10 @@ public class AlertDialog extends Dialog implements Drawable.Callback {
         cell.imageView.setColorFilter(new PorterDuffColorFilter(icon, PorterDuff.Mode.MULTIPLY));
     }
 
+    public int getItemsCount() {
+        return itemViews.size();
+    }
+
     public void setMessage(CharSequence text) {
         message = text;
         if (messageTextView != null) {
@@ -1101,6 +1104,16 @@ public class AlertDialog extends Dialog implements Drawable.Callback {
 
         public Builder setTitle(CharSequence title) {
             alertDialog.title = title;
+            return this;
+        }
+
+        public Builder setCancelable(Boolean cancelable){
+            alertDialog.setCancelable(cancelable);
+            return this;
+        }
+
+        public Builder  setCanceledOnTouchOutside(Boolean cancelable){
+            alertDialog.setCanceledOnTouchOutside(cancelable);
             return this;
         }
 

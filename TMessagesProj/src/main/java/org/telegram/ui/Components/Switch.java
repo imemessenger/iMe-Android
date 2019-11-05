@@ -27,6 +27,9 @@ import android.graphics.drawable.Drawable;
 import android.graphics.drawable.RippleDrawable;
 import android.os.Build;
 import androidx.annotation.Keep;
+import androidx.annotation.Nullable;
+
+import android.util.AttributeSet;
 import android.util.StateSet;
 import android.view.View;
 import android.view.accessibility.AccessibilityNodeInfo;
@@ -63,7 +66,7 @@ public class Switch extends View {
     private boolean drawRipple;
     private RippleDrawable rippleDrawable;
     private Paint ripplePaint;
-    private int pressedState[] = new int[]{android.R.attr.state_enabled, android.R.attr.state_pressed};
+    private int[] pressedState = new int[]{android.R.attr.state_enabled, android.R.attr.state_pressed};
     private int colorSet;
 
     private boolean bitmapsCreated;
@@ -81,6 +84,17 @@ public class Switch extends View {
 
     public interface OnCheckedChangeListener {
         void onCheckedChanged(Switch view, boolean isChecked);
+    }
+
+    public Switch(Context context, @Nullable AttributeSet attrs) {
+        super(context, attrs);
+        rectF = new RectF();
+
+        paint = new Paint(Paint.ANTI_ALIAS_FLAG);
+        paint2 = new Paint(Paint.ANTI_ALIAS_FLAG);
+        paint2.setStyle(Paint.Style.STROKE);
+        paint2.setStrokeCap(Paint.Cap.ROUND);
+        paint2.setStrokeWidth(AndroidUtilities.dp(2));
     }
 
     public Switch(Context context) {

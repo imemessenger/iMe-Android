@@ -1,0 +1,408 @@
+{
+    "classes": [
+        {
+            "tag": "True"
+        },
+        {
+            "tag": "False"
+        }
+    ],
+    "documents": [
+        {
+            "sent_tokens": [
+                "бля"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "блин"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "да",
+                "ну",
+                "на",
+                "хрен"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "не",
+                "может",
+                "быть"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "блин",
+                "опять"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "бля",
+                "ска"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "бляха",
+                "муха"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "вот",
+                "же",
+                "блин"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "ну",
+                "бля"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "вот",
+                "бля"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "во",
+                "бля"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "ну",
+                "блин"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "блин",
+                "блинский"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "бляя"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "бляяя"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "бляяяя"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "бляяяяя"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "бляяяяяя"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "бляяяяяяяяяяяя"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "блять"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "блят"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "блятъ"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "блядь"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "блях"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "опять",
+                "бля"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "тфу",
+                "бля"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "тьфу",
+                "бля"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "тьфу",
+                "блядь"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "тьфу",
+                "блять"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "да"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "ну"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "на"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "хрен"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "не",
+                "может"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "может"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "не"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "быть"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "опять"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "ска"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "бляха"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "муха"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "вот"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "же"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "во"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "ну"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "тфу"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "тьфу"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "блин"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "блины"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "есть",
+                "блины"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "печь",
+                "блины"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "испечь",
+                "блин"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "зажарить",
+                "блин"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "поджарил",
+                "блины"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "выпек",
+                "блины"
+            ],
+            "tag": "False"
+        }
+    ],
+    "words": [
+        "блин",
+        "блинский",
+        "блины",
+        "бля",
+        "блядь",
+        "блят",
+        "блятъ",
+        "блять",
+        "блях",
+        "бляха",
+        "бляя",
+        "бляяя",
+        "бляяяя",
+        "бляяяяя",
+        "бляяяяяя",
+        "бляяяяяяяяяяяя",
+        "быть",
+        "во",
+        "вот",
+        "выпек",
+        "да",
+        "есть",
+        "же",
+        "зажарить",
+        "испечь",
+        "может",
+        "муха",
+        "на",
+        "не",
+        "ну",
+        "опять",
+        "печь",
+        "поджарил",
+        "ска",
+        "тфу",
+        "тьфу",
+        "хрен"
+    ]
+}

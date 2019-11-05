@@ -16,7 +16,6 @@ import android.animation.ObjectAnimator;
 import android.annotation.SuppressLint;
 import android.app.Activity;
 import android.app.Dialog;
-import android.app.PendingIntent;
 import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
@@ -31,7 +30,6 @@ import android.graphics.drawable.Drawable;
 import android.os.Build;
 import android.os.Bundle;
 import android.telephony.PhoneNumberUtils;
-import android.telephony.SmsManager;
 import android.telephony.TelephonyManager;
 import android.text.Editable;
 import android.text.InputFilter;
@@ -61,7 +59,6 @@ import org.telegram.messenger.NotificationCenter;
 import org.telegram.messenger.ApplicationLoader;
 import org.telegram.messenger.FileLog;
 import org.telegram.messenger.R;
-import org.telegram.messenger.SmsReceiver;
 import org.telegram.tgnet.ConnectionsManager;
 import org.telegram.tgnet.TLRPC;
 import org.telegram.messenger.UserConfig;
@@ -218,7 +215,7 @@ public class ChangePhoneActivity extends BaseFragment {
     @Override
     protected void onDialogDismiss(Dialog dialog) {
         if (Build.VERSION.SDK_INT >= 23 && dialog == permissionsDialog && !permissionsItems.isEmpty()) {
-            getParentActivity().requestPermissions(permissionsItems.toArray(new String[permissionsItems.size()]), 6);
+            getParentActivity().requestPermissions(permissionsItems.toArray(new String[0]), 6);
         }
     }
 
@@ -452,14 +449,14 @@ public class ChangePhoneActivity extends BaseFragment {
                                 country = codesMap.get(sub);
                                 if (country != null) {
                                     ok = true;
-                                    textToSet = text.substring(a, text.length()) + phoneField.getText().toString();
+                                    textToSet = text.substring(a) + phoneField.getText().toString();
                                     codeField.setText(text = sub);
                                     break;
                                 }
                             }
                             if (!ok) {
                                 ignoreOnTextChange = true;
-                                textToSet = text.substring(1, text.length()) + phoneField.getText().toString();
+                                textToSet = text.substring(1) + phoneField.getText().toString();
                                 codeField.setText(text = text.substring(0, 1));
                             }
                         }
@@ -552,7 +549,7 @@ public class ChangePhoneActivity extends BaseFragment {
                     String phoneChars = "0123456789";
                     String str = phoneField.getText().toString();
                     if (characterAction == 3) {
-                        str = str.substring(0, actionPosition) + str.substring(actionPosition + 1, str.length());
+                        str = str.substring(0, actionPosition) + str.substring(actionPosition + 1);
                         start--;
                     }
                     StringBuilder builder = new StringBuilder(str.length());
@@ -716,31 +713,32 @@ public class ChangePhoneActivity extends BaseFragment {
                 return;
             }
             TelephonyManager tm = (TelephonyManager) ApplicationLoader.applicationContext.getSystemService(Context.TELEPHONY_SERVICE);
-            boolean simcardAvailable = tm.getSimState() != TelephonyManager.SIM_STATE_ABSENT && tm.getPhoneType() != TelephonyManager.PHONE_TYPE_NONE;
-            boolean allowCall = true;
-            if (Build.VERSION.SDK_INT >= 23 && simcardAvailable) {
-                allowCall = getParentActivity().checkSelfPermission(Manifest.permission.READ_PHONE_STATE) == PackageManager.PERMISSION_GRANTED;
-                if (checkPermissions) {
-                    permissionsItems.clear();
-                    if (!allowCall) {
-                        permissionsItems.add(Manifest.permission.READ_PHONE_STATE);
-                    }
-                    if (!permissionsItems.isEmpty()) {
-                        SharedPreferences preferences = MessagesController.getGlobalMainSettings();
-                        if (preferences.getBoolean("firstlogin", true) || getParentActivity().shouldShowRequestPermissionRationale(Manifest.permission.READ_PHONE_STATE)) {
-                            preferences.edit().putBoolean("firstlogin", false).commit();
-                            AlertDialog.Builder builder = new AlertDialog.Builder(getParentActivity());
-                            builder.setTitle(LocaleController.getString("AppName", R.string.AppName));
-                            builder.setPositiveButton(LocaleController.getString("OK", R.string.OK), null);
-                            builder.setMessage(LocaleController.getString("AllowReadCall", R.string.AllowReadCall));
-                            permissionsDialog = showDialog(builder.create());
-                        } else {
-                            getParentActivity().requestPermissions(permissionsItems.toArray(new String[permissionsItems.size()]), 6);
-                        }
-                        return;
-                    }
-                }
-            }
+            //todo disable call logs
+            boolean simcardAvailable = false;
+            boolean allowCall = false;
+//            if (Build.VERSION.SDK_INT >= 23 && simcardAvailable) {
+//                allowCall = getParentActivity().checkSelfPermission(Manifest.permission.READ_PHONE_STATE) == PackageManager.PERMISSION_GRANTED;
+//                if (checkPermissions) {
+//                    permissionsItems.clear();
+//                    if (!allowCall) {
+//                        permissionsItems.add(Manifest.permission.READ_PHONE_STATE);
+//                    }
+//                    if (!permissionsItems.isEmpty()) {
+//                        SharedPreferences preferences = MessagesController.getGlobalMainSettings();
+//                        if (preferences.getBoolean("firstlogin", true) || getParentActivity().shouldShowRequestPermissionRationale(Manifest.permission.READ_PHONE_STATE)) {
+//                            preferences.edit().putBoolean("firstlogin", false).commit();
+//                            AlertDialog.Builder builder = new AlertDialog.Builder(getParentActivity());
+//                            builder.setTitle(LocaleController.getString("AppName", R.string.AppName));
+//                            builder.setPositiveButton(LocaleController.getString("OK", R.string.OK), null);
+//                            builder.setMessage(LocaleController.getString("AllowReadCall", R.string.AllowReadCall));
+//                            permissionsDialog = showDialog(builder.create());
+//                        } else {
+//                            getParentActivity().requestPermissions(permissionsItems.toArray(new String[0]), 6);
+//                        }
+//                        return;
+//                    }
+//                }
+//            }
 
             if (countryState == 1) {
                 AlertsCreator.showSimpleAlert(ChangePhoneActivity.this, LocaleController.getString("ChooseCountry", R.string.ChooseCountry));
@@ -755,20 +753,10 @@ public class ChangePhoneActivity extends BaseFragment {
             req.phone_number = phone;
             req.settings = new TLRPC.TL_codeSettings();
             req.settings.allow_flashcall = simcardAvailable && allowCall;
-            if (Build.VERSION.SDK_INT >= 26) {
-                try {
-                    req.settings.app_hash = SmsManager.getDefault().createAppSpecificSmsToken(PendingIntent.getBroadcast(ApplicationLoader.applicationContext, 0, new Intent(ApplicationLoader.applicationContext, SmsReceiver.class), PendingIntent.FLAG_UPDATE_CURRENT));
-                } catch (Throwable e) {
-                    FileLog.e(e);
-                }
-            } else {
-                req.settings.app_hash = BuildVars.SMS_HASH;
-                req.settings.app_hash_persistent = true;
-            }
+            req.settings.allow_app_hash = ApplicationLoader.hasPlayServices;
             SharedPreferences preferences = ApplicationLoader.applicationContext.getSharedPreferences("mainconfig", Activity.MODE_PRIVATE);
-            if (!TextUtils.isEmpty(req.settings.app_hash)) {
-                req.settings.flags |= 8;
-                preferences.edit().putString("sms_hash", req.settings.app_hash).commit();
+            if (req.settings.allow_app_hash) {
+                preferences.edit().putString("sms_hash", BuildVars.SMS_HASH).commit();
             } else {
                 preferences.edit().remove("sms_hash").commit();
             }
@@ -1658,6 +1646,6 @@ public class ChangePhoneActivity extends BaseFragment {
         arrayList.add(new ThemeDescription(smsView4.blackImageView, ThemeDescription.FLAG_IMAGECOLOR, null, null, null, null, Theme.key_windowBackgroundWhiteBlackText));
         arrayList.add(new ThemeDescription(smsView4.blueImageView, ThemeDescription.FLAG_IMAGECOLOR, null, null, null, null, Theme.key_chats_actionBackground));
 
-        return arrayList.toArray(new ThemeDescription[arrayList.size()]);
+        return arrayList.toArray(new ThemeDescription[0]);
     }
 }

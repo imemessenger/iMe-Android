@@ -1,0 +1,247 @@
+{
+    "classes": [
+        {
+            "tag": "True"
+        },
+        {
+            "tag": "False"
+        }
+    ],
+    "documents": [
+        {
+            "sent_tokens": [
+                "мне",
+                "скучно"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "это",
+                "скучно"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "скукотища"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "мне",
+                "это",
+                "наскучило"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "скука"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "очень",
+                "скучно"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "ты",
+                "мне",
+                "наскучил"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "наскучила",
+                "работа"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "наскучило",
+                "занятие"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "наскучил",
+                "фильм"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "наскучила",
+                "книга"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "наскучила",
+                "музыка"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "скучная",
+                "книга"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "скучный",
+                "фильм"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "скучное",
+                "занятие"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "наскучило"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "наскучил"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "наскучили"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "скучно"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "скучно",
+                "мне"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "тебе",
+                "не",
+                "скучно"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "тебе",
+                "скучно"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "мне"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "это"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "очень"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "ты"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "ты",
+                "мне"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "тебе"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "фильм"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "книга"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "музыка"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "занятие"
+            ],
+            "tag": "False"
+        }
+    ],
+    "words": [
+        "занятие",
+        "книга",
+        "мне",
+        "музыка",
+        "наскучил",
+        "наскучила",
+        "наскучили",
+        "наскучило",
+        "не",
+        "очень",
+        "работа",
+        "скука",
+        "скукотища",
+        "скучная",
+        "скучно",
+        "скучное",
+        "скучный",
+        "тебе",
+        "ты",
+        "фильм",
+        "это"
+    ]
+}

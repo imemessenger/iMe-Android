@@ -1,0 +1,92 @@
+{
+    "classes": [
+        {
+            "tag": "True"
+        },
+        {
+            "tag": "False"
+        }
+    ],
+    "documents": [
+        {
+            "sent_tokens": [
+                "чо",
+                "делаешь"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "чем",
+                "занят"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "что",
+                "делаешь"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "чем",
+                "сейчас",
+                "занимаешься"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "чо"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "делаешь"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "занят"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "что"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "чем"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "сейчас"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "занимаешься"
+            ],
+            "tag": "False"
+        }
+    ],
+    "words": [
+        "делаешь",
+        "занимаешься",
+        "занят",
+        "сейчас",
+        "чем",
+        "чо",
+        "что"
+    ]
+}

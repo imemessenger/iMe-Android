@@ -27,4 +27,7 @@
     <color name="colorChannelSubscribersGray">#878787</color>
     <color name="colorThemeBlue">#537ea3</color>
     <color name="transparent">#00ffffff</color>
+    <color name="gray_message">#9f9f9f</color>
+    <color name="gray_background_window">#F0F0F0</color>
+    <color name="imecolor">#156ae9</color>
 </resources>

@@ -1,0 +1,499 @@
+{
+    "classes": [
+        {
+            "tag": "True"
+        },
+        {
+            "tag": "False"
+        }
+    ],
+    "documents": [
+        {
+            "sent_tokens": [
+                "в",
+                "чем",
+                "правда",
+                "брат"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "истины",
+                "здесь",
+                "нет"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "мы",
+                "никогда",
+                "не",
+                "узнаем",
+                "правды"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "а",
+                "в",
+                "чем",
+                "ты",
+                "уверен",
+                "вообще"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "ни",
+                "в",
+                "чем",
+                "нельзя",
+                "быть",
+                "уверенным"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "все",
+                "относительно"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "да",
+                "это",
+                "давно",
+                "доказанный",
+                "факт"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "мне",
+                "нужна",
+                "голая",
+                "правда"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "жги"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "я",
+                "уже",
+                "ни",
+                "в",
+                "чем",
+                "не",
+                "уверен"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "правда"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "истина"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "правду"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "правде"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "правдой"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "истине"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "истиной"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "истину"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "в"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "чем"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "брат"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "здесь"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "нет"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "мы"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "никогда"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "не",
+                "узнаем"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "узнаем"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "ни",
+                "в",
+                "чем"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "ни"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "в"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "чем"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "чём"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "нельзя"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "быть"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "уверенным"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "уверен"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "уверена"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "уверены"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "все"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "всё"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "относительно"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "да"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "это"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "давно"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "доказанный"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "доказать"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "доказал"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "доказательство"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "факт"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "факты"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "нужна"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "нужен"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "нужны"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "голый"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "голая"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "голые"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "жги"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "зажигай"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "жгет"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "жгёт"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "матку"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "матка"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "уже"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "в",
+                "чем"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "в",
+                "чём"
+            ],
+            "tag": "False"
+        }
+    ],
+    "words": [
+        "а",
+        "брат",
+        "быть",
+        "в",
+        "вообще",
+        "все",
+        "всё",
+        "голая",
+        "голые",
+        "голый",
+        "да",
+        "давно",
+        "доказал",
+        "доказанный",
+        "доказательство",
+        "доказать",
+        "жгет",
+        "жги",
+        "жгёт",
+        "зажигай",
+        "здесь",
+        "истина",
+        "истине",
+        "истиной",
+        "истину",
+        "истины",
+        "матка",
+        "матку",
+        "мне",
+        "мы",
+        "не",
+        "нельзя",
+        "нет",
+        "ни",
+        "никогда",
+        "нужен",
+        "нужна",
+        "нужны",
+        "относительно",
+        "правда",
+        "правде",
+        "правдой",
+        "правду",
+        "правды",
+        "ты",
+        "уверен",
+        "уверена",
+        "уверенным",
+        "уверены",
+        "уже",
+        "узнаем",
+        "факт",
+        "факты",
+        "чем",
+        "чём",
+        "это",
+        "я"
+    ]
+}

@@ -52,6 +52,8 @@ dependencies {
     implementation "com.google.android.gms:play-services-vision:$play_services_vision_version"
     implementation "com.google.android.gms:play-services-wallet:$play_services_wallet_version"
     implementation "com.google.android.gms:play-services-wearable:$play_services_wearable_version"
+    implementation "com.google.android.gms:play-services-location:$play_services_location_version"
+
 
     implementation "net.hockeyapp.android:HockeySDK:$hockey_sdk_version"
     implementation "com.googlecode.mp4parser:isoparser:$iso_parser_version"
@@ -60,11 +62,14 @@ dependencies {
     implementation "me.zhanghai.android.materialratingbar:library:$material_rating_version"
     implementation "com.google.android:flexbox:$flexbox_version"
     implementation "com.android.support:multidex:$multidex_version"
+    implementation 'com.google.code.gson:gson:2.8.5'
 
     debugImplementation "com.amitshekhar.android:debug-db:$android_debug_db_version"
     implementation "de.hdodenhof:circleimageview:$circle_image_view_version"
 
     implementation "com.airbnb.android:lottie:$lottie"
+
+    implementation "me.grantland:autofittextview:0.2.+"
 }
 
 android {
@@ -109,10 +114,10 @@ android {
         }
 
         release {
-            storeFile file("config/ime.keystore")
-            storePassword RELEASE_STORE_PASSWORD
-            keyAlias RELEASE_KEY_ALIAS
-            keyPassword RELEASE_KEY_PASSWORD
+            storeFile file("config/debug.keystore")
+            storePassword "password"
+            keyAlias "alias"
+            keyPassword "password"
         }
     }
 
@@ -142,14 +147,6 @@ android {
         }
 
 
-        HA {
-            debuggable false
-            jniDebuggable false
-            signingConfig signingConfigs.debug
-            applicationIdSuffix ".beta"
-            minifyEnabled true
-            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
-        }
 
         release {
             debuggable false
@@ -162,7 +159,7 @@ android {
         }
     }
 
-    defaultConfig.versionCode = 1100
+    defaultConfig.versionCode = 51101 // 5.11.1
 
     sourceSets.debug {
         manifest.srcFile 'config/debug/AndroidManifest.xml'
@@ -174,9 +171,7 @@ android {
         java.srcDirs = ['src/multidex/java']
     }
 
-    sourceSets.HA {
-        manifest.srcFile 'config/debug/AndroidManifest.xml'
-    }
+
 
     sourceSets.release {
         manifest.srcFile 'config/release/AndroidManifest.xml'
@@ -290,8 +285,6 @@ android {
         }
     }
 
-    defaultConfig.versionCode = 1608
-
     applicationVariants.all { variant ->
         variant.outputs.all { output ->
             output.getProcessManifestProvider().get().doLast {
@@ -322,10 +315,11 @@ android {
 
     defaultConfig {
         minSdkVersion 16
-        targetSdkVersion 27
-        versionName "1.1.0"
+        targetSdkVersion 28
+        versionName "5.11.1"
         multiDexEnabled true
         manifestPlaceholders = [applicationClassName: "ApplicationLoader"]
+
 
         vectorDrawables.generatedDensities = ['mdpi', 'hdpi', 'xhdpi', 'xxhdpi']
 

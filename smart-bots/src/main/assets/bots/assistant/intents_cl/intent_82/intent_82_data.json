@@ -1,0 +1,381 @@
+{
+    "classes": [
+        {
+            "tag": "True"
+        },
+        {
+            "tag": "False"
+        }
+    ],
+    "documents": [
+        {
+            "sent_tokens": [
+                "тебе",
+                "ясно"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "ты",
+                "понял"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "ты",
+                "меня",
+                "понял"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "ясно",
+                "ли",
+                "тебе"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "понятно",
+                "тебе"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "ты",
+                "понимаешь"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "понимаешь"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "ты",
+                "не",
+                "понял"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "ты",
+                "не",
+                "понимаешь",
+                "меня"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "сечешь",
+                "о",
+                "чем",
+                "я"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "ты",
+                "вразумил"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "что",
+                "не",
+                "ясно"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "что",
+                "не",
+                "понятно"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "чо",
+                "не",
+                "ясно"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "чо",
+                "не",
+                "понятно"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "чо",
+                "ты",
+                "тупишь"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "что",
+                "ты",
+                "тупишь"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "вкуриваешь"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "осознаешь"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "ты",
+                "усвоил"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "ты",
+                "врубился"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "тебе",
+                "все",
+                "ясно"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "тебе",
+                "все",
+                "понятно"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "ты",
+                "разобрался"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "сечёшь",
+                "о",
+                "чём",
+                "я"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "тебе"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "ясно"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "ты"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "понял"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "меня"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "понял"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "ли"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "понятно"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "не"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "сечешь"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "о"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "чем"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "вразумил"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "не",
+                "ясно"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "не",
+                "понятно"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "чо"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "тупишь"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "что"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "догоняешь"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "усвоил"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "врубился"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "разобрался"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "сечёшь"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "чём"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "я"
+            ],
+            "tag": "False"
+        }
+    ],
+    "words": [
+        "вкуриваешь",
+        "вразумил",
+        "врубился",
+        "все",
+        "догоняешь",
+        "ли",
+        "меня",
+        "не",
+        "о",
+        "осознаешь",
+        "понимаешь",
+        "понял",
+        "понятно",
+        "разобрался",
+        "сечешь",
+        "сечёшь",
+        "тебе",
+        "тупишь",
+        "ты",
+        "усвоил",
+        "чем",
+        "чо",
+        "что",
+        "чём",
+        "я",
+        "ясно"
+    ]
+}

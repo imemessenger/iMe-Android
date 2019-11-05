@@ -1,0 +1,232 @@
+{
+    "classes": [
+        {
+            "tag": "True"
+        },
+        {
+            "tag": "False"
+        }
+    ],
+    "documents": [
+        {
+            "sent_tokens": [
+                "я",
+                "дико",
+                "устал"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "валюсь",
+                "с",
+                "ног"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "готов",
+                "уснуть",
+                "прямо",
+                "здесь"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "сильно",
+                "устал"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "тяжелый",
+                "день"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "отдыхать",
+                "будешь"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "сложный",
+                "день"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "заебался"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "я"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "дико"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "валюсь"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "с"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "ног"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "с",
+                "ног"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "готов"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "прямо"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "здесь"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "прямо",
+                "здесь"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "прям",
+                "здесь"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "прям"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "уснуть"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "спать"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "сон"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "сильно"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "день"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "тяжелый"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "отдыхать"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "не",
+                "отдыхать"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "не",
+                "отдохнул"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "сложный"
+            ],
+            "tag": "False"
+        }
+    ],
+    "words": [
+        "будешь",
+        "валюсь",
+        "готов",
+        "день",
+        "дико",
+        "заебался",
+        "здесь",
+        "не",
+        "ног",
+        "отдохнул",
+        "отдыхать",
+        "прям",
+        "прямо",
+        "с",
+        "сильно",
+        "сложный",
+        "сон",
+        "спать",
+        "тяжелый",
+        "уснуть",
+        "устал",
+        "я"
+    ]
+}

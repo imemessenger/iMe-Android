@@ -1,0 +1,4 @@
+Android NDK: WARNING:/Users/sergey/StudioProjects/iMe/TMessagesProj/jni/libtgvoip/Android.mk:flac: LOCAL_LDLIBS is always ignored for static libraries    
+Android NDK: WARNING: Unsupported source file extensions in /Users/sergey/StudioProjects/iMe/TMessagesProj/jni/libtgvoip/Android.mk for module flac    
+Android NDK:   ./exoplayer/libFLAC/windows_unicode_filenames    
+make: Nothing to be done for `tmessages.30'.

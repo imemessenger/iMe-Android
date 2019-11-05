@@ -1,0 +1,183 @@
+{
+    "classes": [
+        {
+            "tag": "True"
+        },
+        {
+            "tag": "False"
+        }
+    ],
+    "documents": [
+        {
+            "sent_tokens": [
+                "у",
+                "меня",
+                "дела"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "я",
+                "поглощен",
+                "работой"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "пора",
+                "заняться",
+                "работой"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "я",
+                "очень",
+                "занят"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "я",
+                "занят"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "я",
+                "работаю"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "на",
+                "это",
+                "нет",
+                "времени"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "дела"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "у"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "меня"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "поглощен"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "я"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "работа"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "работаю"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "работой"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "очень"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "я"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "на"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "это"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "времени"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "нет"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "время"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "времена"
+            ],
+            "tag": "False"
+        }
+    ],
+    "words": [
+        "времена",
+        "времени",
+        "время",
+        "дела",
+        "занят",
+        "заняться",
+        "меня",
+        "на",
+        "нет",
+        "очень",
+        "поглощен",
+        "пора",
+        "работа",
+        "работаю",
+        "работой",
+        "у",
+        "это",
+        "я"
+    ]
+}

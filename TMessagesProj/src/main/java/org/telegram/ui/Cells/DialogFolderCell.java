@@ -16,6 +16,8 @@ import android.text.StaticLayout;
 import android.text.TextPaint;
 import android.text.TextUtils;
 
+import com.smedialink.storage.data.AvatarSerializer;
+
 import org.telegram.messenger.AndroidUtilities;
 import org.telegram.messenger.Emoji;
 import org.telegram.messenger.FileLog;
@@ -25,7 +27,6 @@ import org.telegram.messenger.MessageObject;
 import org.telegram.messenger.MessagesController;
 import org.telegram.messenger.R;
 import org.telegram.messenger.UserConfig;
-import org.telegram.messenger.UserObject;
 import org.telegram.tgnet.TLRPC;
 import org.telegram.ui.ActionBar.Theme;
 import org.telegram.ui.Components.AvatarDrawable;
@@ -497,8 +498,14 @@ public class DialogFolderCell extends BaseCell {
             }
         }
 
-        avatarDrawable.setInfo(currentFolder.getBackground(), currentFolder.getName(), null, false);
-        avatarImage.setImage(null, "50_50", avatarDrawable, null, 0);
+        avatarDrawable.setInfo(currentFolder.getBackground(), currentFolder.getName(), null, null);
+
+        String avatarString = currentFolder.getAvatar();
+        if (avatarString.isEmpty()) {
+            avatarImage.setImage(null, "50_50", avatarDrawable, null, 0);
+        } else {
+            avatarImage.setImageBitmap(AvatarSerializer.getBitmapFromString(avatarString));
+        }
 
         if (getMeasuredWidth() != 0 || getMeasuredHeight() != 0) {
             buildLayout();

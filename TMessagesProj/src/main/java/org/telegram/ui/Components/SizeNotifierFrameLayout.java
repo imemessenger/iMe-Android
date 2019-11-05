@@ -15,6 +15,7 @@ import android.graphics.Shader;
 import android.graphics.drawable.BitmapDrawable;
 import android.graphics.drawable.ColorDrawable;
 import android.graphics.drawable.Drawable;
+import android.graphics.drawable.GradientDrawable;
 import android.os.Build;
 import android.view.View;
 import android.widget.FrameLayout;
@@ -107,15 +108,18 @@ public class SizeNotifierFrameLayout extends FrameLayout {
     public int getKeyboardHeight() {
         View rootView = getRootView();
         getWindowVisibleDisplayFrame(rect);
+        if (rect.bottom == 0 && rect.top == 0) {
+            return 0;
+        }
         int usableViewHeight = rootView.getHeight() - (rect.top != 0 ? AndroidUtilities.statusBarHeight : 0) - AndroidUtilities.getViewInset(rootView);
-        return usableViewHeight - (rect.bottom - rect.top);
+        return Math.max(0, usableViewHeight - (rect.bottom - rect.top));
     }
 
     public void notifyHeightChanged() {
+        if (parallaxEffect != null) {
+            parallaxScale = parallaxEffect.getScale(getMeasuredWidth(), getMeasuredHeight());
+        }
         if (delegate != null) {
-            if (parallaxEffect != null) {
-                parallaxScale = parallaxEffect.getScale(getMeasuredWidth(), getMeasuredHeight());
-            }
             keyboardHeight = getKeyboardHeight();
             final boolean isWidthGreater = AndroidUtilities.displaySize.x > AndroidUtilities.displaySize.y;
             post(() -> {
@@ -133,7 +137,7 @@ public class SizeNotifierFrameLayout extends FrameLayout {
     @Override
     protected void onDraw(Canvas canvas) {
         if (backgroundDrawable != null) {
-            if (backgroundDrawable instanceof ColorDrawable) {
+            if (backgroundDrawable instanceof ColorDrawable || backgroundDrawable instanceof GradientDrawable) {
                 if (bottomClip != 0) {
                     canvas.save();
                     canvas.clipRect(0, 0, getMeasuredWidth(), getMeasuredHeight() - bottomClip);

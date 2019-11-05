@@ -1,0 +1,341 @@
+{
+    "classes": [
+        {
+            "tag": "True"
+        },
+        {
+            "tag": "False"
+        }
+    ],
+    "documents": [
+        {
+            "sent_tokens": [
+                "что",
+                "это",
+                "за",
+                "запах",
+                "был",
+                "на",
+                "тебе"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "какими",
+                "духами",
+                "ты",
+                "пользуешься"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "у",
+                "тебя",
+                "был",
+                "приятный",
+                "запах"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "интересный",
+                "аромат"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "она",
+                "совершенно",
+                "не",
+                "пользуется",
+                "духами"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "не",
+                "люблю",
+                "духи"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "ты",
+                "любишь",
+                "духи"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "я",
+                "хочу",
+                "чувствовать",
+                "твой",
+                "нежный",
+                "запах"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "духи"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "духами"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "парфюмерная",
+                "вода"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "туалетная",
+                "вода"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "что"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "это"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "за"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "запах"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "был"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "на"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "тебе"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "какими"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "ты"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "пользуешься"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "у"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "у",
+                "тебя"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "тебя"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "был"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "приятный"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "интересный"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "аромат"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "она"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "совершенно"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "не"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "пользуется"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "не",
+                "пользуется"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "не",
+                "люблю"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "люблю"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "любишь"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "я"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "хочу"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "чувствовать"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "твой"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "нежный"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "вода"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "туалетная"
+            ],
+            "tag": "False"
+        }
+    ],
+    "words": [
+        "аромат",
+        "был",
+        "вода",
+        "духами",
+        "духи",
+        "за",
+        "запах",
+        "интересный",
+        "какими",
+        "любишь",
+        "люблю",
+        "на",
+        "не",
+        "нежный",
+        "она",
+        "парфюмерная",
+        "пользуется",
+        "пользуешься",
+        "приятный",
+        "совершенно",
+        "твой",
+        "тебе",
+        "тебя",
+        "туалетная",
+        "ты",
+        "у",
+        "хочу",
+        "что",
+        "чувствовать",
+        "это",
+        "я"
+    ]
+}

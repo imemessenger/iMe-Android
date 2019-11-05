@@ -1,0 +1,184 @@
+{
+    "classes": [
+        {
+            "tag": "True"
+        },
+        {
+            "tag": "False"
+        }
+    ],
+    "documents": [
+        {
+            "sent_tokens": [
+                "ты",
+                "женат"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "ты",
+                "что",
+                "женат"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "ты",
+                "семейный"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "ты",
+                "обручен"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "ты",
+                "похоже",
+                "женатый"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "ты",
+                "женатый"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "у",
+                "тебя",
+                "есть",
+                "жена"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "у",
+                "тебя",
+                "есть",
+                "супруга"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "жена",
+                "то",
+                "есть"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "ты",
+                "женатик"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "женат"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "женатый"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "женатик"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "ты"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "что"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "семейный"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "похоже"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "у",
+                "тебя"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "тебя"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "у"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "есть"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "то"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "жена"
+            ],
+            "tag": "False"
+        }
+    ],
+    "words": [
+        "есть",
+        "жена",
+        "женат",
+        "женатик",
+        "женатый",
+        "обручен",
+        "похоже",
+        "семейный",
+        "супруга",
+        "тебя",
+        "то",
+        "ты",
+        "у",
+        "что"
+    ]
+}

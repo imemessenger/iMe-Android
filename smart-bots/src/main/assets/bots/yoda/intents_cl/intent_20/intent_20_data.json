@@ -1,0 +1,223 @@
+{
+    "classes": [
+        {
+            "tag": "True"
+        },
+        {
+            "tag": "False"
+        }
+    ],
+    "documents": [
+        {
+            "sent_tokens": [
+                "время",
+                "пришло"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "уже",
+                "пора"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "когда",
+                "выдвигаемся"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "пошли",
+                "уже"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "настало",
+                "время"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "выходи"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "поторопись"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "надо",
+                "спешить"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "быстрее"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "го",
+                "уже"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "go"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "погнали",
+                "уже"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "выдвигаемся"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "пора",
+                "выходить"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "пришло"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "уже"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "когда"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "выдвигаемся"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "уже"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "пошли"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "настало"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "надо"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "спешить"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "спешка"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "спешит"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "го"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "уже"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "погнали"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "выходить"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "выходит"
+            ],
+            "tag": "False"
+        }
+    ],
+    "words": [
+        "go",
+        "быстрее",
+        "время",
+        "выдвигаемся",
+        "выходи",
+        "выходит",
+        "выходить",
+        "го",
+        "когда",
+        "надо",
+        "настало",
+        "погнали",
+        "пора",
+        "поторопись",
+        "пошли",
+        "пришло",
+        "спешит",
+        "спешить",
+        "спешка",
+        "уже"
+    ]
+}

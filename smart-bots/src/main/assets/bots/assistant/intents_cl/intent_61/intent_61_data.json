@@ -1,0 +1,259 @@
+{
+    "classes": [
+        {
+            "tag": "True"
+        },
+        {
+            "tag": "False"
+        }
+    ],
+    "documents": [
+        {
+            "sent_tokens": [
+                "стань",
+                "умнее"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "учись",
+                "больше"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "будь",
+                "более",
+                "умным"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "будь",
+                "умнее"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "нужно",
+                "тебе",
+                "повысить",
+                "свою",
+                "квалификацию"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "ты",
+                "должен",
+                "учиться"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "повышай",
+                "свою",
+                "квалификацию"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "тебе",
+                "нужно",
+                "больше",
+                "учиться"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "стань"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "умнее"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "ум"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "будь"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "более"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "умный"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "не",
+                "умный"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "не",
+                "умнее"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "учись"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "больше"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "нужно"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "тебе"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "повысить"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "свою"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "квалификация"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "квалификацию"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "свой"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "своя"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "повышай"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "будь",
+                "более"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "будь",
+                "менее"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "тебе",
+                "нужно"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "учиться"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "учится"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "тебе",
+                "не",
+                "нужно"
+            ],
+            "tag": "False"
+        }
+    ],
+    "words": [
+        "более",
+        "больше",
+        "будь",
+        "должен",
+        "квалификацию",
+        "квалификация",
+        "менее",
+        "не",
+        "нужно",
+        "повысить",
+        "повышай",
+        "свой",
+        "свою",
+        "своя",
+        "стань",
+        "тебе",
+        "ты",
+        "ум",
+        "умнее",
+        "умный",
+        "умным",
+        "учись",
+        "учится",
+        "учиться"
+    ]
+}

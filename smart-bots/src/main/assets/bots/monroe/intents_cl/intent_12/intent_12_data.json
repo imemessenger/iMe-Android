@@ -1,0 +1,632 @@
+{
+    "classes": [
+        {
+            "tag": "True"
+        },
+        {
+            "tag": "False"
+        }
+    ],
+    "documents": [
+        {
+            "sent_tokens": [
+                "у",
+                "тебя",
+                "есть",
+                "образ",
+                "идеального",
+                "мужчины"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "каким",
+                "по",
+                "твоему",
+                "должен",
+                "быть",
+                "мужчина"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "с",
+                "кем",
+                "бы",
+                "ты",
+                "стала",
+                "встречаться"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "ты",
+                "любишь",
+                "мужчин"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "вот",
+                "он",
+                "пидрила"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "у",
+                "него",
+                "только",
+                "одно",
+                "на",
+                "уме"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "хочу",
+                "быть",
+                "как",
+                "за",
+                "каменной",
+                "стеной"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "мне",
+                "нужен",
+                "мужчина",
+                "в",
+                "доме"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "надоели",
+                "мужики"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "обожаю",
+                "мужчин"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "мужчины",
+                "не",
+                "нужны"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "кнн"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "мужчина"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "парень"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "мальчик"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "мужчины"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "мужчинам"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "парням"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "парни"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "мальчики"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "мальчикам"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "у",
+                "тебя"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "у"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "тебя"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "образ"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "идеального"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "каким"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "по"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "твоему"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "твоей"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "твоя"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "твои"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "должен"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "должен",
+                "быть"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "быть"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "настоящий"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "любишь"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "ты"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "с",
+                "кем"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "с"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "кем"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "бы"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "встречалась"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "встречается"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "встречались"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "встречался"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "стала"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "встречаться"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "вот",
+                "он"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "вот"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "он"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "пидрила"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "у",
+                "него"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "него"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "на"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "уме"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "на",
+                "уме"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "только"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "одно"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "один"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "одни"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "хочу"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "хочу",
+                "быть"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "за"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "как"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "как",
+                "за"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "каменной"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "стеной"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "каменная"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "стена"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "каменные"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "камень"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "мне",
+                "нужен"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "нужен"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "мне"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "в",
+                "доме"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "в"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "доме"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "дом"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "надоели"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "надоел"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "не",
+                "нужны"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "нужны"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "не"
+            ],
+            "tag": "False"
+        }
+    ],
+    "words": [
+        "бы",
+        "быть",
+        "в",
+        "вот",
+        "встречается",
+        "встречалась",
+        "встречались",
+        "встречался",
+        "встречаться",
+        "должен",
+        "дом",
+        "доме",
+        "есть",
+        "за",
+        "идеального",
+        "как",
+        "каким",
+        "каменная",
+        "каменной",
+        "каменные",
+        "камень",
+        "кем",
+        "кнн",
+        "любишь",
+        "мальчик",
+        "мальчикам",
+        "мальчики",
+        "мне",
+        "мужики",
+        "мужчин",
+        "мужчина",
+        "мужчинам",
+        "мужчины",
+        "на",
+        "надоел",
+        "надоели",
+        "настоящий",
+        "не",
+        "него",
+        "нужен",
+        "нужны",
+        "обожаю",
+        "образ",
+        "один",
+        "одни",
+        "одно",
+        "он",
+        "парень",
+        "парни",
+        "парням",
+        "пидрила",
+        "по",
+        "с",
+        "стала",
+        "стена",
+        "стеной",
+        "твоей",
+        "твоему",
+        "твои",
+        "твоя",
+        "тебя",
+        "только",
+        "ты",
+        "у",
+        "уме",
+        "хочу"
+    ]
+}

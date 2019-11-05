@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:tools="http://schemas.android.com/tools">
     <string name="AutoBots">Автоматические боты</string>
+    <string name="iMeSupport">Техподдержка iMe</string>
+    <string name="iMeGroup">Группа iMe</string>
     <string name="ShareTelegram">Поделиться iMe…</string>
-    <string name="InviteToTelegram">ПРИГЛАСИТЬ В</string>
+    <string name="InviteToTelegram">ПРИГЛАСИТЬ В IME</string>
     <string name="InviteFriendsHelp">Выберите людей, которых хотите пригласить в iMe Messenger</string>
     <string name="InviteText2">Привет, вместо Telegram я использую iMe – мессенджер с Искусственным интеллектом!
 Скачай его здесь %1$s и общайся с пользователями Telegram используя нейроботов-помощников для переписок.</string>
@@ -17,25 +19,42 @@
     <string name="Page6Title">Облачный</string>
     <string name="NoFolders">Папок пока нет</string>
     <string name="NoFoldersHelp">Чтобы создать папку с выбранными чатами, нажмите на значок плюс в правом нижнем углу.</string>
+    <string name="NoUndelivered">У вас нет чатов с недоставленными сообшениями.</string>
+    <string name="NoAdmin">У вас нет групп или каналов, где вы являетесь администратором.</string>
+    <string name="NoOwner">У вас нет групп или каналов, где вы являетесь владельцем.</string>
     <string name="NoUnread">Непрочитанных чатов нет</string>
     <string name="NoUnreadHelp">В этой вкладке отображаются чаты с \nнепрочитанными сообщениями.</string>
+    <string name="NoChannels">У вас нет подписок на каналы.</string>
+    <string name="NoChannelsHelp">Нажмите на кнопку Подборка, чтобы выбрать тематический канал.</string>
     <string name="SelectChats">Выберите чаты</string>
     <string name="Selected">Выбрано: %d</string>
-    <string name="FolderName">Название папки</string>
+    <string name="FolderName">Создать папку</string>
     <string name="SelectDialogsToAdd">Выберите диалоги для добавления в папку %s</string>
     <string name="SendToFolder">Добавить в папку</string>
     <string name="RemoveFromFolder">Удалить из папки</string>
     <string name="FolderEdit">Добавить чат</string>
-    <string name="FolderRename">Переименовать</string>
+    <string name="FolderRename">Изменить</string>
     <string name="FolderDelete">Удалить</string>
+    <string name="AskAQuestionNew">Задать вопрос Telegram</string>
     <!--tabs-->
-    <string name="tabAll">Все</string>
+    <string name="tabAll">Все чаты</string>
+    <string name="tabAllSettings">Все вкладки</string>
     <string name="tabUnread">Непрочитанные</string>
     <string name="tabChats">Личные чаты</string>
     <string name="tabGroups">Групповые чаты</string>
     <string name="tabChannels">Каналы</string>
     <string name="tabBots">Боты</string>
     <string name="tabFolders">Папки</string>
+    <string name="tabSecretChats">Секретные чаты</string>
+    <string name="tabManagement">Менеджмент</string>
+    <string name="tabManagementFavorites">Избранное</string>
+    <string name="tabManagementUndelivered">Недоставленные</string>
+    <string name="tabManagementOwner">Владелец</string>
+    <string name="tabManagementAdministrator">Администратор</string>
+    <string name="tabManagementCreatedBots">Созданные боты</string>
+    <string name="tabManagementSurveys">Опросы</string>
+    <string name="tabManagementReminders">Напоминания</string>
+    <string name="tabManagementGeolocation">Геолокации</string>
 
     <string name="Page1Message">Самый безопасный\n мессенджер в мире.</string>
     <string name="Page2Message">Доставка сообщений быстрее чем\n в любом другом приложении.</string>
@@ -52,16 +71,20 @@
 
     <string name="YourPhone">Ваш телефон</string>
     <string name="StartText">Пожалуйста, укажите код страны и свой номер телефона.</string>
-    <string name="iMeSettings">Настройки вкладок</string>
+    <string name="iMeSettings">Сортировка чатов</string>
+    <string name="iMeSettingsBots">Настройки нейроботов</string>
     <string name="TabSettings">Настройки вкладок</string>
+
     <string name="TabSettingsInfo">Настройте порядок вкладок с помощью перетаскивания</string>
 
     <string name="error_no_internet">Проверьте интернет соединение</string>
     <string name="ads_label">ads</string>
 
+    <string name="createFolder">Создать папку</string>
+
     <!-- iMeStore -->
-    <string name="AiStore">iMeStore</string>
-    <string name="BotsMarket">Магазин ботов</string>
+    <string name="BotsMarket">Магазин нейроботов</string>
+    <string name="iMeStore">Магазин нейроботов</string>
     <string name="NotFound">По вашему запросу ничего не найдено.</string>
     <string name="Channel">Канал</string>
     <string name="ChannelMembers">Подписчиков</string>
@@ -96,7 +119,9 @@
     <string name="HideOnTop">Скрыть</string>
     <string name="search">Поиск</string>
     <string name="change_country">Сменить страну каналов</string>
+    <string name="bots_language">Язык нейроботов</string>
     <string name="add_channel">Добавить свой канал</string>
+    <string name="add_bot">Добавить нейробота</string>
     <string name="publication_rules">Правила размещения</string>
     <string name="design_recommendations">Рекомендации оформления</string>
     <string name="countries_for_placement">Страны размещения</string>
@@ -105,14 +130,30 @@
     <string name="channel_country">Страна каналов</string>
     <string name="rating">Рейтинг</string>
     <string name="add_channel_title">Добавление канала</string>
-
+    <string name="bots_empty_resp">На последнюю входящую фразу не сработал ни один нейробот</string>
+    <string name="settings_bots_label">Автоматическое срабатывание</string>
+    <string name="settings_bots_automatic_dialogs">В личных чатах</string>
+    <string name="settings_bots_automatic_groups">В групповых чатах</string>
+    <string name="settings_bots_often">Часто используемые</string>
+    <string name="settings_neurobots">Настройки нейроботов</string>
+    <string name="language_russian">Русский</string>
+    <string name="language_english">Английский</string>
+    <string name="text_empty_gif">У данного нейробота GIF не предусмотрены.</string>
     <string name="empty_category">В данную категорию еще не были добавлены каналы.</string>
-    <plurals name="ratings">
-        <item quantity="one" tools:ignore="ImpliedQuantity">оценка</item>
-        <item quantity="few">оценки</item>
-        <item quantity="many">оценок</item>
-        <item quantity="other">оценок</item>
-    </plurals>
+    <string name="empty_my_channels1">Вы не подписаны ни на один канал.</string>
+    <string name="empty_my_channels2">Выберете интересующий вас канал в каталоге.</string>
+
+    <string name="AiLeaveChannel">Выйти</string>
+
+    <string name="Ratings_zero">%d оценок</string>
+    <string name="Ratings_one">%d оценка</string>
+    <string name="Ratings_two">%d оценки</string>
+    <string name="Ratings_few">%d оценки</string>
+    <string name="Ratings_many">%d оценок</string>
+    <string name="Ratings_other">%d оценок</string>
+    <string name="supported_languages">Поддерживаемые языки</string>
+    <string name="russian">Русский</string>
+    <string name="english">Английский</string>
 
     <plurals name="subscribers">
         <item quantity="one" tools:ignore="ImpliedQuantity">подписчик</item>
@@ -120,6 +161,8 @@
         <item quantity="many">подписчиков</item>
         <item quantity="other">подписчиков</item>
     </plurals>
+
+    <string name="add_bot_info">Напишите нам на @iMeMessenger, какого нейробота вы хотели бы видеть в нашем магазине. Наша команда обязательно примет это к сведению. Спасибо за Ваше участие!</string>
 
     <string name="publication_rules_text">     Мы не допускаем размещение каналов, в которых содержится контент нарушающий законодательные или общегражданские права и нормы, оскорбляющий людей и чувства верующих, носящий нацистский, насильственный или порнографический характер, и т.д.. Также, мы оцениваем количество рекламы, присутствующей внутри канала, при ее содержании более 30% от общего контента есть большая вероятность непрохождения модерации.
 \n     При нарушении правил размещения материалов в канале после модерации и выпуска в подборке, а также при обоснованных жалобах со стороны пользователей или иных лиц, мы оставляем за собой право удалить ваш канал из подборки.</string>
@@ -164,5 +207,13 @@
 </string>
 
     <string name="apply_text">      Напишите нам сообщение на @iMeMessenger, с указанием названия вашего канала, username, желаемой категорией и страной размещения.</string>
+
+
+    <string name="you_have_backup">У вас есть созданные настройки.\n Хотите активировать их в приложении?</string>
+    <string name="auto_backup_warning1">Вы только что создали личные настройки.\nХотите автоматически сохранять их?</string>
+    <string name="auto_backup_warning2">Ваши настройки будут автоматически сохраняться в чате Избранное в файл backup.ime.\nОбратите внимание, что при удалении этого файла настройки не будут подлежать восстановлению.</string>
+    <string name="auto_backup_warning3">Ваши настройки успешно сохранены.\nВы всегда можете отключить функцию экспорта в настройках приложения (Данные и память).</string>
+    <string name="auto_backup_setting">Автосохранение настроек</string>
+    <string name="iMe_setting">Настройки iMe</string>
 
 </resources>

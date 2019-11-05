@@ -686,4 +686,8 @@ public class PhotoViewerCaptionEnterView extends FrameLayout implements Notifica
             }
         }
     }
+
+    public void setAllowTextEntitiesIntersection(boolean value) {
+        messageEditText.setAllowTextEntitiesIntersection(value);
+    }
 }

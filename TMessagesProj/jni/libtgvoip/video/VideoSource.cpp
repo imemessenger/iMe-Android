@@ -22,7 +22,7 @@ std::shared_ptr<VideoSource> VideoSource::Create(){
 }
 
 
-void VideoSource::SetCallback(std::function<void(const Buffer &, uint32_t)> callback){
+void VideoSource::SetCallback(std::function<void(const Buffer &, uint32_t, uint32_t)> callback){
 	this->callback=callback;
 }
 

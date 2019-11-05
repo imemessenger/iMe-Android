@@ -3,22 +3,20 @@ package org.telegram.ui;
 import android.annotation.SuppressLint;
 import android.content.SharedPreferences;
 
-import androidx.annotation.NonNull;
-
 import org.telegram.messenger.MessagesController;
 
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.HashSet;
-import java.util.Objects;
+import java.util.List;
 import java.util.Set;
 import java.util.TreeSet;
 
 @SuppressLint("ApplySharedPref")
-class DialogsTabManager {
+public class DialogsTabManager {
 
     // Все вкладки
-    ArrayList<DialogsTab> allTabs = new ArrayList<>();
+    public List<DialogsTab> allTabs = new ArrayList<>();
     // Активные вкладки (DialogsActivity.TabsMode.ALL)
     private ArrayList<DialogsTab> activeTabs = new ArrayList<>();
     // Активные вкладки (DialogsActivity.TabsMode.MINIMAL)
@@ -26,10 +24,10 @@ class DialogsTabManager {
 
     // Вкладки, которые не должны отображаться в режиме MINIMAL
     private Set<DialogsActivity.Tab> extraTabs =
-            new HashSet<>(Arrays.asList(DialogsActivity.Tab.CHANNELS, DialogsActivity.Tab.FOLDERS));
+        new HashSet<>(Arrays.asList(DialogsActivity.Tab.CHANNELS, DialogsActivity.Tab.FOLDERS, DialogsActivity.Tab.MANAGEMENT));
 
-    private static final String POSITION_KEY = "Position";
-    private static final String STATE_KEY = "Enabled";
+    private static final String POSITION_KEY = "_Position";
+    private static final String STATE_KEY = "_Enabled";
 
     private static volatile DialogsTabManager Instance = null;
 
@@ -66,13 +64,13 @@ class DialogsTabManager {
         refreshActiveTabs();
     }
 
-    void refreshActiveTabs() {
+    public void refreshActiveTabs() {
         activeTabs.clear();
         activeTabsMinimal.clear();
         for (DialogsTab tab : allTabs) {
             if (tab.isEnabled()) {
                 activeTabs.add(tab);
-                if (!extraTabs.contains(tab.getType())) {
+                if (!extraTabs.contains(tab.getType()) || tab.getType() == DialogsActivity.Tab.ALL) {
                     activeTabsMinimal.add(tab);
                 }
             }
@@ -87,7 +85,7 @@ class DialogsTabManager {
         }
     }
 
-    void storeCurrentTabsData() {
+    public void storeCurrentTabsData() {
         SharedPreferences preferences = MessagesController.getGlobalMainSettings();
         SharedPreferences.Editor editor = preferences.edit();
         for (int index = 0; index < allTabs.size(); index++) {
@@ -152,71 +150,5 @@ class DialogsTabManager {
 
     private String buildStateKey(DialogsActivity.Tab tab) {
         return tab.name().toLowerCase() + STATE_KEY;
-    }
-
-    class DialogsTab implements Comparable<DialogsTab> {
-        private DialogsActivity.Tab type;
-        private boolean enabled;
-        private int position;
-
-        DialogsTab(DialogsActivity.Tab type, boolean enabled, int position) {
-            this.type = type;
-            this.enabled = enabled;
-            this.position = position;
-        }
-
-        @Override
-        public int compareTo(@NonNull DialogsTab o) {
-            return Integer.compare(position, o.position);
-        }
-
-        @Override
-        public boolean equals(Object o) {
-            if (this == o) return true;
-            if (o == null || getClass() != o.getClass()) return false;
-            DialogsTab tabState = (DialogsTab) o;
-            return enabled == tabState.enabled &&
-                    position == tabState.position &&
-                    type == tabState.type;
-        }
-
-        @Override
-        public int hashCode() {
-            return Objects.hash(type, enabled, position);
-        }
-
-        @NonNull
-        @Override
-        public String toString() {
-            return "TabState{" +
-                    "type=" + type +
-                    ", enabled=" + enabled +
-                    ", position=" + position +
-                    '}';
-        }
-
-        public DialogsActivity.Tab getType() {
-            return type;
-        }
-
-        public void setType(DialogsActivity.Tab type) {
-            this.type = type;
-        }
-
-        public boolean isEnabled() {
-            return enabled;
-        }
-
-        public void setEnabled(boolean enabled) {
-            this.enabled = enabled;
-        }
-
-        public int getPosition() {
-            return position;
-        }
-
-        public void setPosition(int position) {
-            this.position = position;
-        }
     }
 }

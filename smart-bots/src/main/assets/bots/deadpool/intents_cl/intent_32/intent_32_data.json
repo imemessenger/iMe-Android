@@ -1,0 +1,177 @@
+{
+    "classes": [
+        {
+            "tag": "True"
+        },
+        {
+            "tag": "False"
+        }
+    ],
+    "documents": [
+        {
+            "sent_tokens": [
+                "надо",
+                "это",
+                "затвитить"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "сейчас",
+                "в",
+                "твиттер",
+                "напишу"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "собираюсь",
+                "запостить",
+                "это",
+                "в",
+                "twitter"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "надо",
+                "в",
+                "твитер",
+                "написать"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "затвичу",
+                "это"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "сейчас",
+                "твитерну"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "твиттерну"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "твитерну"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "затвичу"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "затвититеть"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "затвиттеть"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "твиттер"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "твитер"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "twitter"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "надо"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "это"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "сейчас"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "в"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "напишу"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "собираюсь"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "запостить"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "написать"
+            ],
+            "tag": "False"
+        }
+    ],
+    "words": [
+        "twitter",
+        "в",
+        "запостить",
+        "затвититеть",
+        "затвитить",
+        "затвиттеть",
+        "затвичу",
+        "надо",
+        "написать",
+        "напишу",
+        "сейчас",
+        "собираюсь",
+        "твитер",
+        "твитерну",
+        "твиттер",
+        "твиттерну",
+        "это"
+    ]
+}

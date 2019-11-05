@@ -1,0 +1,535 @@
+{
+    "classes": [
+        {
+            "tag": "True"
+        },
+        {
+            "tag": "False"
+        }
+    ],
+    "documents": [
+        {
+            "sent_tokens": [
+                "я",
+                "верю",
+                "тебе"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "конечно",
+                "она",
+                "мне",
+                "не",
+                "изменяет"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "я",
+                "не",
+                "переживаю",
+                "за",
+                "то",
+                "где",
+                "он",
+                "и",
+                "с",
+                "кем"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "они",
+                "не",
+                "предадут",
+                "меня"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "он",
+                "предал",
+                "ее"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "я",
+                "абсолютно",
+                "в",
+                "них",
+                "уверен"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "мне",
+                "кажется",
+                "что",
+                "он",
+                "мне",
+                "изменяет"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "я",
+                "хочу",
+                "залезть",
+                "к",
+                "нему",
+                "в",
+                "телефон"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "а",
+                "вдруг",
+                "он",
+                "с",
+                "ней",
+                "все",
+                "еще",
+                "общается"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "он",
+                "мне",
+                "изменяет",
+                "это",
+                "точно"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "я",
+                "полностью",
+                "доверяю",
+                "тебе"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "я",
+                "тебе",
+                "верю"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "я",
+                "тебе",
+                "доверяю"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "доверяю"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "доверие",
+                "оправдал"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "недоверяю"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "не",
+                "доверяю"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "я"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "верю"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "тебе"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "конечно"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "она"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "мне"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "не"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "изменяет"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "не",
+                "изменяет"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "я"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "не",
+                "переживаю"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "переживаю"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "за",
+                "то"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "зато"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "за"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "то"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "где"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "он"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "и"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "с",
+                "кем"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "с"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "кем"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "они"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "не",
+                "предадут"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "предадут"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "меня"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "абсолютно"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "в",
+                "них"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "в"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "них"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "уверен"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "мне",
+                "кажется"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "кажется"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "что"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "хочу"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "залезть"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "к"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "нему"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "телефон"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "а"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "вдруг"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "а",
+                "вдруг"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "с",
+                "ней"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "ней"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "все"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "всё"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "еще"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "ещё"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "общается"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "это",
+                "точно"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "точно"
+            ],
+            "tag": "False"
+        }
+    ],
+    "words": [
+        "а",
+        "абсолютно",
+        "в",
+        "вдруг",
+        "верю",
+        "все",
+        "всё",
+        "где",
+        "доверие",
+        "доверяю",
+        "ее",
+        "еще",
+        "ещё",
+        "за",
+        "залезть",
+        "зато",
+        "и",
+        "изменяет",
+        "к",
+        "кажется",
+        "кем",
+        "конечно",
+        "меня",
+        "мне",
+        "не",
+        "недоверяю",
+        "ней",
+        "нему",
+        "них",
+        "общается",
+        "он",
+        "она",
+        "они",
+        "оправдал",
+        "переживаю",
+        "полностью",
+        "предадут",
+        "предал",
+        "с",
+        "тебе",
+        "телефон",
+        "то",
+        "точно",
+        "уверен",
+        "хочу",
+        "что",
+        "это",
+        "я"
+    ]
+}

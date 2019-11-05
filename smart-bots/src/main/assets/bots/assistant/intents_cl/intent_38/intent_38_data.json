@@ -1,0 +1,142 @@
+{
+    "classes": [
+        {
+            "tag": "True"
+        },
+        {
+            "tag": "False"
+        }
+    ],
+    "documents": [
+        {
+            "sent_tokens": [
+                "что",
+                "происходит"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "что",
+                "стряслось"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "что",
+                "случилось"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "что",
+                "нового"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "что",
+                "новенького"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "что",
+                "слышно"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "как",
+                "оно",
+                "вообще"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "что",
+                "такое"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "что"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "происходит"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "случилось"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "нового"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "новенького"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "слышно"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "оно"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "вообще"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "что"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "такое"
+            ],
+            "tag": "False"
+        }
+    ],
+    "words": [
+        "вообще",
+        "как",
+        "новенького",
+        "нового",
+        "оно",
+        "происходит",
+        "случилось",
+        "слышно",
+        "стряслось",
+        "такое",
+        "что"
+    ]
+}

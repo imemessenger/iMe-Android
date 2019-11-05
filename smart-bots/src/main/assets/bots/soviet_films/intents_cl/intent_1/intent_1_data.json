@@ -1,0 +1,745 @@
+{
+    "classes": [
+        {
+            "tag": "True"
+        },
+        {
+            "tag": "False"
+        }
+    ],
+    "documents": [
+        {
+            "sent_tokens": [
+                "привет"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "йоу"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "хэллоу"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "хей"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "приветствую"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "хочу",
+                "сказать",
+                "тебе",
+                "привет"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "и",
+                "снова",
+                "здравствуйте"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "здравствуйте"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "категорически",
+                "приветствую"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "давно",
+                "не",
+                "виделись"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "приветствую",
+                "тебя"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "хотелось",
+                "бы",
+                "тебя",
+                "поприветствовать"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "просто",
+                "хотел",
+                "поздороваться"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "можно",
+                "с",
+                "тобой",
+                "поздороваться"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "я",
+                "пишу",
+                "тебе",
+                "с",
+                "приветом"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "бонжур"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "мое",
+                "почтение"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "ку"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "даров"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "дрям"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "сколько",
+                "лет",
+                "сколько",
+                "зим"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "здравки"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "приветик"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "салам"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "хай"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "хаюшки"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "хелоу"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "драсте"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "здрасте"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "здравствуй"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "здравствуйте"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "даров"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "доров"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "здаров"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "здарово"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "салют"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "прив"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "рад",
+                "слышать"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "рад",
+                "видеть"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "сто",
+                "лет",
+                "сто",
+                "зим"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "какие",
+                "люди",
+                "в",
+                "голливуде"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "ассалам",
+                "валейкум"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "хуш",
+                "келебсиз"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "приветики"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "хело"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "хеллоу"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "ола"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "бонжёрна"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "алоха"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "буенос"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "гутен",
+                "таг"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "гамарджоба"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "гамаржова"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "мерхаба"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "шалом"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "коничива"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "коничуа"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "коничуа"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "хэлоу"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "хелоу"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "хочу"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "сказать"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "тебе"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "и"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "снова"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "категорически"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "давно"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "не"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "виделись"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "видятся"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "увиделись"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "тебя"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "хотелось",
+                "бы"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "хотелось"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "бы"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "просто"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "можно"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "с"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "тобой"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "пишу"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "тебе"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "мое"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "моё"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "почтение"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "сколько"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "лет"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "сколько",
+                "лет"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "зим"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "рад"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "слышать"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "видеть"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "сто",
+                "лет"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "сто"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "зима"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "какие"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "люди"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "какие",
+                "люди"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "в",
+                "голливуде"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "голливуде"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "голливуд"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "в"
+            ],
+            "tag": "False"
+        }
+    ],
+    "words": [
+        "алоха",
+        "ассалам",
+        "бонжур",
+        "бонжёрна",
+        "буенос",
+        "бы",
+        "в",
+        "валейкум",
+        "виделись",
+        "видеть",
+        "видятся",
+        "гамарджоба",
+        "гамаржова",
+        "голливуд",
+        "голливуде",
+        "гутен",
+        "давно",
+        "даров",
+        "доров",
+        "драсте",
+        "дрям",
+        "здаров",
+        "здарово",
+        "здравки",
+        "здравствуй",
+        "здравствуйте",
+        "здрасте",
+        "зим",
+        "зима",
+        "и",
+        "йоу",
+        "какие",
+        "категорически",
+        "келебсиз",
+        "коничива",
+        "коничуа",
+        "ку",
+        "лет",
+        "люди",
+        "мерхаба",
+        "мое",
+        "можно",
+        "моё",
+        "не",
+        "ола",
+        "пишу",
+        "поздороваться",
+        "поприветствовать",
+        "почтение",
+        "прив",
+        "привет",
+        "приветик",
+        "приветики",
+        "приветом",
+        "приветствую",
+        "просто",
+        "рад",
+        "с",
+        "салам",
+        "салют",
+        "сказать",
+        "сколько",
+        "слышать",
+        "снова",
+        "сто",
+        "таг",
+        "тебе",
+        "тебя",
+        "тобой",
+        "увиделись",
+        "хай",
+        "хаюшки",
+        "хей",
+        "хеллоу",
+        "хело",
+        "хелоу",
+        "хотел",
+        "хотелось",
+        "хочу",
+        "хуш",
+        "хэллоу",
+        "хэлоу",
+        "шалом",
+        "я"
+    ]
+}

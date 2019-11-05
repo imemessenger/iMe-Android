@@ -18,8 +18,8 @@ namespace tgvoip {
 		virtual ~PacketReassembler();
 
 		void Reset();
-		void AddFragment(Buffer pkt, unsigned int fragmentIndex, unsigned int fragmentCount, uint32_t pts, bool keyframe);
-		void SetCallback(std::function<void(Buffer packet, uint32_t pts, bool keyframe)> callback);
+		void AddFragment(Buffer pkt, unsigned int fragmentIndex, unsigned int fragmentCount, uint32_t pts, bool keyframe, uint16_t rotation);
+		void SetCallback(std::function<void(Buffer packet, uint32_t pts, bool keyframe, uint16_t rotation)> callback);
 
 	private:
 		struct Packet{
@@ -27,11 +27,12 @@ namespace tgvoip {
 			uint32_t partCount;
 			uint32_t receivedPartCount;
 			bool isKeyframe;
+			uint16_t rotation;
 			Buffer* parts;
 
 			TGVOIP_DISALLOW_COPY_AND_ASSIGN(Packet);
 
-			Packet(Packet&& other) : timestamp(other.timestamp), partCount(other.partCount), receivedPartCount(other.receivedPartCount), isKeyframe(other.isKeyframe){
+			Packet(Packet&& other) : timestamp(other.timestamp), partCount(other.partCount), receivedPartCount(other.receivedPartCount), isKeyframe(other.isKeyframe), rotation(other.rotation){
 				parts=other.parts;
 				other.parts=NULL;
 			}
@@ -45,6 +46,7 @@ namespace tgvoip {
 					partCount=other.partCount;
 					receivedPartCount=other.receivedPartCount;
 					isKeyframe=other.isKeyframe;
+					rotation=other.rotation;
 				}
 				return *this;
 			}
@@ -61,7 +63,7 @@ namespace tgvoip {
 			void AddFragment(Buffer pkt, uint32_t fragmentIndex);
 			Buffer Reassemble();
 		};
-		std::function<void(Buffer, uint32_t, bool)> callback;
+		std::function<void(Buffer, uint32_t, bool, uint16_t)> callback;
 		std::vector<Packet> packets;
 		uint32_t maxTimestamp=0;
 	};

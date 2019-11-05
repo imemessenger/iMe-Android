@@ -1,0 +1,319 @@
+{
+    "classes": [
+        {
+            "tag": "True"
+        },
+        {
+            "tag": "False"
+        }
+    ],
+    "documents": [
+        {
+            "sent_tokens": [
+                "он",
+                "поймет",
+                "что",
+                "со",
+                "мной",
+                "так",
+                "нельзя"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "я",
+                "хочу",
+                "чтобы",
+                "он",
+                "побывал",
+                "на",
+                "моем",
+                "месте"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "месть",
+                "надо",
+                "подавать",
+                "холодной"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "я",
+                "должен",
+                "ему",
+                "отомстить"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "пошли",
+                "со",
+                "мной",
+                "на",
+                "стрелку"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "надо",
+                "его",
+                "прижать"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "я",
+                "его",
+                "размажу"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "он",
+                "за",
+                "все",
+                "заплатит"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "он"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "поймет"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "что"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "со",
+                "мной"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "со"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "мной"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "так"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "нельзя"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "я"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "хочу"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "чтобы"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "побывал"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "на"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "моем"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "месте"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "на",
+                "моем"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "надо"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "подавать"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "холодной"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "должен"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "ему"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "должен",
+                "ему"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "пошли"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "пошли",
+                "со",
+                "мной"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "его"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "стрелку"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "прижать"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "размажу"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "за"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "все"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "заплатит"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "всё"
+            ],
+            "tag": "False"
+        }
+    ],
+    "words": [
+        "все",
+        "всё",
+        "должен",
+        "его",
+        "ему",
+        "за",
+        "заплатит",
+        "месте",
+        "месть",
+        "мной",
+        "моем",
+        "на",
+        "надо",
+        "нельзя",
+        "он",
+        "отомстить",
+        "побывал",
+        "подавать",
+        "поймет",
+        "пошли",
+        "прижать",
+        "размажу",
+        "со",
+        "стрелку",
+        "так",
+        "холодной",
+        "хочу",
+        "что",
+        "чтобы",
+        "я"
+    ]
+}

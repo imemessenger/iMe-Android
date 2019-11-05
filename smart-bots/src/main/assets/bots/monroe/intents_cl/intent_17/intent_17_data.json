@@ -1,0 +1,460 @@
+{
+    "classes": [
+        {
+            "tag": "True"
+        },
+        {
+            "tag": "False"
+        }
+    ],
+    "documents": [
+        {
+            "sent_tokens": [
+                "я",
+                "не",
+                "толстый"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "я",
+                "много",
+                "вешу"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "я",
+                "жирный"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "у",
+                "меня",
+                "просто",
+                "кость",
+                "широкая"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "надо",
+                "худеть"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "надо",
+                "перестать",
+                "много",
+                "есть"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "надо",
+                "заняться",
+                "своим",
+                "весом"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "ты",
+                "думаешь",
+                "о",
+                "похудении"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "тебе",
+                "стоило",
+                "бы",
+                "похудеть"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "я",
+                "так",
+                "разжирел"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "пузо",
+                "отрастил"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "пузико",
+                "мешает"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "ты",
+                "жирный"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "ты",
+                "толстый"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "тебе",
+                "надо",
+                "следить",
+                "за",
+                "весом"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "жиртрест"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "похудей"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "похудеть"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "перестать",
+                "быть",
+                "жирным"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "стать",
+                "худой"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "стать",
+                "худым"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "я"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "не"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "много"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "вешу"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "у",
+                "меня"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "у"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "меня"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "просто"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "кость"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "широкая"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "надо"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "перестать"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "много"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "есть"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "заняться"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "своим"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "весом"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "думаешь"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "о"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "так"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "стоило"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "бы"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "стоило",
+                "бы"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "тебе"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "пузо"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "отрастил"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "пузико"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "мешает"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "толстый"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "жирный"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "жирное",
+                "блюдо"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "толстый",
+                "документ"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "жирный",
+                "шрифт"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "следить"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "за"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "весом"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "перестать"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "быть"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "стать"
+            ],
+            "tag": "False"
+        }
+    ],
+    "words": [
+        "блюдо",
+        "бы",
+        "быть",
+        "весом",
+        "вешу",
+        "документ",
+        "думаешь",
+        "есть",
+        "жирное",
+        "жирный",
+        "жирным",
+        "жиртрест",
+        "за",
+        "заняться",
+        "кость",
+        "меня",
+        "мешает",
+        "много",
+        "надо",
+        "не",
+        "о",
+        "отрастил",
+        "перестать",
+        "похудей",
+        "похудении",
+        "похудеть",
+        "просто",
+        "пузико",
+        "пузо",
+        "разжирел",
+        "своим",
+        "следить",
+        "стать",
+        "стоило",
+        "так",
+        "тебе",
+        "толстый",
+        "ты",
+        "у",
+        "худеть",
+        "худой",
+        "худым",
+        "широкая",
+        "шрифт",
+        "я"
+    ]
+}

@@ -1,0 +1,483 @@
+{
+    "classes": [
+        {
+            "tag": "True"
+        },
+        {
+            "tag": "False"
+        }
+    ],
+    "documents": [
+        {
+            "sent_tokens": [
+                "крайне",
+                "отвратительно"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "да",
+                "уж"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "плохо"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "ужас"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "так",
+                "ужасно"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "плохой",
+                "ответ"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "очень",
+                "плохо"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "невероятно",
+                "плохо"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "безобразно",
+                "плохо"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "боюсь",
+                "это",
+                "не",
+                "так"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "отвратительно"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "недостаточно",
+                "хорошо"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "плохо"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "очень",
+                "плохо"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "ужасно"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "было",
+                "ужасно"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "ничего",
+                "хорошего"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "это",
+                "было",
+                "ужасно",
+                "плохо"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "недостаточно",
+                "хороший"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "слишком",
+                "плохо"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "неубедительно"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "ужасная",
+                "идея"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "плохо"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "так",
+                "жутко"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "ужаснее",
+                "не",
+                "бывает"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "ну",
+                "очень",
+                "плохо"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "так",
+                "плохо"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "это",
+                "плохо"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "крайне",
+                "плохо"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "действительно",
+                "ужасно"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "это",
+                "была",
+                "плохая",
+                "идея"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "это",
+                "было",
+                "плохо"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "крайне"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "да"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "уж"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "так"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "ответ"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "очень"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "невероятно"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "безобразно"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "боюсь"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "это"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "не"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "так"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "это",
+                "не",
+                "так"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "недостаточно"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "хорошо"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "было"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "ничего"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "хорошего"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "хороший"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "слишком"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "идея"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "довольно"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "жутко"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "таки"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "ну",
+                "очень"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "ну"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "действительно"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "это",
+                "было"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "это",
+                "была"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "это",
+                "было",
+                "бы"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "ничего"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "страшного"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "важно"
+            ],
+            "tag": "False"
+        }
+    ],
+    "words": [
+        "безобразно",
+        "боюсь",
+        "бы",
+        "бывает",
+        "была",
+        "было",
+        "важно",
+        "да",
+        "действительно",
+        "довольно",
+        "жутко",
+        "идея",
+        "крайне",
+        "не",
+        "невероятно",
+        "недостаточно",
+        "неубедительно",
+        "ничего",
+        "ну",
+        "ответ",
+        "отвратительно",
+        "очень",
+        "плохая",
+        "плохо",
+        "плохой",
+        "слишком",
+        "страшного",
+        "так",
+        "таки",
+        "уж",
+        "ужас",
+        "ужасная",
+        "ужаснее",
+        "ужасно",
+        "хорошего",
+        "хороший",
+        "хорошо",
+        "это"
+    ]
+}

@@ -24,6 +24,7 @@ import android.content.pm.ActivityInfo;
 import android.content.pm.PackageManager;
 import android.content.res.AssetFileDescriptor;
 import android.content.res.Configuration;
+import android.database.ContentObserver;
 import android.database.Cursor;
 import android.graphics.Bitmap;
 import android.graphics.Color;
@@ -40,6 +41,7 @@ import android.net.Uri;
 import android.os.Build;
 import android.os.Environment;
 import android.os.PowerManager;
+import android.provider.CallLog;
 import android.provider.DocumentsContract;
 import android.provider.MediaStore;
 import android.provider.Settings;
@@ -97,6 +99,7 @@ import org.telegram.ui.ActionBar.BaseFragment;
 import org.telegram.ui.ActionBar.BottomSheet;
 import org.telegram.ui.ActionBar.Theme;
 import org.telegram.ui.Cells.TextDetailSettingsCell;
+import org.telegram.ui.Components.BackgroundGradientDrawable;
 import org.telegram.ui.Components.ForegroundDetector;
 import org.telegram.ui.Components.LayoutHelper;
 import org.telegram.ui.Components.PickerBottomLayout;
@@ -246,6 +249,11 @@ public class AndroidUtilities {
                 }
             } else if (drawable instanceof ColorDrawable) {
                 bitmapColor = ((ColorDrawable) drawable).getColor();
+            } else if (drawable instanceof BackgroundGradientDrawable) {
+                int[] colors = ((BackgroundGradientDrawable) drawable).getColorsList();
+                if (colors != null && colors.length > 0) {
+                    bitmapColor = colors[0];
+                }
             }
         } catch (Exception e) {
             FileLog.e(e);
@@ -265,7 +273,7 @@ public class AndroidUtilities {
         return result;
     }
 
-    private static double[] rgbToHsv(int r, int g, int b) {
+    public static double[] rgbToHsv(int r, int g, int b) {
         double rf = r / 255.0;
         double gf = g / 255.0;
         double bf = b / 255.0;
@@ -403,7 +411,12 @@ public class AndroidUtilities {
             if (pathString != null && pathString.length() > 4096) {
                 return true;
             }
-            String newPath = Utilities.readlink(pathString);
+            String newPath;
+            try {
+                newPath = Utilities.readlink(pathString);
+            } catch (Throwable e) {
+                return true;
+            }
             if (newPath == null || newPath.equals(pathString)) {
                 break;
             }
@@ -423,6 +436,9 @@ public class AndroidUtilities {
                 pathString.replace("/./", "/");
                 //igonre
             }
+        }
+        if (pathString.endsWith(".attheme")) {
+            return false;
         }
         return pathString != null && pathString.toLowerCase().contains("/data/data/" + ApplicationLoader.applicationContext.getPackageName());
     }
@@ -870,7 +886,11 @@ public class AndroidUtilities {
                     user.first_name = vcardData.name;
                     user.last_name = "";
                     user.id = 0;
-                    user.restriction_reason = vcardData.vcard.toString();
+                    TLRPC.TL_restrictionReason reason = new TLRPC.TL_restrictionReason();
+                    reason.text = vcardData.vcard.toString();
+                    reason.platform = "";
+                    reason.reason = "";
+                    user.restriction_reason.add(reason);
                     result.add(user);
                 }
             }
@@ -1234,10 +1254,6 @@ public class AndroidUtilities {
         return (cm / 2.54f) * (isX ? displayMetrics.xdpi : displayMetrics.ydpi);
     }
 
-    public static long makeBroadcastId(int id) {
-        return 0x0000000100000000L | ((long) id & 0x00000000FFFFFFFFL);
-    }
-
     public static int getMyLayerVersion(int layer) {
         return layer & 0xffff;
     }
@@ -1321,6 +1337,8 @@ public class AndroidUtilities {
         }
     }*/
 
+    private static ContentObserver callLogContentObserver;
+    private static Runnable unregisterRunnable;
     private static boolean hasCallPermissions = Build.VERSION.SDK_INT >= 23;
 
     @SuppressWarnings("unchecked")
@@ -1337,9 +1355,38 @@ public class AndroidUtilities {
             telephonyService = (ITelephony) m.invoke(tm);
             telephonyService.silenceRinger();
             telephonyService.endCall();
+        } catch (Throwable e) {
+            FileLog.e(e);
+        }
+    }
+
+    public static String obtainLoginPhoneCall(String pattern) {
+        if (!hasCallPermissions) {
+            return null;
+        }
+        try (Cursor cursor = ApplicationLoader.applicationContext.getContentResolver().query(
+                CallLog.Calls.CONTENT_URI,
+                new String[]{CallLog.Calls.NUMBER, CallLog.Calls.DATE},
+                CallLog.Calls.TYPE + " IN (" + CallLog.Calls.MISSED_TYPE + "," + CallLog.Calls.INCOMING_TYPE + "," + CallLog.Calls.REJECTED_TYPE + ")",
+                null,
+                "date DESC LIMIT 5")) {
+            while (cursor.moveToNext()) {
+                String number = cursor.getString(0);
+                long date = cursor.getLong(1);
+                if (BuildVars.LOGS_ENABLED) {
+                    FileLog.e("number = " + number);
+                }
+                if (Math.abs(System.currentTimeMillis() - date) >= 60 * 60 * 1000) {
+                    continue;
+                }
+                if (checkPhonePattern(pattern, number)) {
+                    return number;
+                }
+            }
         } catch (Exception e) {
             FileLog.e(e);
         }
+        return null;
     }
 
     public static boolean checkPhonePattern(String pattern, String phone) {
@@ -2012,6 +2059,9 @@ public class AndroidUtilities {
     }
 
     public static boolean copyFile(File sourceFile, File destFile) throws IOException {
+        if (sourceFile.equals(destFile)) {
+            return true;
+        }
         if (!destFile.exists()) {
             destFile.createNewFile();
         }
@@ -2049,9 +2099,9 @@ public class AndroidUtilities {
         }
         if (f != null && f.exists()) {
             if (parentFragment != null && f.getName().toLowerCase().endsWith("attheme")) {
-                Theme.ThemeInfo themeInfo = Theme.applyThemeFile(f, message.getDocumentName(), true);
+                Theme.ThemeInfo themeInfo = Theme.applyThemeFile(f, message.getDocumentName(), null, true);
                 if (themeInfo != null) {
-                    parentFragment.presentFragment(new ThemePreviewActivity(f, themeInfo));
+                    parentFragment.presentFragment(new ThemePreviewActivity(themeInfo));
                 } else {
                     AlertDialog.Builder builder = new AlertDialog.Builder(activity);
                     builder.setTitle(LocaleController.getString("AppName", R.string.AppName));
@@ -2683,5 +2733,33 @@ public class AndroidUtilities {
         int bS = Color.blue(color1);
         int aS = Color.alpha(color1);
         return Color.argb((int) ((aS + (aF - aS) * offset) * alpha), (int) (rS + (rF - rS) * offset), (int) (gS + (gF - gS) * offset), (int) (bS + (bF - bS) * offset));
+    }
+
+    public static int indexOfIgnoreCase(final String origin, final String searchStr) {
+        if (searchStr.isEmpty() || origin.isEmpty()) {
+            return origin.indexOf(searchStr);
+        }
+
+        for (int i = 0; i < origin.length(); i++) {
+            if (i + searchStr.length() > origin.length()) {
+                return -1;
+            }
+            int j = 0;
+            int ii = i;
+            while (ii < origin.length() && j < searchStr.length()) {
+                char c = Character.toLowerCase(origin.charAt(ii));
+                char c2 = Character.toLowerCase(searchStr.charAt(j));
+                if (c != c2) {
+                    break;
+                }
+                j++;
+                ii++;
+            }
+            if (j == searchStr.length()) {
+                return i;
+            }
+        }
+
+        return -1;
     }
 }

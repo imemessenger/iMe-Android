@@ -1,0 +1,236 @@
+{
+    "classes": [
+        {
+            "tag": "True"
+        },
+        {
+            "tag": "False"
+        }
+    ],
+    "documents": [
+        {
+            "sent_tokens": [
+                "вау"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "ух",
+                "ты",
+                "вау"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "ух",
+                "ты"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "огого"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "ух",
+                "ты",
+                "ух",
+                "ты"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "ого"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "ничего",
+                "себе"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "вот",
+                "это",
+                "да"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "вон",
+                "оно",
+                "как"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "ух",
+                "епт"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "ух",
+                "ёпт"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "ого",
+                "как"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "ух"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "ты"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "тебе"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "вы"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "ничего"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "себе"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "тебе"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "себя"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "тебя"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "вот"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "вот",
+                "это"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "это"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "да"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "оно"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "вон"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "как"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "она"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "он"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "ух"
+            ],
+            "tag": "False"
+        }
+    ],
+    "words": [
+        "вау",
+        "вон",
+        "вот",
+        "вы",
+        "да",
+        "епт",
+        "как",
+        "ничего",
+        "ого",
+        "огого",
+        "он",
+        "она",
+        "оно",
+        "себе",
+        "себя",
+        "тебе",
+        "тебя",
+        "ты",
+        "ух",
+        "это",
+        "ёпт"
+    ]
+}

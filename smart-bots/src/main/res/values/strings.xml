@@ -1,0 +1,105 @@
+<resources>
+    <string name="app_name">Responses</string>
+    <string name="bot_title_trade_binbank">BinBank</string>
+    <string name="bot_title_chanel">Coco Chanel</string>
+    <string name="bot_title_churchill">Churchill</string>
+    <string name="bot_title_confucius">Confucius</string>
+    <string name="bot_title_memes">Memes</string>
+    <string name="bot_title_monroe">Marilyn Monroe</string>
+    <string name="bot_title_soviet_films">Soviet films</string>
+    <string name="bot_title_yoda">Grand Master Yoda</string>
+    <string name="bot_title_celentano">Celentano</string>
+    <string name="bot_title_corleone">Don Corleone</string>
+    <string name="bot_title_einstein">Einstein</string>
+    <string name="bot_title_terminator">Terminator</string>
+    <string name="bot_title_tsoy">Victor Tsoy</string>
+    <string name="bot_title_napoleon">Napoleon</string>
+    <string name="bot_title_teresa">Mother Teresa</string>
+    <string name="bot_title_karlson">Karlsson</string>
+    <string name="bot_title_daenerys">Daenerys Targaryen</string>
+    <string name="bot_title_scooby_doo">Scooby-Doo</string>
+    <string name="bot_title_sponge_bob">Sponge Bob</string>
+    <string name="bot_title_panda">Kung Fu Panda</string>
+    <string name="bot_title_shrek">Shrek</string>
+    <string name="bot_title_jon_snow">Jon Snow</string>
+    <string name="bot_title_tyrion">Tyrion Lannister</string>
+    <string name="bot_title_assistant">Assistant</string>
+    <string name="bot_title_deadpool">Deadpool</string>
+    <string name="bot_title_pushkin">Pushkin</string>
+    <string name="bot_title_lenin">Lenin</string>
+    <string name="bot_title_minions">Minions</string>
+    <string name="bot_title_lotr">The Lord of the Rings</string>
+    <string name="bot_title_simpsons">The Simpsons</string>
+    <string name="bot_title_south_park">South Park</string>
+    <string name="bot_title_adage">Proverbs and sayings</string>
+    <string name="bot_title_darth_vader">Darth Vader</string>
+    <string name="bot_title_garfield">Garfield</string>
+    <string name="bot_title_nu_pogodi">Nu, pogodi!</string>
+
+    <string name="bot_title_recent">Frequently used</string>
+
+    <string name="bot_title_holidays">Holidays</string>
+    <string name="bot_title_holiday_23rd_feb">Defender of the Fatherland Day</string>
+    <string name="bot_title_holiday_8th_mar">International Women\'s Day</string>
+    <string name="bot_title_holiday_1st_apr">April Fools\' Day</string>
+    <string name="bot_title_holiday_12th_apr">Space Exploration Day</string>
+    <string name="bot_title_holiday_28th_apr">Easter</string>
+    <string name="bot_title_holiday_1st_may">May Day</string>
+    <string name="bot_title_holiday_9th_may">Victory Day</string>
+
+    <string name="bot_description_trade_binbank">BinBank</string>
+    <string name="bot_description_chanel">French designer who founded the fashion house «Chanel».</string>
+    <string name="bot_description_churchill">British statesman and politician.</string>
+    <string name="bot_description_confucius">Ancient Chinese thinker and philosopher.</string>
+    <string name="bot_description_memes">Text information including main popular phrases.</string>
+    <string name="bot_description_monroe">American movie actress, sex icon of 1950th, singer and model.</string>
+    <string name="bot_description_soviet_films">Collection of popular phrases and quotes from the best Soviet films.</string>
+    <string name="bot_description_yoda">One of the main characters of the «Star Wars» movie, the wisest and strongest Jedi.</string>
+    <string name="bot_description_celentano">Very charismatic Italian musician, movie actor.</string>
+    <string name="bot_description_corleone">Main character of the "Godfather" novel by Mario Puzo and main hero of the movie based on the book.</string>
+    <string name="bot_description_einstein">Genius, theoretical physicist, remarkable person.</string>
+    <string name="bot_description_terminator">Character played by Arnold Schwarzenegger.</string>
+    <string name="bot_description_tsoy">Soviet rock musician. Founder and leader of the «Kino» (movie) rock band.</string>
+    <string name="bot_description_napoleon">Outstanding French commander and statesman.</string>
+    <string name="bot_description_teresa">Catholic nun, founder of the Missionaries of Charity, a Catholic order of nuns.</string>
+    <string name="bot_description_karlson">Handsome, moderately plump man in his prime living on the roof.</string>
+    <string name="bot_description_daenerys">The representative of a sort of Targaryen from «Game of Thrones» drama series.</string>
+    <string name="bot_description_scooby_doo">German mastiff solving mysteries with quasi-supernatural creatures.</string>
+    <string name="bot_description_sponge_bob">Overly optimistic cartoon character that always irritates other characters.</string>
+    <string name="bot_description_panda">Panda Po character - real Kung Fu Master.</string>
+    <string name="bot_description_shrek">Giant green ogre from the eponymous cartoon.</string>
+    <string name="bot_description_jon_snow">Bastard of the Starks family and brother of the Night\'s Watch from «Game of Thrones» drama series.</string>
+    <string name="bot_description_tyrion">Sharp-witted and smooth-talking dwarf from «Game of Thrones» drama series.</string>
+    <string name="bot_description_assistant">Personal assistant to discuss popular topics of communication.</string>
+    <string name="bot_description_deadpool">Antihero of Marvel comics has a peculiar and cynical sense of humor.</string>
+    <string name="bot_description_pushkin">Russian poet, playwright and prose writer.</string>
+    <string name="bot_description_lenin">Russian revolutionary, political and statesman.</string>
+    <string name="bot_description_minions">Little minions of all villains.</string>
+    <string name="bot_description_lotr">Roman epic of the English writer J.R.R.Tolkien.</string>
+    <string name="bot_description_simpsons">Satirical animated series about the life of the Simpsons family.</string>
+    <string name="bot_description_south_park">The animated series about the adventures of four boys.</string>
+    <string name="bot_description_adage">Russian proverbs and sayings, short sayings and stable combinations.</string>
+    <string name="bot_description_darth_vader">The head of the army of the Galactic Empire in the movie Star Wars.</string>
+    <string name="bot_description_garfield">Lazy red cat from the same movie.</string>
+    <string name="bot_description_nu_pogodi">The cult Soviet cartoon series about the wolf and the hare.</string>
+    <string name="bot_description_holidays">Holidays of Russia. Bot is activated on holiday dates.</string>
+
+
+
+
+    <string name="bot_tag_free">Free</string>
+    <string name="bot_tag_paid">Paid</string>
+    <string name="bot_tag_man">Man</string>
+    <string name="bot_tag_woman">Woman</string>
+    <string name="bot_tag_great">Great</string>
+    <string name="bot_tag_famous">Famous</string>
+    <string name="bot_tag_hero_movie">Movie hero</string>
+    <string name="bot_tag_hero_cartoon">Cartoon hero</string>
+    <string name="bot_tag_pack">Collection</string>
+    <string name="bot_tag_gif">GIF</string>
+
+    <string name="bot_label_neuro">NeuroBot</string>
+    <string name="bot_label_normal">Bot</string>
+    <string name="bot_label_advert">Adverts Bot</string>
+    <string name="bot_label_most_used">Favorites</string>
+</resources>

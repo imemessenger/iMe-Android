@@ -1,0 +1,560 @@
+{
+    "classes": [
+        {
+            "tag": "True"
+        },
+        {
+            "tag": "False"
+        }
+    ],
+    "documents": [
+        {
+            "sent_tokens": [
+                "ты",
+                "помнишь"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "а",
+                "помнишь",
+                "как",
+                "было"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "были",
+                "светлые",
+                "деньки",
+                "я",
+                "помню",
+                "их"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "моя",
+                "память",
+                "стала",
+                "меня",
+                "подводить"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "ничего",
+                "не",
+                "помню"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "совсем",
+                "забыл"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "как",
+                "ты",
+                "могла",
+                "забыть"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "память",
+                "совсем",
+                "отшибло"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "у",
+                "тебя",
+                "память",
+                "как",
+                "у",
+                "рыбки"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "напомни",
+                "потом"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "ты",
+                "вообще",
+                "помнишь"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "ну",
+                "ты",
+                "вспомнила"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "а",
+                "я",
+                "совсем",
+                "об",
+                "этом",
+                "забыла"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "кто",
+                "бы",
+                "мне",
+                "напомнил"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "нужен",
+                "секретарь",
+                "для",
+                "напоминаний"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "память"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "напомнить"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "напомни"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "забыл"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "помню"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "не",
+                "помню"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "плохая",
+                "память"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "хорошая",
+                "память"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "ты"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "а"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "как"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "было"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "были"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "бывали"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "светлые"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "деньки"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "дни"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "днями"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "я"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "ничего"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "их"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "моя"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "мой"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "мои"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "стала"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "подводить"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "не"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "совсем"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "как",
+                "ты"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "могла"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "отшибло"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "у",
+                "тебя"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "тебя"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "у"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "рыбки"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "рыбка"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "рыба"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "рыбе"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "потом"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "вообще"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "что"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "нибудь"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "ну",
+                "ты"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "ну"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "нужен"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "об",
+                "этом"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "совсем"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "об"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "этом"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "это"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "эти"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "этим"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "кто",
+                "бы"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "кто"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "бы"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "мне"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "секретарь"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "для"
+            ],
+            "tag": "False"
+        }
+    ],
+    "words": [
+        "а",
+        "бы",
+        "бывали",
+        "были",
+        "было",
+        "вообще",
+        "вспомнила",
+        "деньки",
+        "для",
+        "дни",
+        "днями",
+        "забыл",
+        "забыла",
+        "забыть",
+        "их",
+        "как",
+        "кто",
+        "меня",
+        "мне",
+        "могла",
+        "мои",
+        "мой",
+        "моя",
+        "напоминаний",
+        "напомни",
+        "напомнил",
+        "напомнить",
+        "не",
+        "нибудь",
+        "ничего",
+        "ну",
+        "нужен",
+        "об",
+        "отшибло",
+        "память",
+        "плохая",
+        "подводить",
+        "помнишь",
+        "помню",
+        "потом",
+        "рыба",
+        "рыбе",
+        "рыбка",
+        "рыбки",
+        "светлые",
+        "секретарь",
+        "совсем",
+        "стала",
+        "тебя",
+        "ты",
+        "у",
+        "хорошая",
+        "что",
+        "эти",
+        "этим",
+        "это",
+        "этом",
+        "я"
+    ]
+}

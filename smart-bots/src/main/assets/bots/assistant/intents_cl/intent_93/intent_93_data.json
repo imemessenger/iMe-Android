@@ -1,0 +1,96 @@
+{
+    "classes": [
+        {
+            "tag": "True"
+        },
+        {
+            "tag": "False"
+        }
+    ],
+    "documents": [
+        {
+            "sent_tokens": [
+                "где",
+                "ты"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "ты",
+                "хде"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "где",
+                "ты",
+                "есть"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "да",
+                "где",
+                "же",
+                "ты"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "где",
+                "ты",
+                "там"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "где"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "ты"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "хде"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "есть"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "же"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "там"
+            ],
+            "tag": "False"
+        }
+    ],
+    "words": [
+        "где",
+        "да",
+        "есть",
+        "же",
+        "там",
+        "ты",
+        "хде"
+    ]
+}

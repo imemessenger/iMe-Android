@@ -1,0 +1,490 @@
+{
+    "classes": [
+        {
+            "tag": "True"
+        },
+        {
+            "tag": "False"
+        }
+    ],
+    "documents": [
+        {
+            "sent_tokens": [
+                "ты",
+                "боишься",
+                "смерти"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "боишься",
+                "умереть"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "что",
+                "думаешь",
+                "о",
+                "смерти"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "у",
+                "меня",
+                "умер",
+                "близкий",
+                "человек"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "все",
+                "мы",
+                "умрем"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "смерть",
+                "идет",
+                "по",
+                "пятам"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "старуха",
+                "с",
+                "косой",
+                "рядом"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "как",
+                "бы",
+                "ты",
+                "хотел",
+                "умереть"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "у",
+                "меня",
+                "умер",
+                "недавно"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "жаль",
+                "что",
+                "он",
+                "умер"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "он",
+                "умер",
+                "слишком",
+                "рано"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "ушел",
+                "из",
+                "жизни",
+                "достаточно",
+                "рано"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "все",
+                "мы",
+                "умрём"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "смерть",
+                "идёт",
+                "по",
+                "пятам"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "ушёл",
+                "из",
+                "жизни",
+                "достаточно",
+                "рано"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "умер"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "умерла"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "он",
+                "умер"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "она",
+                "умерла"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "они",
+                "умерли"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "умирает"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "он",
+                "умирает"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "она",
+                "умирает"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "они",
+                "умирают"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "ты"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "боишься"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "что"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "думаешь"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "о"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "у"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "меня"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "у",
+                "меня"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "близкий"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "человек"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "близкий",
+                "человек"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "идет"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "идёт"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "по"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "пятам"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "старуха"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "с"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "косой"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "рядом"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "как"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "бы"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "ты"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "хотел"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "кое"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "кто"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "недавно"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "что"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "он"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "жаль"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "слишком"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "рано"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "из"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "жизни"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "достаточно"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "ушел"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "ушёл"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "он"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "она"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "они"
+            ],
+            "tag": "False"
+        }
+    ],
+    "words": [
+        "близкий",
+        "боишься",
+        "бы",
+        "все",
+        "достаточно",
+        "думаешь",
+        "жаль",
+        "жизни",
+        "идет",
+        "идёт",
+        "из",
+        "как",
+        "кое",
+        "косой",
+        "кто",
+        "меня",
+        "мы",
+        "недавно",
+        "о",
+        "он",
+        "она",
+        "они",
+        "по",
+        "пятам",
+        "рано",
+        "рядом",
+        "с",
+        "слишком",
+        "смерти",
+        "смерть",
+        "старуха",
+        "ты",
+        "у",
+        "умер",
+        "умереть",
+        "умерла",
+        "умерли",
+        "умирает",
+        "умирают",
+        "умрем",
+        "умрём",
+        "ушел",
+        "ушёл",
+        "хотел",
+        "человек",
+        "что"
+    ]
+}

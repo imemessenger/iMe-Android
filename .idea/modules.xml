@@ -2,7 +2,16 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/StudioProjects-iMe-Android.iml" filepath="$PROJECT_DIR$/StudioProjects-iMe-Android.iml" />
+      <module fileurl="file://$PROJECT_DIR$/TMessagesProj/TMessagesProj.iml" filepath="$PROJECT_DIR$/TMessagesProj/TMessagesProj.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Users-sergey-StudioProjects-iMe-Android.iml" filepath="$PROJECT_DIR$/Users-sergey-StudioProjects-iMe-Android.iml" />
       <module fileurl="file://$PROJECT_DIR$/iMe-Android.iml" filepath="$PROJECT_DIR$/iMe-Android.iml" />
+      <module fileurl="file://$PROJECT_DIR$/TMessagesProj/iMe-Android-TMessagesProj.iml" filepath="$PROJECT_DIR$/TMessagesProj/iMe-Android-TMessagesProj.iml" />
+      <module fileurl="file://$PROJECT_DIR$/smart-bots/iMe-Android-smart-bots.iml" filepath="$PROJECT_DIR$/smart-bots/iMe-Android-smart-bots.iml" />
+      <module fileurl="file://$PROJECT_DIR$/storage/iMe-Android-storage.iml" filepath="$PROJECT_DIR$/storage/iMe-Android-storage.iml" />
+      <module fileurl="file://$PROJECT_DIR$/sergey-StudioProjects-iMe-Android.iml" filepath="$PROJECT_DIR$/sergey-StudioProjects-iMe-Android.iml" />
+      <module fileurl="file://$PROJECT_DIR$/smart-bots/smart-bots.iml" filepath="$PROJECT_DIR$/smart-bots/smart-bots.iml" />
+      <module fileurl="file://$PROJECT_DIR$/storage/storage.iml" filepath="$PROJECT_DIR$/storage/storage.iml" />
     </modules>
   </component>
 </project>

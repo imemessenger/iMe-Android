@@ -1,0 +1,534 @@
+{
+    "classes": [
+        {
+            "tag": "True"
+        },
+        {
+            "tag": "False"
+        }
+    ],
+    "documents": [
+        {
+            "sent_tokens": [
+                "да",
+                "что",
+                "ты",
+                "говоришь"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "так",
+                "интересно",
+                "продолжай"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "почему",
+                "ты",
+                "меня",
+                "совсем",
+                "не",
+                "слушаешь"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "ты",
+                "не",
+                "обращаешь",
+                "на",
+                "меня",
+                "внимание"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "ты",
+                "совершенно",
+                "охладел",
+                "ко",
+                "мне"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "почему",
+                "ты",
+                "такой",
+                "черствый"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "ты",
+                "так",
+                "холодна",
+                "со",
+                "мной"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "почему",
+                "ты",
+                "не",
+                "можешь",
+                "быть",
+                "мил",
+                "со",
+                "мной"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "тебе",
+                "скучно",
+                "со",
+                "мной"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "я",
+                "тебя",
+                "не",
+                "интересую"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "ты",
+                "не",
+                "хочешь",
+                "со",
+                "мной",
+                "общаться"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "все",
+                "равно"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "всё",
+                "равно"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "безразлично"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "безразличие"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "мне",
+                "плевать"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "плевать",
+                "хотел"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "мне",
+                "насрать"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "мне",
+                "похуй"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "да",
+                "мне",
+                "насрать"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "да",
+                "мне",
+                "похуй"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "да"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "что"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "ты"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "говоришь"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "так"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "интересно"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "продолжай"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "почему"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "ты"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "меня"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "совсем"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "не",
+                "слушаешь"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "слушаешь"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "не",
+                "обращаешь"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "обращаешь"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "внимание"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "совершенно"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "охладел"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "ко",
+                "мне"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "мне"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "ко"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "к"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "такой"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "черствый"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "холодна"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "со",
+                "мной"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "со"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "мной"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "можешь"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "не",
+                "можешь"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "быть"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "мил"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "скучно"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "тебе"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "не",
+                "интересую"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "интересую"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "не",
+                "хочешь"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "хочешь"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "общаться"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "все"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "всё"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "равно"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "ровно"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "плевать"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "похуй"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "мне"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "насрать"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "хотел"
+            ],
+            "tag": "False"
+        }
+    ],
+    "words": [
+        "безразличие",
+        "безразлично",
+        "быть",
+        "внимание",
+        "все",
+        "всё",
+        "говоришь",
+        "да",
+        "интересно",
+        "интересую",
+        "к",
+        "ко",
+        "меня",
+        "мил",
+        "мне",
+        "мной",
+        "можешь",
+        "на",
+        "насрать",
+        "не",
+        "обращаешь",
+        "общаться",
+        "охладел",
+        "плевать",
+        "похуй",
+        "почему",
+        "продолжай",
+        "равно",
+        "ровно",
+        "скучно",
+        "слушаешь",
+        "со",
+        "совершенно",
+        "совсем",
+        "так",
+        "такой",
+        "тебе",
+        "тебя",
+        "ты",
+        "холодна",
+        "хотел",
+        "хочешь",
+        "черствый",
+        "что",
+        "я"
+    ]
+}

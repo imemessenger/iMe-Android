@@ -1,0 +1,512 @@
+{
+    "classes": [
+        {
+            "tag": "True"
+        },
+        {
+            "tag": "False"
+        }
+    ],
+    "documents": [
+        {
+            "sent_tokens": [
+                "что",
+                "бы",
+                "ты",
+                "хотел",
+                "съесть"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "ты",
+                "хочешь",
+                "есть"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "я",
+                "бы",
+                "сейчас",
+                "слона",
+                "съел"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "готов",
+                "сожрать",
+                "все",
+                "что",
+                "угодно"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "хочу",
+                "жрать"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "в",
+                "холодильнике",
+                "мышь",
+                "повесилась"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "хочу",
+                "суши",
+                "заказать"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "сейчас",
+                "бы",
+                "пиццы"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "я",
+                "так",
+                "голоден"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "хочется",
+                "есть"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "коня",
+                "бы",
+                "сейчас",
+                "съел"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "надо",
+                "поужинать"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "надо",
+                "бы",
+                "позавтракать"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "я",
+                "иду",
+                "на",
+                "обед"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "голоден"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "голодна"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "я",
+                "хочу",
+                "есть"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "есть",
+                "хочу"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "я",
+                "голоден"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "я",
+                "голодна"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "умираю",
+                "с",
+                "голоду"
+            ],
+            "tag": "True"
+        },
+        {
+            "sent_tokens": [
+                "что"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "бы"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "ты"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "хотел"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "чтобы",
+                "ты",
+                "хотел"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "ты",
+                "хочешь"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "хочешь"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "хочу"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "готов"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "все"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "всё"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "что"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "угодно"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "что",
+                "угодно"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "слон"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "слона"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "сейчас"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "в",
+                "холодильнике"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "в"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "холодильник"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "холодильнике"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "мышь"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "повесилась"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "повесился"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "повеситься"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "повесится"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "заказать"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "заказал"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "заказывает"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "закажет"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "сейчас",
+                "бы"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "так"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "коня"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "конь"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "надо"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "надо",
+                "бы"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "я",
+                "иду"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "иду"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "идти"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "ухожу",
+                "на"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "идти",
+                "на"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "умираю"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "я"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "хочу"
+            ],
+            "tag": "False"
+        },
+        {
+            "sent_tokens": [
+                "с"
+            ],
+            "tag": "False"
+        }
+    ],
+    "words": [
+        "бы",
+        "в",
+        "все",
+        "всё",
+        "голоден",
+        "голодна",
+        "голоду",
+        "готов",
+        "есть",
+        "жрать",
+        "закажет",
+        "заказал",
+        "заказать",
+        "заказывает",
+        "идти",
+        "иду",
+        "конь",
+        "коня",
+        "мышь",
+        "на",
+        "надо",
+        "обед",
+        "пиццы",
+        "повесилась",
+        "повесился",
+        "повесится",
+        "повеситься",
+        "позавтракать",
+        "поужинать",
+        "с",
+        "сейчас",
+        "слон",
+        "слона",
+        "сожрать",
+        "суши",
+        "съел",
+        "съесть",
+        "так",
+        "ты",
+        "угодно",
+        "умираю",
+        "ухожу",
+        "холодильник",
+        "холодильнике",
+        "хотел",
+        "хочется",
+        "хочешь",
+        "хочу",
+        "что",
+        "чтобы",
+        "я"
+    ]
+}

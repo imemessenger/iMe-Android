@@ -1,9 +1,60 @@
-## Telegram messenger for Android
+## iMe Messenger is an unofficial Telegram client
 
-[Telegram](https://telegram.org) is a messaging app with a focus on speed and security. It’s superfast, simple and free.
-This repo contains the official source code for [Telegram App for Android](https://play.google.com/store/apps/details?id=org.telegram.messenger).
+The development of the main functionality is made by the [Telegram](https://telegram.org) team which creates the most advanced and sophisticated messenger in the world.
+Telegram provides the opportunity to use its [open code](https://telegram.org/apps#source-code) and [API](https://core.telegram.org/#tdlib-build-your-own-telegram) to implement brand-new solutions. 
+The iMe team develops and adds new features in the messenger without breaking user privacy and violating security principles, enjoying the benefits provided by Telegram. 
+
+## Features
+
+## In-house developments and integrations:
+- iMe Wallet and internal AiCoin
+- Neurobots assistants for chatting
+- Neurobots Store
+- Telegram channels, groups, and chatbots’ collection
+- Animated stickers with the addition of a text
+- Integrated Google Translator
+- Text from a Photo
+- Photo Description
+- Transcribing voice messages to text
+- Fast forwarding messages to WhatsApp, WA Business, and Viber
+
+## Features based on the Telegram functionality:
+
+- Efficient Cloud based on the Saved Messages chat
+- Multi-panel in chats
+- Automatic sorting of chats’ lists by types: Unread; Personal; Groups; Channels; Bots
+- Customized Telegram folders
+- Management. Includes tabs: Owner; Administrator; Undelivered; Drafts
+- Forward messages without quotes
+- Compact view of a chat list
+- Set of iMe app icons
+
+## Additional Telegram configurations:
+
+- Going to the first message in a chat
+- Opportunity to pin chats’ previews to view their content without opening them
+- Hiding a pinned message
+- Display accounts on the home screen for quick switching between them
+- Opportunity to choose what account data to display in the sidebar
+- “Move to archive” option in the chat’s setting of the hamburger menu
+- Disable/enable the lower panel in channels
+- Disable/enable rounding the number of users in chats
+- Confirmation before a call
+- Sending GIFs and stickers without sound
+- Clickable links in profile description
+- User ID in profile
+- Stickers, GIF, voice and video messages preview before sending
+
+Download iMe from the [App Store](https://apps.apple.com/ru/app/ime-messenger-%D0%B4%D0%BB%D1%8F-telegram/id1450480822) or [Google Play](https://play.google.com/store/apps/details?id=com.iMe.android&hl)!
+
+Our channel [@iMe_en](https://t.me/ime_en) / [@iMe_ru](https://t.me/ime_ru)
+
+Our group [@iMe_ai](https://t.me/ime_ai)
+
+[Privacy policy](https://www.imem.app/privacy-policy.html)
 
 ## Creating your Telegram Application
+
 
 We welcome all developers to use our API and source code to create applications on our platform.
 There are several things we require from **all developers** for the moment.
